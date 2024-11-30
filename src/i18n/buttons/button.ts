@@ -1,5 +1,5 @@
 import data from '../../datasource/data.json';
-import { localised } from '../en/localised-strings';
+import { localised, } from '../en/localised-strings';
 import _ from 'lodash';
 
 export function createMainTopicButtons(from: string) {
@@ -98,6 +98,32 @@ export function createButtonWithExplanation(
     },
   };
 }
+
+
+export function videoWithButton(from: string, video_link: string) {
+  return {
+    to: from,
+    type: 'button',
+    button: {
+      body: {
+        type: 'text',
+        text: {
+          body: video_link,
+        },
+      },
+      buttons: [
+        {
+          type: 'solid',
+          body: localised.startQuiz,
+          reply: localised.startQuiz,
+        },
+      ],
+      allow_custom_response: false,
+    },
+  };
+}
+
+
 export function createTestYourSelfButton(
   from: string,
   description: string,

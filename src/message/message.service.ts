@@ -24,8 +24,8 @@ export abstract class MessageService {
       });
       return response.data;
     } catch (error) {
-      // console.log('Error sending message:', error.response?.data);
-      // throw new CustomException(error);
+      console.log('Error sending message:', error.response?.data);
+      throw new CustomException(error);
     }
   }
 
@@ -70,4 +70,5 @@ export abstract class MessageService {
   abstract endMessage(from:string);
   abstract sendLanguageChangedMessage(from: string, language: string);
   abstract newscorecard(from: string,score: number, totalQuestions: number, badge:string);
+  abstract sendVideo(from: string, selectedExperimentDetails: any);
 }

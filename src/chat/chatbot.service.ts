@@ -121,10 +121,11 @@ export class ChatbotService {
         const topic = user.selectedSubtopic;
         // Find the selected subtopic in the list of topics
         const subtopic = this.topics
-          .flatMap((topic) => topic.subtopics)
+          .flatMap((topic) => topic.subtopics) 
           .find((subtopic) => subtopic.subtopicName === topic);
         if (subtopic) {
           const description = subtopic.description;
+          
 
           await this.message.sendCompleteExplanation(from, description, topic);
         } 
@@ -306,13 +307,21 @@ export class ChatbotService {
           if (!description) {
             
           }
+          
+
 
           user.selectedSubtopic = subtopicName;
 
           await this.userService.saveUser(user);
           // console.log(subtopicName, description)
           await this.message.sendExplanation(from, description, subtopicName);
+          const selectVideo =subtopic.video_link;
+          console.log(selectVideo,"akash")
+          
+          await this.message.sendVideo(from, selectVideo)
+          console.log(selectVideo,description,"akash")
         } 
+
         const trackingData = {
           distinct_id: from,
           button: buttonBody,

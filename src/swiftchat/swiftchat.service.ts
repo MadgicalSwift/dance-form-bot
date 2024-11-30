@@ -14,12 +14,16 @@ import {
   questionButton,
   answerFeedback,
   optionButton,
-  buttonWithScore
+  buttonWithScore,
+  videoWithButton
 } from 'src/i18n/buttons/button';
 dotenv.config();
 
 @Injectable()
 export class SwiftchatMessageService extends MessageService {
+  sendExperimentVideo(from: string, selectedExperimentDetails: any) {
+    throw new Error('Method not implemented.');
+  }
   private botId = process.env.BOT_ID;
   private apiKey = process.env.API_KEY;
   private apiUrl = process.env.API_URL;
@@ -159,6 +163,7 @@ export class SwiftchatMessageService extends MessageService {
     from: string,
     description: string,
     subtopicName: string,
+
   ) {
     const messageData = createButtonWithExplanation(
       from,
@@ -170,6 +175,25 @@ export class SwiftchatMessageService extends MessageService {
       messageData,
       this.apiKey,
     );
+    return response;
+  }
+
+
+  async sendVideo(from: string, selectVideo: any) {
+    if (!selectVideo) {
+      return;
+    }
+    const messageData = videoWithButton(
+      from,
+      selectVideo,
+    );
+    const response = await this.sendMessage(
+      this.baseUrl,
+      messageData,
+      this.apiKey,
+    );
+    
+    console.log(messageData,"ssddsf")
     return response;
   }
 

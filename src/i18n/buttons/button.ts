@@ -100,29 +100,78 @@ export function createButtonWithExplanation(
 }
 
 
-export function videoWithButton(from: string, video_link: string) {
+// export function videoWithButton(from: string, video_link: string) {
+//   return {
+//     to: from,
+//     type: 'button',
+//     button: {
+//       body: {
+//         type: 'text',
+//         text: {
+//           body: video_link,
+//         },
+//       },
+     
+//       buttons: [
+//         {
+//           type: 'solid',
+//           body: localised.Moreexplanation,
+//           reply: localised.Moreexplanation,
+//         },
+//         {
+//           type: 'solid',
+//           body: localised.startQuiz,
+//           reply: localised.startQuiz,
+//         },
+       
+//         {
+//           type: 'solid',
+//           body: localised.mainMenu,
+
+//           reply: localised.mainMenu,
+//         },
+//       ],
+//       allow_custom_response: false,
+//     },
+//   };
+// }
+
+// export function videoWithButton(from: string, videoUrl: string, videoTitle:string) {
+//   console.log(videoUrl)
+//   console.log(videoTitle)
+//   return {
+//     to: from,  // Recipient's mobile number
+//     type: "video",  // Message type is video
+//     video: {
+//       url: "https://youtu.be/vD-LFksC1Nc?si=O43fbr8Qnyg3McFu",    // URL of the video
+//       title: "videoTitle",  // Title of the video
+//     },
+//   };
+// }
+
+
+
+export function videoWithButton(from: string, videoUrl: string, videoTitle: string , subTopic: string, aboutVideo: string) {
+  console.log(videoUrl);
+  console.log(videoTitle);
   return {
-    to: from,
-    type: 'button',
-    button: {
-      body: {
-        type: 'text',
-        text: {
-          body: video_link,
+    to: from, // Recipient's mobile number
+    type: "article", // Message type is article
+    article: [
+      {
+        tags: [`${subTopic}`], // Subtopic name
+        title: videoTitle, // Title of the video
+        header: {
+          type: "text",
+          text: {
+            body: videoUrl, // URL of the video
+          },
         },
+        description: aboutVideo
       },
-      buttons: [
-        {
-          type: 'solid',
-          body: localised.startQuiz,
-          reply: localised.startQuiz,
-        },
-      ],
-      allow_custom_response: false,
-    },
+    ],
   };
 }
-
 
 export function createTestYourSelfButton(
   from: string,
@@ -321,7 +370,7 @@ export function buttonWithScore(
       body: {
         type: 'text',
         text: {
-          body: "Congrats🎉! you have completed the quiz🎉 "
+          body: " *Congrats🎉! you have completed the quiz* 🎉 "
         },
       },
       buttons: [

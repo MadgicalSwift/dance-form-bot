@@ -71,7 +71,7 @@ export class SwiftchatMessageService extends MessageService {
     return response;
   }
   async sendName(from:string){
-    const message= "Can you please tell me your name?";
+    const message= " *Can you please tell me your name?* ";
     const requestData= this.prepareRequestData(from, message);
     const response = await this.sendMessage(
       this.baseUrl,
@@ -178,24 +178,79 @@ export class SwiftchatMessageService extends MessageService {
     return response;
   }
 
+  //  async sendVideo(from: string, selectVideo: any) {
+  //   if (!selectVideo) {
+  //     return;
+  //   }
+  //       console.log(selectVideo)
+  //   // Create the video message data
+  //   const videoUrl=selectVideo;
+  //   const videoTitle=selectVideo.title||"Title not provided"
+  //   const videoData = videoWithButton(
+  //              from, // The recipient's phone number
+  //             videoUrl, // Video URL
+  //             videoTitle
+  //         );
+  //      console.log(videoData)
+  //   // Send the video message using the sendMessage function
+  //   try {
+  //     const response = await this.sendMessage(this.baseUrl, videoData, this.apiKey);
+  //     console.log('Message sent successfully:', response);
+  //     return response
+  //   } catch (error) {
+  //     console.error('Error sending video message:', error);
+  //   }
+  // }
 
-  async sendVideo(from: string, selectVideo: any) {
-    if (!selectVideo) {
+
+
+  async sendVideo(from: string, videoUrl: string, title:any, subTopic: string, aboutVideo: string ) {
+    if (!videoUrl) {
       return;
     }
-    const messageData = videoWithButton(
-      from,
-      selectVideo,
-    );
-    const response = await this.sendMessage(
-      this.baseUrl,
-      messageData,
-      this.apiKey,
-    );
-    
-    console.log(messageData,"ssddsf")
-    return response;
+        console.log(videoUrl)
+    // Create the video message data
+    //const videoUrl=selectVideo
+    //const videoTitle=title||"Title not provided"
+    const videoData = videoWithButton(
+               from, // The recipient's phone number
+              videoUrl, // Video URL
+              title,
+              subTopic,
+              aboutVideo
+          );
+       console.log(videoData)
+    // Send the video message using the sendMessage function
+    try {
+      const response = await this.sendMessage(this.baseUrl, videoData, this.apiKey);
+      console.log('Message sent successfully:', response);
+      return response
+    } catch (error) {
+      console.error('Error sending video message:', error);
+    }
   }
+
+
+  // async sendVideo(from: string, selectVideo: any) {
+  //   if (!selectVideo) {
+  //     return;
+  //   }
+  //   const messageData = videoWithButton(
+  //     from,
+  //     selectVideo,
+      
+  //   );
+  //   const response = await this.sendMessage(
+  //     this.baseUrl,
+  //     messageData,
+  //     this.apiKey,
+  //   );
+    
+  //   console.log(messageData,"ssddsf")
+  //   return response;
+  // }
+  
+  
 
   async sendCompleteExplanation(
     from: string,

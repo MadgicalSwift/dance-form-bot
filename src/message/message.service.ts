@@ -70,5 +70,5 @@ export abstract class MessageService {
   abstract endMessage(from:string);
   abstract sendLanguageChangedMessage(from: string, language: string);
   abstract newscorecard(from: string,score: number, totalQuestions: number, badge:string);
-  abstract sendVideo(from: string, selectedExperimentDetails: any);
+  abstract sendVideo(from: string,  videoUrl: string, title:string, subTopic: string, aboutVideo: string);
 }

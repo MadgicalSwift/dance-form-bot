@@ -41,7 +41,7 @@ export class ChatbotService {
 
   public async processMessage(body: any): Promise<any> {
     // Destructure 'from', 'text', and 'button_response' from the body
-    const { from, text, button_response } = body;
+    const { from, text, button_response, persistent_menu_response } = body;
 
     // Retrieve botID from environment variables
     const botID = process.env.BOT_ID;
@@ -55,9 +55,28 @@ export class ChatbotService {
   
     // Convert plain user data to a User class instance
     const user = plainToClass(User, userData);
+  if(persistent_menu_response){ 
+  if (persistent_menu_response. body=="Change State"){
+     
+   
+    
+    
+      user.selectedSet = null;
+      user.questionsAnswered = 0;
+      user.score = 0;
+      console.log("akash",user.selectedSet,user.questionsAnswered,user.score )
+      await this.message.sendInitialTopics(from);
+      await this.userService.saveUser(user);
+      return
+    
+    
+  }
+}
+
+  
 
     // Handle button response from the user
-    if (button_response) {
+   else if (button_response) {
       const buttonBody = button_response.body;
 
       // Handle 'Main Menu' button - reset user quiz data and send welcome message
@@ -307,19 +326,22 @@ export class ChatbotService {
           if (!description) {
             
           }
-          
-
-
           user.selectedSubtopic = subtopicName;
+          const videoUrl =subtopic.video_link;
+          const title = subtopic.title;
+          const aboutVideo = subtopic.descrip
+          const subTopic =subtopic.subtopicName
 
           await this.userService.saveUser(user);
-          // console.log(subtopicName, description)
-          await this.message.sendExplanation(from, description, subtopicName);
-          const selectVideo =subtopic.video_link;
-          console.log(selectVideo,"akash")
+          // const selectVideo =subtopic.video_link;
+          // await this.message.sendVideo(from, selectVideo)
+          await this.message.sendVideo(from, videoUrl, title, subTopic, aboutVideo);
           
-          await this.message.sendVideo(from, selectVideo)
-          console.log(selectVideo,description,"akash")
+          await this.message.sendExplanation(from, description, subtopicName);
+         
+          
+          
+          
         } 
 
         const trackingData = {
@@ -393,7 +415,7 @@ export class ChatbotService {
         return;
       }
       // Format the response message with the top 3 students
-      let message = 'Top 3 Users:\n\n';
+      let message = 'Top 10 Users:\n\n';
       topStudents.forEach((student, index) => {
         const totalScore = student.score || 0;
         const studentName = student.name || 'Unknown';

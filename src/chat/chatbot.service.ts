@@ -330,7 +330,10 @@ export class ChatbotService {
           const videoUrl =subtopic.video_link;
           const title = subtopic.title;
           const aboutVideo = subtopic.descrip
-          const subTopic =subtopic.subtopicName
+          let subTopic =subtopic.subtopicName
+          if(subTopic.length > 20){
+            subTopic = subTopic.slice(0, 20) + '...'
+          }
 
           await this.userService.saveUser(user);
           // const selectVideo =subtopic.video_link;

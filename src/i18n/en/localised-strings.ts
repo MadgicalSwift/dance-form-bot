@@ -6,9 +6,9 @@ export const localised = {
   welcomeMessage: "😊 *Welcome to Dance Explore! 🎉 Discover the diverse dance forms of India, each representing a different state. Are you ready to explore? Let’s 🕺dive into the rhythm of India!!* ",
   validText: ['hi', 'Hi', 'HI', 'hI', 'Hello', 'hello', 'hola'],
   selectSubtopic: (topicName: string) =>
-  `📜 *Which state's mesmerizing Dance forms are you eager to groove to? 🎶💃 Let's twirl into the world of rhythm and tradition!* 🌟🕺:`,
+  `📜 Great choice! Now pick a dance form from the selected state. **${topicName}**: 🌟🕺:`,
   mainMenu:'Main Menu',
-  chooseTopic:"*Which state’s vibrant dance culture are you excited to explore? 🌍💃 Let the rhythm guide your curiosity!* 🎶✨",
+  chooseTopic:"Which state’s vibrant dance culture are you excited to explore? 🌍💃 Let the rhythm guide your curiosity! 🎶✨",
   retakeQuiz:'Retake Quiz',
   startQuiz: 'Start Quiz',
 

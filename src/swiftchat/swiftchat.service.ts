@@ -15,7 +15,8 @@ import {
   answerFeedback,
   optionButton,
   buttonWithScore,
-  videoWithButton
+  videoWithButton,
+  imageWithButton
 } from 'src/i18n/buttons/button';
 dotenv.config();
 
@@ -229,8 +230,38 @@ export class SwiftchatMessageService extends MessageService {
       console.error('Error sending video message:', error);
     }
   }
+  
 
 
+  
+
+  async imageWithButton(from: string,  imageUrl: string, Title:any, subTopic: string, aboutimage: string ) {
+
+
+    if (! imageUrl) {
+      return;
+    }
+        console.log( imageUrl)
+    // Create the video message data
+    //const videoUrl=selectVideo
+    //const videoTitle=title||"Title not provided"
+    const  imagedata = imageWithButton(
+               from, // The recipient's phone number
+               imageUrl, // Video URL
+              subTopic,
+              Title,
+              
+          );
+       console.log(imagedata)
+    // Send the video message using the sendMessage function
+    try {
+      const response = await this.sendMessage(this.baseUrl,imagedata, this.apiKey);
+      console.log('Message sent successfully:', response);
+      return response
+    } catch (error) {
+      console.error('Error sending image message:', error);
+    }
+  }
   // async sendVideo(from: string, selectVideo: any) {
   //   if (!selectVideo) {
   //     return;
@@ -249,6 +280,9 @@ export class SwiftchatMessageService extends MessageService {
   //   console.log(messageData,"ssddsf")
   //   return response;
   // }
+
+
+  
   
   
 

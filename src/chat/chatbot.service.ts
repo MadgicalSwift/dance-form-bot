@@ -333,6 +333,8 @@ export class ChatbotService {
           let subTopic =subtopic.subtopicName
           if(subTopic.length > 20){
             subTopic = subTopic.slice(0, 20) + '...'
+
+          
           }
 
           await this.userService.saveUser(user);
@@ -340,10 +342,14 @@ export class ChatbotService {
           // await this.message.sendVideo(from, selectVideo)
           await this.message.sendVideo(from, videoUrl, title, subTopic, aboutVideo);
           
+          
+          const imageUrl =subtopic.image_link;
+          const Title = subtopic.title;
+          const aboutimage = subtopic.Descrip
+          const SubTopic =subtopic.subtopicName
+          await this.message.imageWithButton(from, imageUrl,Title, subTopic, aboutimage);
+          
           await this.message.sendExplanation(from, description, subtopicName);
-         
-          
-          
           
         } 
 

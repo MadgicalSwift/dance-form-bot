@@ -1,3 +1,4 @@
+import { url } from 'inspector';
 import data from '../../datasource/data.json';
 import { localised, } from '../en/localised-strings';
 import _ from 'lodash';
@@ -172,6 +173,92 @@ export function videoWithButton(from: string, videoUrl: string, videoTitle: stri
     ],
   };
 }
+
+
+// export function imageWithButton(from: string, imageUrl: string, imageTitle: string , subTopic: string, aboutimage: string) {
+//   console.log(imageUrl);
+//   console.log(imageTitle);
+//   return {
+//     to: from, // Recipient's mobile number
+//     type: "article", // Message type is article
+//     article: [
+//       {
+//         tags: [`${subTopic}`], // Subtopic name
+//         title:imageTitle, // Title of the video
+//         header: {
+//           type: "image",
+//           text: {
+//             body:'https://images.app.goo.gl/VXGy12qhkpaLRCMZA', // URL of the video'
+//           },
+//         },
+//         description: aboutimage
+//       },
+//     ],
+//   };
+// }
+// export function imageWithButton(
+//   from: string, 
+//   imageUrl: string, 
+//   imageTitle: string, 
+//   subTopic: string, 
+//   aboutImage: string
+// ) {
+//   console.log(imageUrl);
+//   console.log(imageTitle);
+  
+//   return {
+//     to: from, // Recipient's mobile number
+//     type: "article", // Message type is article
+//     article: [
+//       {
+//         tags: [`${subTopic}`], // Subtopic name
+//         title: imageTitle, // Title of the image
+//         header: {
+//           type: "image",
+//           image: {
+//             url: imageUrl, // Use the image URL here as ID (if API accepts direct URL)
+//             body: "imageUrl", // Use the title as the caption
+//           },
+//         },
+//         description: aboutImage, // Description of the image
+//       },
+//     ],
+//   };
+// }
+
+
+export function imageWithButton(
+  from, // Recipient's mobile number
+  images, // Array of image objects containing URL, title, and description
+  subTopic, // Subtopic for tagging
+  title
+) {
+  console.log("Images:", images);
+
+  // Map each image object into the desired structure
+  const articles = images.map((image) => ({
+    tags: [subTopic], // Subtopic name as a tag
+    title: image.title, // Title of the image
+    header: {
+      type: "image", // Type of header is 'image'
+      image: {
+        url:image.imageUrl, // The image URL
+        body: image.Descrip, // The title as the caption for the image
+        // width: 1000, // Set width to achieve a 2:1 ratio
+        // height: 2000, 
+      },
+    },
+    description:image.Descrip, // Description for the image
+  }));
+
+  // Return the complete payload
+  return {
+    to: from, // Recipient's mobile number
+    type: "article", // Message type is 'article'
+    article: articles, // Array of articles
+  };
+}
+
 
 export function createTestYourSelfButton(
   from: string,

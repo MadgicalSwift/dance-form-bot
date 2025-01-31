@@ -40,6 +40,17 @@ export class SwiftchatMessageService extends MessageService {
     };
   }
 
+  async sendInformationMessage(from: string, username: string) {
+    const message = localised.InformationMessage(username); // Pass username dynamically
+    const requestData = this.prepareRequestData(from, message);
+    const response = await this.sendMessage(
+      this.baseUrl,
+      requestData,
+      this.apiKey
+    );
+    return response;
+  }
+
   async sendWelcomeMessage(from: string, language: string) {
     
     const message= localised.welcomeMessage;

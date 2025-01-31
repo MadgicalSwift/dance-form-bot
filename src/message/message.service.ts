@@ -76,4 +76,5 @@ export abstract class MessageService {
   abstract newscorecard(from: string,score: number, totalQuestions: number, badge:string);
   abstract sendVideo(from: string,  videoUrl: string, title:string, subTopic: string, aboutVideo: string);
   abstract imageWithButton(from: string,  imageUrl: string, Title:any, subTopic: string, aboutimage: string );
+  abstract sendInformationMessage(from: string, username: string);
 }

@@ -26,6 +26,5 @@ export const localised = {
  `👎Not quite right, but you’re learning!  💪\n The correct answer is: **${correctAnswer}**\n Here’s the explanation : **${explanation}**`,
   score: (score: number, totalQuestions: number,  badge:string) =>
   `🌟 Wow! You did an awesome job.  **${score}** out of **${totalQuestions}**.\n\n💪 Congratulations! You earned ${ badge} badge! `,
-   
-  
+  InformationMessage : (username :string) => `🌟 Hello ${username} !\nYou will get total 10 questions. \n For every correct answer, you earn 1 mark. Don’t worry—no marks will be deducted for wrong answers. 😊\n when you complete the quiz . You  will get the rewarded based on your scores.\n These are the 🏅 Scoring Rewards:\n- Gold 🥇: Total score = 10\n- Silver 🥈: Total score ≥ 7\n- Bronze 🥉: Total score ≥ 5\n\n✨ Complete the quiz to discover your final score! Keep it up—you’ve got this! 💪`,
 };

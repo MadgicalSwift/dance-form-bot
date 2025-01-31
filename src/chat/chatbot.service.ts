@@ -160,6 +160,8 @@ export class ChatbotService {
       // Handle 'Test Yourself' button - show difficulty options to the user
 
       if (buttonBody === localised.startQuiz) {
+
+        await this.message.sendInformationMessage(from, user.name);
         
         user.questionsAnswered=0;
         await this.userService.saveUser(user);

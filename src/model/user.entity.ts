@@ -29,6 +29,12 @@ export class User {
   questionsAnswered: number = 0;
 
   @IsString()
+  imageIndexing: number = 0;
+
+  @IsString()
+  updateImageIndexing: number = 0;
+
+  @IsString()
   score: number = 0;
 
   challenges:Challenge[];

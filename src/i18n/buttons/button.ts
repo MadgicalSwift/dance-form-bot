@@ -69,8 +69,8 @@ export function createButtonWithExplanation(
   const buttons = [
     {
       type: 'solid',
-      body: 'More Explanation',
-      reply: 'More Explanation',
+      body: localised.seeMoreVideo,
+      reply: localised.seeMoreVideo,
     },
     {
       type: 'solid',
@@ -152,8 +152,8 @@ export function createButtonWithExplanation(
 
 
 export function videoWithButton(from: string, videoUrl: string, videoTitle: string , subTopic: string, aboutVideo: string) {
-  console.log(videoUrl);
-  console.log(videoTitle);
+  // console.log(videoUrl);
+  // console.log(videoTitle);
   return {
     to: from, // Recipient's mobile number
     type: "article", // Message type is article
@@ -232,7 +232,7 @@ export function imageWithButton(
   subTopic, // Subtopic for tagging
   title
 ) {
-  console.log("Images:", images);
+  // console.log("Images:", images);
 
   // Map each image object into the desired structure
   const articles = images.map((image) => ({

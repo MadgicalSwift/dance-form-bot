@@ -121,7 +121,7 @@ export class SwiftchatMessageService extends MessageService {
     const year = currentDate.getFullYear() % 100
 
 
-    console.log(currentDate.getDate())
+    // console.log(currentDate.getDate())
     const payload = {
       to: from,
       type: "scorecard",
@@ -146,7 +146,7 @@ export class SwiftchatMessageService extends MessageService {
       },
     });
     await this.sendScore(from, score, totalQuestions, badge);
-    console.log(response)
+    // console.log(response)
     return response;
   }
 
@@ -220,7 +220,7 @@ export class SwiftchatMessageService extends MessageService {
     if (!videoUrl) {
       return;
     }
-    console.log(videoUrl)
+    // console.log(videoUrl)
     // Create the video message data
     //const videoUrl=selectVideo
     //const videoTitle=title||"Title not provided"
@@ -231,11 +231,11 @@ export class SwiftchatMessageService extends MessageService {
       subTopic,
       aboutVideo
     );
-    console.log(videoData)
+    // console.log(videoData)
     // Send the video message using the sendMessage function
     try {
       const response = await this.sendMessage(this.baseUrl, videoData, this.apiKey);
-      console.log('Message sent successfully:', response);
+      // console.log('Message sent successfully:', response);
       return response
     } catch (error) {
       console.error('Error sending video message:', error);
@@ -246,14 +246,11 @@ export class SwiftchatMessageService extends MessageService {
 
   async imageWithButton(from: string, imageUrl: string, Title: any, subTopic: string, aboutimage: string) {
 
-
+    // console.log('swiftchat imageURL', imageUrl);
+    
     if (!imageUrl) {
       return;
     }
-    // console.log("vishal",imageUrl)
-    // Create the video message data
-    //const videoUrl=selectVideo
-    //const videoTitle=title||"Title not provided"
     const imagedata = imageWithButton(
       from, // The recipient's phone number
       imageUrl, // Video URL
@@ -261,35 +258,15 @@ export class SwiftchatMessageService extends MessageService {
       Title,
 
     );
-    // console.log(imagedata)
-    // Send the video message using the sendMessage function
     try {
       const response = await this.sendMessage(this.baseUrl, imagedata, this.apiKey);
-      console.log('Message sent successfully:', response);
+      // console.log('Message sent successfully:', response);
       return response
     } catch (error) {
       console.error('Error sending image message:', error);
     }
   }
-  // async sendVideo(from: string, selectVideo: any) {
-  //   if (!selectVideo) {
-  //     return;
-  //   }
-  //   const messageData = videoWithButton(
-  //     from,
-  //     selectVideo,
-
-  //   );
-  //   const response = await this.sendMessage(
-  //     this.baseUrl,
-  //     messageData,
-  //     this.apiKey,
-  //   );
-
-  //   console.log(messageData,"ssddsf")
-  //   return response;
-  // }
-
+  
 
 
 

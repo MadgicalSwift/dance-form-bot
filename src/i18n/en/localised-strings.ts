@@ -1,5 +1,6 @@
 export const localised = {
   seeMoreMessage: 'See More Data',
+  seeMoreVideo: 'See More',
   language_hindi: 'हिन्दी',
   language_english: 'English',
   language_changed: 'Language changed to English',

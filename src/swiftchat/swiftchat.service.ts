@@ -52,9 +52,9 @@ export class SwiftchatMessageService extends MessageService {
   }
 
   async sendWelcomeMessage(from: string, language: string) {
-    
-    const message= localised.welcomeMessage;
-    const requestData= this.prepareRequestData(from, message);
+
+    const message = localised.welcomeMessage;
+    const requestData = this.prepareRequestData(from, message);
     const response = await this.sendMessage(
       this.baseUrl,
       requestData,
@@ -63,9 +63,9 @@ export class SwiftchatMessageService extends MessageService {
     return response;
   }
   async endMessage(from: string) {
-    
-    const message= localised.endMessage;
-    const requestData= this.prepareRequestData(from, message);
+
+    const message = localised.endMessage;
+    const requestData = this.prepareRequestData(from, message);
     const response = await this.sendMessage(
       this.baseUrl,
       requestData,
@@ -73,7 +73,7 @@ export class SwiftchatMessageService extends MessageService {
     );
     return response;
   }
-  async sendInitialTopics(from:string){
+  async sendInitialTopics(from: string) {
     const messageData = createMainTopicButtons(from);
     const response = await this.sendMessage(
       this.baseUrl,
@@ -82,9 +82,9 @@ export class SwiftchatMessageService extends MessageService {
     );
     return response;
   }
-  async sendName(from:string){
-    const message= " Can you please tell me your name? ";
-    const requestData= this.prepareRequestData(from, message);
+  async sendName(from: string) {
+    const message = " Can you please tell me your name? ";
+    const requestData = this.prepareRequestData(from, message);
     const response = await this.sendMessage(
       this.baseUrl,
       requestData,
@@ -94,7 +94,7 @@ export class SwiftchatMessageService extends MessageService {
   }
 
   async sendSubTopics(from: string, topicName: string) {
-  
+
     const messageData = createSubTopicButtons(from, topicName);
     const response = await this.sendMessage(
       this.baseUrl,
@@ -113,39 +113,39 @@ export class SwiftchatMessageService extends MessageService {
     );
     return response;
   }
-  async newscorecard(from: string, score: number, totalQuestions: number, badge:string) {
+  async newscorecard(from: string, score: number, totalQuestions: number, badge: string) {
     //const messageData = createDifficultyButtons(from);
     const currentDate = new Date()
-    const date =currentDate.getDate()
-    const month =currentDate.getMonth()+1
-    const year =currentDate.getFullYear()%100
+    const date = currentDate.getDate()
+    const month = currentDate.getMonth() + 1
+    const year = currentDate.getFullYear() % 100
 
 
     console.log(currentDate.getDate())
-    const payload= {
+    const payload = {
       to: from,
       type: "scorecard",
       scorecard: {
-          theme: "theme2",
-          background: "blue",
-          performance: "high",
-          share_message: "Hey! I got a badge in the Today quiz. Click the link below to take the quiz.",
-          text1:  `Quiz-${date}-${month}-${year}`,
-          text2: "Good job! Keep pushing!",
-          text3: `${score*10}%`,
-          text4: `${badge} `,
-          score: `${score}/10`,
-          animation: "confetti"
+        theme: "theme2",
+        background: "blue",
+        performance: "high",
+        share_message: "Hey! I got a badge in the Today quiz. Click the link below to take the quiz.",
+        text1: `Quiz-${date}-${month}-${year}`,
+        text2: "Good job! Keep pushing!",
+        text3: `${score * 10}%`,
+        text4: `${badge} `,
+        score: `${score}/10`,
+        animation: "confetti"
       }
-  }
-  
-  const response = await axios.post(this.baseUrl, payload, {
-    headers: {
-      Authorization: `Bearer ${this.apiKey}`,
-      'Content-Type': 'application/json',
-    },
-  });
-    await this.sendScore(from,score,totalQuestions,badge);
+    }
+
+    const response = await axios.post(this.baseUrl, payload, {
+      headers: {
+        Authorization: `Bearer ${this.apiKey}`,
+        'Content-Type': 'application/json',
+      },
+    });
+    await this.sendScore(from, score, totalQuestions, badge);
     console.log(response)
     return response;
   }
@@ -173,13 +173,13 @@ export class SwiftchatMessageService extends MessageService {
 
   async sendExplanation(
     from: string,
-    description: string,
+    // description: string,
     subtopicName: string,
 
   ) {
     const messageData = createButtonWithExplanation(
       from,
-      description,
+      
       subtopicName,
     );
     const response = await this.sendMessage(
@@ -216,22 +216,22 @@ export class SwiftchatMessageService extends MessageService {
 
 
 
-  async sendVideo(from: string, videoUrl: string, title:any, subTopic: string, aboutVideo: string ) {
+  async sendVideo(from: string, videoUrl: string, title: any, subTopic: string, aboutVideo: string) {
     if (!videoUrl) {
       return;
     }
-        console.log(videoUrl)
+    console.log(videoUrl)
     // Create the video message data
     //const videoUrl=selectVideo
     //const videoTitle=title||"Title not provided"
     const videoData = videoWithButton(
-               from, // The recipient's phone number
-              videoUrl, // Video URL
-              title,
-              subTopic,
-              aboutVideo
-          );
-       console.log(videoData)
+      from, // The recipient's phone number
+      videoUrl, // Video URL
+      title,
+      subTopic,
+      aboutVideo
+    );
+    console.log(videoData)
     // Send the video message using the sendMessage function
     try {
       const response = await this.sendMessage(this.baseUrl, videoData, this.apiKey);
@@ -241,32 +241,30 @@ export class SwiftchatMessageService extends MessageService {
       console.error('Error sending video message:', error);
     }
   }
-  
+
+ 
+
+  async imageWithButton(from: string, imageUrl: string, Title: any, subTopic: string, aboutimage: string) {
 
 
-  
-
-  async imageWithButton(from: string,  imageUrl: string, Title:any, subTopic: string, aboutimage: string ) {
-
-
-    if (! imageUrl) {
+    if (!imageUrl) {
       return;
     }
-        console.log( imageUrl)
+    // console.log("vishal",imageUrl)
     // Create the video message data
     //const videoUrl=selectVideo
     //const videoTitle=title||"Title not provided"
-    const  imagedata = imageWithButton(
-               from, // The recipient's phone number
-               imageUrl, // Video URL
-              subTopic,
-              Title,
-              
-          );
-       console.log(imagedata)
+    const imagedata = imageWithButton(
+      from, // The recipient's phone number
+      imageUrl, // Video URL
+      subTopic,
+      Title,
+
+    );
+    // console.log(imagedata)
     // Send the video message using the sendMessage function
     try {
-      const response = await this.sendMessage(this.baseUrl,imagedata, this.apiKey);
+      const response = await this.sendMessage(this.baseUrl, imagedata, this.apiKey);
       console.log('Message sent successfully:', response);
       return response
     } catch (error) {
@@ -280,36 +278,31 @@ export class SwiftchatMessageService extends MessageService {
   //   const messageData = videoWithButton(
   //     from,
   //     selectVideo,
-      
+
   //   );
   //   const response = await this.sendMessage(
   //     this.baseUrl,
   //     messageData,
   //     this.apiKey,
   //   );
-    
+
   //   console.log(messageData,"ssddsf")
   //   return response;
   // }
 
 
-  
-  
-  
+
+
+
 
   async sendCompleteExplanation(
     from: string,
-    description: string[],
+    // description: string,
     subtopicName: string,
+
   ) {
-    let completeDescription = '';
-    description.slice(1).forEach((desc, index) => {
-      // Add each element to the string, ensuring no commas are added
-      completeDescription += desc;
-    });
     const messageData = createTestYourSelfButton(
       from,
-      completeDescription,
       subtopicName,
     );
     const response = await this.sendMessage(
@@ -373,8 +366,8 @@ export class SwiftchatMessageService extends MessageService {
     return { response, randomSet };
   }
 
-  async sendScore(from: string, score: number, totalQuestions: number, badge:string) {
-  
+  async sendScore(from: string, score: number, totalQuestions: number, badge: string) {
+
 
     const messageData = buttonWithScore(from, score, totalQuestions, badge);
     const response = await this.sendMessage(

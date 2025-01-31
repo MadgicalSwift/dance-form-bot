@@ -37,12 +37,10 @@ export abstract class MessageService {
   abstract sendSubTopics(from: string, topicName: string);
   abstract sendExplanation(
     from: string,
-    description: string,
     subtopicName: string,
   );
   abstract sendCompleteExplanation(
     from: string,
-    description: string[],
     subtopicName: string,
   );
   abstract difficultyButtons(from: string);
@@ -76,5 +74,6 @@ export abstract class MessageService {
   abstract newscorecard(from: string,score: number, totalQuestions: number, badge:string);
   abstract sendVideo(from: string,  videoUrl: string, title:string, subTopic: string, aboutVideo: string);
   abstract imageWithButton(from: string,  imageUrl: string, Title:any, subTopic: string, aboutimage: string );
+  // abstract imageWithButton2(from: string,  imageUrl: string, Title:any, subTopic: string, aboutimage: string );
   abstract sendInformationMessage(from: string, username: string);
 }

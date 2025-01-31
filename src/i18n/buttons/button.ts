@@ -64,7 +64,6 @@ export function createSubTopicButtons(from: string, topicName: string) {
 
 export function createButtonWithExplanation(
   from: string,
-  description: string,
   subtopicName: string,
 ) {
   const buttons = [
@@ -91,7 +90,7 @@ export function createButtonWithExplanation(
       body: {
         type: 'text',
         text: {
-          body: localised.explanation(subtopicName, description),
+          body: localised.explanation(subtopicName),
         },
       },
       buttons: buttons,
@@ -262,7 +261,6 @@ export function imageWithButton(
 
 export function createTestYourSelfButton(
   from: string,
-  description: string,
   subtopicName: string,
 ) {
   const buttons = [
@@ -284,7 +282,7 @@ export function createTestYourSelfButton(
       body: {
         type: 'text',
         text: {
-          body: localised.moreExplanation(subtopicName, description),
+          body: localised.moreExplanation(subtopicName),
         },
       },
       buttons: buttons,

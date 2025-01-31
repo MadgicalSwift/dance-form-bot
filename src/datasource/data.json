@@ -15,18 +15,33 @@
           "image_link": [
             {
               "imageUrl": "https://t4.ftcdn.net/jpg/07/06/87/11/240_F_706871121_HWVs4UjDlMV86ljplBuBKsB2yrwdHfEz.jpg",
-              "title": " Bhangra with Dhol Beats",
-              "Descrip": "Bhangra combines lively drum beats from the dhol with rhythmic clapping, dynamic footwork, and expressive movements."
+              "title": "Symbol of Unity",
+              "Descrip": "Brings people together in celebration and joy.\nTranscends religious, cultural, and national boundaries.\nCelebrates the spirit of togetherness and positivity.\nConnects Punjabis worldwide with their roots.\nSymbolizes cultural pride and resilience."
             },
             {
               "imageUrl": "https://as1.ftcdn.net/v2/jpg/03/60/60/30/1000_F_360603056_C5lne95PPPqFtRBZKtxMcbyAhz0N2fO5.jpg",
-              "title": "Bhangra on Harvest Festival",
-              "Descrip": "The performers wear colorful attire, with men donning turbans and lungis, and women in salwar kameez with vibrant dupattas."
+              "title": "Cultural Significance",
+              "Descrip": "Represents Punjab's vibrant traditions and culture.\nPerformed during weddings, festivals, and celebrations.\nUnites people across religious and cultural boundaries.\nReflects themes of happiness, prosperity, and community.\nIs an integral part of Punjabi identity."
             },
             {
               "imageUrl": "https://as2.ftcdn.net/v2/jpg/00/69/53/71/1000_F_69537192_iTCeVLugoMA3nDeLxjGeXBZ3P119hl7F.jpg",
-              "title": "Group Bhangra Celebration",
-              "Descrip": "In modern times, Bhangra has evolved, blending with various music genres like hip-hop and pop, making it popular globally. "
+              "title": "Dance Style",
+              "Descrip": "High-energy movements involving shoulders, arms, and legs.\nKey steps include jhummar, dhamaal, and phummaniya.\nMovements are bold and expressive, often mimicking farming actions.\nThe dance includes synchronized group formations.\nIt requires stamina, rhythm, and coordination."
+            },
+            {
+              "imageUrl": "https://t4.ftcdn.net/jpg/07/06/87/11/240_F_706871121_HWVs4UjDlMV86ljplBuBKsB2yrwdHfEz.jpg",
+              "title": "Symbol of Unity",
+              "Descrip": "Brings people together in celebration and joy.\nTranscends religious, cultural, and national boundaries.\nCelebrates the spirit of togetherness and positivity.\nConnects Punjabis worldwide with their roots.\nSymbolizes cultural pride and resilience."
+            },
+            {
+              "imageUrl": "https://as1.ftcdn.net/v2/jpg/03/60/60/30/1000_F_360603056_C5lne95PPPqFtRBZKtxMcbyAhz0N2fO5.jpg",
+              "title": "Cultural Significance",
+              "Descrip": "Represents Punjab's vibrant traditions and culture.\nPerformed during weddings, festivals, and celebrations.\nUnites people across religious and cultural boundaries.\nReflects themes of happiness, prosperity, and community.\nIs an integral part of Punjabi identity."
+            },
+            {
+              "imageUrl": "https://as2.ftcdn.net/v2/jpg/00/69/53/71/1000_F_69537192_iTCeVLugoMA3nDeLxjGeXBZ3P119hl7F.jpg",
+              "title": "Dance Style",
+              "Descrip": "High-energy movements involving shoulders, arms, and legs.\nKey steps include jhummar, dhamaal, and phummaniya.\nMovements are bold and expressive, often mimicking farming actions.\nThe dance includes synchronized group formations.\nIt requires stamina, rhythm, and coordination."
             }
           ],
           "questionSets": [
@@ -10346,7 +10361,6 @@
             },
             {
               "setNumber": 15,
-              
               "questions": [
                 {
                   "question": "What is the significance of the circular dance formation in Garba?",

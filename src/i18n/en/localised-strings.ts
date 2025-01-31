@@ -11,14 +11,13 @@ export const localised = {
   chooseTopic:"Which state’s vibrant dance culture are you excited to explore? 🌍💃 Let the rhythm guide your curiosity! 🎶✨",
   retakeQuiz:'Retake Quiz',
   startQuiz: 'Start Quiz',
-
   Moreexplanation:'More Explanation',
   viewChallenge:"View Challenges",
   endMessage:"Whenever you're ready to continue, just type 'Hi' to start the bot again. Looking forward to helping you out! 😊",
-  explanation: (subtopicName: string, description: string) =>
-  `📖 **Explanation of ${subtopicName}:**\n${description}`,
-  moreExplanation: (subtopicName: string, description: string) =>
-  `📝 More Explanation of  **${subtopicName}:**\n${description}`,
+  explanation: (subtopicName: string) =>
+  `📖 **Explanation of ${subtopicName}:**`,
+  moreExplanation: (subtopicName: string) =>
+  `📝 Choose Any from Below Buttons`,
   difficulty: `🎯 Choose your quiz level to get started!🚀`,
   rightAnswer: (explanation: string) =>
   `🌟 Fantastic! You got it 👍right! \nCheck this out: **${explanation}**`,

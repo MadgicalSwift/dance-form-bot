@@ -73,7 +73,6 @@ export class ChatbotService {
   }
 }
 
-  
 
     // Handle button response from the user
    else if (button_response) {
@@ -143,10 +142,16 @@ export class ChatbotService {
           .flatMap((topic) => topic.subtopics) 
           .find((subtopic) => subtopic.subtopicName === topic);
         if (subtopic) {
+          const imageUrl =subtopic.image_link;
           const description = subtopic.description;
+          const secondThreeImageUrls = imageUrl.slice(3, 6);
+          const Title = subtopic.title;
+          const aboutimage = subtopic.Descrip
+          const SubTopic =subtopic.subtopicName
+          await this.message.imageWithButton(from, secondThreeImageUrls,Title, SubTopic, aboutimage);
           
 
-          await this.message.sendCompleteExplanation(from, description, topic);
+          await this.message.sendCompleteExplanation(from, topic);
         } 
         const trackingData = {
           distinct_id: from,
@@ -346,12 +351,15 @@ export class ChatbotService {
           
           
           const imageUrl =subtopic.image_link;
+          console.log("vishal rathore", imageUrl)
+          const firstThreeImageUrls = imageUrl.slice(0, 3);
+          const secondThreeImageUrls = imageUrl.slice(3, 6);
           const Title = subtopic.title;
           const aboutimage = subtopic.Descrip
           const SubTopic =subtopic.subtopicName
-          await this.message.imageWithButton(from, imageUrl,Title, subTopic, aboutimage);
+          await this.message.imageWithButton(from, firstThreeImageUrls,Title, subTopic, aboutimage);
           
-          await this.message.sendExplanation(from, description, subtopicName);
+          await this.message.sendExplanation(from, subtopicName);
           
         } 
 

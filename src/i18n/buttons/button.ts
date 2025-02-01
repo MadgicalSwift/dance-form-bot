@@ -2,8 +2,11 @@ import { url } from 'inspector';
 import data from '../../datasource/data.json';
 import { localised, } from '../en/localised-strings';
 import _ from 'lodash';
+import { LocalizationService } from 'src/localization/localization.service';
 
-export function createMainTopicButtons(from: string) {
+
+export function createMainTopicButtons(from: string, language:string) {
+  const localisedStrings = LocalizationService.getLocalisedString(language)
   // Extract topic names from the data
   const topics = data.topics.map((topic) => topic.topicName);
 
@@ -21,7 +24,7 @@ export function createMainTopicButtons(from: string) {
       body: {
         type: 'text',
         text: {
-          body: localised.chooseTopic,
+          body: localisedStrings.chooseTopic,
         },
       },
       buttons: buttons,
@@ -30,7 +33,7 @@ export function createMainTopicButtons(from: string) {
   };
 }
 
-export function createSubTopicButtons(from: string, topicName: string) {
+export function createSubTopicButtons(from: string, topicName: string,language:string) {
   // Find the topic in the data
   const topic = data.topics.find((topic) => topic.topicName === topicName);
 
@@ -62,10 +65,7 @@ export function createSubTopicButtons(from: string, topicName: string) {
   }
 }
 
-export function createButtonWithExplanation(
-  from: string,
-  subtopicName: string,
-) {
+export function createButtonWithExplanation(from: string, subtopicName: string,language:string) {
   const buttons = [
     {
       type: 'solid',
@@ -100,60 +100,8 @@ export function createButtonWithExplanation(
 }
 
 
-// export function videoWithButton(from: string, video_link: string) {
-//   return {
-//     to: from,
-//     type: 'button',
-//     button: {
-//       body: {
-//         type: 'text',
-//         text: {
-//           body: video_link,
-//         },
-//       },
+export function videoWithButton(from: string, videoUrl: string, videoTitle: string, subTopic: string, aboutVideo: string,language:string) {
 
-//       buttons: [
-//         {
-//           type: 'solid',
-//           body: localised.Moreexplanation,
-//           reply: localised.Moreexplanation,
-//         },
-//         {
-//           type: 'solid',
-//           body: localised.startQuiz,
-//           reply: localised.startQuiz,
-//         },
-
-//         {
-//           type: 'solid',
-//           body: localised.mainMenu,
-
-//           reply: localised.mainMenu,
-//         },
-//       ],
-//       allow_custom_response: false,
-//     },
-//   };
-// }
-
-// export function videoWithButton(from: string, videoUrl: string, videoTitle:string) {
-//   console.log(videoUrl)
-//   console.log(videoTitle)
-//   return {
-//     to: from,  // Recipient's mobile number
-//     type: "video",  // Message type is video
-//     video: {
-//       url: "https://youtu.be/vD-LFksC1Nc?si=O43fbr8Qnyg3McFu",    // URL of the video
-//       title: "videoTitle",  // Title of the video
-//     },
-//   };
-// }
-
-
-
-export function videoWithButton(from: string, videoUrl: string, videoTitle: string, subTopic: string, aboutVideo: string) {
-  // console.log(videoUrl);
-  // console.log(videoTitle);
   return {
     to: from, // Recipient's mobile number
     type: "article", // Message type is article
@@ -173,64 +121,12 @@ export function videoWithButton(from: string, videoUrl: string, videoTitle: stri
   };
 }
 
-
-// export function imageWithButton(from: string, imageUrl: string, imageTitle: string , subTopic: string, aboutimage: string) {
-//   console.log(imageUrl);
-//   console.log(imageTitle);
-//   return {
-//     to: from, // Recipient's mobile number
-//     type: "article", // Message type is article
-//     article: [
-//       {
-//         tags: [`${subTopic}`], // Subtopic name
-//         title:imageTitle, // Title of the video
-//         header: {
-//           type: "image",
-//           text: {
-//             body:'https://images.app.goo.gl/VXGy12qhkpaLRCMZA', // URL of the video'
-//           },
-//         },
-//         description: aboutimage
-//       },
-//     ],
-//   };
-// }
-// export function imageWithButton(
-//   from: string, 
-//   imageUrl: string, 
-//   imageTitle: string, 
-//   subTopic: string, 
-//   aboutImage: string
-// ) {
-//   console.log(imageUrl);
-//   console.log(imageTitle);
-
-//   return {
-//     to: from, // Recipient's mobile number
-//     type: "article", // Message type is article
-//     article: [
-//       {
-//         tags: [`${subTopic}`], // Subtopic name
-//         title: imageTitle, // Title of the image
-//         header: {
-//           type: "image",
-//           image: {
-//             url: imageUrl, // Use the image URL here as ID (if API accepts direct URL)
-//             body: "imageUrl", // Use the title as the caption
-//           },
-//         },
-//         description: aboutImage, // Description of the image
-//       },
-//     ],
-//   };
-// }
-
-
 export function imageWithButton(
   from, // Recipient's mobile number
   images, // Array of image objects containing URL, title, and description
   subTopic, // Subtopic for tagging
-  title
+  title,
+  language:string
 ) {
   // console.log("Images:", images);
 
@@ -262,6 +158,7 @@ export function imageWithButton(
 export function createTestYourSelfButton(
   from: string,
   subtopicName: string,
+  language:string
 ) {
   const buttons = [
     {
@@ -290,7 +187,7 @@ export function createTestYourSelfButton(
     },
   };
 }
-export function createDifficultyButtons(from: string) { // not in used
+export function createDifficultyButtons(from: string,language:string) { // not in used
   const buttons = [
     {
       type: 'solid',
@@ -329,6 +226,7 @@ export function questionButton(
   selectedMainTopic: string,
   selectedSubtopic: string,
   selectedQuestionIndex: number,
+  language:string
 
 ) {
   const topic = data.topics.find(
@@ -393,7 +291,8 @@ export function answerFeedback(
   selectedSubtopic: string,
   randomSet: string,
   currentQuestionIndex: number,
-  score: number
+  score: number,
+  language:string
 ) {
   const topic = data.topics.find((t) => t.topicName === selectedMainTopic);
   if (!topic) {
@@ -448,7 +347,8 @@ export function buttonWithScore(
   from: string,
   score: number,
   totalQuestions: number,
-  badge: string
+  badge: string,
+  language:string
 ) {
   return {
     to: from,
@@ -487,6 +387,7 @@ export function optionButton(
   selectedSubtopic: string,
   randomSet: string,
   currentQuestionIndex: number,
+  language:string
 ) {
   // Find the selected topic
   const topic = data.topics.find(

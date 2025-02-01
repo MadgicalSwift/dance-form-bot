@@ -88,8 +88,11 @@ export class SwiftchatMessageService extends MessageService {
     );
     return response;
   }
+
+
   async sendInitialTopics(from: string,language:string) {
-    const messageData = createMainTopicButtons(from);
+    // const localisedStrings = LocalizationService.getLocalisedString(language)
+    const messageData = createMainTopicButtons(from , language);
     const response = await this.sendMessage(
       this.baseUrl,
       messageData,
@@ -97,6 +100,7 @@ export class SwiftchatMessageService extends MessageService {
     );
     return response;
   }
+
   async sendName(from: string,language:string) {
     const message = localised.askUserName
     const requestData = this.prepareRequestData(from, message);
@@ -120,9 +124,9 @@ export class SwiftchatMessageService extends MessageService {
     return response;
   }
 
-  async sendSubTopics(from: string, topicName: string) {
+  async sendSubTopics(from: string, topicName: string,language:string) {
 
-    const messageData = createSubTopicButtons(from, topicName);
+    const messageData = createSubTopicButtons(from, topicName,language);
     const response = await this.sendMessage(
       this.baseUrl,
       messageData,
@@ -131,8 +135,8 @@ export class SwiftchatMessageService extends MessageService {
     return response;
   }
 
-  async difficultyButtons(from: string) {
-    const messageData = createDifficultyButtons(from);
+  async difficultyButtons(from: string,language:string) {
+    const messageData = createDifficultyButtons(from,language);
     const response = await this.sendMessage(
       this.baseUrl,
       messageData,
@@ -140,7 +144,7 @@ export class SwiftchatMessageService extends MessageService {
     );
     return response;
   }
-  async newscorecard(from: string, score: number, totalQuestions: number, badge: string) {
+  async newscorecard(from: string, score: number, totalQuestions: number, badge: string,language:string) {
     //const messageData = createDifficultyButtons(from);
     const currentDate = new Date()
     const date = currentDate.getDate()
@@ -172,7 +176,7 @@ export class SwiftchatMessageService extends MessageService {
         'Content-Type': 'application/json',
       },
     });
-    await this.sendScore(from, score, totalQuestions, badge);
+    await this.sendScore(from, score, totalQuestions, badge,language);
     // console.log(response)
     return response;
   }
@@ -182,12 +186,14 @@ export class SwiftchatMessageService extends MessageService {
     selectedMainTopic: string,
     selectedSubtopic: string,
     selectedQuestionIndex: number,
+    language:string
   ) {
     const { messageData, randomSet } = await questionButton(
       from,
       selectedMainTopic,
       selectedSubtopic,
       selectedQuestionIndex,
+      language
     );
     if (!messageData) {
       return;
@@ -204,9 +210,10 @@ export class SwiftchatMessageService extends MessageService {
     from: string,
     // description: string,
     subtopicName: string,
+    language:string
 
   ) {
-    const messageData = createButtonWithExplanation(from, subtopicName);
+    const messageData = createButtonWithExplanation(from, subtopicName,language);
     const response = await this.sendMessage(
       this.baseUrl,
       messageData,
@@ -241,7 +248,7 @@ export class SwiftchatMessageService extends MessageService {
 
 
 
-  async sendVideo(from: string, videoUrl: string, title: any, subTopic: string, aboutVideo: string) {
+  async sendVideo(from: string, videoUrl: string, title: any, subTopic: string, aboutVideo: string,language:string) {
     if (!videoUrl) {
       return;
     }
@@ -254,7 +261,8 @@ export class SwiftchatMessageService extends MessageService {
       videoUrl, // Video URL
       title,
       subTopic,
-      aboutVideo
+      aboutVideo,
+      language
     );
     // console.log(videoData)
     // Send the video message using the sendMessage function
@@ -269,7 +277,7 @@ export class SwiftchatMessageService extends MessageService {
 
 
 
-  async imageWithButton(from: string, imageUrl: string, Title: any, subTopic: string, aboutimage: string) {
+  async imageWithButton(from: string, imageUrl: string, Title: any, subTopic: string, aboutimage: string,language:string) {
 
     // console.log('swiftchat imageURL', imageUrl);
 
@@ -281,6 +289,7 @@ export class SwiftchatMessageService extends MessageService {
       imageUrl, // Video URL
       subTopic,
       Title,
+      language
 
     );
     try {
@@ -301,11 +310,13 @@ export class SwiftchatMessageService extends MessageService {
     from: string,
     // description: string,
     subtopicName: string,
+    language:string
 
   ) {
     const messageData = createTestYourSelfButton(
       from,
       subtopicName,
+      language
     );
     const response = await this.sendMessage(
       this.baseUrl,
@@ -322,7 +333,8 @@ export class SwiftchatMessageService extends MessageService {
     selectedSubtopic: string,
     randomSet: string,
     currentQuestionIndex: number,
-    score: number
+    score: number,
+    language:string
   ) {
     const { feedbackMessage, result } = answerFeedback(
       from,
@@ -331,7 +343,8 @@ export class SwiftchatMessageService extends MessageService {
       selectedSubtopic,
       randomSet,
       currentQuestionIndex,
-      score
+      score,
+      language
     );
 
     const requestData = this.prepareRequestData(from, feedbackMessage);
@@ -354,6 +367,7 @@ export class SwiftchatMessageService extends MessageService {
     selectedSubtopic: string,
     randomSet: string,
     currentQuestionIndex: number,
+    language:string
   ) {
     const messageData = optionButton(
       from,
@@ -361,6 +375,7 @@ export class SwiftchatMessageService extends MessageService {
       selectedSubtopic,
       randomSet,
       currentQuestionIndex,
+      language
     );
     const response = await this.sendMessage(
       this.baseUrl,
@@ -371,10 +386,10 @@ export class SwiftchatMessageService extends MessageService {
   }
 
 
-  async sendScore(from: string, score: number, totalQuestions: number, badge: string) {
+  async sendScore(from: string, score: number, totalQuestions: number, badge: string,language:string) {
 
 
-    const messageData = buttonWithScore(from, score, totalQuestions, badge);
+    const messageData = buttonWithScore(from, score, totalQuestions, badge,language);
     const response = await this.sendMessage(
       this.baseUrl,
       messageData,
@@ -397,6 +412,7 @@ export class SwiftchatMessageService extends MessageService {
   //   );
   //   return response;
   // }
+
 
   async sendLanguageSelectionMessage(from: string, language: string) {
     const localisedStrings = LocalizationService.getLocalisedString(language);

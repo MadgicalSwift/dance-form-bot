@@ -16,6 +16,9 @@ export const localised = {
   viewChallenge: "View Challengers",
   congratsMessage: "Congrats🎉! you have completed the quiz 🎉 ",
   endMessage: "Whenever you're ready to continue, just type 'Hi' to start the bot again. Looking forward to helping you out! 😊",
+  askUserName: " Can you please tell me your name? ",
+  gotBadgeText: "Hey! I got a badge in the Today quiz. Click the link below to take the quiz.",
+  goodJobText: "Good job! Keep pushing!",
   explanation: (subtopicName: string) =>
     `📖 **Explanation of ${subtopicName}:**`,
   moreExplanation: (subtopicName: string) =>

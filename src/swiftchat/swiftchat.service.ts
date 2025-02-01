@@ -83,7 +83,7 @@ export class SwiftchatMessageService extends MessageService {
     return response;
   }
   async sendName(from: string) {
-    const message = " Can you please tell me your name? ";
+    const message = localised.askUserName
     const requestData = this.prepareRequestData(from, message);
     const response = await this.sendMessage(
       this.baseUrl,
@@ -141,9 +141,9 @@ export class SwiftchatMessageService extends MessageService {
         theme: "theme2",
         background: "blue",
         performance: "high",
-        share_message: "Hey! I got a badge in the Today quiz. Click the link below to take the quiz.",
+        share_message: localised.gotBadgeText,
         text1: `Quiz-${date}-${month}-${year}`,
-        text2: "Good job! Keep pushing!",
+        text2: localised.goodJobText,
         text3: `${score * 10}%`,
         text4: `${badge} `,
         score: `${score}/10`,

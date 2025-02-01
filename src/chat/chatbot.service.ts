@@ -56,33 +56,51 @@ export class ChatbotService {
 
     // Convert plain user data to a User class instance
     const user = plainToClass(User, userData);
-    // console.log('persistent_menu_response', persistent_menu_response)
 
-    console.log("language", userData)
+    console.log('USERDATA= ', userData);
+    console.log('USER= ', user);
+    
+    
     if (persistent_menu_response) {
       if (persistent_menu_response.body == "Change Topic") {
 
+        
         user.selectedSet = null;
+        user.selectedMainTopic = null;
+        user.selectedSubtopic = null;
+        user.score = 0;
         user.questionsAnswered = 0;
         user.startingIndex = 0;
-        user.score = 0;
-
-        await this.message.sendInitialTopics(from);
-
+        user.lastIndex = 0;
+        // user.selectedSet = null;
+        // user.questionsAnswered = 0;
+        // user.startingIndex = 0;
+        // user.score = 0;
+        // user.name = null
         await this.userService.saveUser(user);
-        return
 
+
+        await this.message.endMessage(from);
+
+        // await this.message.sendInitialTopics(from);
+        return
       }
+      
 
     }
 
     // Handle button response from the user
     else if (button_response) {
       const buttonBody = button_response.body;
-
+      
       if (['english', 'hindi'].includes(buttonBody?.toLowerCase())) {
         userData.language = buttonBody.toLowerCase();
         await this.userService.saveUser(user);
+        await this.message.sendWelcomeMessage(from, userData.language);
+        if (userData.name == null){
+          await this.message.sendName(from,userData.language);
+        }
+        await this.message.sendInitialTopics(from , userData.language);
       }
 
       // Handle 'Main Menu' button - reset user quiz data and send welcome message
@@ -93,8 +111,8 @@ export class ChatbotService {
         user.startingIndex = 0;
         user.score = 0;
         await this.userService.saveUser(user);
-        // await this.message.sendWelcomeMessage(from, user.language);
-        await this.message.sendInitialTopics(from);
+        // await this.message.sendWelcomeMessage(from, userData.language);
+        await this.message.sendInitialTopics(from ,userData.language);
         const trackingData = {
           distinct_id: from,
           button: buttonBody,
@@ -446,19 +464,6 @@ export class ChatbotService {
 
 
           }
-          // const firstThreeImageUrls = imageUrl.slice(indexing, updateIndexing);
-
-
-          // const firstThreeImageUrls = imageUrl.slice(0, 3);
-
-
-
-          // for image button 
-
-          // console.log('sangeeta-startingIndex', user.startingIndex);
-
-          // await this.message.imageWithButton(from, imageUrl, Title, subTopic, aboutimage);
-
 
 
         }
@@ -494,24 +499,20 @@ export class ChatbotService {
         user.questionsAnswered = 0;
         user.startingIndex = 0;
         user.lastIndex = 0;
-        await this.userService.saveUser(user);
-        // console.log("user data -", userData)
-        if (userData.name == null) {
-          await this.message.sendLanguageSelectionMessage(from, user.language)
-          await this.message.sendWelcomeMessage(from, user.language);
-          await this.message.sendName(from);
+        await this.userService.saveUser(user); //save in database
 
-        }
-        else {
-          await this.message.sendLanguageSelectionMessage(from, user.language)
-          await this.message.sendWelcomeMessage(from, user.language);
-          await this.message.sendInitialTopics(from);
-        }
+        await this.message.sendWelcomeMessage(from, userData.language);
+        await this.message.sendLanguageSelectionMessage(from, userData.language)
+        
+        // if (userData.name == null){
+        //   await this.message.sendName(from);
+        // }
+        // await this.message.sendLanguageSelectionMessage(from, userData.language)
       }
       else {
-
+        //  save username and send the main topic
         await this.userService.saveUserName(from, botID, text.body);
-        await this.message.sendInitialTopics(from);
+        await this.message.sendInitialTopics(from, userData.language);
       }
 
     }

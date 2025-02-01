@@ -51,10 +51,25 @@ export class SwiftchatMessageService extends MessageService {
     return response;
   }
 
-  async sendWelcomeMessage(from: string, language: string) {
+  // async sendWelcomeMessage(from: string, language: string) {
 
-    const message = localised.welcomeMessage;
-    const requestData = this.prepareRequestData(from, message);
+  //   const message = localised.welcomeMessage;
+  //   const requestData = this.prepareRequestData(from, message);
+  //   const response = await this.sendMessage(
+  //     this.baseUrl,
+  //     requestData,
+  //     this.apiKey,
+  //   );
+  //   return response;
+  // }
+
+  async sendWelcomeMessage(from: string, language: string) {
+    const localisedStrings = LocalizationService.getLocalisedString(language);
+    const requestData = this.prepareRequestData(
+      from,
+      localisedStrings.welcomeMessage,
+    );
+
     const response = await this.sendMessage(
       this.baseUrl,
       requestData,
@@ -73,7 +88,7 @@ export class SwiftchatMessageService extends MessageService {
     );
     return response;
   }
-  async sendInitialTopics(from: string) {
+  async sendInitialTopics(from: string,language:string) {
     const messageData = createMainTopicButtons(from);
     const response = await this.sendMessage(
       this.baseUrl,
@@ -82,7 +97,7 @@ export class SwiftchatMessageService extends MessageService {
     );
     return response;
   }
-  async sendName(from: string) {
+  async sendName(from: string,language:string) {
     const message = localised.askUserName
     const requestData = this.prepareRequestData(from, message);
     const response = await this.sendMessage(
@@ -400,7 +415,7 @@ export class SwiftchatMessageService extends MessageService {
           {
             type: 'solid',
             body: localisedStrings.language_english,
-            reply: 'English',
+            reply: 'english',
           },
           {
             type: 'solid',

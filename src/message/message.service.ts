@@ -59,8 +59,8 @@ export abstract class MessageService {
     currentQuestionIndex: number,
     score: number
   );
-  abstract sendName(from: string);
-  abstract sendInitialTopics(from: string);
+  abstract sendName(from: string,language:string);
+  abstract sendInitialTopics(from: string,language:string );
   abstract getQuestionBySet(
     from: string,
     answer: string,

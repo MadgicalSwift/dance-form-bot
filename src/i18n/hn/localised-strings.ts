@@ -5,7 +5,7 @@
 // };
 
 
-export const localised = {
+export const localisedStrings = {
   seeMoreMessage: 'अधिक डेटा देखें',
   seeMoreVideo: 'और देखें',
   language_hindi: 'हिन्दी',

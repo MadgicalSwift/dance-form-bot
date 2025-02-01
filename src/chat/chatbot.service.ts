@@ -57,8 +57,7 @@ export class ChatbotService {
     // Convert plain user data to a User class instance
     const user = plainToClass(User, userData);
 
-    console.log('USERDATA= ', userData);
-    console.log('USER= ', user);
+    // console.log('USERDATA= ', userData);
     
     
     if (persistent_menu_response) {
@@ -96,11 +95,12 @@ export class ChatbotService {
       if (['english', 'hindi'].includes(buttonBody?.toLowerCase())) {
         userData.language = buttonBody.toLowerCase();
         await this.userService.saveUser(user);
-        await this.message.sendWelcomeMessage(from, userData.language);
         if (userData.name == null){
           await this.message.sendName(from,userData.language);
         }
+        else{
         await this.message.sendInitialTopics(from , userData.language);
+        }
       }
 
       // Handle 'Main Menu' button - reset user quiz data and send welcome message
@@ -111,7 +111,7 @@ export class ChatbotService {
         user.startingIndex = 0;
         user.score = 0;
         await this.userService.saveUser(user);
-        // await this.message.sendWelcomeMessage(from, userData.language);
+
         await this.message.sendInitialTopics(from ,userData.language);
         const trackingData = {
           distinct_id: from,
@@ -161,7 +161,7 @@ export class ChatbotService {
         this.mixpanel.track('Button_Click', trackingData);
         return 'ok';
       }
-      // Handle 'More Explanation' button - send complete explanation for the subtopic
+      // Handle 'More Videos' button - send complete explanation for the subtopic
 
       if (buttonBody === localised.seeMoreVideo) {
 
@@ -178,11 +178,10 @@ export class ChatbotService {
           const SubTopic = subtopic.subtopicName
 
 
-          // start
+          // Divide all the videos into parts of 3 each
 
-          let indexing = user.startingIndex; //3 
-          let updateIndexing = user.lastIndex;   //6
-
+          let indexing = user.startingIndex; 
+          let updateIndexing = user.lastIndex;   
           if (indexing >= imageUrl.length) {
             user.startingIndex = 0;
             user.lastIndex = 0;
@@ -192,7 +191,6 @@ export class ChatbotService {
           }
           else {
             const eachImageUrl = imageUrl.slice(indexing, updateIndexing);
-            // console.log('eachImageUrl', eachImageUrl);
 
             await this.message.imageWithButton(from, eachImageUrl, Title, SubTopic, aboutimage);
 
@@ -248,7 +246,6 @@ export class ChatbotService {
         user.selectedSet = randomSet;
 
         await this.userService.saveUser(user);
-        // console.log("question set", user.selectedSet)
         const trackingData = {
           distinct_id: from,
           button: buttonBody,
@@ -264,11 +261,8 @@ export class ChatbotService {
 
         const selectedMainTopic = user.selectedMainTopic;
         const selectedSubtopic = user.selectedSubtopic;
-        // const selectedDifficulty = user.selectedDifficulty;
         const randomSet = user.selectedSet;
         const score = user.score;
-
-        // console.log("before", user)
 
         const currentQuestionIndex = user.questionsAnswered;
         const { result } = await this.message.checkAnswer(
@@ -280,8 +274,8 @@ export class ChatbotService {
           currentQuestionIndex,
           score
         );
-        // Update user score and questions answered
 
+        // Update user score and questions answered
         user.score += result;
         user.questionsAnswered += 1;
         await this.userService.saveUser(user);
@@ -326,16 +320,9 @@ export class ChatbotService {
             userData.Botid,
             challengeData,
           );
-          // console.log("Challenge Data:", challengeData)
-          // console.log("user:", user )
+
           await this.message.newscorecard(from, user.score, user.questionsAnswered, badge)
-          // await this.message.sendScore(
-
-          //   user.score,
-          //   user.questionsAnswered,
-
-          //   payload
-          // );
+          
           let isAnswer = ""
           if (result == 1) {
             isAnswer = "correct"
@@ -384,14 +371,12 @@ export class ChatbotService {
 
       // Handle topic selection - find the main topic and save it to the user data
       const topic = this.topics.find((topic) => topic.topicName === buttonBody);
-      // console.log("topic", topic);
+  
       if (topic) {
         const mainTopic = topic.topicName;
 
         user.selectedMainTopic = mainTopic;
-
         await this.userService.saveUser(user);
-        // console.log("Main topic:", mainTopic)
 
         await this.message.sendSubTopics(from, mainTopic);
         const trackingData = {
@@ -424,8 +409,6 @@ export class ChatbotService {
           }
 
           await this.userService.saveUser(user);
-          // const selectVideo =subtopic.video_link;
-          // await this.message.sendVideo(from, selectVideo)
           await this.message.sendVideo(from, videoUrl, title, subTopic, aboutVideo);
 
 
@@ -436,10 +419,10 @@ export class ChatbotService {
           const aboutimage = subtopic.Descrip
           const SubTopic = subtopic.subtopicName
 
-          let indexing = user.startingIndex; //starting indexing should be 0
-          user.lastIndex = user.lastIndex + 3; //update indexing 0+3= 3 
+          let indexing = user.startingIndex; 
+          user.lastIndex = user.lastIndex + 3;
           await this.userService.saveUser(user);
-          let updateIndexing = user.lastIndex; //updating indexing is 3
+          let updateIndexing = user.lastIndex; 
 
 
           const eachImageUrl = imageUrl.slice(indexing, updateIndexing);

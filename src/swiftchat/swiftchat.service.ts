@@ -179,7 +179,7 @@ export class SwiftchatMessageService extends MessageService {
   ) {
     const messageData = createButtonWithExplanation(
       from,
-      
+
       subtopicName,
     );
     const response = await this.sendMessage(
@@ -242,12 +242,12 @@ export class SwiftchatMessageService extends MessageService {
     }
   }
 
- 
+
 
   async imageWithButton(from: string, imageUrl: string, Title: any, subTopic: string, aboutimage: string) {
 
     // console.log('swiftchat imageURL', imageUrl);
-    
+
     if (!imageUrl) {
       return;
     }
@@ -266,7 +266,7 @@ export class SwiftchatMessageService extends MessageService {
       console.error('Error sending image message:', error);
     }
   }
-  
+
 
 
 
@@ -297,6 +297,7 @@ export class SwiftchatMessageService extends MessageService {
     selectedSubtopic: string,
     randomSet: string,
     currentQuestionIndex: number,
+    score: number
   ) {
     const { feedbackMessage, result } = answerFeedback(
       from,
@@ -305,6 +306,7 @@ export class SwiftchatMessageService extends MessageService {
       selectedSubtopic,
       randomSet,
       currentQuestionIndex,
+      score
     );
 
     const requestData = this.prepareRequestData(from, feedbackMessage);
@@ -342,6 +344,7 @@ export class SwiftchatMessageService extends MessageService {
     );
     return { response, randomSet };
   }
+
 
   async sendScore(from: string, score: number, totalQuestions: number, badge: string) {
 

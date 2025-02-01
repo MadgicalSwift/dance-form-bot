@@ -8,6 +8,7 @@ import { SwiftchatMessageService } from 'src/swiftchat/swiftchat.service';
 import { plainToClass } from 'class-transformer';
 import { User } from 'src/model/user.entity';
 import { MixpanelService } from 'src/mixpanel/mixpanel.service';
+import { log } from 'console';
 
 
 
@@ -55,20 +56,23 @@ export class ChatbotService {
 
     // Convert plain user data to a User class instance
     const user = plainToClass(User, userData);
+    // console.log('persistent_menu_response', persistent_menu_response)
+
     if (persistent_menu_response) {
-      if (persistent_menu_response.body == "Change State") {
+      if (persistent_menu_response.body == "Change Topic") {
 
         user.selectedSet = null;
         user.questionsAnswered = 0;
-        user.startingIndex =0;
-
+        user.startingIndex = 0;
         user.score = 0;
-        // console.log("akash", user.selectedSet, user.questionsAnswered, user.score)
+
         await this.message.sendInitialTopics(from);
+
         await this.userService.saveUser(user);
         return
 
       }
+
     }
 
     // Handle button response from the user
@@ -80,7 +84,7 @@ export class ChatbotService {
 
         user.selectedSet = null;
         user.questionsAnswered = 0;
-        user.startingIndex=0;
+        user.startingIndex = 0;
         user.score = 0;
         await this.userService.saveUser(user);
         // await this.message.sendWelcomeMessage(from, user.language);
@@ -133,8 +137,7 @@ export class ChatbotService {
         return 'ok';
       }
       // Handle 'More Explanation' button - send complete explanation for the subtopic
-      
-      
+
       if (buttonBody === localised.seeMoreVideo) {
 
         const topic = user.selectedSubtopic;
@@ -150,7 +153,7 @@ export class ChatbotService {
           const SubTopic = subtopic.subtopicName
 
 
-      // start
+          // start
 
           let indexing = user.startingIndex; //3 
           let updateIndexing = user.lastIndex;   //6
@@ -162,28 +165,28 @@ export class ChatbotService {
             await this.message.sendCompleteExplanation(from, SubTopic);
 
           }
-          else{
+          else {
             const eachImageUrl = imageUrl.slice(indexing, updateIndexing);
-              console.log('eachImageUrl',eachImageUrl);
-              
+            console.log('eachImageUrl', eachImageUrl);
+
             await this.message.imageWithButton(from, eachImageUrl, Title, SubTopic, aboutimage);
 
-           
-            
-            if(user.lastIndex  >=imageUrl.length){
-                user.startingIndex = 0;
-                user.lastIndex = 0;
-                await this.userService.saveUser(user);
-                await this.message.sendCompleteExplanation(from, SubTopic);
+
+
+            if (user.lastIndex >= imageUrl.length) {
+              user.startingIndex = 0;
+              user.lastIndex = 0;
+              await this.userService.saveUser(user);
+              await this.message.sendCompleteExplanation(from, SubTopic);
             }
-            else{
+            else {
 
               await this.message.sendExplanation(from, SubTopic);
             }
-            user.startingIndex = user.lastIndex; 
+            user.startingIndex = user.lastIndex;
             user.lastIndex = user.lastIndex + 3;
             await this.userService.saveUser(user);
-            
+
 
           }
 
@@ -235,6 +238,10 @@ export class ChatbotService {
         const selectedSubtopic = user.selectedSubtopic;
         // const selectedDifficulty = user.selectedDifficulty;
         const randomSet = user.selectedSet;
+        const score = user.score;
+
+        console.log("before", user)
+
         const currentQuestionIndex = user.questionsAnswered;
         const { result } = await this.message.checkAnswer(
           from,
@@ -243,12 +250,15 @@ export class ChatbotService {
           selectedSubtopic,
           randomSet,
           currentQuestionIndex,
+          score
         );
-
         // Update user score and questions answered
+
         user.score += result;
         user.questionsAnswered += 1;
         await this.userService.saveUser(user);
+
+        console.log("after", user)
 
         // If the user has answered 10 questions, send their final score
         if (user.questionsAnswered >= 10) {
@@ -391,49 +401,49 @@ export class ChatbotService {
           const Title = subtopic.title;
           const aboutimage = subtopic.Descrip
           const SubTopic = subtopic.subtopicName
-          
+
           let indexing = user.startingIndex; //starting indexing should be 0
           user.lastIndex = user.lastIndex + 3; //update indexing 0+3= 3 
           await this.userService.saveUser(user);
           let updateIndexing = user.lastIndex; //updating indexing is 3
-          
+
 
           const eachImageUrl = imageUrl.slice(indexing, updateIndexing);
-          
+
           await this.message.imageWithButton(from, eachImageUrl, Title, SubTopic, aboutimage);
 
 
           if (updateIndexing >= imageUrl.length) {
-            
+
             user.lastIndex = 0;
             await this.userService.saveUser(user);
-            
+
             await this.message.sendCompleteExplanation(from, subtopicName);
 
 
           }
-          else{
-            user.startingIndex = user.lastIndex; 
+          else {
+            user.startingIndex = user.lastIndex;
             user.lastIndex = user.lastIndex + 3;
             await this.userService.saveUser(user);
             await this.message.sendExplanation(from, subtopicName);
-            
+
 
           }
           // const firstThreeImageUrls = imageUrl.slice(indexing, updateIndexing);
-          
+
 
           // const firstThreeImageUrls = imageUrl.slice(0, 3);
-          
+
 
 
           // for image button 
 
           // console.log('sangeeta-startingIndex', user.startingIndex);
-          
+
           // await this.message.imageWithButton(from, imageUrl, Title, subTopic, aboutimage);
-        
-          
+
+
 
         }
 
@@ -467,7 +477,7 @@ export class ChatbotService {
         user.score = 0;
         user.questionsAnswered = 0;
         user.startingIndex = 0;
-        user.lastIndex = 0 ;
+        user.lastIndex = 0;
         await this.userService.saveUser(user);
         // console.log("user data -", userData)
         if (userData.name == null) {

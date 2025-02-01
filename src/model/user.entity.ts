@@ -32,7 +32,7 @@ export class User {
   startingIndex: number = 0;
 
   @IsString()
-  updateImageIndexing: number = 0;
+  lastIndex: number = 0;
 
   @IsString()
   score: number = 0;

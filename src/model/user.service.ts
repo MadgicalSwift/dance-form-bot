@@ -176,7 +176,7 @@ export class UserService {
         selectedSet: user.selectedSet,
         questionsAnswered: user.questionsAnswered,
         startingIndex: user.startingIndex,
-        updateImageIndexing: user.updateImageIndexing,
+        lastIndex: user.lastIndex,
         score: user.score,
       },
     };

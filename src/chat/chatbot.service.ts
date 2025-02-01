@@ -153,11 +153,11 @@ export class ChatbotService {
       // start
 
           let indexing = user.startingIndex; //3 
-          let updateIndexing = user.updateImageIndexing;   //6
+          let updateIndexing = user.lastIndex;   //6
 
           if (indexing >= imageUrl.length) {
             user.startingIndex = 0;
-            user.updateImageIndexing = 0;
+            user.lastIndex = 0;
             await this.userService.saveUser(user);
             await this.message.sendCompleteExplanation(from, SubTopic);
 
@@ -170,9 +170,9 @@ export class ChatbotService {
 
            
             
-            if(user.updateImageIndexing  >=imageUrl.length){
+            if(user.lastIndex  >=imageUrl.length){
                 user.startingIndex = 0;
-                user.updateImageIndexing = 0;
+                user.lastIndex = 0;
                 await this.userService.saveUser(user);
                 await this.message.sendCompleteExplanation(from, SubTopic);
             }
@@ -180,8 +180,8 @@ export class ChatbotService {
 
               await this.message.sendExplanation(from, SubTopic);
             }
-            user.startingIndex = user.updateImageIndexing; 
-            user.updateImageIndexing = user.updateImageIndexing + 3;
+            user.startingIndex = user.lastIndex; 
+            user.lastIndex = user.lastIndex + 3;
             await this.userService.saveUser(user);
             
 
@@ -393,9 +393,9 @@ export class ChatbotService {
           const SubTopic = subtopic.subtopicName
           
           let indexing = user.startingIndex; //starting indexing should be 0
-          user.updateImageIndexing = user.updateImageIndexing + 3; //update indexing 0+3= 3 
+          user.lastIndex = user.lastIndex + 3; //update indexing 0+3= 3 
           await this.userService.saveUser(user);
-          let updateIndexing = user.updateImageIndexing; //updating indexing is 3
+          let updateIndexing = user.lastIndex; //updating indexing is 3
           
 
           const eachImageUrl = imageUrl.slice(indexing, updateIndexing);
@@ -405,7 +405,7 @@ export class ChatbotService {
 
           if (updateIndexing >= imageUrl.length) {
             
-            user.updateImageIndexing = 0;
+            user.lastIndex = 0;
             await this.userService.saveUser(user);
             
             await this.message.sendCompleteExplanation(from, subtopicName);
@@ -413,8 +413,8 @@ export class ChatbotService {
 
           }
           else{
-            user.startingIndex = user.updateImageIndexing; 
-            user.updateImageIndexing = user.updateImageIndexing + 3;
+            user.startingIndex = user.lastIndex; 
+            user.lastIndex = user.lastIndex + 3;
             await this.userService.saveUser(user);
             await this.message.sendExplanation(from, subtopicName);
             
@@ -467,7 +467,7 @@ export class ChatbotService {
         user.score = 0;
         user.questionsAnswered = 0;
         user.startingIndex = 0;
-        user.updateImageIndexing = 0 ;
+        user.lastIndex = 0 ;
         await this.userService.saveUser(user);
         // console.log("user data -", userData)
         if (userData.name == null) {

@@ -74,13 +74,13 @@ export function createButtonWithExplanation(
     },
     {
       type: 'solid',
-      body: 'Start Quiz',
-      reply: 'Start Quiz',
+      body: localised.startQuiz,
+      reply: localised.startQuiz,
     },
     {
       type: 'solid',
-      body: 'Main Menu',
-      reply: 'Main Menu',
+      body: localised.mainMenu,
+      reply: localised.mainMenu,
     },
   ];
   return {
@@ -266,13 +266,13 @@ export function createTestYourSelfButton(
   const buttons = [
     {
       type: 'solid',
-      body: 'Start Quiz',
-      reply: 'Start Quiz',
+      body: localised.startQuiz,
+      reply: localised.startQuiz,
     },
     {
       type: 'solid',
-      body: 'Main Menu',
-      reply: 'Main Menu',
+      body: localised.mainMenu,
+      reply: localised.mainMenu,
     },
   ];
   return {
@@ -290,7 +290,7 @@ export function createTestYourSelfButton(
     },
   };
 }
-export function createDifficultyButtons(from: string) {
+export function createDifficultyButtons(from: string) { // not in used
   const buttons = [
     {
       type: 'solid',
@@ -457,24 +457,24 @@ export function buttonWithScore(
       body: {
         type: 'text',
         text: {
-          body: " Congrats🎉! you have completed the quiz 🎉 "
+          body: localised.congratsMessage
         },
       },
       buttons: [
         {
           type: 'solid',
-          body: 'Main Menu',
-          reply: 'Main Menu',
+          body: localised.mainMenu,
+          reply: localised.mainMenu,
         },
         {
           type: 'solid',
-          body: 'Retake Quiz',
-          reply: 'Retake Quiz',
+          body: localised.retakeQuiz,
+          reply: localised.retakeQuiz,
         },
         {
           type: 'solid',
-          body: 'View Challenges',
-          reply: 'View Challenges',
+          body: localised.viewChallenge,
+          reply: localised.viewChallenge,
         }
       ],
       allow_custom_response: false,

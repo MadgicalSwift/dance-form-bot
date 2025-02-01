@@ -13,7 +13,8 @@ export const localised = {
   retakeQuiz: 'Retake Quiz',
   startQuiz: 'Start Quiz',
   Moreexplanation: 'More Explanation',
-  viewChallenge: "View Challenges",
+  viewChallenge: "View Challengers",
+  congratsMessage: "Congrats🎉! you have completed the quiz 🎉 ",
   endMessage: "Whenever you're ready to continue, just type 'Hi' to start the bot again. Looking forward to helping you out! 😊",
   explanation: (subtopicName: string) =>
     `📖 **Explanation of ${subtopicName}:**`,

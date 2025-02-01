@@ -262,7 +262,10 @@ export class ChatbotService {
         await this.userService.saveUser(user);
 
 
-        await this.message.scoreInformation(from,user.score, currentQuestionIndex+1)
+        if ( currentQuestionIndex < 9) {
+
+          await this.message.scoreInformation(from,user.score, currentQuestionIndex+1)
+        }
 
         
 

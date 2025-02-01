@@ -375,7 +375,7 @@ export function questionButton(
       body: {
         type: 'text',
         text: {
-          body: `${selectedQuestionIndex + 1}. ${question.question}`,
+          body: `Question: ${selectedQuestionIndex + 1}\n ${question.question}`,
         },
       },
       buttons: buttons,
@@ -543,7 +543,7 @@ export function optionButton(
       body: {
         type: 'text',
         text: {
-          body: `${currentQuestionIndex + 1}. ${question.question}`,
+          body: `Question: ${currentQuestionIndex + 1}\n ${question.question}`,
         },
       },
       buttons: buttons,

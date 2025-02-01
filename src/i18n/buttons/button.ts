@@ -437,8 +437,8 @@ export function answerFeedback(
   const isCorrect = userAnswer === correctAns;
   const feedbackMessage =
     isCorrect
-      ? localised.rightAnswer(explanation, currentQuestionIndex + 1, score)
-      : localised.wrongAnswer(correctAns, explanation, currentQuestionIndex + 1, score);
+      ? localised.rightAnswer(explanation)
+      : localised.wrongAnswer(correctAns, explanation);
   const result = isCorrect ? 1 : 0;
 
   return { feedbackMessage, result };

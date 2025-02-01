@@ -20,12 +20,12 @@ export const localised = {
   moreExplanation: (subtopicName: string) =>
     `📝 Choose Any from Below Buttons`,
   difficulty: `🎯 Choose your quiz level to get started!🚀`,
-  rightAnswer: (explanation: string, attempted: number, score: number) =>
+  rightAnswer: (explanation: string) =>
     `🌟 Fantastic! You got it 👍right! \nCheck this out: **${explanation}**`,
 
-  wrongAnswer: (correctAnswer: string, explanation: string, attempted: number, score: number) =>
+  wrongAnswer: (correctAnswer: string, explanation: string) =>
     `👎Not quite right, but you’re learning!  💪\n The correct answer is: **${correctAnswer}**\n Here’s the explanation : **${explanation}** `,
-  
+
 
   scoreInformation:(score:number,attempted: number) => 
     `You've attempted ${attempted}/10 questions so far and answered ${score} correctly. Your current score is ${score}/10. Complete the quiz to see your final score! Keep it up! 🚀`,

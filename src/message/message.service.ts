@@ -73,7 +73,8 @@ export abstract class MessageService {
   abstract sendScore(from: string, score: number, totalQuestions: number, badge: string);
   abstract endMessage(from: string);
   abstract scoreInformation(from: string,score:number,attempted: number);
-  abstract sendLanguageChangedMessage(from: string, language: string);
+  // abstract sendLanguageChangedMessage(from: string, language: string);
+  abstract sendLanguageSelectionMessage(from: string, language: string);
   abstract newscorecard(from: string, score: number, totalQuestions: number, badge: string);
   abstract sendVideo(from: string, videoUrl: string, title: string, subTopic: string, aboutVideo: string);
   abstract imageWithButton(from: string, imageUrl: string, Title: any, subTopic: string, aboutimage: string);

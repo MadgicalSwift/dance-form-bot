@@ -94,8 +94,8 @@ export class SwiftchatMessageService extends MessageService {
   }
 
 
-  async scoreInformation(from: string,score:number,attempted: number) {
-    const message = localised.scoreInformation(score,attempted);
+  async scoreInformation(from: string, score: number, attempted: number) {
+    const message = localised.scoreInformation(score, attempted);
     const requestData = this.prepareRequestData(from, message);
     const response = await this.sendMessage(
       this.baseUrl,
@@ -191,11 +191,7 @@ export class SwiftchatMessageService extends MessageService {
     subtopicName: string,
 
   ) {
-    const messageData = createButtonWithExplanation(
-      from,
-
-      subtopicName,
-    );
+    const messageData = createButtonWithExplanation(from, subtopicName);
     const response = await this.sendMessage(
       this.baseUrl,
       messageData,
@@ -372,18 +368,56 @@ export class SwiftchatMessageService extends MessageService {
     return response;
   }
 
-  async sendLanguageChangedMessage(from: string, language: string) {
-    const localisedStrings = LocalizationService.getLocalisedString(language);
-    const requestData = this.prepareRequestData(
-      from,
-      localisedStrings.select_language,
-    );
+  // async sendLanguageChangedMessage(from: string, language: string) {
+  //   const localisedStrings = LocalizationService.getLocalisedString(language);
+  //   const requestData = this.prepareRequestData(
+  //     from,
+  //     localisedStrings.select_language,
+  //   );
 
-    const response = await this.sendMessage(
-      this.baseUrl,
-      requestData,
-      this.apiKey,
-    );
-    return response;
+  //   const response = await this.sendMessage(
+  //     this.baseUrl,
+  //     requestData,
+  //     this.apiKey,
+  //   );
+  //   return response;
+  // }
+
+  async sendLanguageSelectionMessage(from: string, language: string) {
+    const localisedStrings = LocalizationService.getLocalisedString(language);
+    const message = localisedStrings.languageSelection;
+    const messageData = {
+      to: from,
+      type: 'button',
+      button: {
+        body: {
+          type: 'text',
+          text: {
+            body: message,
+          },
+        },
+        buttons: [
+          {
+            type: 'solid',
+            body: localisedStrings.language_english,
+            reply: 'English',
+          },
+          {
+            type: 'solid',
+            body: localisedStrings.language_hindi,
+            reply: 'hindi',
+          },
+        ],
+        allow_custom_response: false,
+      },
+    };
+    return await this.sendMessage(this.baseUrl, messageData, this.apiKey);
   }
+
+
+
+
+
+
+
 }

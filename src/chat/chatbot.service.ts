@@ -58,6 +58,7 @@ export class ChatbotService {
     const user = plainToClass(User, userData);
     // console.log('persistent_menu_response', persistent_menu_response)
 
+    console.log("language", userData)
     if (persistent_menu_response) {
       if (persistent_menu_response.body == "Change Topic") {
 
@@ -79,6 +80,11 @@ export class ChatbotService {
     else if (button_response) {
       const buttonBody = button_response.body;
 
+      if (['english', 'hindi'].includes(buttonBody?.toLowerCase())) {
+        userData.language = buttonBody.toLowerCase();
+        await this.userService.saveUser(user);
+      }
+
       // Handle 'Main Menu' button - reset user quiz data and send welcome message
       if (buttonBody === localised.mainMenu) {
 
@@ -98,6 +104,7 @@ export class ChatbotService {
         this.mixpanel.track('Button_Click', trackingData);
         return 'ok';
       }
+      
       // Handle 'Retake Quiz' button - reset quiz progress and send the first question
       if (buttonBody === localised.retakeQuiz) {
         user.questionsAnswered = 0;
@@ -490,13 +497,14 @@ export class ChatbotService {
         await this.userService.saveUser(user);
         // console.log("user data -", userData)
         if (userData.name == null) {
+          await this.message.sendLanguageSelectionMessage(from, user.language)
           await this.message.sendWelcomeMessage(from, user.language);
-
           await this.message.sendName(from);
+
         }
         else {
+          await this.message.sendLanguageSelectionMessage(from, user.language)
           await this.message.sendWelcomeMessage(from, user.language);
-
           await this.message.sendInitialTopics(from);
         }
       }

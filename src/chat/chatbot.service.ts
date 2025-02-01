@@ -383,7 +383,7 @@ export class ChatbotService {
         user.score=0; 
         user.questionsAnswered=0;
         await this.userService.saveUser(user);   
-        console.log("user data -",userData)
+        // console.log("user data -",userData)
         if(userData.name==null){
           await this.message.sendWelcomeMessage(from, user.language);
           

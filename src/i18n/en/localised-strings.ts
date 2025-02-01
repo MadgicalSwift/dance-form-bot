@@ -19,6 +19,8 @@ export const localised = {
   askUserName: " Can you please tell me your name? ",
   gotBadgeText: "Hey! I got a badge in the Today quiz. Click the link below to take the quiz.",
   goodJobText: "Good job! Keep pushing!",
+  noChallenges: 'No challenges have been completed yet.', 
+  errorOccurred: 'An error occurred while fetching challenges. Please try again later.',
   explanation: (subtopicName: string) =>
     `📖 **Explanation of ${subtopicName}:**`,
   moreExplanation: (subtopicName: string) =>

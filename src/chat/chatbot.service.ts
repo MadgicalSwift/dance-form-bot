@@ -521,7 +521,7 @@ export class ChatbotService {
         await this.swiftchatMessageService.sendMessage(this.baseUrl, {
           to: from,
           type: 'text',
-          text: { body: 'No challenges have been completed yet.' },
+          text: { body: localised.noChallenges },
         }, this.apiKey);
         return;
       }
@@ -559,7 +559,7 @@ export class ChatbotService {
         to: from,
         type: 'text',
         text: {
-          body: 'An error occurred while fetching challenges. Please try again later.',
+          body: localised.errorOccurred,
         },
       }, this.apiKey);
     }

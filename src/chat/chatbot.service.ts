@@ -167,7 +167,7 @@ export class ChatbotService {
           }
           else {
             const eachImageUrl = imageUrl.slice(indexing, updateIndexing);
-            console.log('eachImageUrl', eachImageUrl);
+            // console.log('eachImageUrl', eachImageUrl);
 
             await this.message.imageWithButton(from, eachImageUrl, Title, SubTopic, aboutimage);
 
@@ -211,16 +211,19 @@ export class ChatbotService {
 
         const selectedMainTopic = user.selectedMainTopic;
         const selectedSubtopic = user.selectedSubtopic;
+        const selectedQuestionIndex = user.questionsAnswered;
 
         const { randomSet } = await this.message.sendQuestion(
           from,
           selectedMainTopic,
           selectedSubtopic,
+          selectedQuestionIndex
         );
 
         user.selectedSet = randomSet;
 
         await this.userService.saveUser(user);
+        // console.log("question set", user.selectedSet)
         const trackingData = {
           distinct_id: from,
           button: buttonBody,
@@ -240,7 +243,7 @@ export class ChatbotService {
         const randomSet = user.selectedSet;
         const score = user.score;
 
-        console.log("before", user)
+        // console.log("before", user)
 
         const currentQuestionIndex = user.questionsAnswered;
         const { result } = await this.message.checkAnswer(
@@ -258,7 +261,10 @@ export class ChatbotService {
         user.questionsAnswered += 1;
         await this.userService.saveUser(user);
 
-        console.log("after", user)
+
+        await this.message.scoreInformation(from,user.score, currentQuestionIndex+1)
+
+        
 
         // If the user has answered 10 questions, send their final score
         if (user.questionsAnswered >= 10) {
@@ -503,7 +509,7 @@ export class ChatbotService {
   }
   async handleViewChallenges(from: string, userData: any): Promise<void> {
     try {
-      console.log("userData", userData)
+      // console.log("userData", userData)
       const topStudents = await this.userService.getTopStudents(
         userData.Botid,
         userData.selectedMainTopic,

@@ -328,6 +328,7 @@ export function questionButton(
   from: string,
   selectedMainTopic: string,
   selectedSubtopic: string,
+  selectedQuestionIndex: number,
 
 ) {
   const topic = data.topics.find(
@@ -374,7 +375,7 @@ export function questionButton(
       body: {
         type: 'text',
         text: {
-          body: question.question,
+          body: `${selectedQuestionIndex + 1}. ${question.question}`,
         },
       },
       buttons: buttons,
@@ -542,7 +543,7 @@ export function optionButton(
       body: {
         type: 'text',
         text: {
-          body: question.question,
+          body: `${currentQuestionIndex + 1}. ${question.question}`,
         },
       },
       buttons: buttons,

@@ -93,6 +93,18 @@ export class SwiftchatMessageService extends MessageService {
     return response;
   }
 
+
+  async scoreInformation(from: string,score:number,attempted: number) {
+    const message = localised.scoreInformation(score,attempted);
+    const requestData = this.prepareRequestData(from, message);
+    const response = await this.sendMessage(
+      this.baseUrl,
+      requestData,
+      this.apiKey,
+    );
+    return response;
+  }
+
   async sendSubTopics(from: string, topicName: string) {
 
     const messageData = createSubTopicButtons(from, topicName);
@@ -154,11 +166,13 @@ export class SwiftchatMessageService extends MessageService {
     from: string,
     selectedMainTopic: string,
     selectedSubtopic: string,
+    selectedQuestionIndex: number,
   ) {
     const { messageData, randomSet } = await questionButton(
       from,
       selectedMainTopic,
       selectedSubtopic,
+      selectedQuestionIndex,
     );
     if (!messageData) {
       return;

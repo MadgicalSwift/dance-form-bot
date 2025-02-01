@@ -96,6 +96,8 @@ export class ChatbotService {
         userData.language = buttonBody.toLowerCase();
         await this.userService.saveUser(user);
         if (userData.name == null){
+          console.log();
+          
           await this.message.sendName(from,userData.language);
         }
         else{
@@ -490,10 +492,16 @@ export class ChatbotService {
         user.questionsAnswered = 0;
         user.startingIndex = 0;
         user.lastIndex = 0;
+        userData.language = 'hindi',
+        user.name = null
+        console.log('user',user);
+        
         await this.userService.saveUser(user); //save in database
+        
 
-        await this.message.sendWelcomeMessage(from, userData.language);
-        await this.message.sendLanguageSelectionMessage(from, userData.language)
+        let userLang = userData.language
+        await this.message.sendWelcomeMessage(from, userLang);
+        await this.message.sendLanguageSelectionMessage(from, userLang)
         
         // if (userData.name == null){
         //   await this.message.sendName(from);

@@ -40,6 +40,7 @@ export class SwiftchatMessageService extends MessageService {
     };
   }
 
+// fn
   async sendInformationMessage(from: string, username: string) {
     const message = localised.InformationMessage(username); // Pass username dynamically
     const requestData = this.prepareRequestData(from, message);
@@ -51,6 +52,20 @@ export class SwiftchatMessageService extends MessageService {
     return response;
   }
 
+  // fn
+  async scoreInformation(from: string, score: number, attempted: number) {
+    const message = localised.scoreInformation(score, attempted);
+    const requestData = this.prepareRequestData(from, message);
+    const response = await this.sendMessage(
+      this.baseUrl,
+      requestData,
+      this.apiKey,
+    );
+    return response;
+  }
+
+
+//  old nor
   // async sendWelcomeMessage(from: string, language: string) {
 
   //   const message = localised.welcomeMessage;
@@ -63,6 +78,7 @@ export class SwiftchatMessageService extends MessageService {
   //   return response;
   // }
 
+  // nor done
   async sendWelcomeMessage(from: string, language: string) {
     const localisedStrings = LocalizationService.getLocalisedString(language);
     const requestData = this.prepareRequestData(
@@ -77,10 +93,12 @@ export class SwiftchatMessageService extends MessageService {
     );
     return response;
   }
-  async endMessage(from: string) {
 
-    const message = localised.endMessage;
-    const requestData = this.prepareRequestData(from, message);
+  // nor done
+  async endMessage(from: string, language:string) {
+    const localisedStrings = LocalizationService.getLocalisedString(language);
+    // const message = localised.endMessage;
+    const requestData = this.prepareRequestData(from, localisedStrings.endMessage);
     const response = await this.sendMessage(
       this.baseUrl,
       requestData,
@@ -90,20 +108,11 @@ export class SwiftchatMessageService extends MessageService {
   }
 
 
-  async sendInitialTopics(from: string,language:string) {
-    // const localisedStrings = LocalizationService.getLocalisedString(language)
-    const messageData = createMainTopicButtons(from , language);
-    const response = await this.sendMessage(
-      this.baseUrl,
-      messageData,
-      this.apiKey,
-    );
-    return response;
-  }
-
+  // nor done
   async sendName(from: string,language:string) {
-    const message = localised.askUserName
-    const requestData = this.prepareRequestData(from, message);
+    const localisedStrings = LocalizationService.getLocalisedString(language);
+    // const message = localised.askUserName
+    const requestData = this.prepareRequestData(from, localisedStrings.askUserName);
     const response = await this.sendMessage(
       this.baseUrl,
       requestData,
@@ -112,29 +121,12 @@ export class SwiftchatMessageService extends MessageService {
     return response;
   }
 
+ 
 
-  async scoreInformation(from: string, score: number, attempted: number) {
-    const message = localised.scoreInformation(score, attempted);
-    const requestData = this.prepareRequestData(from, message);
-    const response = await this.sendMessage(
-      this.baseUrl,
-      requestData,
-      this.apiKey,
-    );
-    return response;
-  }
 
-  async sendSubTopics(from: string, topicName: string,language:string) {
+ 
 
-    const messageData = createSubTopicButtons(from, topicName,language);
-    const response = await this.sendMessage(
-      this.baseUrl,
-      messageData,
-      this.apiKey,
-    );
-    return response;
-  }
-
+  // not used
   async difficultyButtons(from: string,language:string) {
     const messageData = createDifficultyButtons(from,language);
     const response = await this.sendMessage(
@@ -144,6 +136,8 @@ export class SwiftchatMessageService extends MessageService {
     );
     return response;
   }
+
+  // don;t change
   async newscorecard(from: string, score: number, totalQuestions: number, badge: string,language:string) {
     //const messageData = createDifficultyButtons(from);
     const currentDate = new Date()
@@ -181,12 +175,64 @@ export class SwiftchatMessageService extends MessageService {
     return response;
   }
 
-  async sendQuestion(
-    from: string,
-    selectedMainTopic: string,
-    selectedSubtopic: string,
-    selectedQuestionIndex: number,
-    language:string
+     // don;t chnage
+     async sendVideo(from: string, videoUrl: string, title: any, subTopic: string, aboutVideo: string,language:string) {
+      if (!videoUrl) {
+        return;
+      }
+      const videoData = videoWithButton(
+        from, // The recipient's phone number
+        videoUrl, // Video URL
+        title,
+        subTopic,
+        aboutVideo,
+        language
+      );
+      try {
+        const response = await this.sendMessage(this.baseUrl, videoData, this.apiKey);
+        // console.log('Message sent successfully:', response);
+        return response
+      } catch (error) {
+        console.error('Error sending video message:', error);
+      }
+    }
+  
+    // dont'know
+    async checkAnswer(
+      from: string,
+      answer: string,
+      selectedMainTopic: string,
+      selectedSubtopic: string,
+      randomSet: string,
+      currentQuestionIndex: number,
+      score: number,
+      language:string
+    ) {
+      const { feedbackMessage, result } = answerFeedback(
+        from,
+        answer,
+        selectedMainTopic,
+        selectedSubtopic,
+        randomSet,
+        currentQuestionIndex,
+        score,
+        language
+      );
+  
+      const requestData = this.prepareRequestData(from, feedbackMessage);
+      try {
+        const response = await this.sendMessage(
+          this.baseUrl,
+          requestData,
+          this.apiKey,
+        );
+        return { response, result };
+      } catch (error) {
+        console.error('Error sending message:', error);
+      }
+    }
+// don;t change
+  async sendQuestion(from: string,selectedMainTopic: string,selectedSubtopic: string, selectedQuestionIndex: number , language:string
   ) {
     const { messageData, randomSet } = await questionButton(
       from,
@@ -206,13 +252,8 @@ export class SwiftchatMessageService extends MessageService {
     return { response, randomSet };
   }
 
-  async sendExplanation(
-    from: string,
-    // description: string,
-    subtopicName: string,
-    language:string
-
-  ) {
+  // button done
+  async sendExplanation(from: string, subtopicName: string, language:string) {
     const messageData = createButtonWithExplanation(from, subtopicName,language);
     const response = await this.sendMessage(
       this.baseUrl,
@@ -221,62 +262,40 @@ export class SwiftchatMessageService extends MessageService {
     );
     return response;
   }
-
-  //  async sendVideo(from: string, selectVideo: any) {
-  //   if (!selectVideo) {
-  //     return;
-  //   }
-  //       console.log(selectVideo)
-  //   // Create the video message data
-  //   const videoUrl=selectVideo;
-  //   const videoTitle=selectVideo.title||"Title not provided"
-  //   const videoData = videoWithButton(
-  //              from, // The recipient's phone number
-  //             videoUrl, // Video URL
-  //             videoTitle
-  //         );
-  //      console.log(videoData)
-  //   // Send the video message using the sendMessage function
-  //   try {
-  //     const response = await this.sendMessage(this.baseUrl, videoData, this.apiKey);
-  //     console.log('Message sent successfully:', response);
-  //     return response
-  //   } catch (error) {
-  //     console.error('Error sending video message:', error);
-  //   }
-  // }
-
-
-
-  async sendVideo(from: string, videoUrl: string, title: any, subTopic: string, aboutVideo: string,language:string) {
-    if (!videoUrl) {
-      return;
-    }
-    // console.log(videoUrl)
-    // Create the video message data
-    //const videoUrl=selectVideo
-    //const videoTitle=title||"Title not provided"
-    const videoData = videoWithButton(
-      from, // The recipient's phone number
-      videoUrl, // Video URL
-      title,
-      subTopic,
-      aboutVideo,
-      language
+   // button done
+   async sendScore(from: string, score: number, totalQuestions: number, badge: string,language:string) {
+    const messageData = buttonWithScore(from, score, totalQuestions, badge,language);
+    const response = await this.sendMessage(
+      this.baseUrl,
+      messageData,
+      this.apiKey,
     );
-    // console.log(videoData)
-    // Send the video message using the sendMessage function
-    try {
-      const response = await this.sendMessage(this.baseUrl, videoData, this.apiKey);
-      // console.log('Message sent successfully:', response);
-      return response
-    } catch (error) {
-      console.error('Error sending video message:', error);
-    }
+    return response;
   }
 
+  // button done
+  async sendInitialTopics(from: string,language:string) {
+    const messageData = createMainTopicButtons(from , language);
+    const response = await this.sendMessage(
+      this.baseUrl,
+      messageData,
+      this.apiKey,
+    );
+    return response;
+  }
 
+   // button done
+   async sendSubTopics(from: string, topicName: string,language:string) {
+    const messageData = createSubTopicButtons(from, topicName,language);
+    const response = await this.sendMessage(
+      this.baseUrl,
+      messageData,
+      this.apiKey,
+    );
+    return response;
+  }
 
+  // button  done
   async imageWithButton(from: string, imageUrl: string, Title: any, subTopic: string, aboutimage: string,language:string) {
 
     // console.log('swiftchat imageURL', imageUrl);
@@ -301,148 +320,59 @@ export class SwiftchatMessageService extends MessageService {
     }
   }
 
-
-
-
-
-
-  async sendCompleteExplanation(
-    from: string,
-    // description: string,
-    subtopicName: string,
-    language:string
-
-  ) {
-    const messageData = createTestYourSelfButton(
-      from,
-      subtopicName,
-      language
-    );
-    const response = await this.sendMessage(
-      this.baseUrl,
-      messageData,
-      this.apiKey,
-    );
-    return response;
-  }
-
-  async checkAnswer(
-    from: string,
-    answer: string,
-    selectedMainTopic: string,
-    selectedSubtopic: string,
-    randomSet: string,
-    currentQuestionIndex: number,
-    score: number,
-    language:string
-  ) {
-    const { feedbackMessage, result } = answerFeedback(
-      from,
-      answer,
-      selectedMainTopic,
-      selectedSubtopic,
-      randomSet,
-      currentQuestionIndex,
-      score,
-      language
-    );
-
-    const requestData = this.prepareRequestData(from, feedbackMessage);
-    try {
+    // button done
+    async getQuestionBySet( from: string,answer: string, selectedMainTopic: string, selectedSubtopic: string,randomSet: string,currentQuestionIndex: number, language:string) {
+      const messageData = optionButton(from,selectedMainTopic,selectedSubtopic,randomSet,currentQuestionIndex,language);
       const response = await this.sendMessage(
         this.baseUrl,
-        requestData,
+        messageData,
         this.apiKey,
       );
-      return { response, result };
-    } catch (error) {
-      console.error('Error sending message:', error);
+      return { response, randomSet };
     }
-  }
+  
+  
+  // button done
+    async sendLanguageSelectionMessage(from: string, language: string) {
+      const localisedStrings = LocalizationService.getLocalisedString(language);
+      const message = localisedStrings.languageSelection;
+      const messageData = {
+        to: from,
+        type: 'button',
+        button: {
+          body: {
+            type: 'text',
+            text: {
+              body: message,
+            },
+          },
+          buttons: [
+            {
+              type: 'solid',
+              body: localisedStrings.language_english,
+              reply: 'english',
+            },
+            {
+              type: 'solid',
+              body: localisedStrings.language_hindi,
+              reply: 'hindi',
+            },
+          ],
+          allow_custom_response: false,
+        },
+      };
+      return await this.sendMessage(this.baseUrl, messageData, this.apiKey);
+    }
 
-  async getQuestionBySet(
-    from: string,
-    answer: string,
-    selectedMainTopic: string,
-    selectedSubtopic: string,
-    randomSet: string,
-    currentQuestionIndex: number,
-    language:string
-  ) {
-    const messageData = optionButton(
-      from,
-      selectedMainTopic,
-      selectedSubtopic,
-      randomSet,
-      currentQuestionIndex,
-      language
-    );
-    const response = await this.sendMessage(
-      this.baseUrl,
-      messageData,
-      this.apiKey,
-    );
-    return { response, randomSet };
-  }
-
-
-  async sendScore(from: string, score: number, totalQuestions: number, badge: string,language:string) {
-
-
-    const messageData = buttonWithScore(from, score, totalQuestions, badge,language);
+  // button done
+  async sendCompleteExplanation(from: string, subtopicName: string, language:string) {
+    const messageData = createTestYourSelfButton(from, subtopicName, language);
     const response = await this.sendMessage(
       this.baseUrl,
       messageData,
       this.apiKey,
     );
     return response;
-  }
-
-  // async sendLanguageChangedMessage(from: string, language: string) {
-  //   const localisedStrings = LocalizationService.getLocalisedString(language);
-  //   const requestData = this.prepareRequestData(
-  //     from,
-  //     localisedStrings.select_language,
-  //   );
-
-  //   const response = await this.sendMessage(
-  //     this.baseUrl,
-  //     requestData,
-  //     this.apiKey,
-  //   );
-  //   return response;
-  // }
-
-
-  async sendLanguageSelectionMessage(from: string, language: string) {
-    const localisedStrings = LocalizationService.getLocalisedString(language);
-    const message = localisedStrings.languageSelection;
-    const messageData = {
-      to: from,
-      type: 'button',
-      button: {
-        body: {
-          type: 'text',
-          text: {
-            body: message,
-          },
-        },
-        buttons: [
-          {
-            type: 'solid',
-            body: localisedStrings.language_english,
-            reply: 'english',
-          },
-          {
-            type: 'solid',
-            body: localisedStrings.language_hindi,
-            reply: 'hindi',
-          },
-        ],
-        allow_custom_response: false,
-      },
-    };
-    return await this.sendMessage(this.baseUrl, messageData, this.apiKey);
   }
 
 

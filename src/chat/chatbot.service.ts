@@ -60,7 +60,7 @@ export class ChatbotService {
 
         user.selectedSet = null;
         user.questionsAnswered = 0;
-        user.imageIndexing =0;
+        user.startingIndex =0;
 
         user.score = 0;
         // console.log("akash", user.selectedSet, user.questionsAnswered, user.score)
@@ -80,7 +80,7 @@ export class ChatbotService {
 
         user.selectedSet = null;
         user.questionsAnswered = 0;
-        user.imageIndexing=0;
+        user.startingIndex=0;
         user.score = 0;
         await this.userService.saveUser(user);
         // await this.message.sendWelcomeMessage(from, user.language);
@@ -152,11 +152,11 @@ export class ChatbotService {
 
       // start
 
-          let indexing = user.imageIndexing; //3 
+          let indexing = user.startingIndex; //3 
           let updateIndexing = user.updateImageIndexing;   //6
 
           if (indexing >= imageUrl.length) {
-            user.imageIndexing = 0;
+            user.startingIndex = 0;
             user.updateImageIndexing = 0;
             await this.userService.saveUser(user);
             await this.message.sendCompleteExplanation(from, SubTopic);
@@ -171,7 +171,7 @@ export class ChatbotService {
            
             
             if(user.updateImageIndexing  >=imageUrl.length){
-                user.imageIndexing = 0;
+                user.startingIndex = 0;
                 user.updateImageIndexing = 0;
                 await this.userService.saveUser(user);
                 await this.message.sendCompleteExplanation(from, SubTopic);
@@ -180,7 +180,7 @@ export class ChatbotService {
 
               await this.message.sendExplanation(from, SubTopic);
             }
-            user.imageIndexing = user.updateImageIndexing; 
+            user.startingIndex = user.updateImageIndexing; 
             user.updateImageIndexing = user.updateImageIndexing + 3;
             await this.userService.saveUser(user);
             
@@ -392,7 +392,7 @@ export class ChatbotService {
           const aboutimage = subtopic.Descrip
           const SubTopic = subtopic.subtopicName
           
-          let indexing = user.imageIndexing; //starting indexing should be 0
+          let indexing = user.startingIndex; //starting indexing should be 0
           user.updateImageIndexing = user.updateImageIndexing + 3; //update indexing 0+3= 3 
           await this.userService.saveUser(user);
           let updateIndexing = user.updateImageIndexing; //updating indexing is 3
@@ -413,7 +413,7 @@ export class ChatbotService {
 
           }
           else{
-            user.imageIndexing = user.updateImageIndexing; 
+            user.startingIndex = user.updateImageIndexing; 
             user.updateImageIndexing = user.updateImageIndexing + 3;
             await this.userService.saveUser(user);
             await this.message.sendExplanation(from, subtopicName);
@@ -429,7 +429,7 @@ export class ChatbotService {
 
           // for image button 
 
-          // console.log('sangeeta-imageIndexing', user.imageIndexing);
+          // console.log('sangeeta-startingIndex', user.startingIndex);
           
           // await this.message.imageWithButton(from, imageUrl, Title, subTopic, aboutimage);
         
@@ -466,7 +466,7 @@ export class ChatbotService {
         user.selectedSubtopic = null;
         user.score = 0;
         user.questionsAnswered = 0;
-        user.imageIndexing = 0;
+        user.startingIndex = 0;
         user.updateImageIndexing = 0 ;
         await this.userService.saveUser(user);
         // console.log("user data -", userData)

@@ -29,7 +29,7 @@ export class User {
   questionsAnswered: number = 0;
 
   @IsString()
-  imageIndexing: number = 0;
+  startingIndex: number = 0;
 
   @IsString()
   updateImageIndexing: number = 0;

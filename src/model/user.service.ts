@@ -175,7 +175,7 @@ export class UserService {
         selectedSubtopic: user.selectedSubtopic,
         selectedSet: user.selectedSet,
         questionsAnswered: user.questionsAnswered,
-        imageIndexing: user.imageIndexing,
+        startingIndex: user.startingIndex,
         updateImageIndexing: user.updateImageIndexing,
         score: user.score,
       },

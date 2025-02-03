@@ -1,9 +1,8 @@
 import { url } from 'inspector';
 import data from '../../datasource/data.json';
-import { localised, } from '../en/localised-strings';
+// import { localised, } from '../en/localised-strings';
 import _ from 'lodash';
 import { LocalizationService } from 'src/localization/localization.service';
-
 
 export function createMainTopicButtons(from: string, language:string) {
   const localisedStrings = LocalizationService.getLocalisedString(language)
@@ -35,6 +34,7 @@ export function createMainTopicButtons(from: string, language:string) {
 
 export function createSubTopicButtons(from: string, topicName: string,language:string) {
   // Find the topic in the data
+  const localisedStrings = LocalizationService.getLocalisedString(language)
   const topic = data.topics.find((topic) => topic.topicName === topicName);
 
   // If the topic exists, create buttons for each subtopic
@@ -52,7 +52,7 @@ export function createSubTopicButtons(from: string, topicName: string,language:s
         body: {
           type: 'text',
           text: {
-            body: localised.selectSubtopic(topicName),
+            body: localisedStrings.selectSubtopic(topicName),
           },
         },
         buttons: buttons,
@@ -66,21 +66,23 @@ export function createSubTopicButtons(from: string, topicName: string,language:s
 }
 
 export function createButtonWithExplanation(from: string, subtopicName: string,language:string) {
+  const localisedStrings = LocalizationService.getLocalisedString(language)
+
   const buttons = [
     {
       type: 'solid',
-      body: localised.seeMoreVideo,
-      reply: localised.seeMoreVideo,
+      body: localisedStrings.seeMoreVideo,
+      reply: localisedStrings.seeMoreVideo,
     },
     {
       type: 'solid',
-      body: localised.startQuiz,
-      reply: localised.startQuiz,
+      body: localisedStrings.startQuiz,
+      reply: localisedStrings.startQuiz,
     },
     {
       type: 'solid',
-      body: localised.mainMenu,
-      reply: localised.mainMenu,
+      body: localisedStrings.mainMenu,
+      reply: localisedStrings.mainMenu,
     },
   ];
   return {
@@ -90,7 +92,7 @@ export function createButtonWithExplanation(from: string, subtopicName: string,l
       body: {
         type: 'text',
         text: {
-          body: localised.explanation(subtopicName),
+          body: localisedStrings.explanation(subtopicName),
         },
       },
       buttons: buttons,
@@ -160,16 +162,17 @@ export function createTestYourSelfButton(
   subtopicName: string,
   language:string
 ) {
+  const localisedStrings = LocalizationService.getLocalisedString(language)
   const buttons = [
     {
       type: 'solid',
-      body: localised.startQuiz,
-      reply: localised.startQuiz,
+      body: localisedStrings.startQuiz,
+      reply: localisedStrings.startQuiz,
     },
     {
       type: 'solid',
-      body: localised.mainMenu,
-      reply: localised.mainMenu,
+      body: localisedStrings.mainMenu,
+      reply: localisedStrings.mainMenu,
     },
   ];
   return {
@@ -179,7 +182,7 @@ export function createTestYourSelfButton(
       body: {
         type: 'text',
         text: {
-          body: localised.moreExplanation(subtopicName),
+          body: localisedStrings.moreExplanation(subtopicName),
         },
       },
       buttons: buttons,
@@ -187,39 +190,39 @@ export function createTestYourSelfButton(
     },
   };
 }
-export function createDifficultyButtons(from: string,language:string) { // not in used
-  const buttons = [
-    {
-      type: 'solid',
-      body: 'Easy',
-      reply: 'Easy',
-    },
-    {
-      type: 'solid',
-      body: 'Medium',
-      reply: 'Medium',
-    },
-    {
-      type: 'solid',
-      body: 'Hard',
-      reply: 'Hard',
-    },
-  ];
-  return {
-    to: from,
-    type: 'button',
-    button: {
-      body: {
-        type: 'text',
-        text: {
-          body: localised.difficulty,
-        },
-      },
-      buttons: buttons,
-      allow_custom_response: false,
-    },
-  };
-}
+// export function createDifficultyButtons(from: string,language:string) { // not in used
+//   const buttons = [
+//     {
+//       type: 'solid',
+//       body: 'Easy',
+//       reply: 'Easy',
+//     },
+//     {
+//       type: 'solid',
+//       body: 'Medium',
+//       reply: 'Medium',
+//     },
+//     {
+//       type: 'solid',
+//       body: 'Hard',
+//       reply: 'Hard',
+//     },
+//   ];
+//   return {
+//     to: from,
+//     type: 'button',
+//     button: {
+//       body: {
+//         type: 'text',
+//         text: {
+//           body: localised.difficulty,
+//         },
+//       },
+//       buttons: buttons,
+//       allow_custom_response: false,
+//     },
+//   };
+// }
 
 export function questionButton(
   from: string,
@@ -332,12 +335,12 @@ export function answerFeedback(
   const correctAnswer = question.answer;
   const userAnswer = Array.isArray(answer) ? answer[0] : answer;
   const correctAns = Array.isArray(correctAnswer) ? correctAnswer[0] : correctAnswer;
-
+const localisedStrings = LocalizationService.getLocalisedString(language)
   const isCorrect = userAnswer === correctAns;
   const feedbackMessage =
     isCorrect
-      ? localised.rightAnswer(explanation)
-      : localised.wrongAnswer(correctAns, explanation);
+      ? localisedStrings.rightAnswer(explanation)
+      : localisedStrings.wrongAnswer(correctAns, explanation);
   const result = isCorrect ? 1 : 0;
 
   return { feedbackMessage, result };
@@ -350,6 +353,7 @@ export function buttonWithScore(
   badge: string,
   language:string
 ) {
+  const localisedStrings = LocalizationService.getLocalisedString(language)
   return {
     to: from,
     type: 'button',
@@ -357,24 +361,24 @@ export function buttonWithScore(
       body: {
         type: 'text',
         text: {
-          body: localised.congratsMessage
+          body: localisedStrings.congratsMessage
         },
       },
       buttons: [
         {
           type: 'solid',
-          body: localised.mainMenu,
-          reply: localised.mainMenu,
+          body: localisedStrings.mainMenu,
+          reply: localisedStrings.mainMenu,
         },
         {
           type: 'solid',
-          body: localised.retakeQuiz,
-          reply: localised.retakeQuiz,
+          body: localisedStrings.retakeQuiz,
+          reply: localisedStrings.retakeQuiz,
         },
         {
           type: 'solid',
-          body: localised.viewChallenge,
-          reply: localised.viewChallenge,
+          body: localisedStrings.viewChallenge,
+          reply: localisedStrings.viewChallenge,
         }
       ],
       allow_custom_response: false,

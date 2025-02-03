@@ -3,6 +3,8 @@ import IntentClassifier from '../intent/intent.classifier';
 import { MessageService } from 'src/message/message.service';
 import { UserService } from 'src/model/user.service';
 import { localised } from 'src/i18n/en/localised-strings';
+import { LocalizationService } from 'src/localization/localization.service';
+
 import data from '../datasource/data.json';
 import { SwiftchatMessageService } from 'src/swiftchat/swiftchat.service';
 import { plainToClass } from 'class-transformer';
@@ -58,8 +60,8 @@ export class ChatbotService {
     // Convert plain user data to a User class instance
     const user = plainToClass(User, userData);
 
-    // console.log('USERDATA= ', userData);
-    
+    const localisedStrings = LocalizationService.getLocalisedString(user.language);
+    console.log('user-language', user.language);
     
     if (persistent_menu_response) {
       if (persistent_menu_response.body == "Change Topic") {
@@ -80,37 +82,44 @@ export class ChatbotService {
         await this.userService.saveUser(user);
 
 
-        await this.message.endMessage(from,userData.language);
+        // await this.message.endMessage(from,user.language);
 
-        // await this.message.sendInitialTopics(from);
+        await this.message.sendInitialTopics(from,user.language);
+        return
+      }
+
+      if (persistent_menu_response.body == "Change Language") {
+        user.language = null;
+        await this.userService.saveUser(user);
+        await this.message.sendLanguageSelectionMessage(from, user.language);
         return
       }
       
 
     }
-
+    
     // Handle button response from the user
     else if (button_response) {
       const buttonBody = button_response.body;
       
       if (['english', 'hindi'].includes(buttonBody?.toLowerCase())) {
-        userData.language = buttonBody.toLowerCase();
+        user.language = buttonBody.toLowerCase();
         await this.userService.saveUser(user);
-        if (userData.name == null){
-          console.log();
+        console.log('afterselecting-user-language', user.language);
+        if (user.name == null){
           
-          await this.message.sendName(from,userData.language);
+          await this.message.sendName(from,user.language);
         }
         else{
-        await this.message.sendInitialTopics(from , userData.language);
+          
+        await this.message.sendInitialTopics(from , user.language);
         }
       }
-      let userSelectedLanguage = userData.language;
-      console.log('userSelectedLanguage',userSelectedLanguage);
+      let userSelectedLanguage = user.language;
       
 
       // Handle 'Main Menu' button - reset user quiz data and send welcome message
-      if (buttonBody === localised.mainMenu) {
+      if (buttonBody === localisedStrings.mainMenu) {
 
         user.selectedSet = null;
         user.questionsAnswered = 0;
@@ -130,7 +139,7 @@ export class ChatbotService {
       }
       
       // Handle 'Retake Quiz' button - reset quiz progress and send the first question
-      if (buttonBody === localised.retakeQuiz) {
+      if (buttonBody === localisedStrings.retakeQuiz) {
         user.questionsAnswered = 0;
         user.score = 0;
         await this.userService.saveUser(user);
@@ -156,7 +165,7 @@ export class ChatbotService {
         this.mixpanel.track('Button_Click', trackingData);
         return 'ok';
       }
-      if (buttonBody === localised.viewChallenge) {
+      if (buttonBody === localisedStrings.viewChallenge) {
         await this.handleViewChallenges(from, userData,userSelectedLanguage);
         await this.message.endMessage(from,userSelectedLanguage);
         const trackingData = {
@@ -170,7 +179,7 @@ export class ChatbotService {
       }
       // Handle 'More Videos' button - send complete explanation for the subtopic
 
-      if (buttonBody === localised.seeMoreVideo) {
+      if (buttonBody === localisedStrings.seeMoreVideo) {
 
         const topic = user.selectedSubtopic;
         // Find the selected subtopic in the list of topics
@@ -232,7 +241,7 @@ export class ChatbotService {
       }
       // Handle 'Test Yourself' button - show difficulty options to the user
 
-      if (buttonBody === localised.startQuiz) {
+      if (buttonBody === localisedStrings.startQuiz) {
 
         await this.message.sendInformationMessage(from, user.name,userSelectedLanguage);
 
@@ -248,7 +257,7 @@ export class ChatbotService {
           selectedMainTopic,
           selectedSubtopic,
           selectedQuestionIndex,
-          userData.language
+          user.language
         );
 
         user.selectedSet = randomSet;
@@ -493,26 +502,23 @@ export class ChatbotService {
         user.questionsAnswered = 0;
         user.startingIndex = 0;
         user.lastIndex = 0;
-        userData.language = 'hindi',
-        user.name = null
-        console.log('user',user);
+        userData.language = 'english',
+        // user.name = null
         
         await this.userService.saveUser(user); //save in database
-        
-
         let userLang = userData.language
         await this.message.sendWelcomeMessage(from, userLang);
+
         await this.message.sendLanguageSelectionMessage(from, userLang)
-        
-        // if (userData.name == null){
-        //   await this.message.sendName(from);
-        // }
-        // await this.message.sendLanguageSelectionMessage(from, userData.language)
+       
       }
       else {
+        
         //  save username and send the main topic
         await this.userService.saveUserName(from, botID, text.body);
-        await this.message.sendInitialTopics(from, userData.language);
+        console.log('user-language for topic', user.language);
+        
+        await this.message.sendInitialTopics(from, user.language);
       }
 
     }
@@ -521,7 +527,6 @@ export class ChatbotService {
   }
   async handleViewChallenges(from: string, userData: any, userSelectedLanguage:string): Promise<void> {
     try {
-      // console.log("userData", userData)
       const topStudents = await this.userService.getTopStudents(
         userData.Botid,
         userData.selectedMainTopic,

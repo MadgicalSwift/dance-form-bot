@@ -45,7 +45,7 @@ export abstract class MessageService {
     subtopicName: string,
     language: string
   );
-  abstract difficultyButtons(from: string,language: string);
+  // abstract difficultyButtons(from: string,language: string);
   abstract sendQuestion(
     from: string,
     selectedMainTopic: string,

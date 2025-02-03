@@ -2,14 +2,14 @@ import { Injectable } from '@nestjs/common';
 import * as dotenv from 'dotenv';
 import { LocalizationService } from 'src/localization/localization.service';
 import { MessageService } from 'src/message/message.service';
-import { localised } from 'src/i18n/en/localised-strings';
+// import { localised } from 'src/i18n/en/localised-strings';
 import data from '../datasource/data.json';
 import axios from 'axios';
 import {
   createMainTopicButtons,
   createSubTopicButtons,
   createButtonWithExplanation,
-  createDifficultyButtons,
+  // createDifficultyButtons,
   createTestYourSelfButton,
   questionButton,
   answerFeedback,
@@ -40,9 +40,10 @@ export class SwiftchatMessageService extends MessageService {
     };
   }
 
-// fn
-  async sendInformationMessage(from: string, username: string) {
-    const message = localised.InformationMessage(username); // Pass username dynamically
+// fn done
+  async sendInformationMessage(from: string, username: string, language:string) {
+    const localisedStrings = LocalizationService.getLocalisedString(language);
+    const message = localisedStrings.InformationMessage(username); // Pass username dynamically
     const requestData = this.prepareRequestData(from, message);
     const response = await this.sendMessage(
       this.baseUrl,
@@ -52,9 +53,11 @@ export class SwiftchatMessageService extends MessageService {
     return response;
   }
 
-  // fn
-  async scoreInformation(from: string, score: number, attempted: number) {
-    const message = localised.scoreInformation(score, attempted);
+  // fn done
+  async scoreInformation(from: string, score: number, attempted: number, language:string) {
+    const localisedStrings = LocalizationService.getLocalisedString(language);
+
+    const message = localisedStrings.scoreInformation(score, attempted);
     const requestData = this.prepareRequestData(from, message);
     const response = await this.sendMessage(
       this.baseUrl,
@@ -127,18 +130,19 @@ export class SwiftchatMessageService extends MessageService {
  
 
   // not used
-  async difficultyButtons(from: string,language:string) {
-    const messageData = createDifficultyButtons(from,language);
-    const response = await this.sendMessage(
-      this.baseUrl,
-      messageData,
-      this.apiKey,
-    );
-    return response;
-  }
+  // async difficultyButtons(from: string,language:string) {
+  //   const messageData = createDifficultyButtons(from,language);
+  //   const response = await this.sendMessage(
+  //     this.baseUrl,
+  //     messageData,
+  //     this.apiKey,
+  //   );
+  //   return response;
+  // }
 
   // don;t change
   async newscorecard(from: string, score: number, totalQuestions: number, badge: string,language:string) {
+    const localisedStrings = LocalizationService.getLocalisedString(language);
     //const messageData = createDifficultyButtons(from);
     const currentDate = new Date()
     const date = currentDate.getDate()
@@ -154,9 +158,9 @@ export class SwiftchatMessageService extends MessageService {
         theme: "theme2",
         background: "blue",
         performance: "high",
-        share_message: localised.gotBadgeText,
+        share_message: localisedStrings.gotBadgeText,
         text1: `Quiz-${date}-${month}-${year}`,
-        text2: localised.goodJobText,
+        text2: localisedStrings.goodJobText,
         text3: `${score * 10}%`,
         text4: `${badge} `,
         score: `${score}/10`,
@@ -275,6 +279,7 @@ export class SwiftchatMessageService extends MessageService {
 
   // button done
   async sendInitialTopics(from: string,language:string) {
+    console.log(" object 2 = ", language)
     const messageData = createMainTopicButtons(from , language);
     const response = await this.sendMessage(
       this.baseUrl,

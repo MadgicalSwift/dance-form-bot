@@ -172,8 +172,7 @@
             },
             {
               "setNumber": 2,
-             "questions":
-             [
+             "questions":[
               {
                 "question": "What is the traditional Bhangra costume for men?",
                 "options": [
@@ -737,6 +736,470 @@
                 "explanation": "Bhangra is performed globally, in Bollywood, competitions, and cultural events."
               }
             ]
+            },
+            {
+              "setNumber": 7,
+             "questions":
+             [
+              {
+                "question": "Which of these is an essential component of Bhangra?",
+                "options": [
+                  "Jumping and footwork",
+                  "Sitting and swaying",
+                  "Slow hand gestures",
+                  "Controlled body movements"
+                ],
+                "answer": "Jumping and footwork",
+                "explanation": "Bhangra is characterized by energetic movements, including jumping and intricate footwork, making it a highly dynamic dance."
+              },
+              {
+                "question": "What is 'Kikli' in Bhangra?",
+                "options": [
+                  "A spinning movement",
+                  "A singing style",
+                  "A drumming technique",
+                  "A type of costume"
+                ],
+                "answer": "A spinning movement",
+                "explanation": "Kikli is a fast-spinning movement performed in pairs, commonly seen in Bhangra and Giddha dances."
+              },
+              {
+                "question": "Bhangra music is typically performed in which language?",
+                "options": [
+                  "Hindi",
+                  "Urdu",
+                  "Punjabi",
+                  "Bengali"
+                ],
+                "answer": "Punjabi",
+                "explanation": "Bhangra music is deeply rooted in Punjabi culture and is traditionally performed in the Punjabi language."
+              },
+              {
+                "question": "What is 'Luddi' in Bhangra?",
+                "options": [
+                  "A slow-moving dance step",
+                  "A type of rhythm",
+                  "A celebratory shout",
+                  "A costume accessory"
+                ],
+                "answer": "A slow-moving dance step",
+                "explanation": "Luddi is a slower dance step in Bhangra that involves graceful arm and body movements."
+              },
+              {
+                "question": "What is the role of 'Boliyan' in Bhangra music?",
+                "options": [
+                  "They are poetic verses",
+                  "They are drum beats",
+                  "They are dance moves",
+                  "They are costume designs"
+                ],
+                "answer": "They are poetic verses",
+                "explanation": "Boliyan are short, rhythmic poetic verses that accompany Bhangra music, adding meaning and storytelling to the performance."
+              },
+              {
+                "question": "How does Bhangra promote teamwork?",
+                "options": [
+                  "Requires coordination between dancers",
+                  "Encourages solo performances",
+                  "Uses freestyle dance",
+                  "Involves separate acts"
+                ],
+                "answer": "Requires coordination between dancers",
+                "explanation": "Bhangra is performed in groups, requiring synchronized movements and teamwork to create a vibrant performance."
+              },
+              {
+                "question": "What is 'Mirza' in Bhangra songs?",
+                "options": [
+                  "A famous Bhangra performer",
+                  "A type of Bhangra style",
+                  "A common song theme",
+                  "A dance move"
+                ],
+                "answer": "A common song theme",
+                "explanation": "Mirza is a recurring theme in Punjabi folk music, often referring to the tragic love story of Mirza-Sahiban."
+              },
+              {
+                "question": "What makes a Bhangra performance more engaging?",
+                "options": [
+                  "Expression and energy",
+                  "Silent movements",
+                  "Slow-paced steps",
+                  "Lack of coordination"
+                ],
+                "answer": "Expression and energy",
+                "explanation": "A lively Bhangra performance is full of expressive facial gestures, high-energy moves, and enthusiasm."
+              },
+              {
+                "question": "What is the significance of Bhangra in Punjabi culture?",
+                "options": [
+                  "Symbolizes joy and celebration",
+                  "Represents royal heritage",
+                  "Is a religious practice",
+                  "Is only for special groups"
+                ],
+                "answer": "Symbolizes joy and celebration",
+                "explanation": "Bhangra originated as a celebratory dance for the harvest season and continues to be a symbol of joy in Punjabi culture."
+              },
+              {
+                "question": "Where is Bhangra most popular today?",
+                "options": [
+                  "Only in Punjab",
+                  "All over India",
+                  "Worldwide",
+                  "Only in villages"
+                ],
+                "answer": "Worldwide",
+                "explanation": "Bhangra has gained international popularity and is performed at cultural festivals and dance competitions around the world."
+              }
+            ]             
+            },
+            {
+              "setNumber": 8,
+             "questions":
+             [
+              {
+                "question": "What does 'Bhangra' originally refer to?",
+                "options": [
+                  "A type of clothing",
+                  "A harvest festival dance",
+                  "A spiritual practice",
+                  "A musical instrument"
+                ],
+                "answer": "A harvest festival dance",
+                "explanation": "Bhangra was originally a folk dance performed during the harvest season in Punjab to celebrate a successful yield."
+              },
+              {
+                "question": "Which instrument is often played alongside the Dhol in Bhangra music?",
+                "options": [
+                  "Sitar",
+                  "Tumbi",
+                  "Santoor",
+                  "Violin"
+                ],
+                "answer": "Tumbi",
+                "explanation": "The Tumbi is a single-stringed instrument that produces a high-pitched, rhythmic sound and is commonly used in Bhangra music."
+              },
+              {
+                "question": "What kind of body movements are emphasized in Bhangra?",
+                "options": [
+                  "Sharp and controlled",
+                  "Slow and graceful",
+                  "Fast and energetic",
+                  "Minimal and static"
+                ],
+                "answer": "Fast and energetic",
+                "explanation": "Bhangra is known for its high-energy moves, including jumps, fast footwork, and expressive gestures."
+              },
+              {
+                "question": "Which of these is a common Bhangra step?",
+                "options": [
+                  "Bedi",
+                  "Kathak Chakkar",
+                  "Lavani Spin",
+                  "Bharatnatyam Hasta"
+                ],
+                "answer": "Bedi",
+                "explanation": "Bedi is a popular Bhangra step that involves rhythmic foot movements and coordinated arm gestures."
+              },
+              {
+                "question": "What is the traditional attire for female Bhangra dancers?",
+                "options": [
+                  "Salwar Kameez with Dupatta",
+                  "Ghagra Choli",
+                  "Lehenga Saree",
+                  "Western casuals"
+                ],
+                "answer": "Salwar Kameez with Dupatta",
+                "explanation": "Female Bhangra dancers typically wear a vibrant Salwar Kameez with a Dupatta, allowing free movement during performances."
+              },
+              {
+                "question": "What is 'Jhoomer' in Bhangra?",
+                "options": [
+                  "A type of rhythm",
+                  "A slow and graceful dance style",
+                  "A loud shout during dance",
+                  "A type of costume"
+                ],
+                "answer": "A slow and graceful dance style",
+                "explanation": "Jhoomer is a slower, graceful style of Bhangra with fluid arm movements and gentle footwork."
+              },
+              {
+                "question": "What is the primary theme of most traditional Bhangra songs?",
+                "options": [
+                  "Romance",
+                  "Harvest and celebration",
+                  "War stories",
+                  "Religious prayers"
+                ],
+                "answer": "Harvest and celebration",
+                "explanation": "Traditional Bhangra songs celebrate farming life, harvest success, and the joy of hard work."
+              },
+              {
+                "question": "What is 'Dhamaal' in Bhangra?",
+                "options": [
+                  "A special hand gesture",
+                  "A move where both arms are raised",
+                  "A type of drum beat",
+                  "A slow dance form"
+                ],
+                "answer": "A move where both arms are raised",
+                "explanation": "Dhamaal is a dance move in Bhangra where dancers raise both arms enthusiastically while stepping in rhythm."
+              },
+              {
+                "question": "What does the 'Bugchu' instrument add to Bhangra music?",
+                "options": [
+                  "Deep bass sounds",
+                  "A high-pitched twang",
+                  "A slow rhythm",
+                  "A sharp bell sound"
+                ],
+                "answer": "A high-pitched twang",
+                "explanation": "The Bugchu is a small stringed percussion instrument that creates a distinctive high-pitched twang in Bhangra music."
+              },
+              {
+                "question": "Which Bollywood film heavily featured Bhangra music?",
+                "options": [
+                  "Dilwale Dulhania Le Jayenge",
+                  "Gadar",
+                  "Jab We Met",
+                  "Singh is Kinng"
+                ],
+                "answer": "Singh is Kinng",
+                "explanation": "'Singh is Kinng' prominently featured Bhangra music and dance, reflecting Punjabi culture in a modern cinematic setting."
+              }
+            ]
+            },
+             {
+              "setNumber": 9,
+             "questions":
+             [
+              {
+                "question": "Where is Bhangra widely performed outside of India?",
+                "options": [
+                  "United States",
+                  "United Kingdom",
+                  "Canada",
+                  "All of the above"
+                ],
+                "answer": "All of the above",
+                "explanation": "Bhangra has gained global popularity, especially in countries with large Punjabi communities like the US, UK, and Canada."
+              },
+              {
+                "question": "What role does facial expression play in Bhangra?",
+                "options": [
+                  "It is unimportant",
+                  "It enhances energy and engagement",
+                  "Dancers must remain serious",
+                  "Dancers wear masks"
+                ],
+                "answer": "It enhances energy and engagement",
+                "explanation": "Facial expressions in Bhangra reflect the joy and enthusiasm of the dance, making performances more engaging and lively."
+              },
+              {
+                "question": "What makes Bhangra different from other Indian folk dances?",
+                "options": [
+                  "Use of high jumps and shoulder movements",
+                  "Lack of any music",
+                  "Slow and controlled pace",
+                  "No use of instruments"
+                ],
+                "answer": "Use of high jumps and shoulder movements",
+                "explanation": "Bhangra is characterized by high-energy jumps, strong shoulder movements, and vibrant footwork, setting it apart from other Indian folk dances."
+              },
+              {
+                "question": "What is 'Jhummar' in Bhangra?",
+                "options": [
+                  "A dance step involving circular movements",
+                  "A costume accessory",
+                  "A drumming technique",
+                  "A type of song lyric"
+                ],
+                "answer": "A dance step involving circular movements",
+                "explanation": "Jhummar is a graceful Bhangra move that includes circular arm and body movements, adding a smooth and flowing element to the dance."
+              },
+              {
+                "question": "What footwear is traditionally worn in Bhangra?",
+                "options": [
+                  "Mojaris",
+                  "Sneakers",
+                  "Leather boots",
+                  "None, dancers perform barefoot"
+                ],
+                "answer": "Mojaris",
+                "explanation": "Traditional Bhangra dancers wear Mojaris, which are intricately designed leather shoes that complement the vibrant attire."
+              },
+              {
+                "question": "Which aspect is crucial for a strong Bhangra performance?",
+                "options": [
+                  "Stamina and energy",
+                  "Standing still",
+                  "Lack of coordination",
+                  "Slow movements"
+                ],
+                "answer": "Stamina and energy",
+                "explanation": "Bhangra is an energetic dance requiring strength, endurance, and continuous movement to maintain its lively nature."
+              },
+              {
+                "question": "What is 'Saap' in Bhangra?",
+                "options": [
+                  "A wooden prop used in dance",
+                  "A type of headgear",
+                  "A famous Bhangra song",
+                  "A slow beat pattern"
+                ],
+                "answer": "A wooden prop used in dance",
+                "explanation": "Saap is a wooden prop with collapsible panels, creating rhythmic sounds and adding dramatic visual effects to Bhangra performances."
+              },
+              {
+                "question": "Which color is commonly seen in Bhangra outfits?",
+                "options": [
+                  "Black",
+                  "Blue",
+                  "Bright colors like red, yellow, and green",
+                  "Grey"
+                ],
+                "answer": "Bright colors like red, yellow, and green",
+                "explanation": "Bhangra outfits are designed with bright and vibrant colors, reflecting the joyous and celebratory nature of the dance."
+              },
+              {
+                "question": "How has Bhangra evolved over time?",
+                "options": [
+                  "It has remained unchanged",
+                  "It has mixed with modern dance styles",
+                  "It has become slower",
+                  "It has lost its traditional instruments"
+                ],
+                "answer": "It has mixed with modern dance styles",
+                "explanation": "Modern Bhangra has incorporated hip-hop, pop, and electronic music while maintaining its traditional essence."
+              },
+              {
+                "question": "What is the key emotion expressed in Bhangra?",
+                "options": [
+                  "Happiness and excitement",
+                  "Sadness",
+                  "Anger",
+                  "Fear"
+                ],
+                "answer": "Happiness and excitement",
+                "explanation": "Bhangra is a celebratory dance full of energy, joy, and enthusiasm, often performed during festive occasions."
+              }
+            ]
+            },
+             {
+              "setNumber": 10,
+             "questions":
+             [
+              {
+                "question": "What is the name of the fast-paced hand movement used in Bhangra?",
+                "options": [
+                  "Phirki",
+                  "Thappi",
+                  "Chakri",
+                  "Lungi"
+                ],
+                "answer": "Thappi",
+                "explanation": "Thappi is a rapid hand movement in Bhangra that adds rhythm and excitement to the performance."
+              },
+              {
+                "question": "Which part of the body is most actively used in Bhangra footwork?",
+                "options": [
+                  "Heels",
+                  "Toes",
+                  "Knees",
+                  "Ankles"
+                ],
+                "answer": "Knees",
+                "explanation": "Bhangra footwork relies heavily on the knees, allowing for powerful jumps and energetic movement."
+              },
+              {
+                "question": "What is the signature feature of Bhangra jumps?",
+                "options": [
+                  "They are low and subtle",
+                  "They are high and energetic",
+                  "They are done sideways",
+                  "They involve sitting mid-air"
+                ],
+                "answer": "They are high and energetic",
+                "explanation": "Bhangra jumps are performed with high energy, adding to the lively and vibrant nature of the dance."
+              },
+              {
+                "question": "What does the dancer’s wide arm movements in Bhangra represent?",
+                "options": [
+                  "Birds flying",
+                  "Spreading happiness",
+                  "Showing strength",
+                  "Giving blessings"
+                ],
+                "answer": "Spreading happiness",
+                "explanation": "The wide arm movements in Bhangra symbolize joy and celebration, reflecting the dance’s festive spirit."
+              },
+              {
+                "question": "Which musical instrument in Bhangra produces a sharp and metallic sound?",
+                "options": [
+                  "Algoza",
+                  "Chimta",
+                  "Dhol",
+                  "Tumbi"
+                ],
+                "answer": "Chimta",
+                "explanation": "Chimta is a traditional percussion instrument with metallic tongs that create sharp, rhythmic sounds in Bhangra music."
+              },
+              {
+                "question": "How does a dancer usually enter the stage in a Bhangra performance?",
+                "options": [
+                  "Slowly walking",
+                  "Running energetically",
+                  "With a jump and spin",
+                  "Crawling"
+                ],
+                "answer": "With a jump and spin",
+                "explanation": "Bhangra dancers often make an energetic entrance by jumping and spinning, setting an upbeat tone for the performance."
+              },
+              {
+                "question": "What is the meaning of the term 'Saggi Phul' in Bhangra culture?",
+                "options": [
+                  "A traditional dance step",
+                  "A type of head ornament",
+                  "A Bhangra song style",
+                  "A farming tool"
+                ],
+                "answer": "A type of head ornament",
+                "explanation": "Saggi Phul is a traditional head ornament worn by Bhangra dancers, adding to their colorful and vibrant attire."
+              },
+              {
+                "question": "What do Bhangra dancers wear on their feet?",
+                "options": [
+                  "Leather shoes",
+                  "Barefoot",
+                  "Juttis",
+                  "Sandals"
+                ],
+                "answer": "Juttis",
+                "explanation": "Bhangra dancers typically wear Juttis, traditional Punjabi footwear that complements the dance's cultural essence."
+              },
+              {
+                "question": "What is the best way to learn Bhangra?",
+                "options": [
+                  "Watching YouTube videos",
+                  "Learning from an experienced dancer",
+                  "Reading about it",
+                  "Copying friends"
+                ],
+                "answer": "Learning from an experienced dancer",
+                "explanation": "Bhangra is best learned from an experienced dancer who can teach authentic techniques and cultural significance."
+              },
+              {
+                "question": "Which famous festival often features Bhangra performances?",
+                "options": [
+                  "Diwali",
+                  "Holi",
+                  "Baisakhi",
+                  "Navratri"
+                ],
+                "answer": "Baisakhi",
+                "explanation": "Baisakhi, the Punjabi harvest festival, is one of the most significant occasions for Bhangra performances, celebrating prosperity and joy."
+              }
+            ]
             }
            
           ]
@@ -777,10 +1240,6 @@
         "Descrip": "It shows the grace and beauty of Punjabi women.\nIt helps preserve traditional culture.\nIt brings people together in a joyful and peaceful way."
       }
     ],
-
-
-
-    
     "questionSets": [
       {
         "setNumber": 1,
@@ -1130,8 +1589,7 @@
             "answer": "Folk songs",
             "explanation": "The dancers often sing folk songs to accompany the graceful movements of Sammi."
           }
-        ]        
-        
+        ]                
       },
       {
         "setNumber": 4,
@@ -1481,12 +1939,473 @@
             "answer": "Dancers sing folk songs themselves",
             "explanation": "Unlike many other dances, Sammi includes singing by the dancers, making the performance even more engaging and cultural."
           }
-        ]        
-        
-      }
-
-    ]
-              
+        ]          
+      },
+      {
+        "setNumber": 7,
+        "questions":
+        [
+          {
+            "question": "What is a defining characteristic of Sammi dance movements?",
+            "options": [
+              "Quick and sharp",
+              "Graceful and gentle",
+              "Heavy and loud",
+              "Fast and acrobatic"
+            ],
+            "answer": "Graceful and gentle",
+            "explanation": "Sammi movements are known for their graceful and gentle steps, reflecting the beauty and elegance of Punjabi culture."
+          },
+          {
+            "question": "What adds to the visual beauty of Sammi dance performances?",
+            "options": [
+              "Colorful costumes",
+              "Use of technology",
+              "Modern dance steps",
+              "No costumes"
+            ],
+            "answer": "Colorful costumes",
+            "explanation": "The colorful costumes, such as lehenga-choli and phulkari dupatta, add to the vibrant visual appeal of the dance."
+          },
+          {
+            "question": "Which of the following is commonly seen in Sammi dance costumes?",
+            "options": [
+              "High heels",
+              "Phulkari dupatta (embroidered scarf)",
+              "T-shirts",
+              "Jeans"
+            ],
+            "answer": "Phulkari dupatta (embroidered scarf)",
+            "explanation": "The phulkari dupatta is an important part of the costume, showcasing traditional embroidery and adding a decorative touch."
+          },
+          {
+            "question": "What type of music is often used in Sammi performances?",
+            "options": [
+              "Classical instrumental music",
+              "Folk songs sung by the dancers",
+              "Pop music",
+              "No music"
+            ],
+            "answer": "Folk songs sung by the dancers",
+            "explanation": "In Sammi, the dancers often create the music themselves by singing traditional folk songs, enhancing the cultural experience."
+          },
+          {
+            "question": "What is the role of Sammi dance in Punjabi culture?",
+            "options": [
+              "It teaches history",
+              "It is a form of entertainment",
+              "It preserves cultural traditions",
+              "It is used for political events"
+            ],
+            "answer": "It preserves cultural traditions",
+            "explanation": "Sammi plays a significant role in preserving the traditional culture and values of Punjab, highlighting its rich heritage."
+          },
+          {
+            "question": "Who performs Sammi dance?",
+            "options": [
+              "Only men",
+              "Only children",
+              "Only women",
+              "Both men and women"
+            ],
+            "answer": "Only women",
+            "explanation": "Sammi is traditionally performed by women, and it celebrates the grace and beauty of Punjabi women."
+          },
+          {
+            "question": "What mood does Sammi create during performances?",
+            "options": [
+              "Sad and serious",
+              "Joyful and peaceful",
+              "Angry and tense",
+              "Lonely and quiet"
+            ],
+            "answer": "Joyful and peaceful",
+            "explanation": "The dance and the music create a joyful, peaceful atmosphere, fostering a sense of unity among the performers and the audience."
+          },
+          {
+            "question": "What makes Sammi special compared to other dances?",
+            "options": [
+              "It is only performed indoors",
+              "It does not use any costumes",
+              "It celebrates women and traditional culture",
+              "It uses modern dance styles"
+            ],
+            "answer": "It celebrates women and traditional culture",
+            "explanation": "Sammi highlights the grace of women and helps preserve Punjabi culture by staying true to its traditional forms."
+          },
+          {
+            "question": "In Sammi dance, what is often used for decoration?",
+            "options": [
+              "Flowers",
+              "Phulkari embroidery",
+              "Glitter and beads",
+              "Modern fabric"
+            ],
+            "answer": "Phulkari embroidery",
+            "explanation": "Phulkari, a traditional form of embroidery, is often seen in the costumes, adding a decorative touch to the dance."
+          },
+          {
+            "question": "Where did Sammi dance originate?",
+            "options": [
+              "Punjab, India",
+              "Rajasthan",
+              "Sandal Bar, Pakistan",
+              "Uttar Pradesh"
+            ],
+            "answer": "Sandal Bar, Pakistan",
+            "explanation": "Sammi originated in the Sandal Bar region, which is now part of Pakistan. It has deep roots in Punjabi culture."
+          }
+        ]
+        },
+        {
+          "setNumber": 8,
+          "questions":
+          [
+            {
+              "question": "What is a unique feature of Sammi dance performances?",
+              "options": [
+                "The dancers wear high-tech costumes",
+                "The dancers sing their own folk songs",
+                "It is performed on a stage with no audience",
+                "It uses modern pop music"
+              ],
+              "answer": "The dancers sing their own folk songs",
+              "explanation": "In Sammi, the dancers often sing traditional folk songs, making it a unique and cultural performance."
+            },
+            {
+              "question": "Which of these is a traditional outfit worn for Sammi?",
+              "options": [
+                "Formal suits",
+                "Lehenga-choli or salwar kameez",
+                "Tutu skirts",
+                "Dance costumes with tutus"
+              ],
+              "answer": "Lehenga-choli or salwar kameez",
+              "explanation": "The traditional outfit for Sammi includes colorful lehenga-choli or salwar kameez, which represent the culture of Punjab."
+            },
+            {
+              "question": "What is the primary symbol of the Sammi dance?",
+              "options": [
+                "The dance stage",
+                "The circle formation",
+                "A single dancer in the middle",
+                "The color of the costumes"
+              ],
+              "answer": "The circle formation",
+              "explanation": "The dancers form a circle, which represents unity and togetherness in Punjabi culture."
+            },
+            {
+              "question": "How does Sammi dance help the community?",
+              "options": [
+                "By promoting modern dance forms",
+                "By celebrating the grace of women and bringing people together",
+                "By entertaining only",
+                "By focusing on individual performances"
+              ],
+              "answer": "By celebrating the grace of women and bringing people together",
+              "explanation": "Sammi helps bring people together in a joyful way while celebrating the grace and beauty of women in Punjabi culture."
+            },
+            {
+              "question": "What is the mood of Sammi's music?",
+              "options": [
+                "Serious and slow",
+                "Loud and aggressive",
+                "Cheerful and lively",
+                "Quiet and subtle"
+              ],
+              "answer": "Cheerful and lively",
+              "explanation": "The music in Sammi is cheerful and lively, enhancing the joyful atmosphere of the performance."
+            },
+            {
+              "question": "Who typically performs the Sammi dance?",
+              "options": [
+                "Both men and women",
+                "Only women",
+                "Only children",
+                "Only elderly women"
+              ],
+              "answer": "Only women",
+              "explanation": "Sammi is traditionally performed by women, showcasing their grace and cultural significance."
+            },
+            {
+              "question": "What is often used to decorate Sammi costumes?",
+              "options": [
+                "Glitter",
+                "Phulkari embroidery",
+                "Artificial flowers",
+                "Heavy jewelry"
+              ],
+              "answer": "Phulkari embroidery",
+              "explanation": "Phulkari, a type of traditional embroidery, is used to decorate the costumes, adding beauty and cultural significance."
+            },
+            {
+              "question": "What does Sammi symbolize for Punjabi culture?",
+              "options": [
+                "Celebrating modernity",
+                "The importance of family",
+                "Unity, peace, and traditional values",
+                "A festive mood only"
+              ],
+              "answer": "Unity, peace, and traditional values",
+              "explanation": "Sammi symbolizes the unity and peace within the community and helps preserve traditional Punjabi values."
+            },
+            {
+              "question": "In Sammi dance, what kind of rhythm is used?",
+              "options": [
+                "Fast and chaotic",
+                "Slow and heavy",
+                "Soft and rhythmic",
+                "Random and spontaneous"
+              ],
+              "answer": "Soft and rhythmic",
+              "explanation": "The steps in Sammi are soft and rhythmic, reflecting the graceful and peaceful nature of the dance."
+            },
+            {
+              "question": "Why is Sammi dance considered special?",
+              "options": [
+                "It is very fast and intense",
+                "It is a dance of celebration and togetherness",
+                "It is only for festivals",
+                "It is always performed solo"
+              ],
+              "answer": "It is a dance of celebration and togetherness",
+              "explanation": "Sammi is a dance that celebrates unity, joy, and the beauty of Punjabi culture, creating a festive atmosphere."
+            }
+          ]
+          },
+          {
+            "setNumber": 9,
+            "questions":
+            [
+              {
+                "question": "What is a key aspect of Sammi dance performances?",
+                "options": [
+                  "They are always performed in the night",
+                  "The dancers use loud instruments",
+                  "Folk songs are sung by the dancers",
+                  "Dancers wear modern outfits"
+                ],
+                "answer": "Folk songs are sung by the dancers",
+                "explanation": "A key feature of Sammi is that dancers sing traditional folk songs while performing, making it a culturally rich experience."
+              },
+              {
+                "question": "Which region is Sammi dance closely associated with?",
+                "options": [
+                  "Gujarat",
+                  "Punjab (Pakistan)",
+                  "Maharashtra",
+                  "Kerala"
+                ],
+                "answer": "Punjab (Pakistan)",
+                "explanation": "Sammi originated in the Sandal Bar region, which is now part of Pakistan, and is an important part of Punjabi culture."
+              },
+              {
+                "question": "What does the circle formation represent in Sammi?",
+                "options": [
+                  "The cycle of seasons",
+                  "The unity and togetherness of the community",
+                  "A festive symbol",
+                  "A symbol of the sun"
+                ],
+                "answer": "The unity and togetherness of the community",
+                "explanation": "The circle represents unity and togetherness, symbolizing the collective spirit of the dance and the community."
+              },
+              {
+                "question": "What is a common color theme for Sammi dance costumes?",
+                "options": [
+                  "Black and gold",
+                  "Bright and colorful",
+                  "White and silver",
+                  "Blue and green"
+                ],
+                "answer": "Bright and colorful",
+                "explanation": "Sammi costumes are known for their bright and colorful designs, which enhance the lively and vibrant atmosphere of the dance."
+              },
+              {
+                "question": "Which type of traditional outfit is worn by women performing Sammi?",
+                "options": [
+                  "Salwar kameez or lehenga-choli",
+                  "Kimono",
+                  "Sari",
+                  "Toga"
+                ],
+                "answer": "Salwar kameez or lehenga-choli",
+                "explanation": "Women wear traditional Punjabi outfits like salwar kameez or lehenga-choli during Sammi performances."
+              },
+              {
+                "question": "What makes Sammi dance unique?",
+                "options": [
+                  "The use of modern props",
+                  "The incorporation of folk songs sung by the dancers",
+                  "Its fast, energetic movements",
+                  "Its use of technology"
+                ],
+                "answer": "The incorporation of folk songs sung by the dancers",
+                "explanation": "The dancers sing folk songs during the performance, which makes Sammi unique compared to other traditional dances."
+              },
+              {
+                "question": "What emotion is typically conveyed through Sammi dance?",
+                "options": [
+                  "Sorrow and loss",
+                  "Joy, celebration, and unity",
+                  "Anger and frustration",
+                  "Fear and suspense"
+                ],
+                "answer": "Joy, celebration, and unity",
+                "explanation": "The dance is joyful and celebratory, conveying feelings of happiness, togetherness, and cultural pride."
+              },
+              {
+                "question": "How does Sammi contribute to the cultural heritage of Punjab?",
+                "options": [
+                  "By adopting modern influences",
+                  "By preserving traditional folk music and dance",
+                  "By integrating global dance styles",
+                  "By performing only in schools"
+                ],
+                "answer": "By preserving traditional folk music and dance",
+                "explanation": "Sammi helps preserve the traditional music and dance forms of Punjab, keeping the culture alive for future generations."
+              },
+              {
+                "question": "What is the role of women in Sammi dance?",
+                "options": [
+                  "To perform only in solo acts",
+                  "To showcase their grace and beauty as the main dancers",
+                  "To sing but not dance",
+                  "To play instruments while others dance"
+                ],
+                "answer": "To showcase their grace and beauty as the main dancers",
+                "explanation": "Women are the central figures in Sammi, performing the dance to showcase their grace and beauty as part of the celebration."
+              },
+              {
+                "question": "Why is Sammi considered an essential part of Punjabi culture?",
+                "options": [
+                  "It is a modern form of entertainment",
+                  "It teaches modern dance techniques",
+                  "It celebrates traditional folk music and dances",
+                  "It is only performed during festivals"
+                ],
+                "answer": "It celebrates traditional folk music and dances",
+                "explanation": "Sammi is an important dance form as it celebrates the traditional folk music and dances of Punjab, preserving cultural practices."
+              }
+            ]
+            },
+            {
+              "setNumber": 10,
+              "questions":
+              [
+                {
+                  "question": "What is typically used to enhance the performance of Sammi dancers?",
+                  "options": [
+                    "Flashy lights",
+                    "Folk music sung by the dancers",
+                    "Modern dance shoes",
+                    "Heavy makeup"
+                  ],
+                  "answer": "Folk music sung by the dancers",
+                  "explanation": "Sammi performances are enhanced by the dancers singing folk music, which is an integral part of the dance's appeal."
+                },
+                {
+                  "question": "How are the dance movements in Sammi performed?",
+                  "options": [
+                    "With minimal footwork",
+                    "With quick and energetic foot movements",
+                    "By jumping and twirling",
+                    "With slow, controlled movements"
+                  ],
+                  "answer": "With quick and energetic foot movements",
+                  "explanation": "Sammi features quick and energetic footwork that complements the lively music and rhythmic beats."
+                },
+                {
+                  "question": "What is the purpose of the circle in Sammi?",
+                  "options": [
+                    "It represents a cultural symbol of the earth",
+                    "It signifies the continuity and bond of community",
+                    "It highlights individual performances",
+                    "It is just for artistic purposes"
+                  ],
+                  "answer": "It signifies the continuity and bond of community",
+                  "explanation": "The circle in Sammi represents the continuity of life and the bond between members of the community, reinforcing unity and togetherness."
+                },
+                {
+                  "question": "What type of songs are sung by the dancers during a Sammi performance?",
+                  "options": [
+                    "Pop songs",
+                    "Traditional Punjabi folk songs",
+                    "Bollywood hits",
+                    "Classical music"
+                  ],
+                  "answer": "Traditional Punjabi folk songs",
+                  "explanation": "The dancers sing traditional Punjabi folk songs, which are integral to the performance and the overall atmosphere of the dance."
+                },
+                {
+                  "question": "Which of the following is NOT a feature of Sammi?",
+                  "options": [
+                    "Circle formations",
+                    "Bright traditional costumes",
+                    "Use of modern props",
+                    "Energetic foot movements"
+                  ],
+                  "answer": "Use of modern props",
+                  "explanation": "Sammi does not rely on modern props but instead focuses on the dancers' movements, costumes, and singing."
+                },
+                {
+                  "question": "How is Sammi dance typically performed?",
+                  "options": [
+                    "By solo performers only",
+                    "In large groups, with both dancers and singers",
+                    "By men and women equally",
+                    "By professional dancers only"
+                  ],
+                  "answer": "In large groups, with both dancers and singers",
+                  "explanation": "Sammi is performed in groups, with singers and dancers working together to create a lively performance."
+                },
+                {
+                  "question": "What is the general mood of Sammi performances?",
+                  "options": [
+                    "Somber and slow",
+                    "Fun, lively, and energetic",
+                    "Introspective and serious",
+                    "Aggressive and competitive"
+                  ],
+                  "answer": "Fun, lively, and energetic",
+                  "explanation": "The mood of Sammi is fun and lively, creating an energetic and joyous atmosphere that engages the community."
+                },
+                {
+                  "question": "Where did Sammi originate?",
+                  "options": [
+                    "Punjab (India)",
+                    "Sandal Bar region (Pakistan)",
+                    "Gujarat",
+                    "Rajasthan"
+                  ],
+                  "answer": "Sandal Bar region (Pakistan)",
+                  "explanation": "Sammi originated from the Sandal Bar region of Pakistan, and has become an important dance form in Punjabi culture."
+                },
+                {
+                  "question": "What is a unique feature of Sammi compared to other traditional dances?",
+                  "options": [
+                    "It involves competitive dancing",
+                    "The dancers sing folk songs during the performance",
+                    "It focuses solely on intricate foot movements",
+                    "It uses modern music"
+                  ],
+                  "answer": "The dancers sing folk songs during the performance",
+                  "explanation": "Unlike other dances, Sammi incorporates the singing of folk songs by the dancers, which is a defining characteristic of the performance."
+                },
+                {
+                  "question": "Why is Sammi dance important for Punjabi women?",
+                  "options": [
+                    "It helps them showcase their athletic skills",
+                    "It is a celebration of their grace and beauty",
+                    "It is an opportunity to perform solo",
+                    "It teaches modern dance movements"
+                  ],
+                  "answer": "It is a celebration of their grace and beauty",
+                  "explanation": "Sammi celebrates the grace, beauty, and cultural significance of Punjabi women, empowering them within their community."
+                }
+              ]
+              }
+    ]       
         },
         {
           "subtopicName": "Giddha🩰",
@@ -2111,7 +3030,578 @@
                   "explanation": "Giddha reflects themes like family, love, relationships, and everyday life through its dance and Boliyan."
                 }
               ]                    
-            }
+            },
+            {
+              "setNumber": 6,
+              "questions": [
+                {
+                  "question": "What type of movement is emphasized in Giddha?",
+                  "options": [
+                    "Slow and graceful",
+                    "Quick and energetic",
+                    "Only hand movements",
+                    "Gentle rocking movements"
+                  ],
+                  "answer": "Quick and energetic",
+                  "explanation": "Giddha is known for its energetic and fast-paced movements, including quick foot stamping, clapping, and arm swings."
+                },
+                {
+                  "question": "What cultural values are often expressed through Giddha performances?",
+                  "options": [
+                    "Sadness and reflection",
+                    "Bravery and war",
+                    "Celebration, joy, and femininity",
+                    "Political freedom"
+                  ],
+                  "answer": "Celebration, joy, and femininity",
+                  "explanation": "Giddha celebrates joy, community, and femininity, reflecting the cultural values of Punjab."
+                },
+                {
+                  "question": "Which of these props is commonly used in a Giddha performance?",
+                  "options": [
+                    "Fans",
+                    "Swords",
+                    "Dhol",
+                    "Flowers"
+                  ],
+                  "answer": "Dhol",
+                  "explanation": "The dhol, a traditional drum, is often used to accompany Giddha performances, adding rhythm to the dance."
+                },
+                {
+                  "question": "Who is the primary performer in a Giddha dance?",
+                  "options": [
+                    "The village head",
+                    "Women dancers",
+                    "Children",
+                    "Solo performers"
+                  ],
+                  "answer": "Women dancers",
+                  "explanation": "Giddha is primarily performed by women, who showcase their energy, grace, and community spirit through this dance."
+                },
+                {
+                  "question": "Which of the following best describes the atmosphere of a Giddha performance?",
+                  "options": [
+                    "Quiet and meditative",
+                    "Loud and boisterous",
+                    "Dark and somber",
+                    "Strict and formal"
+                  ],
+                  "answer": "Loud and boisterous",
+                  "explanation": "Giddha is a lively and boisterous performance, filled with clapping, singing, and energetic movements."
+                },
+                {
+                  "question": "What is the significance of the ‘V’ hand gestures often seen in Giddha?",
+                  "options": [
+                    "A symbol of peace",
+                    "A sign of respect",
+                    "To enhance the rhythm of the performance",
+                    "To represent victory"
+                  ],
+                  "answer": "To enhance the rhythm of the performance",
+                  "explanation": "The ‘V’ hand gestures in Giddha are used to maintain rhythm and enhance the visual energy of the dance."
+                },
+                {
+                  "question": "How is Giddha different from other dances in terms of musical accompaniment?",
+                  "options": [
+                    "It uses no instruments",
+                    "It uses a wide variety of instruments",
+                    "It primarily uses clapping and singing",
+                    "It uses only string instruments"
+                  ],
+                  "answer": "It primarily uses clapping and singing",
+                  "explanation": "Giddha mainly relies on clapping, singing, and rhythmic movements for musical accompaniment, rather than heavy reliance on instruments."
+                },
+                {
+                  "question": "What do Boliyan often reflect in a Giddha performance?",
+                  "options": [
+                    "Political themes",
+                    "Traditional folklore",
+                    "Personal narratives and humorous themes",
+                    "Religious teachings"
+                  ],
+                  "answer": "Personal narratives and humorous themes",
+                  "explanation": "Boliyan are short, humorous, and often reflect personal stories, jokes, or playful themes from everyday life."
+                },
+                {
+                  "question": "Which region is the origin of the Giddha dance?",
+                  "options": [
+                    "Uttar Pradesh",
+                    "Rajasthan",
+                    "Punjab",
+                    "Bengal"
+                  ],
+                  "answer": "Punjab",
+                  "explanation": "Giddha is a traditional dance form originating from the state of Punjab in India."
+                },
+                {
+                  "question": "In which context is Giddha typically performed?",
+                  "options": [
+                    "During formal ceremonies",
+                    "At casual, festive events and celebrations",
+                    "Only in dance competitions",
+                    "As a form of religious worship"
+                  ],
+                  "answer": "At casual, festive events and celebrations",
+                  "explanation": "Giddha is mostly performed at casual events like festivals, weddings, and social gatherings to celebrate joy and togetherness."
+                }
+              ]
+              },
+            {
+             "setNumber": 7,
+              "questions":
+              [
+                {
+                  "question": "In Giddha performances, the dancers often form which of these shapes with their hands and bodies?",
+                  "options": [
+                    "Circular formations",
+                    "Square formations",
+                    "Triangular formations",
+                    "Linear formations"
+                  ],
+                  "answer": "Circular formations",
+                  "explanation": "Dancers in Giddha often form circular formations, symbolizing unity and community during the performance."
+                },
+                {
+                  "question": "What is the primary role of Boliyan in a Giddha dance?",
+                  "options": [
+                    "To accompany the dancers with rhythm",
+                    "To provide a narrative or theme for the performance",
+                    "To represent specific religious rituals",
+                    "To provide an introduction to the dance"
+                  ],
+                  "answer": "To provide a narrative or theme for the performance",
+                  "explanation": "Boliyan are songs sung during Giddha that provide a narrative or humorous theme, often related to village life and personal stories."
+                },
+                {
+                  "question": "Which instrument is often played during a Giddha performance?",
+                  "options": [
+                    "Tabla",
+                    "Harmonium",
+                    "Dholki",
+                    "Sitar"
+                  ],
+                  "answer": "Dholki",
+                  "explanation": "The Dholki, a smaller version of the dhol, is commonly played during Giddha performances, providing rhythmic accompaniment."
+                },
+                {
+                  "question": "What type of costumes are typically worn by women performing Giddha?",
+                  "options": [
+                    "Saris",
+                    "Traditional Punjabi suits with dupattas",
+                    "Western-style dresses",
+                    "Traditional royal costumes"
+                  ],
+                  "answer": "Traditional Punjabi suits with dupattas",
+                  "explanation": "Women performing Giddha typically wear vibrant traditional Punjabi suits with dupattas, often in bright colors like red, green, and yellow."
+                },
+                {
+                  "question": "True or False: Giddha is performed only during daytime events.",
+                  "options": [
+                    "True",
+                    "False"
+                  ],
+                  "answer": "False",
+                  "explanation": "Giddha can be performed at any time during the day or night, especially during festivals and celebrations."
+                },
+                {
+                  "question": "What is the cultural significance of the Giddha dance?",
+                  "options": [
+                    "It is a way to express sorrow and grief",
+                    "It is a celebration of femininity and social unity",
+                    "It is performed to honor historical leaders",
+                    "It is used to communicate with deities"
+                  ],
+                  "answer": "It is a celebration of femininity and social unity",
+                  "explanation": "Giddha holds cultural significance as a celebration of femininity, joy, and the social unity of the community."
+                },
+                {
+                  "question": "What is often the theme of the songs sung during a Giddha performance?",
+                  "options": [
+                    "Spiritual enlightenment",
+                    "Romantic relationships and playful banter",
+                    "Political revolutions",
+                    "Harvest rituals"
+                  ],
+                  "answer": "Romantic relationships and playful banter",
+                  "explanation": "The songs sung during Giddha performances often involve themes of romance, relationships, and playful banter, reflecting the humorous nature of the dance."
+                },
+                {
+                  "question": "What is a key characteristic of the music played during Giddha?",
+                  "options": [
+                    "It has a very slow tempo",
+                    "It involves stringed instruments only",
+                    "It features fast beats and rhythms",
+                    "It is only vocal with no instruments"
+                  ],
+                  "answer": "It features fast beats and rhythms",
+                  "explanation": "Giddha music typically features fast-paced beats, often accompanied by percussion instruments like the dholki, which drive the energy of the dance."
+                },
+                {
+                  "question": "Which of these emotions is NOT typically expressed through Giddha?",
+                  "options": [
+                    "Joy",
+                    "Humor",
+                    "Sorrow",
+                    "Energy"
+                  ],
+                  "answer": "Sorrow",
+                  "explanation": "Giddha is a joyful and energetic dance, often filled with humor and celebration, rather than sorrow."
+                },
+                {
+                  "question": "What role do the claps play in a Giddha performance?",
+                  "options": [
+                    "They mark the beats and rhythms of the dance",
+                    "They are a form of audience interaction",
+                    "They serve as a prayer to the gods",
+                    "They symbolize unity and connection between the dancers"
+                  ],
+                  "answer": "They mark the beats and rhythms of the dance",
+                  "explanation": "Clapping is an essential component of Giddha, helping to mark the beats and rhythms, enhancing the overall performance."
+                }
+              ]
+               },
+             {
+        "setNumber": 8,
+        "questions": 
+        [
+          {
+            "question": "Which of the following is a common setting for a Giddha performance?",
+            "options": [
+              "A large theater",
+              "A village fair or festival",
+              "A political rally",
+              "A corporate event"
+            ],
+            "answer": "A village fair or festival",
+            "explanation": "Giddha is typically performed at village fairs, festivals, and weddings, where it adds to the celebratory atmosphere."
+          },
+          {
+            "question": "What is the purpose of the colorful dupatta worn by Giddha performers?",
+            "options": [
+              "To symbolize royalty",
+              "To complement the dance movements and enhance visual appeal",
+              "To protect the performers from the sun",
+              "To represent religious values"
+            ],
+            "answer": "To complement the dance movements and enhance visual appeal",
+            "explanation": "The dupatta adds to the visual appeal of Giddha, enhancing the dance’s movements and creating a more festive look."
+          },
+          {
+            "question": "True or False: Giddha is only performed by young women.",
+            "options": [
+              "True",
+              "False"
+            ],
+            "answer": "False",
+            "explanation": "Giddha is performed by women of all ages, from young girls to older women, and is a dance form that promotes community involvement."
+          },
+          {
+            "question": "Which of these qualities is most associated with Giddha dancers?",
+            "options": [
+              "Rigidity",
+              "Grace and flexibility",
+              "Speed and power",
+              "Solemnity"
+            ],
+            "answer": "Grace and flexibility",
+            "explanation": "Giddha dancers are known for their graceful and flexible movements, which are an integral part of the performance."
+          },
+          {
+            "question": "What is one reason Giddha has remained popular across generations in Punjab?",
+            "options": [
+              "It is easy to learn",
+              "It is a form of ritual worship",
+              "It fosters community spirit and social bonding",
+              "It requires expensive costumes"
+            ],
+            "answer": "It fosters community spirit and social bonding",
+            "explanation": "Giddha continues to be popular because it promotes community participation, social bonding, and celebration, making it a culturally significant tradition."
+          },
+          {
+            "question": "What do the rhythms of Giddha symbolize?",
+            "options": [
+              "The passage of time",
+              "The energy of nature",
+              "Celebration, unity, and festivity",
+              "The lives of historical figures"
+            ],
+            "answer": "Celebration, unity, and festivity",
+            "explanation": "The fast rhythms of Giddha symbolize celebration, unity, and the collective joy of the community."
+          },
+          {
+            "question": "In addition to the dance, what other form of expression is key to a Giddha performance?",
+            "options": [
+              "The use of gestures only",
+              "The storytelling through Boliyan (songs)",
+              "Silent communication",
+              "Pantomime and dramatization"
+            ],
+            "answer": "The storytelling through Boliyan (songs)",
+            "explanation": "Boliyan (songs) are a crucial aspect of Giddha, providing both entertainment and narrative to the dance performance."
+          },
+          {
+            "question": "What is a major difference between Giddha and Bhangra in terms of performance?",
+            "options": [
+              "Giddha is performed by men, while Bhangra is for women",
+              "Giddha is slower and more graceful",
+              "Giddha is a group dance, while Bhangra is typically solo",
+              "Giddha emphasizes clapping and singing, whereas Bhangra emphasizes footwork and jumps"
+            ],
+            "answer": "Giddha emphasizes clapping and singing, whereas Bhangra emphasizes footwork and jumps",
+            "explanation": "While both are popular dance forms, Giddha places more emphasis on clapping, singing, and communal participation, while Bhangra is more energetic with focus on footwork and jumps."
+          },
+          {
+            "question": "Which cultural occasion is Giddha most likely performed?",
+            "options": [
+              "Weddings",
+              "Funerals",
+              "Corporate meetings",
+              "Political rallies"
+            ],
+            "answer": "Weddings",
+            "explanation": "Giddha is especially popular at weddings, where it adds to the festive atmosphere and is a central part of the celebration."
+          },
+          {
+            "question": "What is often the mood of a Giddha performance?",
+            "options": [
+              "Melancholic",
+              "Celebratory and lively",
+              "Solemn and respectful",
+              "Mournful and serious"
+            ],
+            "answer": "Celebratory and lively",
+            "explanation": "Giddha performances are known for their lively, energetic, and celebratory mood, bringing joy to the audience."
+          }
+        ]
+        },
+            {
+            "setNumber": 9,
+            "questions": 
+            [
+              {
+                "question": "Which of these is the most common gesture used in Giddha?",
+                "options": [
+                  "Twisting hands",
+                  "Clapping",
+                  "Raising arms",
+                  "Pointing fingers"
+                ],
+                "answer": "Clapping",
+                "explanation": "Clapping is a signature movement in Giddha, used to mark the rhythm of the music and synchronize with the dancers."
+              },
+              {
+                "question": "Giddha is most commonly associated with which region of India?",
+                "options": [
+                  "Gujarat",
+                  "Rajasthan",
+                  "Punjab",
+                  "Uttar Pradesh"
+                ],
+                "answer": "Punjab",
+                "explanation": "Giddha is a traditional folk dance from the state of Punjab, often performed at celebrations and festivals."
+              },
+              {
+                "question": "What is one key feature of the songs sung during Giddha?",
+                "options": [
+                  "They are in classical music style",
+                  "They often feature humorous and flirtatious lyrics",
+                  "They are silent songs",
+                  "They use modern pop tunes"
+                ],
+                "answer": "They often feature humorous and flirtatious lyrics",
+                "explanation": "Giddha songs, known as Boliyan, are often humorous, playful, and flirtatious, revolving around themes of village life, love, and social interactions."
+              },
+              {
+                "question": "What is typically the role of the men during a Giddha performance?",
+                "options": [
+                  "To dance alongside the women",
+                  "To provide vocal support and play musical instruments",
+                  "To sit and watch the women dance",
+                  "To provide a commentary on the performance"
+                ],
+                "answer": "To provide vocal support and play musical instruments",
+                "explanation": "In Giddha, men usually provide vocal support, playing the dholki or singing along with the women’s dance."
+              },
+              {
+                "question": "Which of these dance styles is similar to Giddha in terms of rhythm and energy?",
+                "options": [
+                  "Kuchipudi",
+                  "Bhangra",
+                  "Bharatanatyam",
+                  "Kathak"
+                ],
+                "answer": "Bhangra",
+                "explanation": "Both Giddha and Bhangra originate from Punjab and share a lively, energetic rhythm, though Bhangra has more emphasis on vigorous footwork and jumps."
+              },
+              {
+                "question": "What does the colorful attire worn by Giddha performers symbolize?",
+                "options": [
+                  "Royalty and power",
+                  "Festivity and cultural pride",
+                  "Modesty and restraint",
+                  "Wealth and status"
+                ],
+                "answer": "Festivity and cultural pride",
+                "explanation": "The vibrant costumes worn during Giddha symbolize celebration, joy, and pride in Punjabi culture."
+              },
+              {
+                "question": "True or False: Giddha can be performed by both men and women.",
+                "options": [
+                  "True",
+                  "False"
+                ],
+                "answer": "True",
+                "explanation": "While traditionally performed by women, Giddha can be performed by both men and women, especially in modern times where men also participate in the performance."
+              },
+              {
+                "question": "What is the primary cultural purpose of Giddha?",
+                "options": [
+                  "To express political opinions",
+                  "To entertain and promote unity",
+                  "To praise the gods",
+                  "To teach moral lessons"
+                ],
+                "answer": "To entertain and promote unity",
+                "explanation": "Giddha is primarily performed for entertainment, socializing, and fostering community unity."
+              },
+              {
+                "question": "What is often the subject of the Boliyan sung during a Giddha?",
+                "options": [
+                  "Sacred rituals",
+                  "Humorous tales of village life",
+                  "Political events",
+                  "Family history"
+                ],
+                "answer": "Humorous tales of village life",
+                "explanation": "Boliyan often tell humorous, playful stories about love, village life, and everyday experiences, adding a light-hearted element to the dance."
+              },
+              {
+                "question": "Which instrument is NOT typically associated with Giddha performances?",
+                "options": [
+                  "Dholki",
+                  "Harmonium",
+                  "Tabla",
+                  "Flute"
+                ],
+                "answer": "Flute",
+                "explanation": "Giddha performances are mainly accompanied by percussion instruments like the dholki and tabla, while the flute is not a common instrument in this dance form."
+              }
+            ]
+            },
+            {
+              "setNumber": 10,
+              "questions": 
+              [
+                {
+                  "question": "Which of the following movements is commonly seen in Giddha?",
+                  "options": [
+                    "Spinning in place",
+                    "Quick arm movements and twirls",
+                    "Slow graceful hand gestures",
+                    "Jumping in circles"
+                  ],
+                  "answer": "Quick arm movements and twirls",
+                  "explanation": "Giddha is characterized by quick arm movements, clapping, and twirls, all of which are done in sync with the rhythm of the music."
+                },
+                {
+                  "question": "What does Giddha represent in terms of social life?",
+                  "options": [
+                    "A form of spiritual devotion",
+                    "A way to showcase personal power",
+                    "A celebration of femininity and communal harmony",
+                    "A historical re-enactment"
+                  ],
+                  "answer": "A celebration of femininity and communal harmony",
+                  "explanation": "Giddha is a celebration of femininity, social bonding, and community spirit, often performed by women as a form of expression."
+                },
+                {
+                  "question": "Which of these is a typical feature of Giddha performances?",
+                  "options": [
+                    "Using only traditional instruments like the sitar",
+                    "A focus on intricate footwork",
+                    "High energy with synchronized clapping and singing",
+                    "A storytelling format using mime"
+                  ],
+                  "answer": "High energy with synchronized clapping and singing",
+                  "explanation": "Giddha is known for its high energy, with dancers clapping and singing to the rhythm of the music while performing the dance."
+                },
+                {
+                  "question": "Where would you most commonly see a Giddha performance during the year?",
+                  "options": [
+                    "At a sports event",
+                    "During a wedding or festival",
+                    "At a political debate",
+                    "In a theater play"
+                  ],
+                  "answer": "During a wedding or festival",
+                  "explanation": "Giddha is most commonly performed during cultural celebrations such as weddings and festivals, adding to the festive mood."
+                },
+                {
+                  "question": "Which of the following is a traditional Giddha dance move?",
+                  "options": [
+                    "Handstand twirls",
+                    "Whirling dervish spins",
+                    "Hand claps and body shakes",
+                    "Slow hip movements"
+                  ],
+                  "answer": "Hand claps and body shakes",
+                  "explanation": "Hand claps and body shakes are essential elements of the Giddha dance style, adding to the rhythmic energy of the performance."
+                },
+                {
+                  "question": "What do the lyrics of Boliyan songs often focus on?",
+                  "options": [
+                    "Religious themes",
+                    "Everyday social life and playful interactions",
+                    "Political issues",
+                    "Life after death"
+                  ],
+                  "answer": "Everyday social life and playful interactions",
+                  "explanation": "Boliyan songs focus on lighthearted, everyday social interactions, often humorously describing life and relationships in the community."
+                },
+                {
+                  "question": "Which of these is an essential accessory during a Giddha performance?",
+                  "options": [
+                    "Tinsel headbands",
+                    "Colorful dupatta",
+                    "Silver bangles",
+                    "Feathered headdresses"
+                  ],
+                  "answer": "Colorful dupatta",
+                  "explanation": "The dupatta is a key accessory in Giddha, often draped over the head or shoulders, contributing to the vibrant and festive appearance of the dancers."
+                },
+                {
+                  "question": "How do Giddha dancers typically create rhythm during the performance?",
+                  "options": [
+                    "By stomping their feet",
+                    "By clapping their hands and striking their thighs",
+                    "By tapping the floor with sticks",
+                    "By using finger snaps"
+                  ],
+                  "answer": "By clapping their hands and striking their thighs",
+                  "explanation": "Giddha dancers create rhythm by clapping their hands, striking their thighs, and sometimes tapping the floor, helping to keep the tempo of the music."
+                },
+                {
+                  "question": "Giddha dances are most often performed in groups. What is the significance of this?",
+                  "options": [
+                    "To showcase individual talent",
+                    "To highlight the unity and cooperation of the community",
+                    "To compete with other dancers",
+                    "To express personal emotions"
+                  ],
+                  "answer": "To highlight the unity and cooperation of the community",
+                  "explanation": "Giddha is a communal dance that emphasizes unity and cooperation, and is often performed in groups to symbolize the strength of the community."
+                },
+                {
+                  "question": "True or False: The dance steps of Giddha are always the same and never vary.",
+                  "options": [
+                    "True",
+                    "False"
+                  ],
+                  "answer": "False",
+                  "explanation": "While there are traditional steps in Giddha, the dance can vary with different performances, adding unique movements and variations depending on the occasion."
+                }
+              ]
+              }
           ]
         }
         ]
@@ -2404,7 +3894,8 @@
                       "answer": "False",
                       "explanation": "Bharatanatyam dancers wear formal, colorful silk sarees, and traditional jewelry to enhance their performances."
                     }
-                  ] },
+                  ] 
+                },
                   {
                     "setNumber": 3,
                     "questions":
@@ -2628,9 +4119,704 @@
                           "explanation": "Bharatanatyam's purpose is to express devotion through dance, music, and emotions."
                         }
                       ]
-                     }
-                     
+       }, 
+       {
+        "setNumber": 5,
+        "questions":
+        [
+          {
+            "question": "Which of the following is NOT a key element of Bharatanatyam?",
+            "options": [
+              "Bhava",
+              "Raga",
+              "Tala",
+              "Samba"
+            ],
+            "answer": "Samba",
+            "explanation": "Bhava (expression), Raga (melody), and Tala (rhythm) are essential elements of Bharatanatyam, while Samba is a different dance style."
+          },
+          {
+            "question": "Which part of the body is crucial for Bharatanatyam's expression?",
+            "options": [
+              "Eyes and face",
+              "Hands and feet",
+              "Legs and torso",
+              "Shoulders"
+            ],
+            "answer": "Eyes and face",
+            "explanation": "Bharatanatyam heavily relies on facial expressions and eye movements to convey emotions and stories."
+          },
+          {
+            "question": "What is the main purpose of mudras in Bharatanatyam?",
+            "options": [
+              "To make dance movements faster",
+              "To express emotions and stories",
+              "To play music",
+              "To control rhythm"
+            ],
+            "answer": "To express emotions and stories",
+            "explanation": "Mudras are hand gestures used to convey feelings and tell stories during the performance."
+          },
+          {
+            "question": "Bharatanatyam is performed with which type of music?",
+            "options": [
+              "Folk music",
+              "Classical Carnatic music",
+              "Pop music",
+              "Jazz"
+            ],
+            "answer": "Classical Carnatic music",
+            "explanation": "The music used in Bharatanatyam is classical Carnatic music, which includes various instruments like the Mridangam."
+          },
+          {
+            "question": "Bharatanatyam's performances are often based on which type of stories?",
+            "options": [
+              "Mythological tales",
+              "Modern love stories",
+              "Fairy tales",
+              "Fables"
+            ],
+            "answer": "Mythological tales",
+            "explanation": "Many Bharatanatyam performances are based on stories from Hindu mythology."
+          },
+          {
+            "question": "Which dance form is associated with sharp and graceful movements of hands, feet, and eyes?",
+            "options": [
+              "Kathak",
+              "Bharatanatyam",
+              "Kuchipudi",
+              "Odissi"
+            ],
+            "answer": "Bharatanatyam",
+            "explanation": "Bharatanatyam involves sharp and graceful movements of hands, feet, and eyes, each having a distinct meaning."
+          },
+          {
+            "question": "What is the traditional attire worn in Bharatanatyam?",
+            "options": [
+              "Lehenga and choli",
+              "Saree with pleats for easy movement",
+              "Salwar kameez",
+              "T-shirt and skirt"
+            ],
+            "answer": "Saree with pleats for easy movement",
+            "explanation": "Bharatanatyam dancers wear bright, colorful silk sarees with pleats for easy movement."
+          },
+          {
+            "question": "Which instrument is used for melody in Bharatanatyam?",
+            "options": [
+              "Veena",
+              "Guitar",
+              "Trumpet",
+              "Drums"
+            ],
+            "answer": "Veena",
+            "explanation": "The Veena is used in Carnatic music for melody during Bharatanatyam performances."
+          },
+          {
+            "question": "Bharatanatyam performances express devotion to which aspect?",
+            "options": [
+              "The government",
+              "The performer",
+              "The divine",
+              "The audience"
+            ],
+            "answer": "The divine",
+            "explanation": "Bharatanatyam performances are expressions of devotion to the divine, celebrating spirituality."
+          },
+          {
+            "question": "What makes Bharatanatyam a challenging dance form?",
+            "options": [
+              "Use of modern music",
+              "Intricate footwork and facial expressions",
+              "Simple movements",
+              "Easy choreography"
+            ],
+            "answer": "Intricate footwork and facial expressions",
+            "explanation": "Bharatanatyam is challenging because of its complex footwork and the use of detailed facial expressions and mudras."
+          }
+        ]
+        },
+        {
+          "setNumber": 6,
+          "questions":
+          [
+            {
+              "question": "Which hand gesture in Bharatanatyam is known as 'Pataka'?",
+              "options": [
+                "Open hand with palm facing downward",
+                "Both hands held in a fist",
+                "A bent wrist with fingers pointing upward",
+                "One hand placed on the head"
+              ],
+              "answer": "Open hand with palm facing downward",
+              "explanation": "Pataka is a basic hand gesture used in Bharatanatyam to convey different meanings, like peace or offering."
+            },
+            {
+              "question": "Which classical dance form is considered a predecessor to Bharatanatyam?",
+              "options": [
+                "Kuchipudi",
+                "Odissi",
+                "Natya Shastra",
+                "Sattriya"
+              ],
+              "answer": "Natya Shastra",
+              "explanation": "The Natya Shastra, written by Bharata Muni, is considered the foundation of Bharatanatyam and other classical Indian dance forms."
+            },
+            {
+              "question": "What is the primary focus of 'Bhava' in Bharatanatyam?",
+              "options": [
+                "Rhythm",
+                "Hand gestures",
+                "Emotional expression",
+                "Stage lighting"
+              ],
+              "answer": "Emotional expression",
+              "explanation": "'Bhava' refers to the emotional expression conveyed by the dancer through facial expressions, gestures, and movements."
+            },
+            {
+              "question": "What does the term 'Adavu' refer to in Bharatanatyam?",
+              "options": [
+                "A type of costume",
+                "A specific style of music",
+                "A basic dance step or movement",
+                "A rhythm cycle"
+              ],
+              "answer": "A basic dance step or movement",
+              "explanation": "'Adavu' refers to the basic units of movement in Bharatanatyam, forming the building blocks of choreography."
+            },
+            {
+              "question": "Which deity is often portrayed in the 'Tillana' section of Bharatanatyam performances?",
+              "options": [
+                "Lord Vishnu",
+                "Goddess Lakshmi",
+                "Lord Shiva",
+                "Goddess Saraswati"
+              ],
+              "answer": "Lord Shiva",
+              "explanation": "In many performances, the 'Tillana' concludes with a representation of Lord Shiva in his cosmic dance."
+            },
+            {
+              "question": "What is the purpose of the 'Varnam' in a Bharatanatyam performance?",
+              "options": [
+                "To introduce the dancer",
+                "To conclude the performance",
+                "To showcase the dancer's skill in both technical and expressive elements",
+                "To show off the music"
+              ],
+              "answer": "To showcase the dancer's skill in both technical and expressive elements",
+              "explanation": "The Varnam is a detailed and complex piece of Bharatanatyam that demonstrates both the dancer's technical ability and emotional expression."
+            },
+            {
+              "question": "Which of the following instruments is commonly used in Bharatanatyam performances?",
+              "options": [
+                "Violin",
+                "Tabla",
+                "Mridangam",
+                "Guitar"
+              ],
+              "answer": "Mridangam",
+              "explanation": "The Mridangam, a type of drum, is commonly used in Bharatanatyam performances for rhythm and tempo."
+            },
+            {
+              "question": "What is the significance of 'Ghungroos' in Bharatanatyam?",
+              "options": [
+                "To mark time with sound",
+                "To indicate speed changes",
+                "To make the dancer's movements more graceful",
+                "To decorate the dancer's legs"
+              ],
+              "answer": "To mark time with sound",
+              "explanation": "'Ghungroos' are anklets with small bells worn by Bharatanatyam dancers, producing a rhythmic sound that highlights the dancer's footwork."
+            },
+            {
+              "question": "The 'Alarippu' in Bharatanatyam serves what purpose?",
+              "options": [
+                "To introduce the dance performance and warm up the body",
+                "To express a narrative",
+                "To show the rhythm of the music",
+                "To end the performance"
+              ],
+              "answer": "To introduce the dance performance and warm up the body",
+              "explanation": "'Alarippu' is the opening dance item in Bharatanatyam, performed to warm up the dancer and establish rhythm."
+            },
+            {
+              "question": "What is a key feature of Bharatanatyam costumes?",
+              "options": [
+                "They are made of silk and embellished with gold",
+                "They are worn only by male dancers",
+                "They are inspired by Western fashion",
+                "They are simple and practical"
+              ],
+              "answer": "They are made of silk and embellished with gold",
+              "explanation": "Bharatanatyam costumes are traditionally made of silk, often richly embroidered and adorned with jewelry."
+            }
+          ]          
+        },
+          {
+            "setNumber": 7,
+            "questions":
+            [
+              {
+                "question": "What does the 'Jathi' represent in Bharatanatyam?",
+                "options": [
+                  "A rhythm cycle",
+                  "A dance style",
+                  "A hand gesture",
+                  "A piece of music"
+                ],
+                "answer": "A rhythm cycle",
+                "explanation": "'Jathi' is a rhythmic pattern or cycle used in Bharatanatyam to structure movements."
+              },
+              {
+                "question": "What is the origin of the name 'Bharatanatyam'?",
+                "options": [
+                  "Derived from the word 'Bharati', meaning the divine",
+                  "Derived from 'Bharata', the sage in Hindu mythology",
+                  "Named after a famous dancer named Bharati",
+                  "Named after a specific temple in Tamil Nadu"
+                ],
+                "answer": "Derived from 'Bharata', the sage in Hindu mythology",
+                "explanation": "The name 'Bharatanatyam' comes from 'Bharata', the sage credited with composing the Natya Shastra, the foundation of Indian classical dance."
+              },
+              {
+                "question": "Which of these is a primary focus of Bharatanatyam performances?",
+                "options": [
+                  "Dialogue and speech",
+                  "Narrative storytelling through dance",
+                  "Elaborate set designs",
+                  "Large orchestras"
+                ],
+                "answer": "Narrative storytelling through dance",
+                "explanation": "Bharatanatyam performances focus on storytelling through expressive dance, mudras, and facial expressions."
+              },
+              {
+                "question": "The 'Alarippu' is performed to express which emotion?",
+                "options": [
+                  "Devotion",
+                  "Happiness",
+                  "Energy and readiness",
+                  "Anger"
+                ],
+                "answer": "Energy and readiness",
+                "explanation": "The 'Alarippu' is a warm-up piece, expressing the energy and readiness of the dancer to start the performance."
+              },
+              {
+                "question": "What is the final piece in a Bharatanatyam performance called?",
+                "options": [
+                  "Tillana",
+                  "Alarippu",
+                  "Varnam",
+                  "Jathi"
+                ],
+                "answer": "Tillana",
+                "explanation": "The Tillana is the final piece in a Bharatanatyam performance, known for its lively and energetic movements."
+              },
+              {
+                "question": "What is a significant characteristic of Bharatanatyam's footwork?",
+                "options": [
+                  "Slow and graceful movements",
+                  "Fast and rhythmic patterns",
+                  "Minimal footwork",
+                  "Randomized movements"
+                ],
+                "answer": "Fast and rhythmic patterns",
+                "explanation": "Bharatanatyam features intricate and fast footwork, synchronized with the rhythm of the music."
+              },
+              {
+                "question": "In Bharatanatyam, the expression 'Shivalinga' symbolizes which god?",
+                "options": [
+                  "Vishnu",
+                  "Shiva",
+                  "Rama",
+                  "Ganesha"
+                ],
+                "answer": "Shiva",
+                "explanation": "The 'Shivalinga' represents Lord Shiva, a central deity in many Bharatanatyam performances."
+              },
+              {
+                "question": "What does the 'Tala' refer to in Bharatanatyam?",
+                "options": [
+                  "The music",
+                  "The rhythm cycle",
+                  "The dress code",
+                  "The dance floor"
+                ],
+                "answer": "The rhythm cycle",
+                "explanation": "'Tala' refers to the rhythm cycle in Bharatanatyam, which governs the timing of the dance movements."
+              },
+              {
+                "question": "Which of the following is the key focus of 'Natya' in Bharatanatyam?",
+                "options": [
+                  "Drama and storytelling",
+                  "Pure dance movements",
+                  "Footwork",
+                  "Emotional expression"
+                ],
+                "answer": "Drama and storytelling",
+                "explanation": "'Natya' focuses on storytelling and drama, using gestures, facial expressions, and emotions to communicate a narrative."
+              },
+              {
+                "question": "The famous Bharatanatyam dancer, Rukmini Devi Arundale, was also known for which of the following contributions?",
+                "options": [
+                  "Reviving classical dance",
+                  "Developing new dance styles",
+                  "Creating Bollywood dance",
+                  "Introducing modern dance movements"
+                ],
+                "answer": "Reviving classical dance",
+                "explanation": "Rukmini Devi Arundale is known for her significant role in reviving and formalizing Bharatanatyam, bringing it to the stage."
+              }
+            ]            
+          },
+          {
+            "setNumber": 8,
+            "questions":
+            [
+              {
+                "question": "What is the term used for the rhythmic patterns or beats in Bharatanatyam?",
+                "options": [
+                  "Raga",
+                  "Tala",
+                  "Jathi",
+                  "Nada"
+                ],
+                "answer": "Tala",
+                "explanation": "Tala refers to the rhythmic cycles or patterns in Bharatanatyam, providing the foundation for the dancer's footwork and movements."
+              },
+              {
+                "question": "In Bharatanatyam, what does the term 'Mudra' refer to?",
+                "options": [
+                  "The footwork pattern",
+                  "The hand gestures used to express meaning",
+                  "The facial expressions of the dancer",
+                  "The music played during the performance"
+                ],
+                "answer": "The hand gestures used to express meaning",
+                "explanation": "'Mudra' refers to hand gestures that convey specific meanings and emotions in Bharatanatyam."
+              },
+              {
+                "question": "Which of these is a traditional piece of music accompanying Bharatanatyam?",
+                "options": [
+                  "Raag Malkauns",
+                  "Thillana",
+                  "Varnam",
+                  "Jathi"
+                ],
+                "answer": "Varnam",
+                "explanation": "Varnam is a significant piece of music in Bharatanatyam, providing both a rhythmic and emotional foundation for the dancer's performance."
+              },
+              {
+                "question": "What is the symbolic gesture 'Anjali' used for in Bharatanatyam?",
+                "options": [
+                  "To express thanks or gratitude",
+                  "To represent the element of fire",
+                  "To indicate peace and calm",
+                  "To show love and devotion"
+                ],
+                "answer": "To express thanks or gratitude",
+                "explanation": "'Anjali' is a hand gesture symbolizing reverence and gratitude, often used to pay respect to deities."
+              },
+              {
+                "question": "Which of the following elements is NOT part of the Bharatanatyam costume?",
+                "options": [
+                  "Silk sari",
+                  "Ghungroos",
+                  "Gold jewelry",
+                  "Feathered headdress"
+                ],
+                "answer": "Feathered headdress",
+                "explanation": "Bharatanatyam dancers traditionally wear a silk sari, ghungroos (anklets), and gold jewelry, but feathered headdresses are not part of the traditional costume."
+              },
+              {
+                "question": "What is the role of the 'Nattuvanar' in a Bharatanatyam performance?",
+                "options": [
+                  "To play the mridangam",
+                  "To guide the dancer's rhythm and movements",
+                  "To sing the lyrics",
+                  "To lead the audience in prayer"
+                ],
+                "answer": "To guide the dancer's rhythm and movements",
+                "explanation": "The 'Nattuvanar' is the person who directs the rhythm and provides guidance for the dancer, using a cymbal to mark the beats."
+              },
+              {
+                "question": "What does 'Abhinaya' mean in Bharatanatyam?",
+                "options": [
+                  "Footwork patterns",
+                  "Facial expressions and emotional storytelling",
+                  "Hand gestures",
+                  "Dance technique and precision"
+                ],
+                "answer": "Facial expressions and emotional storytelling",
+                "explanation": "'Abhinaya' refers to the expressive aspect of Bharatanatyam, where the dancer conveys emotions and tells stories using facial expressions and gestures."
+              },
+              {
+                "question": "Which classical music instrument is primarily used for rhythm in Bharatanatyam performances?",
+                "options": [
+                  "Tabla",
+                  "Flute",
+                  "Mridangam",
+                  "Violin"
+                ],
+                "answer": "Mridangam",
+                "explanation": "The Mridangam is a drum used in Bharatanatyam performances to maintain rhythm and tempo."
+              },
+              {
+                "question": "In which region of India did Bharatanatyam originate?",
+                "options": [
+                  "Karnataka",
+                  "Kerala",
+                  "Tamil Nadu",
+                  "Andhra Pradesh"
+                ],
+                "answer": "Tamil Nadu",
+                "explanation": "Bharatanatyam originated in Tamil Nadu, particularly in the temples, where it was used for religious and devotional purposes."
+              },
+              {
+                "question": "What does the dance posture 'Aramandi' represent in Bharatanatyam?",
+                "options": [
+                  "A bending of the knees with feet turned outward",
+                  "A standing position with hands held in prayer",
+                  "A sitting position for storytelling",
+                  "A hand gesture representing devotion"
+                ],
+                "answer": "A bending of the knees with feet turned outward",
+                "explanation": "'Aramandi' is a fundamental posture in Bharatanatyam, where the knees bend outward and the feet are placed in a wide stance to stabilize the body."
+              }
+            ]
+            },
+            {
+              "setNumber": 9,
+              "questions":
+              [
+                {
+                  "question": "Which of the following is a key feature of the Bharatanatyam style?",
+                  "options": [
+                    "Focus on hand gestures",
+                    "Focus on facial expressions and emotions",
+                    "Emphasis on free movement and improvisation",
+                    "Use of large props on stage"
+                  ],
+                  "answer": "Focus on facial expressions and emotions",
+                  "explanation": "Bharatanatyam emphasizes the use of facial expressions and emotions to convey the story and connect with the audience."
+                },
+                {
+                  "question": "Which dance style combines elements of Bharatanatyam with storytelling from the folk traditions of Andhra Pradesh?",
+                  "options": [
+                    "Kuchipudi",
+                    "Odissi",
+                    "Kathakali",
+                    "Kathak"
+                  ],
+                  "answer": "Kuchipudi",
+                  "explanation": "Kuchipudi is a classical dance style from Andhra Pradesh that combines elements of Bharatanatyam with folk storytelling traditions."
+                },
+                {
+                  "question": "What is the term for a Bharatanatyam performance where the dancer is accompanied by a live orchestra?",
+                  "options": [
+                    "Rangapravesha",
+                    "Arangetram",
+                    "Natya Shastra",
+                    "Rasa"
+                  ],
+                  "answer": "Arangetram",
+                  "explanation": "'Arangetram' is the debut performance of a Bharatanatyam dancer, typically accompanied by a live orchestra and marking the completion of their training."
+                },
+                {
+                  "question": "What is the name of the seated dance pose in Bharatanatyam?",
+                  "options": [
+                    "Samapadam",
+                    "Padmasana",
+                    "Aramandi",
+                    "Padhmasana"
+                  ],
+                  "answer": "Samapadam",
+                  "explanation": "Samapadam is a seated position in Bharatanatyam, where the dancer sits in a controlled, symmetrical manner."
+                },
+                {
+                  "question": "Which element of Bharatanatyam incorporates detailed footwork and rhythmic patterns?",
+                  "options": [
+                    "Nritta",
+                    "Abhinaya",
+                    "Adavu",
+                    "Tala"
+                  ],
+                  "answer": "Nritta",
+                  "explanation": "'Nritta' refers to the pure dance movements that emphasize intricate footwork and rhythmic patterns."
+                },
+                {
+                  "question": "What does 'Rasa' signify in Bharatanatyam?",
+                  "options": [
+                    "The spiritual aspect of dance",
+                    "The emotional essence or flavor of the performance",
+                    "The rhythm cycle",
+                    "The dramatic interpretation"
+                  ],
+                  "answer": "The emotional essence or flavor of the performance",
+                  "explanation": "'Rasa' is the aesthetic and emotional flavor conveyed by the dancer's expressions, gestures, and movements."
+                },
+                {
+                  "question": "Which instrument is used to provide melodic accompaniment during a Bharatanatyam performance?",
+                  "options": [
+                    "Flute",
+                    "Violin",
+                    "Mridangam",
+                    "Sitar"
+                  ],
+                  "answer": "Violin",
+                  "explanation": "The violin is typically used to provide melodic accompaniment during Bharatanatyam performances, alongside the mridangam."
+                },
+                {
+                  "question": "The 'Padam' in Bharatanatyam refers to which of the following?",
+                  "options": [
+                    "A dance style",
+                    "A song that expresses devotion and love",
+                    "A rhythmic footwork pattern",
+                    "A hand gesture used in storytelling"
+                  ],
+                  "answer": "A song that expresses devotion and love",
+                  "explanation": "The 'Padam' is a slow and expressive piece of music in Bharatanatyam, often used to convey emotions such as devotion and longing."
+                },
+                {
+                  "question": "Which famous dancer is considered one of the leading proponents of Bharatanatyam in the 20th century?",
+                  "options": [
+                    "Birju Maharaj",
+                    "Rukmini Devi Arundale",
+                    "Uday Shankar",
+                    "Sonal Mansingh"
+                  ],
+                  "answer": "Rukmini Devi Arundale",
+                  "explanation": "Rukmini Devi Arundale is one of the foremost figures who played a key role in reviving and formalizing Bharatanatyam."
+                },
+                {
+                  "question": "What is the 'Tala' used for in Bharatanatyam?",
+                  "options": [
+                    "To indicate the story",
+                    "To mark the rhythm and beats in music",
+                    "To decide the sequence of the dance steps",
+                    "To synchronize the dancer's movements with music"
+                  ],
+                  "answer": "To mark the rhythm and beats in music",
+                  "explanation": "'Tala' refers to the rhythmic cycle that structures the dance and aligns the dancer’s movements with the music."
+                }
               ]
+              },
+              {
+                "setNumber": 10,
+                "questions":
+                [
+                  {
+                    "question": "What is the significance of the 'Guru' in Bharatanatyam?",
+                    "options": [
+                      "To provide costumes and makeup",
+                      "To instruct and guide students in dance",
+                      "To compose music for the dance",
+                      "To handle the lighting during performances"
+                    ],
+                    "answer": "To instruct and guide students in dance",
+                    "explanation": "The 'Guru' is an essential figure in Bharatanatyam, providing guidance, teaching the techniques, and passing on the traditions of the dance form."
+                  },
+                  {
+                    "question": "What is the main focus of the Bharatanatyam style called 'Nritta'?",
+                    "options": [
+                      "Facial expressions",
+                      "Hand gestures",
+                      "Pure dance movements and rhythms",
+                      "Storytelling through words"
+                    ],
+                    "answer": "Pure dance movements and rhythms",
+                    "explanation": "'Nritta' focuses on the purely technical aspect of Bharatanatyam, which includes intricate movements, footwork, and rhythm without any narrative."
+                  },
+                  {
+                    "question": "Which deity is most often honored through Bharatanatyam performances?",
+                    "options": [
+                      "Vishnu",
+                      "Lakshmi",
+                      "Shiva",
+                      "Saraswati"
+                    ],
+                    "answer": "Shiva",
+                    "explanation": "Many Bharatanatyam performances are dedicated to Lord Shiva, especially his dance forms like Nataraja, which are integral to the style."
+                  },
+                  {
+                    "question": "What is the 'Jathi' in Bharatanatyam?",
+                    "options": [
+                      "A form of devotional song",
+                      "A rhythmic sequence of steps",
+                      "A kind of folk dance",
+                      "A facial expression"
+                    ],
+                    "answer": "A rhythmic sequence of steps",
+                    "explanation": "'Jathi' refers to the specific rhythmic patterns or sequences of steps performed during the dance."
+                  },
+                  {
+                    "question": "Which of the following is an important attribute for a Bharatanatyam dancer to master?",
+                    "options": [
+                      "Flexibility",
+                      "Powerlifting",
+                      "Aerobic endurance",
+                      "Foot strength and control"
+                    ],
+                    "answer": "Foot strength and control",
+                    "explanation": "Bharatanatyam places heavy emphasis on footwork, requiring strong and controlled movements to maintain rhythm and express emotions."
+                  },
+                  {
+                    "question": "Which of these describes the 'Alarippu' in Bharatanatyam?",
+                    "options": [
+                      "A form of rhythmic dance warm-up",
+                      "A gesture of devotion",
+                      "A type of storytelling dance",
+                      "A rhythm cycle used in performances"
+                    ],
+                    "answer": "A form of rhythmic dance warm-up",
+                    "explanation": "'Alarippu' is an introductory dance sequence used as a warm-up, focusing on rhythmic movements and preparation for the main performance."
+                  },
+                  {
+                    "question": "What does the 'Rukmini Devi Arundale' award honor in Bharatanatyam?",
+                    "options": [
+                      "Best choreographer",
+                      "Best young dancer",
+                      "Lifetime achievements in dance",
+                      "Best composer"
+                    ],
+                    "answer": "Lifetime achievements in dance",
+                    "explanation": "The Rukmini Devi Arundale award recognizes exceptional contributions to Bharatanatyam and classical dance as a whole."
+                  },
+                  {
+                    "question": "What is the term 'Arangetram' used to describe?",
+                    "options": [
+                      "The debut performance of a dancer after completing training",
+                      "A stage performance by a guest dancer",
+                      "A dance piece focused on storytelling",
+                      "A religious dance offering"
+                    ],
+                    "answer": "The debut performance of a dancer after completing training",
+                    "explanation": "'Arangetram' is the ceremonial debut performance of a Bharatanatyam student after successfully completing their formal training."
+                  },
+                  {
+                    "question": "What does 'Natya Shastra' refer to in Bharatanatyam?",
+                    "options": [
+                      "A type of dance costume",
+                      "A foundational text on the theory of performing arts",
+                      "A kind of dance step",
+                      "A type of performance music"
+                    ],
+                    "answer": "A foundational text on the theory of performing arts",
+                    "explanation": "The 'Natya Shastra' is an ancient Indian treatise on performing arts, including dance, music, and drama, forming the basis of classical dance forms like Bharatanatyam."
+                  },
+                  {
+                    "question": "What is a typical Bharatanatyam performance sequence starting with?",
+                    "options": [
+                      "The dance storytelling",
+                      "A slow, introductory piece",
+                      "An energetic and rhythmic piece",
+                      "The concluding prayer"
+                    ],
+                    "answer": "The dance storytelling",
+                    "explanation": "A typical Bharatanatyam performance starts with an introductory piece, like the 'Alarippu' or 'Varnam,' followed by dance storytelling pieces that convey emotions and narratives."
+                  }
+                ]                
+          }             
+         ]
           },
           {
             "subtopicName": "Karakattam",
@@ -3133,9 +5319,694 @@
                           "answer": "Offerings to the gods",
                           "explanation": "The decorated pots symbolize offerings to the goddess Mariamman, especially in Sakthi Karakattam."
                         }
-                      ] }
-            ]
-              }
+                      ] 
+        },
+        {
+       "setNumber" : 5,
+       "questions":
+       [
+        {
+          "question": "What type of performance is Aatta Karakattam associated with?",
+          "options": [
+            "Spiritual ceremonies",
+            "Entertainment at cultural events",
+            "Historical re-enactments",
+            "Religious rituals"
+          ],
+          "answer": "Entertainment at cultural events",
+          "explanation": "Aatta Karakattam is performed primarily for entertainment at cultural events, fairs, and festivals."
+        },
+        {
+          "question": "Which dance form features dancers balancing decorated pots on their heads?",
+          "options": [
+            "Kathakali",
+            "Karakattam",
+            "Kuchipudi",
+            "Bharatnatyam"
+          ],
+          "answer": "Karakattam",
+          "explanation": "Karakattam is known for dancers balancing decorated pots on their heads while performing intricate dance steps."
+        },
+        {
+          "question": "True or False: Karakattam performances are never held during festivals.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "answer": "False",
+          "explanation": "Karakattam is commonly performed during temple festivals, especially those dedicated to Mariamman, and also during harvest celebrations."
+        },
+        {
+          "question": "What is the purpose of the Thavil in Karakattam performances?",
+          "options": [
+            "To accompany vocal singing",
+            "To provide rhythm and energy",
+            "To create melody",
+            "To mimic the sound of animals"
+          ],
+          "answer": "To provide rhythm and energy",
+          "explanation": "The Thavil drum provides rhythm and energy during Karakattam performances, complementing other instruments and the dancers' movements."
+        },
+        {
+          "question": "What are the pots (karakam) used for in Karakattam?",
+          "options": [
+            "To store water",
+            "To balance on the dancers' heads",
+            "To serve as offerings to the gods",
+            "To make music"
+          ],
+          "answer": "To balance on the dancers' heads",
+          "explanation": "The pots (karakam) are balanced on the dancers' heads while performing the intricate movements of Karakattam."
+        },
+        {
+          "question": "What does Sakthi Karakattam symbolize?",
+          "options": [
+            "Fun and entertainment",
+            "Spiritual offering to the goddess Mariamman",
+            "The harvest season",
+            "A historical event"
+          ],
+          "answer": "Spiritual offering to the goddess Mariamman",
+          "explanation": "Sakthi Karakattam is performed as a spiritual offering to Mariamman, especially in temples during festivals."
+        },
+        {
+          "question": "Which of these costumes are typically worn by Karakattam dancers?",
+          "options": [
+            "White silk robes",
+            "Colorful sarees or dhotis",
+            "Western-style dresses",
+            "Tight-fitting leather suits"
+          ],
+          "answer": "Colorful sarees or dhotis",
+          "explanation": "Karakattam dancers wear colorful sarees or dhotis, often decorated with mirrors and bright patterns to enhance the festive look."
+        },
+        {
+          "question": "True or False: Karakattam is never performed in rural areas.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "answer": "False",
+          "explanation": "Karakattam has its roots in rural Tamil Nadu and is traditionally performed in rural areas, especially during festivals and harvest celebrations."
+        },
+        {
+          "question": "What type of music accompanies Karakattam performances?",
+          "options": [
+            "Classical Indian instrumental music",
+            "Energetic folk music with drums",
+            "Jazz music",
+            "Classical Western music"
+          ],
+          "answer": "Energetic folk music with drums",
+          "explanation": "The music accompanying Karakattam is energetic and includes drums like the Thavil and other traditional instruments to set the rhythm."
+        },
+        {
+          "question": "When is Karakattam typically performed?",
+          "options": [
+            "During winters",
+            "During temple festivals and harvest seasons",
+            "During the monsoon",
+            "In the evenings only"
+          ],
+          "answer": "During temple festivals and harvest seasons",
+          "explanation": "Karakattam is often performed during temple festivals dedicated to Mariamman, as well as during the harvest season to give thanks."
+        }
+      ]      
+        },
+        {
+          "setNumber" : 6,
+          "questions":
+          [
+            {
+              "question": "What is one key feature of Karakattam dancers' performances?",
+              "options": [
+                "They perform with fire",
+                "They balance pots on their heads",
+                "They dance with swords",
+                "They wear animal costumes"
+              ],
+              "answer": "They balance pots on their heads",
+              "explanation": "The hallmark of Karakattam performances is the balancing of pots (karakam) on the dancers' heads while they perform graceful and intricate steps."
+            },
+            {
+              "question": "What is the primary focus of Sakthi Karakattam?",
+              "options": [
+                "Entertainment",
+                "Religious devotion to Mariamman",
+                "Storytelling",
+                "Celebrating the harvest"
+              ],
+              "answer": "Religious devotion to Mariamman",
+              "explanation": "Sakthi Karakattam is performed in temples as a spiritual offering to the goddess Mariamman."
+            },
+            {
+              "question": "True or False: Karakattam involves the use of modern technology like lighting and sound effects.",
+              "options": [
+                "True",
+                "False"
+              ],
+              "answer": "False",
+              "explanation": "Karakattam relies on traditional music and live instruments such as the Thavil and Nadaswaram, with no use of modern lighting or sound technology."
+            },
+            {
+              "question": "What type of events commonly feature Karakattam performances?",
+              "options": [
+                "Weddings",
+                "Sports competitions",
+                "Temple festivals and cultural events",
+                "Political rallies"
+              ],
+              "answer": "Temple festivals and cultural events",
+              "explanation": "Karakattam is typically performed during temple festivals and cultural events, especially in rural Tamil Nadu."
+            },
+            {
+              "question": "What is one of the key instruments used in Karakattam to create rhythm?",
+              "options": [
+                "Guitar",
+                "Thavil",
+                "Flute",
+                "Violin"
+              ],
+              "answer": "Thavil",
+              "explanation": "The Thavil is a traditional drum used in Karakattam performances to set the rhythm and add energy to the dance."
+            },
+            {
+              "question": "Which of the following is a common feature of Karakattam dancers' costumes?",
+              "options": [
+                "Simple white robes",
+                "Colorful sarees and dhotis with mirrors",
+                "Heavy armor",
+                "Modern Western attire"
+              ],
+              "answer": "Colorful sarees and dhotis with mirrors",
+              "explanation": "Karakattam dancers wear bright and colorful sarees or dhotis adorned with mirrors, enhancing the festive look."
+            },
+            {
+              "question": "What do the decorated pots symbolize in Karakattam?",
+              "options": [
+                "The harvest season",
+                "A connection to nature",
+                "Offerings to the gods",
+                "Celebration of life"
+              ],
+              "answer": "Offerings to the gods",
+              "explanation": "The decorated pots used in Karakattam are symbolic offerings to the gods, especially during temple festivals."
+            },
+            {
+              "question": "True or False: Karakattam is performed to thank the gods for a good harvest.",
+              "options": [
+                "True",
+                "False"
+              ],
+              "answer": "True",
+              "explanation": "Karakattam is often performed during the harvest season to express gratitude to the gods for a successful harvest."
+            },
+            {
+              "question": "In which type of Karakattam is the focus on entertainment rather than spirituality?",
+              "options": [
+                "Sakthi Karakattam",
+                "Aatta Karakattam",
+                "Classical Karakattam",
+                "Festival Karakattam"
+              ],
+              "answer": "Aatta Karakattam",
+              "explanation": "Aatta Karakattam is performed for entertainment at cultural events and fairs, unlike Sakthi Karakattam, which is spiritual."
+            },
+            {
+              "question": "What role does the Nadaswaram play in Karakattam?",
+              "options": [
+                "Provides rhythm",
+                "Plays melody and sets the mood",
+                "Provides background vocals",
+                "Acts as a percussion instrument"
+              ],
+              "answer": "Plays melody and sets the mood",
+              "explanation": "The Nadaswaram is a wind instrument used in Karakattam to provide melody and create a spiritual and festive mood during the performance."
+            }
+          ]          
+        },
+        {
+          "setNumber" : 7,
+          "questions":
+          [
+            {
+              "question": "What is one key feature of Karakattam dancers' performances?",
+              "options": [
+                "They perform with fire",
+                "They balance pots on their heads",
+                "They dance with swords",
+                "They wear animal costumes"
+              ],
+              "answer": "They balance pots on their heads",
+              "explanation": "The hallmark of Karakattam performances is the balancing of pots (karakam) on the dancers' heads while they perform graceful and intricate steps."
+            },
+            {
+              "question": "What is the primary focus of Sakthi Karakattam?",
+              "options": [
+                "Entertainment",
+                "Religious devotion to Mariamman",
+                "Storytelling",
+                "Celebrating the harvest"
+              ],
+              "answer": "Religious devotion to Mariamman",
+              "explanation": "Sakthi Karakattam is performed in temples as a spiritual offering to the goddess Mariamman."
+            },
+            {
+              "question": "True or False: Karakattam involves the use of modern technology like lighting and sound effects.",
+              "options": [
+                "True",
+                "False"
+              ],
+              "answer": "False",
+              "explanation": "Karakattam relies on traditional music and live instruments such as the Thavil and Nadaswaram, with no use of modern lighting or sound technology."
+            },
+            {
+              "question": "What type of events commonly feature Karakattam performances?",
+              "options": [
+                "Weddings",
+                "Sports competitions",
+                "Temple festivals and cultural events",
+                "Political rallies"
+              ],
+              "answer": "Temple festivals and cultural events",
+              "explanation": "Karakattam is typically performed during temple festivals and cultural events, especially in rural Tamil Nadu."
+            },
+            {
+              "question": "What is one of the key instruments used in Karakattam to create rhythm?",
+              "options": [
+                "Guitar",
+                "Thavil",
+                "Flute",
+                "Violin"
+              ],
+              "answer": "Thavil",
+              "explanation": "The Thavil is a traditional drum used in Karakattam performances to set the rhythm and add energy to the dance."
+            },
+            {
+              "question": "Which of the following is a common feature of Karakattam dancers' costumes?",
+              "options": [
+                "Simple white robes",
+                "Colorful sarees and dhotis with mirrors",
+                "Heavy armor",
+                "Modern Western attire"
+              ],
+              "answer": "Colorful sarees and dhotis with mirrors",
+              "explanation": "Karakattam dancers wear bright and colorful sarees or dhotis adorned with mirrors, enhancing the festive look."
+            },
+            {
+              "question": "What do the decorated pots symbolize in Karakattam?",
+              "options": [
+                "The harvest season",
+                "A connection to nature",
+                "Offerings to the gods",
+                "Celebration of life"
+              ],
+              "answer": "Offerings to the gods",
+              "explanation": "The decorated pots used in Karakattam are symbolic offerings to the gods, especially during temple festivals."
+            },
+            {
+              "question": "True or False: Karakattam is performed to thank the gods for a good harvest.",
+              "options": [
+                "True",
+                "False"
+              ],
+              "answer": "True",
+              "explanation": "Karakattam is often performed during the harvest season to express gratitude to the gods for a successful harvest."
+            },
+            {
+              "question": "In which type of Karakattam is the focus on entertainment rather than spirituality?",
+              "options": [
+                "Sakthi Karakattam",
+                "Aatta Karakattam",
+                "Classical Karakattam",
+                "Festival Karakattam"
+              ],
+              "answer": "Aatta Karakattam",
+              "explanation": "Aatta Karakattam is performed for entertainment at cultural events and fairs, unlike Sakthi Karakattam, which is spiritual."
+            },
+            {
+              "question": "What role does the Nadaswaram play in Karakattam?",
+              "options": [
+                "Provides rhythm",
+                "Plays melody and sets the mood",
+                "Provides background vocals",
+                "Acts as a percussion instrument"
+              ],
+              "answer": "Plays melody and sets the mood",
+              "explanation": "The Nadaswaram is a wind instrument used in Karakattam to provide melody and create a spiritual and festive mood during the performance."
+            }
+          ]          
+         },
+         {
+          "setNumber" : 8,
+          "questions":
+          [
+            {
+              "question": "How does Karakattam contribute to the local culture in Tamil Nadu?",
+              "options": [
+                "Promotes social awareness",
+                "Teaches ancient dance techniques",
+                "Celebrates agricultural prosperity",
+                "Promotes modern dance trends"
+              ],
+              "answer": "Celebrates agricultural prosperity",
+              "explanation": "Karakattam celebrates agricultural prosperity, often performed during harvest festivals as a way of thanking the gods for a good harvest."
+            },
+            {
+              "question": "What is often seen in the costumes of Karakattam dancers?",
+              "options": [
+                "Simple tunics",
+                "Elaborate headpieces and jewelry",
+                "Loose skirts",
+                "Long flowing capes"
+              ],
+              "answer": "Elaborate headpieces and jewelry",
+              "explanation": "Dancers wear elaborate jewelry, anklets, and headpieces to complement their vibrant costumes and enhance the festive look."
+            },
+            {
+              "question": "What is the main function of the Nadaswaram in Karakattam performances?",
+              "options": [
+                "To provide rhythm to the dance",
+                "To create melodies for the dancers",
+                "To announce the start of the performance",
+                "To serve as a drum for beats"
+              ],
+              "answer": "To create melodies for the dancers",
+              "explanation": "The Nadaswaram, a traditional wind instrument, creates melodic tunes that complement the dance movements and add to the spiritual ambiance of Karakattam."
+            },
+            {
+              "question": "Which of these dance features is common in Karakattam performances?",
+              "options": [
+                "Foot stamping",
+                "Head balancing with pots",
+                "Jumping through hoops",
+                "Acrobatic aerial stunts"
+              ],
+              "answer": "Head balancing with pots",
+              "explanation": "One of the most unique features of Karakattam is the dancer's ability to balance a pot on their head while performing various dance steps."
+            },
+            {
+              "question": "In Karakattam, which of the following items is often used to decorate the pots?",
+              "options": [
+                "Gold",
+                "Flowers and beads",
+                "Paint and cloth",
+                "Sand and stones"
+              ],
+              "answer": "Flowers and beads",
+              "explanation": "The pots are decorated with vibrant flowers, beads, and intricate designs, making them visually appealing and symbolically significant in the performance."
+            },
+            {
+              "question": "What does the dance style Aatta Karakattam represent?",
+              "options": [
+                "A divine offering",
+                "A storytelling tradition",
+                "A playful celebration",
+                "A religious ritual"
+              ],
+              "answer": "A playful celebration",
+              "explanation": "Aatta Karakattam is a playful and energetic form of the dance, typically performed during festivals and fairs for entertainment."
+            },
+            {
+              "question": "What do dancers express through their facial expressions in Karakattam?",
+              "options": [
+                "Happiness and devotion",
+                "Sadness and longing",
+                "Anger and frustration",
+                "Surprise and excitement"
+              ],
+              "answer": "Happiness and devotion",
+              "explanation": "Dancers use their facial expressions to convey a sense of devotion and joy, reflecting the spiritual and celebratory nature of the performance."
+            },
+            {
+              "question": "When was Karakattam believed to have originated?",
+              "options": [
+                "Ancient Egypt",
+                "During the Mughal empire",
+                "In rural Tamil Nadu",
+                "In classical dance schools"
+              ],
+              "answer": "In rural Tamil Nadu",
+              "explanation": "Karakattam originated in rural Tamil Nadu, where it was performed to celebrate the harvest and offer thanks to the goddess Mariamman."
+            },
+            {
+              "question": "Which goddess is honored in Sakthi Karakattam performances?",
+              "options": [
+                "Saraswati",
+                "Lakshmi",
+                "Mariamman",
+                "Durga"
+              ],
+              "answer": "Mariamman",
+              "explanation": "Sakthi Karakattam is performed as a spiritual offering to the goddess Mariamman, who is associated with health, prosperity, and protection from diseases."
+            },
+            {
+              "question": "What makes Karakattam a unique dance form?",
+              "options": [
+                "Use of a stage",
+                "Balancing a decorated pot on the head",
+                "Solo performances only",
+                "Minimal movement"
+              ],
+              "answer": "Balancing a decorated pot on the head",
+              "explanation": "The unique aspect of Karakattam is the balance of a decorated pot on the dancer's head while performing intricate and graceful dance movements."
+            }
+          ]          
+      },
+      {
+        "setNumber" : 9,
+        "questions":
+        [
+          {
+            "question": "Which deity is specifically worshiped during the performance of Karakattam?",
+            "options": [
+              "Vishnu",
+              "Shiva",
+              "Mariamman",
+              "Brahma"
+            ],
+            "answer": "Mariamman",
+            "explanation": "Karakattam is performed as an offering to goddess Mariamman, the deity associated with health, rain, and fertility in Tamil Nadu."
+          },
+          {
+            "question": "What is the primary element used in Karakattam to enhance the performance's visual appeal?",
+            "options": [
+              "Colorful ribbons",
+              "Decorative pots",
+              "Light effects",
+              "Heavy costumes"
+            ],
+            "answer": "Decorative pots",
+            "explanation": "The pots used in Karakattam are brightly decorated, often with flowers, beads, and intricate patterns, making them a significant visual element in the dance."
+          },
+          {
+            "question": "In what type of events is Karakattam most commonly performed?",
+            "options": [
+              "Weddings",
+              "Religious and temple festivals",
+              "National holidays",
+              "Community fairs"
+            ],
+            "answer": "Religious and temple festivals",
+            "explanation": "Karakattam is typically performed during religious festivals, particularly those honoring goddess Mariamman, in Tamil Nadu."
+          },
+          {
+            "question": "What is the primary goal of a Karakattam dancer during a performance?",
+            "options": [
+              "To entertain a large audience",
+              "To showcase acrobatic skills",
+              "To honor and appease the deity",
+              "To display rhythmic precision"
+            ],
+            "answer": "To honor and appease the deity",
+            "explanation": "The primary goal of Karakattam is devotional, aimed at honoring the goddess and seeking her blessings, particularly for health and prosperity."
+          },
+          {
+            "question": "What is a key characteristic of Karakattam dance movements?",
+            "options": [
+              "High-energy jumps and flips",
+              "Slow and meditative movements",
+              "Balancing intricate steps while holding a pot",
+              "Full-body floor work"
+            ],
+            "answer": "Balancing intricate steps while holding a pot",
+            "explanation": "A key feature of Karakattam is the dancer's ability to balance a decorated pot on their head while performing intricate and graceful steps."
+          },
+          {
+            "question": "How does the music in Karakattam performances enhance the dance?",
+            "options": [
+              "It dictates the pace of the movements",
+              "It is purely instrumental without vocals",
+              "It accompanies the rhythm and movement of the dance",
+              "It is used to signal the end of the performance"
+            ],
+            "answer": "It accompanies the rhythm and movement of the dance",
+            "explanation": "The music, often including instruments like the Nadaswaram and Thavil, enhances the rhythm of the dance, guiding the dancers through their steps."
+          },
+          {
+            "question": "What is often the emotional tone of a Karakattam performance?",
+            "options": [
+              "Melancholic and slow",
+              "Joyful and devotional",
+              "Aggressive and bold",
+              "Suspenseful and dramatic"
+            ],
+            "answer": "Joyful and devotional",
+            "explanation": "The tone of Karakattam is typically joyful and devotional, with the dancer expressing reverence and joy through movements dedicated to the goddess."
+          },
+          {
+            "question": "What is the significance of the headgear in Karakattam?",
+            "options": [
+              "It represents the dancer's family heritage",
+              "It is purely decorative with no meaning",
+              "It symbolizes the dancer's connection to the goddess",
+              "It is used to cover the dancer’s hair"
+            ],
+            "answer": "It symbolizes the dancer's connection to the goddess",
+            "explanation": "The headgear in Karakattam is an important part of the dancer’s costume, symbolizing their connection to the divine and enhancing the spiritual nature of the performance."
+          },
+          {
+            "question": "What is a common practice before performing Karakattam?",
+            "options": [
+              "Performing rituals to purify the space",
+              "Wearing special makeup and body paint",
+              "Learning the moves through modern techniques",
+              "Collecting water from a holy river"
+            ],
+            "answer": "Performing rituals to purify the space",
+            "explanation": "Before performing Karakattam, dancers and performers often conduct rituals to purify the space and invoke divine blessings, ensuring the performance's success."
+          },
+          {
+            "question": "How does Karakattam contribute to Tamil culture?",
+            "options": [
+              "It teaches the history of Tamil kings",
+              "It celebrates the agricultural and spiritual practices",
+              "It is a form of street entertainment for tourists",
+              "It is an expression of martial arts heritage"
+            ],
+            "answer": "It celebrates the agricultural and spiritual practices",
+            "explanation": "Karakattam celebrates both agricultural prosperity and spiritual devotion, reflecting the deep connection between rural Tamil culture, spirituality, and nature."
+          }
+        ]        
+         },
+         {
+          "setNumber" : 10,
+          "questions":
+          [
+            {
+              "question": "Which traditional musical instrument is frequently used during Karakattam performances?",
+              "options": [
+                "Tabla",
+                "Nadaswaram",
+                "Violin",
+                "Guitar"
+              ],
+              "answer": "Nadaswaram",
+              "explanation": "The Nadaswaram, a traditional wind instrument, is often played during Karakattam to accompany the dance and create a melodious atmosphere."
+            },
+            {
+              "question": "What is one of the challenges dancers face in Karakattam?",
+              "options": [
+                "Performing without any audience",
+                "Maintaining perfect balance of the pot",
+                "Dancing to non-traditional music",
+                "Speaking in multiple languages"
+              ],
+              "answer": "Maintaining perfect balance of the pot",
+              "explanation": "Balancing the pot on the head while executing dance steps is one of the most challenging aspects of Karakattam and requires significant skill and concentration."
+            },
+            {
+              "question": "Which festival is Karakattam most associated with?",
+              "options": [
+                "Deepavali",
+                "Pongal",
+                "Onam",
+                "Diwali"
+              ],
+              "answer": "Pongal",
+              "explanation": "Karakattam is especially popular during the Pongal festival, which celebrates the harvest season and is deeply rooted in Tamil agricultural traditions."
+            },
+            {
+              "question": "What is the symbolic meaning of the pot in Karakattam?",
+              "options": [
+                "It symbolizes strength",
+                "It represents a gift to the audience",
+                "It is a vessel for water during rituals",
+                "It symbolizes offerings to the goddess Mariamman"
+              ],
+              "answer": "It symbolizes offerings to the goddess Mariamman",
+              "explanation": "The pot, often adorned with decorations, symbolizes offerings to the goddess Mariamman, embodying the devotion and spirituality of the performance."
+            },
+            {
+              "question": "How is the tempo of a Karakattam performance typically structured?",
+              "options": [
+                "Fast-paced throughout",
+                "Slow and meditative throughout",
+                "Starts slow, then speeds up to a lively pace",
+                "Consistently medium-paced"
+              ],
+              "answer": "Starts slow, then speeds up to a lively pace",
+              "explanation": "Karakattam performances typically begin with slower, graceful movements and gradually increase in tempo, culminating in more energetic steps."
+            },
+            {
+              "question": "Which aspect of Karakattam draws the largest audience?",
+              "options": [
+                "The spiritual devotion expressed through dance",
+                "The high-speed acrobatics",
+                "The use of modern technology in performances",
+                "The loud and powerful music"
+              ],
+              "answer": "The spiritual devotion expressed through dance",
+              "explanation": "The devotional aspect of Karakattam, where the dancer expresses reverence and respect for the goddess, is a central draw for audiences."
+            },
+            {
+              "question": "What traditional footwear is worn by dancers during Karakattam?",
+              "options": [
+                "Barefoot",
+                "Wooden sandals",
+                "Leather boots",
+                "Soft slippers"
+              ],
+              "answer": "Barefoot",
+              "explanation": "Dancers traditionally perform barefoot during Karakattam to stay grounded and connect more closely with the spiritual and cultural significance of the dance."
+            },
+            {
+              "question": "What does the rhythmic beat of the Thavil instrument contribute to during Karakattam?",
+              "options": [
+                "The tempo of the dance",
+                "The style of costumes",
+                "The dialogue spoken by the performers",
+                "The food served at the event"
+              ],
+              "answer": "The tempo of the dance",
+              "explanation": "The Thavil, a traditional drum, provides the rhythmic base that guides the dancers’ movements and maintains the tempo throughout the performance."
+            },
+            {
+              "question": "Why is the Aatta Karakattam dance form significant?",
+              "options": [
+                "It is a ritual dance performed for kings",
+                "It is performed solely for entertainment in villages",
+                "It celebrates the harvest and agricultural traditions",
+                "It is a spiritual offering performed only in temples"
+              ],
+              "answer": "It is performed solely for entertainment in villages",
+              "explanation": "Aatta Karakattam is a form of the dance performed primarily for entertainment during village festivals and fairs, highlighting joy and celebration."
+            },
+            {
+              "question": "What is the most common location for Karakattam performances?",
+              "options": [
+                "Movie theaters",
+                "Outdoor stages in villages",
+                "Urban shopping malls",
+                "Private homes"
+              ],
+              "answer": "Outdoor stages in villages",
+              "explanation": "Karakattam performances are often held on outdoor stages during festivals in rural villages, especially during events like Pongal and temple festivals."
+            }
+          ]          
+           }
+            ]          
+         }
                          
         ]
       },

@@ -43,6 +43,7 @@ export const localised = {
 
   score: (score: number, totalQuestions: number, badge: string) =>
     `🌟 Wow! You did an awesome job.  **${score}** out of **${totalQuestions}**.\n\n💪 Congratulations! You earned ${badge} badge! `,
-  InformationMessage: (username: string) => `🌟 Hello ${username} !\nYou will get total 10 questions. \n For every correct answer, you earn 1 mark. Don’t worry—no marks will be deducted for wrong answers. 😊\n when you complete the quiz . You  will get the rewarded based on your scores.\n These are the 🏅 Scoring Rewards:\n- Gold 🥇: Total score = 10\n- Silver 🥈: Total score ≥ 7\n- Bronze 🥉: Total score ≥ 5\n\n✨ Complete the quiz to discover your final score! Keep it up—you’ve got this! 💪`,
+  InformationMessage: (username: string) => `Hello ${username} 🎯 Welcome to the Quiz! \n You’ll answer 10 questions—earn 1 point for each correct answer. No penalties for wrong answers! 😊 \n 🏆 Rewards: \n 🥇 Gold: Score 10 \n 🥈 Silver: Score 7–9 \n 🥉 Bronze: Score 5–6 \n Ready to test your knowledge? Let’s go! 🚀
+`,
 
 };

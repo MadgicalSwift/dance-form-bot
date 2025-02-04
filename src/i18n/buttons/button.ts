@@ -146,6 +146,18 @@ export function imageWithButton(
       },
     },
     description: image.Descrip, // Description for the image
+    actions: [
+                {
+                    button_text: "Open Image",
+                    type: "website",
+                    website: {
+                        title: "Welcome to Swiftchat",
+                        payload: "qwerty",
+                        url: image.imageUrl,
+                       
+                    }
+                }
+            ]
   }));
 
   // Return the complete payload

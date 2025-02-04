@@ -5358,68 +5358,570 @@
              "questionSets": [
               {
                 "setNumber": 1,
-                "questions": [
+                "questions":
+                [
                   {
-                    "question": "What does Padhant refer to in Indian classical dance?",
-                    "options": ["Rhythmic recitation of dance syllables", "A type of costume", "A dance style", "A musical instrument"],
-                    "answer": "Rhythmic recitation of dance syllables",
-                    "explanation": "Padhant is the rhythmic articulation of dance syllables (bols) used in Indian classical dance ."
+                    "question": "What is Padhant in Indian classical dance?",
+                    "options": [
+                      "Singing songs",
+                      "Reciting rhythmic beats",
+                      "Playing musical instruments",
+                      "Performing hand gestures"
+                    ],
+                    "answer": "Reciting rhythmic beats",
+                    "explanation": "Padhant is the practice of saying beats aloud to help dancers stay in rhythm."
                   },
                   {
-                    "question": "Which of the following is a common bol used in Padhant?",
-                    "options": ["Ta", "Do", "Mi", "Re"],
-                    "answer": "Ta",
-                    "explanation": "The bol 'Ta' is commonly used in various Indian classical dance forms, including Kathak."
+                    "question": "Which dance form commonly uses Padhant before performing?",
+                    "options": [
+                      "Kathak",
+                      "Odissi",
+                      "Mohiniyattam",
+                      "Kuchipudi"
+                    ],
+                    "answer": "Kathak",
+                    "explanation": "In Kathak, dancers or teachers recite beats before the dance to set the rhythm."
                   },
                   {
-                    "question": "What is the primary purpose of Padhant in dance training?",
-                    "options": ["To improve costume design", "To develop a sense of rhythm", "To learn musical notes", "To memorize dance steps"],
-                    "answer": "To develop a sense of rhythm",
-                    "explanation": "Padhant helps dancers internalize rhythms and improve their timing and coordination."
+                    "question": "Which sounds are commonly used in Padhant?",
+                    "options": [
+                      "Sa, Re, Ga, Ma",
+                      "Ta, Dhin, Na, Dhin",
+                      "Do, Re, Mi, Fa",
+                      "Dha, Ni, Sa, Ga"
+                    ],
+                    "answer": "Ta, Dhin, Na, Dhin",
+                    "explanation": "These rhythmic sounds help dancers match their footwork with the beat."
                   },
                   {
-                    "question": "In Kathak, what does the term 'bol' represent?",
-                    "options": ["A type of beat", "A rhythmic syllable", "A dance move", "A musical instrument"],
-                    "answer": "A rhythmic syllable",
-                    "explanation": "In Kathak, a 'bol' refers to a rhythmic syllable that corresponds to specific dance movements."
+                    "question": "What does Padhant help dancers with?",
+                    "options": [
+                      "Singing better",
+                      "Keeping rhythm",
+                      "Jumping higher",
+                      "Memorizing lyrics"
+                    ],
+                    "answer": "Keeping rhythm",
+                    "explanation": "Padhant helps dancers stay in sync with the music while performing."
                   },
                   {
-                    "question": "What role does Padhant play in choreography?",
-                    "options": ["Helps memorize sequences", "Designs costumes", "Improves musical composition", "None of the above"],
-                    "answer": "Helps memorize sequences",
-                    "explanation": "Padhant serves as a guide for dancers to memorize intricate dance sequences in choreography."
+                    "question": "True or False: Padhant is only used in Bharatanatyam.",
+                    "options": [
+                      "True",
+                      "False"
+                    ],
+                    "answer": "False",
+                    "explanation": "Padhant is used in multiple dance forms, including Kathak and Bharatanatyam."
                   },
                   {
-                    "question": "Which tala is commonly used in Padhant training?",
-                    "options": ["Dhrupad", "Teentaal", "Sargam", "Alankar"],
-                    "answer": "Teentaal",
-                    "explanation": "Teentaal is a popular tala that is often used in Padhant training for its rhythmic complexity."
+                    "question": "Why is Padhant important in dance?",
+                    "options": [
+                      "It teaches timing",
+                      "It makes dance faster",
+                      "It helps with costume selection",
+                      "It is only for fun"
+                    ],
+                    "answer": "It teaches timing",
+                    "explanation": "Padhant helps dancers understand rhythm and timing in their performances."
                   },
                   {
-                    "question": "How does Padhant contribute to improvisation in dance?",
-                    "options": ["By providing fixed movements", "By enhancing spontaneous creativity", "By reducing dance complexity", "By limiting expression"],
-                    "answer": "By enhancing spontaneous creativity",
-                    "explanation": "Padhant allows experienced dancers to explore spontaneous rhythms and movements during improvisation."
+                    "question": "In which part of Bharatanatyam is Padhant used?",
+                    "options": [
+                      "Nritta (pure dance)",
+                      "Storytelling",
+                      "Facial expressions",
+                      "Singing"
+                    ],
+                    "answer": "Nritta (pure dance)",
+                    "explanation": "In Bharatanatyam, Padhant is used in pure dance, focusing on rhythmic movements."
                   },
                   {
-                    "question": "What does the speed of Padhant recitation affect in performance?",
-                    "options": ["The costume design", "The complexity of footwork", "The lighting", "The audience's reaction"],
-                    "answer": "The complexity of footwork",
-                    "explanation": "The speed of Padhant recitation can influence the complexity and execution of footwork in a performance."
+                    "question": "What makes Padhant fun for dancers?",
+                    "options": [
+                      "It is like a rhythm game",
+                      "It helps them sing",
+                      "It allows them to sit and rest",
+                      "It makes them run faster"
+                    ],
+                    "answer": "It is like a rhythm game",
+                    "explanation": "Matching movements with beats makes learning fun for dancers."
                   },
                   {
-                    "question": "Which dance form, besides Kathak, also utilizes Padhant?",
-                    "options": ["Bharatanatyam", "Bollywood", "Folk dance", "Hip hop"],
-                    "answer": "Bharatanatyam",
-                    "explanation": "Padhant is utilized in various Indian classical dance forms, including Bharatanatyam and Odissi."
+                    "question": "Which of these is NOT a benefit of Padhant?",
+                    "options": [
+                      "Helps in group performances",
+                      "Teaches timing",
+                      "Improves dance rhythm",
+                      "Changes the melody of a song"
+                    ],
+                    "answer": "Changes the melody of a song",
+                    "explanation": "Padhant is about rhythm, not melody."
                   },
                   {
-                    "question": "Why is Padhant considered culturally significant?",
-                    "options": ["It focuses solely on costumes", "It connects music and dance", "It excludes audience interaction", "It is only for training purposes"],
-                    "answer": "It connects music and dance",
-                    "explanation": "Padhant embodies the essence of dance, linking the dancer's movements to the music and engaging the audience."
+                    "question": "True or False: Padhant helps dancers remember steps better.",
+                    "options": [
+                      "True",
+                      "False"
+                    ],
+                    "answer": "True",
+                    "explanation": "Saying the beats aloud makes it easier to remember dance steps."
+                  }
+                ]                
+              },
+              {
+                "setNumber": 2,
+                "questions":
+                [
+                  {
+                    "question": "Which classical dance form uses Padhant to set the rhythm?",
+                    "options": [
+                      "Kathak",
+                      "Manipuri",
+                      "Sattriya",
+                      "Bihu"
+                    ],
+                    "answer": "Kathak",
+                    "explanation": "In Kathak, the beats are recited before the dancer starts."
+                  },
+                  {
+                    "question": "Which part of the body follows the Padhant beats in dance?",
+                    "options": [
+                      "Hands",
+                      "Feet",
+                      "Eyes",
+                      "Head"
+                    ],
+                    "answer": "Feet",
+                    "explanation": "The dancer moves their feet according to the rhythmic beats."
+                  },
+                  {
+                    "question": "True or False: Padhant is only done by the teacher.",
+                    "options": [
+                      "True",
+                      "False"
+                    ],
+                    "answer": "False",
+                    "explanation": "Both teachers and dancers can recite Padhant."
+                  },
+                  {
+                    "question": "How does Padhant help in group performances?",
+                    "options": [
+                      "Helps dancers stay in sync",
+                      "Makes dance slower",
+                      "Teaches new moves",
+                      "Tells the story of the dance"
+                    ],
+                    "answer": "Helps dancers stay in sync",
+                    "explanation": "When dancers say the beats together, they move in harmony."
+                  },
+                  {
+                    "question": "Which of these sounds is NOT used in Padhant?",
+                    "options": [
+                      "Ta",
+                      "Dhin",
+                      "Na",
+                      "Ga"
+                    ],
+                    "answer": "Ga",
+                    "explanation": "'Ga' is a musical note, not a Padhant beat."
+                  },
+                  {
+                    "question": "What do Bharatanatyam dancers follow during Padhant?",
+                    "options": [
+                      "Hand gestures",
+                      "Rhythmic beats",
+                      "Facial expressions",
+                      "Singing tunes"
+                    ],
+                    "answer": "Rhythmic beats",
+                    "explanation": "Bharatanatyam dancers follow the beats to perform their movements."
+                  },
+                  {
+                    "question": "Which of these dance forms does NOT use Padhant?",
+                    "options": [
+                      "Kathak",
+                      "Bharatanatyam",
+                      "Kuchipudi",
+                      "Contemporary dance"
+                    ],
+                    "answer": "Contemporary dance",
+                    "explanation": "Padhant is mainly used in classical Indian dance forms."
+                  },
+                  {
+                    "question": "Why do dancers say the beats aloud in Padhant?",
+                    "options": [
+                      "To sing better",
+                      "To match their steps with the rhythm",
+                      "To distract the audience",
+                      "To tell a story"
+                    ],
+                    "answer": "To match their steps with the rhythm",
+                    "explanation": "Reciting the beats helps dancers stay in rhythm."
+                  },
+                  {
+                    "question": "True or False: Padhant helps dancers stay in perfect rhythm with music.",
+                    "options": [
+                      "True",
+                      "False"
+                    ],
+                    "answer": "True",
+                    "explanation": "Padhant ensures the dancer follows the correct timing."
+                  },
+                  {
+                    "question": "What is an example of a Padhant beat?",
+                    "options": [
+                      "Sa Re Ga",
+                      "Ta Dhin Na",
+                      "La Ti Do",
+                      "Ra Ma Da"
+                    ],
+                    "answer": "Ta Dhin Na",
+                    "explanation": "These are common beats used in Padhant."
+                  }
+                ]                
+              },
+              {
+                "setNumber": 3,
+                "questions": 
+                [
+                  {
+                    "question": "What does 'Padhant' mean in Indian classical dance?",
+                    "options": [
+                      "Fast footwork",
+                      "Reciting rhythmic beats",
+                      "Hand gestures",
+                      "Costume design"
+                    ],
+                    "answer": "Reciting rhythmic beats",
+                    "explanation": "Padhant is the practice of saying rhythmic beats aloud, helping dancers maintain rhythm."
+                  },
+                  {
+                    "question": "In which dance form is Padhant commonly used before a performance?",
+                    "options": [
+                      "Kathak",
+                      "Bharatanatyam",
+                      "Odissi",
+                      "Manipuri"
+                    ],
+                    "answer": "Kathak",
+                    "explanation": "In Kathak, dancers or teachers recite beats (Padhant) before dancing to set the rhythm."
+                  },
+                  {
+                    "question": "How does Padhant help a dancer?",
+                    "options": [
+                      "It makes the costume look better",
+                      "It helps in remembering dance steps",
+                      "It increases dance speed",
+                      "It improves makeup"
+                    ],
+                    "answer": "It helps in remembering dance steps",
+                    "explanation": "Padhant acts as a memory aid, allowing dancers to recall steps through rhythmic sounds."
+                  },
+                  {
+                    "question": "Which of these is an example of a Padhant sound?",
+                    "options": [
+                      "La, re, mi",
+                      "Ta, dhin, na",
+                      "Boom, clap, tap",
+                      "Do, re, fa"
+                    ],
+                    "answer": "Ta, dhin, na",
+                    "explanation": "These rhythmic sounds help dancers follow the beat of the music."
+                  },
+                  {
+                    "question": "In Bharatanatyam, where is Padhant used?",
+                    "options": [
+                      "Storytelling part",
+                      "Pure dance (Nritta)",
+                      "Expressive gestures",
+                      "Only for beginners"
+                    ],
+                    "answer": "Pure dance (Nritta)",
+                    "explanation": "In Bharatanatyam, Padhant is used in Nritta, focusing on rhythm and footwork."
+                  },
+                  {
+                    "question": "Why is Padhant important in group performances?",
+                    "options": [
+                      "Helps dancers move together",
+                      "Makes dance more colorful",
+                      "Increases dance speed",
+                      "Changes the music"
+                    ],
+                    "answer": "Helps dancers move together",
+                    "explanation": "Reciting Padhant keeps all dancers in sync, making performances smooth."
+                  },
+                  {
+                    "question": "What is one way Padhant makes learning dance easier?",
+                    "options": [
+                      "It is like singing the rhythm",
+                      "It helps with facial expressions",
+                      "It adds new dance moves",
+                      "It improves costumes"
+                    ],
+                    "answer": "It is like singing the rhythm",
+                    "explanation": "Padhant is similar to singing beats, making it easier for students to learn."
+                  },
+                  {
+                    "question": "How does Padhant help in timing?",
+                    "options": [
+                      "It matches steps with the music",
+                      "It speeds up the music",
+                      "It adds new moves",
+                      "It changes the story"
+                    ],
+                    "answer": "It matches steps with the music",
+                    "explanation": "Padhant helps dancers match their movements to the beats perfectly."
+                  },
+                  {
+                    "question": "True or False: Padhant is only used in Kathak.",
+                    "options": [
+                      "True",
+                      "False"
+                    ],
+                    "answer": "False",
+                    "explanation": "Padhant is used in multiple dance forms like Bharatanatyam and Kathak."
+                  },
+                  {
+                    "question": "Which of these dance elements does Padhant connect with?",
+                    "options": [
+                      "Rhythm and timing",
+                      "Costume and jewelry",
+                      "Makeup and lights",
+                      "Stage decorations"
+                    ],
+                    "answer": "Rhythm and timing",
+                    "explanation": "Padhant is about keeping the rhythm and timing perfect in a dance."
+                  }
+                ]                
+              },
+              {
+                "setNumber": 4,
+                "questions": 
+                [
+                  {
+                    "question": "What is the main purpose of Padhant?",
+                    "options": [
+                      "To improve costumes",
+                      "To keep rhythm in dance",
+                      "To make dance faster",
+                      "To change hand gestures"
+                    ],
+                    "answer": "To keep rhythm in dance",
+                    "explanation": "Padhant helps dancers stay in sync with the beats and rhythm."
+                  },
+                  {
+                    "question": "Who usually recites Padhant during training?",
+                    "options": [
+                      "Musicians",
+                      "Dancer or teacher",
+                      "Costume designer",
+                      "Audience"
+                    ],
+                    "answer": "Dancer or teacher",
+                    "explanation": "The dancer or teacher recites Padhant to guide the performance."
+                  },
+                  {
+                    "question": "How does Padhant help in improving footwork?",
+                    "options": [
+                      "By changing music",
+                      "By adding more beats",
+                      "By guiding step timing",
+                      "By making it colorful"
+                    ],
+                    "answer": "By guiding step timing",
+                    "explanation": "Padhant helps dancers time their footwork perfectly with the music."
+                  },
+                  {
+                    "question": "What is an important benefit of Padhant in dance rehearsals?",
+                    "options": [
+                      "Helps dancers stay in sync",
+                      "Changes the dance costume",
+                      "Makes dance slower",
+                      "Removes the need for music"
+                    ],
+                    "answer": "Helps dancers stay in sync",
+                    "explanation": "Padhant helps all dancers perform together in harmony."
+                  },
+                  {
+                    "question": "True or False: Padhant is only done with instruments.",
+                    "options": [
+                      "True",
+                      "False"
+                    ],
+                    "answer": "False",
+                    "explanation": "Padhant is recited by dancers, not just played with instruments."
+                  },
+                  {
+                    "question": "What do the sounds \"ta, dhin, na\" represent in Padhant?",
+                    "options": [
+                      "Hand movements",
+                      "Rhythmic beats",
+                      "Song lyrics",
+                      "Dance stories"
+                    ],
+                    "answer": "Rhythmic beats",
+                    "explanation": "These are spoken beats that help dancers follow rhythm."
+                  },
+                  {
+                    "question": "Which dance form relies heavily on Padhant?",
+                    "options": [
+                      "Kathak",
+                      "Bhangra",
+                      "Kuchipudi",
+                      "Manipuri"
+                    ],
+                    "answer": "Kathak",
+                    "explanation": "Kathak dancers use Padhant to recite and follow rhythm."
+                  },
+                  {
+                    "question": "How does Padhant make performances better?",
+                    "options": [
+                      "By adding timing precision",
+                      "By changing costumes",
+                      "By removing hand gestures",
+                      "By making dance slower"
+                    ],
+                    "answer": "By adding timing precision",
+                    "explanation": "Padhant ensures perfect timing in movements and rhythm."
+                  },
+                  {
+                    "question": "What does reciting Padhant teach young dancers?",
+                    "options": [
+                      "Understanding beats",
+                      "Costume designing",
+                      "Singing songs",
+                      "Playing instruments"
+                    ],
+                    "answer": "Understanding beats",
+                    "explanation": "It helps students learn rhythm and beats for better dance coordination."
+                  },
+                  {
+                    "question": "Why do dancers practice Padhant regularly?",
+                    "options": [
+                      "To master rhythm",
+                      "To change hand movements",
+                      "To remove footwork",
+                      "To make dance faster"
+                    ],
+                    "answer": "To master rhythm",
+                    "explanation": "Regular practice helps dancers perfect their rhythm and timing."
+                  }
+                ]                
+              },
+              {
+                "setNumber": 5,
+                "questions":
+                [
+                  {
+                    "question": "What does Padhant help a dancer to do?",
+                    "options": [
+                      "Improve stage performance",
+                      "Keep in rhythm with the music",
+                      "Change costumes",
+                      "Increase dance speed"
+                    ],
+                    "answer": "Keep in rhythm with the music",
+                    "explanation": "Padhant helps dancers stay in sync with the rhythm and beats of the music."
+                  },
+                  {
+                    "question": "Which dance form uses Padhant for footwork practice?",
+                    "options": [
+                      "Kathak",
+                      "Bharatnatyam",
+                      "Kuchipudi",
+                      "Kathakali"
+                    ],
+                    "answer": "Kathak",
+                    "explanation": "Kathak dancers often use Padhant to recite rhythmic beats and practice footwork."
+                  },
+                  {
+                    "question": "In Bharatanatyam, which aspect of the dance uses Padhant?",
+                    "options": [
+                      "Hand gestures (Mudras)",
+                      "Pure dance (Nritta)",
+                      "Storytelling (Abhinaya)",
+                      "Music composition"
+                    ],
+                    "answer": "Pure dance (Nritta)",
+                    "explanation": "Padhant is used in Bharatanatyam during Nritta to synchronize movements with rhythm."
+                  },
+                  {
+                    "question": "Which of these sounds is used in Padhant?",
+                    "options": [
+                      "Ra, mi, fa",
+                      "Ta, dhin, na",
+                      "Pa, ta, ka",
+                      "Do, re, me"
+                    ],
+                    "answer": "Ta, dhin, na",
+                    "explanation": "These are common rhythmic sounds recited in Padhant to guide the dancer’s rhythm."
+                  },
+                  {
+                    "question": "Why is Padhant essential in group dance performances?",
+                    "options": [
+                      "Helps synchronize movements",
+                      "Makes costumes more beautiful",
+                      "Changes the lighting",
+                      "Increases dance speed"
+                    ],
+                    "answer": "Helps synchronize movements",
+                    "explanation": "Padhant ensures all dancers move in perfect harmony by reciting rhythmic sounds together."
+                  },
+                  {
+                    "question": "What is the benefit of learning Padhant for young dancers?",
+                    "options": [
+                      "It helps improve timing",
+                      "It makes dance more colorful",
+                      "It increases foot speed",
+                      "It helps with makeup"
+                    ],
+                    "answer": "It helps improve timing",
+                    "explanation": "Padhant teaches young dancers the timing of movements, which is crucial for perfect performances."
+                  },
+                  {
+                    "question": "What is the main role of the teacher in Padhant practice?",
+                    "options": [
+                      "To create dance costumes",
+                      "To recite the rhythmic sounds",
+                      "To sing the music",
+                      "To change the dance steps"
+                    ],
+                    "answer": "To recite the rhythmic sounds",
+                    "explanation": "The teacher helps the dancer by reciting the rhythmic beats (Padhant) to guide them."
+                  },
+                  {
+                    "question": "True or False: Padhant helps dancers focus only on footwork.",
+                    "options": [
+                      "True",
+                      "False"
+                    ],
+                    "answer": "False",
+                    "explanation": "Padhant helps dancers focus on both footwork and hand gestures in sync with rhythm."
+                  },
+                  {
+                    "question": "How does Padhant make learning easier for dancers?",
+                    "options": [
+                      "Makes dance movements faster",
+                      "Helps remember dance steps",
+                      "Changes the choreography",
+                      "Adds new costumes"
+                    ],
+                    "answer": "Helps remember dance steps",
+                    "explanation": "By reciting rhythmic sounds, dancers can remember and stay focused on the steps."
+                  },
+                  {
+                    "question": "What is a fun fact about Padhant?",
+                    "options": [
+                      "It’s like a game of matching sounds to movements",
+                      "It is only done on stage",
+                      "It improves makeup techniques",
+                      "It removes the need for music"
+                    ],
+                    "answer": "It’s like a game of matching sounds to movements",
+                    "explanation": "Padhant is fun because dancers match sounds to movements, like a rhythmic game!"
                   }
                 ]
+                
               }
              ]
           },
@@ -5480,80 +5982,577 @@
                 "Descrip": "In Purulia Chhau, the dancers wear elaborate masks to represent various characters like gods, demons, and animals. These masks are an essential part of the performance, helping convey different emotions and personalities."
               }
             ],
-           
-
-
-            
             "questionSets": [
                 {
                 "setNumber": 1,
-                "questions": [
+                "questions": 
+                [
                   {
-                    "question": "What is Chhau dance primarily known for?",
-                    "options": ["Martial arts movements", "Classical music", "Modern dance styles", "Ballet techniques"],
-                    "answer": "Martial arts movements",
-                    "explanation": "Chhau dance incorporates various martial arts movements and is often energetic."
+                    "question": "What is Chhau?",
+                    "options": [
+                      "A traditional Indian classical dance",
+                      "A folk dance from Eastern India",
+                      "A Bollywood dance form",
+                      "A type of Kathak"
+                    ],
+                    "answer": "A folk dance from Eastern India",
+                    "explanation": "Chhau is a folk dance originating from Eastern India, specifically Odisha, West Bengal, and Jharkhand."
                   },
                   {
-                    "question": "Which Indian state is primarily associated with Chhau dance?",
-                    "options": ["Odisha", "West Bengal", "Bihar", "Karnataka"],
+                    "question": "Which state is known for Mayurbhanj Chhau?",
+                    "options": [
+                      "Odisha",
+                      "Jharkhand",
+                      "West Bengal",
+                      "Kerala"
+                    ],
                     "answer": "Odisha",
-                    "explanation": "Chhau dance is prominently performed in the eastern Indian state of Odisha."
+                    "explanation": "Mayurbhanj Chhau is a form of Chhau dance that comes from Odisha, known for powerful movements."
                   },
                   {
-                    "question": "What is a unique feature of Chhau dance costumes?",
-                    "options": ["Heavy metal jewelry", "Elaborate masks", "Simple attire", "No costumes are used"],
-                    "answer": "Elaborate masks",
-                    "explanation": "Dancers often wear elaborate masks that represent various characters."
+                    "question": "True or False: Chhau dancers wear masks during performances.",
+                    "options": [
+                      "True",
+                      "False"
+                    ],
+                    "answer": "True",
+                    "explanation": "Dancers wear elaborate masks that help represent different characters in Chhau performances."
                   },
                   {
-                    "question": "During which festival is Chhau dance commonly performed?",
-                    "options": ["Holi", "Durga Puja", "Diwali", "Eid"],
+                    "question": "What is a key characteristic of Chhau dance?",
+                    "options": [
+                      "Ballet-like grace",
+                      "Martial arts-inspired movements",
+                      "Slow and graceful footwork",
+                      "Light, flowing costumes"
+                    ],
+                    "answer": "Martial arts-inspired movements",
+                    "explanation": "Chhau incorporates martial arts techniques, such as high jumps and powerful body movements."
+                  },
+                  {
+                    "question": "Which festival is Chhau often performed during?",
+                    "options": [
+                      "Diwali",
+                      "Durga Puja",
+                      "Holi",
+                      "Christmas"
+                    ],
                     "answer": "Durga Puja",
-                    "explanation": "Chhau dance is a significant part of the Durga Puja celebrations in West Bengal."
+                    "explanation": "Chhau is an important dance form during festivals like Durga Puja in Eastern India."
                   },
                   {
-                    "question": "What are the three major styles of Chhau dance?",
-                    "options": ["Seraikella, Mayurbhanj, and Purulia", "Odissi, Bharatanatyam, and Kathak", "Kathakali, Mohiniyattam, and Kuchipudi", "None of the above"],
-                    "answer": "Seraikella, Mayurbhanj, and Purulia",
-                    "explanation": "The three main styles of Chhau dance are Seraikella, Mayurbhanj, and Purulia."
+                    "question": "Why do Chhau dancers use masks?",
+                    "options": [
+                      "To cover their faces",
+                      "To represent gods and demons",
+                      "To avoid being recognized",
+                      "To stay cool"
+                    ],
+                    "answer": "To represent gods and demons",
+                    "explanation": "The masks help portray different characters like gods, demons, and animals during the performance."
                   },
                   {
-                    "question": "What themes are commonly depicted in Chhau dance performances?",
-                    "options": ["Religious stories", "Historical events", "Mythological tales", "All of the above"],
-                    "answer": "All of the above",
-                    "explanation": "Chhau dance performances often depict a variety of themes including religion, history, and mythology."
+                    "question": "Which of these instruments is commonly used in Chhau performances?",
+                    "options": [
+                      "Tabla",
+                      "Madal and Chenda",
+                      "Veena",
+                      "Harmonium"
+                    ],
+                    "answer": "Madal and Chenda",
+                    "explanation": "Traditional drums like madal and chenda are used to create the rhythmic atmosphere for Chhau."
                   },
                   {
-                    "question": "Which instrument is prominently used in Chhau dance performances?",
-                    "options": ["Violin", "Drums", "Flute", "Piano"],
-                    "answer": "Drums",
-                    "explanation": "Drums, especially the 'dhol', play a crucial role in the music accompanying Chhau dance."
+                    "question": "What is the focus of Mayurbhanj Chhau?",
+                    "options": [
+                      "Graceful movements and storytelling",
+                      "Acrobatics and rapid footwork",
+                      "Strong, powerful movements",
+                      "Slow, gentle dance"
+                    ],
+                    "answer": "Strong, powerful movements",
+                    "explanation": "Mayurbhanj Chhau is known for its strong and powerful movements, influenced by martial arts."
                   },
                   {
-                    "question": "What is the significance of the mask in Chhau dance?",
-                    "options": ["To hide the dancer's identity", "To enhance visual appeal", "To depict different characters", "All of the above"],
-                    "answer": "All of the above",
-                    "explanation": "Masks serve to enhance the performance by representing various characters and emotions."
+                    "question": "True or False: Chhau is performed only during religious ceremonies.",
+                    "options": [
+                      "True",
+                      "False"
+                    ],
+                    "answer": "False",
+                    "explanation": "While Chhau is performed during religious ceremonies, it is also part of local festivals and celebrations."
                   },
                   {
-                    "question": "Chhau dance is a blend of which of the following art forms?",
-                    "options": ["Dance and drama", "Music and painting", "Theater and poetry", "None of the above"],
-                    "answer": "Dance and drama",
-                    "explanation": "Chhau dance is a performance art that combines elements of dance and dramatic storytelling."
-                  },
-                  {
-                    "question": "What type of movements are characteristic of Chhau dance?",
-                    "options": ["Slow and graceful", "Rapid and energetic", "Fluid and soft", "Stiff and rigid"],
-                    "answer": "Rapid and energetic",
-                    "explanation": "Chhau dance is known for its rapid, energetic movements, often mimicking martial arts."
+                    "question": "What is a defining feature of Chhau performances?",
+                    "options": [
+                      "Slow, rhythmic movements",
+                      "Use of martial arts and storytelling",
+                      "Focus on classical music",
+                      "Simple, plain costumes"
+                    ],
+                    "answer": "Use of martial arts and storytelling",
+                    "explanation": "Chhau combines martial arts techniques with expressive storytelling through dance and gestures."
                   }
-                ]
+                ]                
+              },
+              {
+                "setNumber": 2,
+                "questions": 
+                [
+                  {
+                    "question": "What type of dance is Chhau?",
+                    "options": [
+                      "Classical Indian dance",
+                      "Folk dance",
+                      "Modern dance",
+                      "Hip-hop dance"
+                    ],
+                    "answer": "Folk dance",
+                    "explanation": "Chhau is a folk dance originating from Eastern India, blending martial arts and storytelling."
+                  },
+                  {
+                    "question": "Which Chhau dance form emphasizes graceful movements?",
+                    "options": [
+                      "Mayurbhanj Chhau",
+                      "Seraikella Chhau",
+                      "Purulia Chhau",
+                      "Kathak Chhau"
+                    ],
+                    "answer": "Seraikella Chhau",
+                    "explanation": "Seraikella Chhau from Jharkhand focuses on graceful, elegant movements and storytelling."
+                  },
+                  {
+                    "question": "What is a key element of Chhau dance performances?",
+                    "options": [
+                      "Slow footwork",
+                      "Storytelling through gestures",
+                      "Quiet music",
+                      "No costumes"
+                    ],
+                    "answer": "Storytelling through gestures",
+                    "explanation": "Chhau dancers use facial expressions and hand gestures to tell stories, often mythological."
+                  },
+                  {
+                    "question": "Which state is famous for Purulia Chhau?",
+                    "options": [
+                      "Jharkhand",
+                      "Odisha",
+                      "West Bengal",
+                      "Uttar Pradesh"
+                    ],
+                    "answer": "West Bengal",
+                    "explanation": "Purulia Chhau is a form of Chhau performed in West Bengal, known for acrobatics and dramatic expression."
+                  },
+                  {
+                    "question": "Why is Chhau dance considered special?",
+                    "options": [
+                      "Because of its graceful movements",
+                      "Due to its martial arts influence",
+                      "Because it uses no music",
+                      "For its slow pace"
+                    ],
+                    "answer": "Due to its martial arts influence",
+                    "explanation": "Chhau is unique because of the martial arts-inspired movements, which make it dynamic and energetic."
+                  },
+                  {
+                    "question": "True or False: Chhau is always performed with live music.",
+                    "options": [
+                      "True",
+                      "False"
+                    ],
+                    "answer": "True",
+                    "explanation": "Chhau performances are accompanied by live traditional instruments like madal and chenda."
+                  },
+                  {
+                    "question": "What is a feature of Purulia Chhau?",
+                    "options": [
+                      "Elegant footwork",
+                      "Acrobatic and dramatic expression",
+                      "Slow, classical movements",
+                      "Use of fewer masks"
+                    ],
+                    "answer": "Acrobatic and dramatic expression",
+                    "explanation": "Purulia Chhau is known for its dramatic expressions, acrobatic moves, and strong storytelling."
+                  },
+                  {
+                    "question": "What do Chhau dancers often perform during?",
+                    "options": [
+                      "Festivals",
+                      "Weddings",
+                      "School events",
+                      "Movies"
+                    ],
+                    "answer": "Festivals",
+                    "explanation": "Chhau is performed during festivals like Durga Puja and Chaitra Parva, marking its cultural significance."
+                  },
+                  {
+                    "question": "What do the masks in Chhau represent?",
+                    "options": [
+                      "The dance style",
+                      "Gods and demons",
+                      "The weather",
+                      "The performers’ mood"
+                    ],
+                    "answer": "Gods and demons",
+                    "explanation": "The masks represent different characters, such as gods, demons, and animals, in Chhau performances."
+                  },
+                  {
+                    "question": "Which instrument is NOT typically used in Chhau?",
+                    "options": [
+                      "Madal",
+                      "Chenda",
+                      "Tabla",
+                      "Violin"
+                    ],
+                    "answer": "Violin",
+                    "explanation": "Instruments like madal and chenda are used, but violin is not part of Chhau performances."
+                  }
+                ]                
+              },
+              {
+                "setNumber": 3,
+                "questions": 
+                [
+                  {
+                    "question": "What is Chhau Dance known for?",
+                    "options": [
+                      "Slow and graceful movements",
+                      "Martial arts movements and acrobatics",
+                      "Only religious themes",
+                      "Classical storytelling through music"
+                    ],
+                    "answer": "Martial arts movements and acrobatics",
+                    "explanation": "Chhau is known for its energetic martial arts movements, acrobatics, and powerful body movements."
+                  },
+                  {
+                    "question": "Which state is famous for Mayurbhanj Chhau?",
+                    "options": [
+                      "Jharkhand",
+                      "Odisha",
+                      "West Bengal",
+                      "Gujarat"
+                    ],
+                    "answer": "Odisha",
+                    "explanation": "Mayurbhanj Chhau, known for its powerful movements, originates from Odisha."
+                  },
+                  {
+                    "question": "True or False: Chhau dancers always perform in simple costumes.",
+                    "options": [
+                      "True",
+                      "False"
+                    ],
+                    "answer": "False",
+                    "explanation": "Chhau dancers wear elaborate costumes and masks to represent different characters and enhance storytelling."
+                  },
+                  {
+                    "question": "What type of stories do Chhau dancers tell?",
+                    "options": [
+                      "Everyday life stories",
+                      "Mythological stories and battle scenes",
+                      "Folk tales of animals",
+                      "Love stories only"
+                    ],
+                    "answer": "Mythological stories and battle scenes",
+                    "explanation": "Chhau performances are famous for depicting mythological stories, gods, demons, and battle scenes."
+                  },
+                  {
+                    "question": "What role do facial expressions play in Chhau?",
+                    "options": [
+                      "They show the dancer's happiness",
+                      "They help tell stories and show characters",
+                      "They are not used in Chhau",
+                      "They show the dancer’s emotions only"
+                    ],
+                    "answer": "They help tell stories and show characters",
+                    "explanation": "In Chhau, dancers use facial expressions to help depict mythological characters and tell stories."
+                  },
+                  {
+                    "question": "Which musical instruments are used in Chhau performances?",
+                    "options": [
+                      "Sitar and Tabla",
+                      "Madal and Chenda",
+                      "Violin and Flute",
+                      "Guitar and Drums"
+                    ],
+                    "answer": "Madal and Chenda",
+                    "explanation": "Chhau performances are accompanied by rhythmic music played with traditional drums like Madal and Chenda."
+                  },
+                  {
+                    "question": "What is special about the masks used in Purulia Chhau?",
+                    "options": [
+                      "They are made of wood",
+                      "They are simple and small",
+                      "They represent gods, demons, and animals",
+                      "They are only used for decoration"
+                    ],
+                    "answer": "They represent gods, demons, and animals",
+                    "explanation": "The masks in Purulia Chhau represent various mythological characters and convey different emotions."
+                  },
+                  {
+                    "question": "What kind of movements do dancers perform in Mayurbhanj Chhau?",
+                    "options": [
+                      "Gentle and slow",
+                      "Powerful and martial",
+                      "Only hand movements",
+                      "Mostly foot movements"
+                    ],
+                    "answer": "Powerful and martial",
+                    "explanation": "Mayurbhanj Chhau focuses on strong, powerful movements often influenced by martial arts."
+                  },
+                  {
+                    "question": "Which festival is closely associated with Chhau performances?",
+                    "options": [
+                      "Diwali",
+                      "Holi",
+                      "Durga Puja",
+                      "Christmas"
+                    ],
+                    "answer": "Durga Puja",
+                    "explanation": "Chhau performances are an important part of Durga Puja celebrations and other local festivals in Eastern India."
+                  },
+                  {
+                    "question": "Which part of the body is used most in Chhau performances?",
+                    "options": [
+                      "Eyes only",
+                      "Hands only",
+                      "Legs and face",
+                      "Entire body"
+                    ],
+                    "answer": "Entire body",
+                    "explanation": "Chhau involves the entire body, including legs, hands, and facial expressions to convey stories."
+                  }
+                ]                
+              },
+              {
+                "setNumber": 4,
+                "questions":
+                [
+                  {
+                    "question": "What does Chhau symbolize in Eastern India?",
+                    "options": [
+                      "A battle between gods and demons",
+                      "The story of Rama and Sita",
+                      "Peace and harmony",
+                      "An agricultural festival"
+                    ],
+                    "answer": "A battle between gods and demons",
+                    "explanation": "Chhau often depicts mythological battles between gods and demons."
+                  },
+                  {
+                    "question": "True or False: Chhau dance includes both dance and acrobatics.",
+                    "options": [
+                      "True",
+                      "False"
+                    ],
+                    "answer": "True",
+                    "explanation": "Chhau combines dance with acrobatics and martial arts movements."
+                  },
+                  {
+                    "question": "Which of the following is an important feature of Chhau performances?",
+                    "options": [
+                      "Simple costumes",
+                      "Large crowds",
+                      "Use of masks and colorful costumes",
+                      "Solo performances"
+                    ],
+                    "answer": "Use of masks and colorful costumes",
+                    "explanation": "Chhau performances are known for their bright costumes and elaborate masks."
+                  },
+                  {
+                    "question": "Where is Purulia Chhau performed?",
+                    "options": [
+                      "Jharkhand",
+                      "Odisha",
+                      "West Bengal",
+                      "Kerala"
+                    ],
+                    "answer": "West Bengal",
+                    "explanation": "Purulia Chhau is a popular dance form in West Bengal, combining dance, acrobatics, and dramatic expressions."
+                  },
+                  {
+                    "question": "How do Chhau dancers use their faces?",
+                    "options": [
+                      "To show only happiness",
+                      "To express different emotions and characters",
+                      "Only for decoration",
+                      "To confuse the audience"
+                    ],
+                    "answer": "To express different emotions and characters",
+                    "explanation": "Facial expressions are crucial in Chhau to convey emotions and the characters in the stories."
+                  },
+                  {
+                    "question": "Which of these Chhau types is known for graceful movements?",
+                    "options": [
+                      "Mayurbhanj Chhau",
+                      "Purulia Chhau",
+                      "Seraikella Chhau",
+                      "None of the above"
+                    ],
+                    "answer": "Seraikella Chhau",
+                    "explanation": "Seraikella Chhau is known for its graceful and elegant movements."
+                  },
+                  {
+                    "question": "What is the primary purpose of Chhau masks?",
+                    "options": [
+                      "To hide the dancer's identity",
+                      "To represent gods, demons, and animals",
+                      "To make the dance more fun",
+                      "To decorate the stage"
+                    ],
+                    "answer": "To represent gods, demons, and animals",
+                    "explanation": "Masks in Chhau are used to depict various characters, adding depth to the performance."
+                  },
+                  {
+                    "question": "What does Chhau use to tell its stories?",
+                    "options": [
+                      "Only music",
+                      "Only dancing",
+                      "Music, dance, and facial expressions",
+                      "Words and songs"
+                    ],
+                    "answer": "Music, dance, and facial expressions",
+                    "explanation": "Chhau performances tell stories through a combination of music, dance, and expressive facial gestures."
+                  },
+                  {
+                    "question": "Which dance form combines martial arts with acrobatics?",
+                    "options": [
+                      "Bharatanatyam",
+                      "Chhau",
+                      "Kathak",
+                      "Odissi"
+                    ],
+                    "answer": "Chhau",
+                    "explanation": "Chhau is unique for combining martial arts movements, acrobatics, and expressive dance."
+                  },
+                  {
+                    "question": "Why are Chhau performances special?",
+                    "options": [
+                      "They are performed only by women",
+                      "They have martial arts influence and vibrant performances",
+                      "They are slow and peaceful",
+                      "They are only performed in schools"
+                    ],
+                    "answer": "They have martial arts influence and vibrant performances",
+                    "explanation": "Chhau is special due to its martial arts-inspired movements and vibrant, energetic performances."
+                  }
+                ]                 
+              },
+              {
+                "setNumber": 5,
+                "questions": 
+                [
+                  {
+                    "question": "What does the word 'Chhau' refer to?",
+                    "options": [
+                      "A type of flower",
+                      "A dance form from Eastern India",
+                      "A type of festival",
+                      "A type of musical instrument"
+                    ],
+                    "answer": "A dance form from Eastern India",
+                    "explanation": "Chhau is a folk dance that originated in Eastern India and is known for its dynamic and martial arts-influenced movements."
+                  },
+                  {
+                    "question": "What are the key features of Chhau dance?",
+                    "options": [
+                      "Fast movements and dramatic storytelling",
+                      "Simple footwork and slow movements",
+                      "Only hand gestures",
+                      "No facial expressions"
+                    ],
+                    "answer": "Fast movements and dramatic storytelling",
+                    "explanation": "Chhau is known for its quick footwork, dramatic storytelling, and energetic performances."
+                  },
+                  {
+                    "question": "True or False: Chhau is performed with only one dancer at a time.",
+                    "options": [
+                      "True",
+                      "False"
+                    ],
+                    "answer": "False",
+                    "explanation": "Chhau performances are often group dances, with multiple dancers performing together."
+                  },
+                  {
+                    "question": "What kind of themes are depicted in Chhau dance?",
+                    "options": [
+                      "Love and peace",
+                      "Battles between gods and demons",
+                      "Everyday life",
+                      "Happiness"
+                    ],
+                    "answer": "Battles between gods and demons",
+                    "explanation": "Chhau dance often portrays mythological stories involving battles between gods and demons."
+                  },
+                  {
+                    "question": "What is a common use of masks in Chhau?",
+                    "options": [
+                      "To entertain children",
+                      "To represent different characters",
+                      "To hide the dancer’s identity",
+                      "To protect the dancer’s face"
+                    ],
+                    "answer": "To represent different characters",
+                    "explanation": "Masks in Chhau help represent various mythological characters, such as gods and demons, making the performance more engaging."
+                  },
+                  {
+                    "question": "What type of dance movements are used in Mayurbhanj Chhau?",
+                    "options": [
+                      "Soft and gentle",
+                      "Rapid and powerful",
+                      "Slow and graceful",
+                      "None of the above"
+                    ],
+                    "answer": "Rapid and powerful",
+                    "explanation": "Mayurbhanj Chhau features strong, powerful, and martial-inspired movements."
+                  },
+                  {
+                    "question": "Where can you often see Chhau performances?",
+                    "options": [
+                      "During major festivals",
+                      "Only in schools",
+                      "Only on TV",
+                      "At weddings"
+                    ],
+                    "answer": "During major festivals",
+                    "explanation": "Chhau is commonly performed during important festivals like Durga Puja and other regional celebrations."
+                  },
+                  {
+                    "question": "Which region of India is most associated with Chhau?",
+                    "options": [
+                      "Southern India",
+                      "Eastern India",
+                      "Northern India",
+                      "Western India"
+                    ],
+                    "answer": "Eastern India",
+                    "explanation": "Chhau originated in Eastern India, specifically in states like Odisha, Jharkhand, and West Bengal."
+                  },
+                  {
+                    "question": "What type of instruments accompany Chhau performances?",
+                    "options": [
+                      "Modern instruments like guitar",
+                      "Traditional drums like Madal and Chenda",
+                      "Only vocals",
+                      "No music"
+                    ],
+                    "answer": "Traditional drums like Madal and Chenda",
+                    "explanation": "Chhau performances are accompanied by traditional instruments like Madal and Chenda, creating a lively rhythm."
+                  },
+                  {
+                    "question": "What makes Chhau a unique dance form?",
+                    "options": [
+                      "Its soft movements",
+                      "Its use of only hand gestures",
+                      "Its blend of martial arts and dance",
+                      "Its use of only one dancer"
+                    ],
+                    "answer": "Its blend of martial arts and dance",
+                    "explanation": "Chhau is unique for combining martial arts movements, acrobatic jumps, and expressive dance to tell stories."
+                  }
+                ]                
               }
             ]
-      }
-      
-      
+      }  
     ]
   }
 ]

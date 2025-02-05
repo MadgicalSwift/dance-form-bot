@@ -1,12 +1,13 @@
 import { url } from 'inspector';
-import data from '../../datasource/data.json';
-// import { localised, } from '../en/localised-strings';
+import englishData from '../../datasource/english_data.json';
+import hindiData from '../../datasource/hindi_data.json';
 import _ from 'lodash';
 import { LocalizationService } from 'src/localization/localization.service';
 
 export function createMainTopicButtons(from: string, language:string) {
   const localisedStrings = LocalizationService.getLocalisedString(language)
   // Extract topic names from the data
+  let data = language === 'english' ? englishData : hindiData;
   const topics = data.topics.map((topic) => topic.topicName);
 
   // Create buttons for each topic
@@ -35,6 +36,7 @@ export function createMainTopicButtons(from: string, language:string) {
 export function createSubTopicButtons(from: string, topicName: string,language:string) {
   // Find the topic in the data
   const localisedStrings = LocalizationService.getLocalisedString(language)
+  let data = language === 'english' ? englishData : hindiData;
   const topic = data.topics.find((topic) => topic.topicName === topicName);
 
   // If the topic exists, create buttons for each subtopic
@@ -244,6 +246,8 @@ export function questionButton(
   language:string
 
 ) {
+  const localisedStrings = LocalizationService.getLocalisedString(language)
+  let data = language === 'english' ? englishData : hindiData;
   const topic = data.topics.find(
     (topic) => topic.topicName === selectedMainTopic,
   );
@@ -288,7 +292,7 @@ export function questionButton(
       body: {
         type: 'text',
         text: {
-          body: `Question: ${selectedQuestionIndex + 1}\n ${question.question}`,
+          body: `${localisedStrings.question}: ${selectedQuestionIndex + 1}\n ${question.question}`,
         },
       },
       buttons: buttons,
@@ -309,6 +313,7 @@ export function answerFeedback(
   score: number,
   language:string
 ) {
+  let data = language === 'english' ? englishData : hindiData;
   const topic = data.topics.find((t) => t.topicName === selectedMainTopic);
   if (!topic) {
 
@@ -406,6 +411,8 @@ export function optionButton(
   language:string
 ) {
   // Find the selected topic
+  const localisedStrings = LocalizationService.getLocalisedString(language)
+  let data = language === 'english' ? englishData : hindiData;
   const topic = data.topics.find(
     (topic) => topic.topicName === selectedMainTopic,
   );
@@ -460,7 +467,7 @@ export function optionButton(
       body: {
         type: 'text',
         text: {
-          body: `Question: ${currentQuestionIndex + 1}\n ${question.question}`,
+          body: `${localisedStrings.question}: ${currentQuestionIndex + 1}\n ${question.question}`,
         },
       },
       buttons: buttons,

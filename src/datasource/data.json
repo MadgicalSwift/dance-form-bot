@@ -6516,10 +6516,700 @@
                           "explanation": "Garba is most famously performed during the nine-night festival of Navratri in honor of Goddess Durga."
                         }
                       ]
-                    }
-               ]
-              
-            
+      },
+      {
+        "setNumber": 5,
+        "questions":
+        [
+          {
+            "question": "Garba is a traditional dance from which Indian state?",
+            "options": [
+              "Rajasthan",
+              "Gujarat",
+              "Maharashtra",
+              "Punjab"
+            ],
+            "answer": "Gujarat",
+            "explanation": "Garba is a famous folk dance from Gujarat, performed during Navratri."
+          },
+          {
+            "question": "During which festival is Garba most commonly performed?",
+            "options": [
+              "Diwali",
+              "Navratri",
+              "Holi",
+              "Pongal"
+            ],
+            "answer": "Navratri",
+            "explanation": "Garba is performed during the nine nights of Navratri to honor Goddess Durga."
+          },
+          {
+            "question": "What does the word ‘Garba’ mean in Sanskrit?",
+            "options": [
+              "Celebration",
+              "Earthen lamp",
+              "Circular dance",
+              "Joyful movement"
+            ],
+            "answer": "Earthen lamp",
+            "explanation": "‘Garba’ comes from ‘Garbhadeep,’ meaning an earthen lamp symbolizing life."
+          },
+          {
+            "question": "What do dancers move around while performing Garba?",
+            "options": [
+              "A bonfire",
+              "A sacred lamp",
+              "A decorated tree",
+              "A temple"
+            ],
+            "answer": "A sacred lamp",
+            "explanation": "Garba dancers circle a lamp, symbolizing life and the goddess's divine power."
+          },
+          {
+            "question": "What is the primary emotion expressed in Garba?",
+            "options": [
+              "Sadness",
+              "Anger",
+              "Devotion and joy",
+              "Fear"
+            ],
+            "answer": "Devotion and joy",
+            "explanation": "Garba expresses devotion to Goddess Durga and joy in celebration."
+          },
+          {
+            "question": "Which of these instruments is commonly used in Garba music?",
+            "options": [
+              "Veena",
+              "Tabla",
+              "Dhol",
+              "Sitar"
+            ],
+            "answer": "Dhol",
+            "explanation": "Dhol is a drum that creates the energetic beats of Garba music."
+          },
+          {
+            "question": "True or False: Garba is only performed by women?",
+            "options": [
+              "True",
+              "False"
+            ],
+            "answer": "False",
+            "explanation": "Both men and women participate in Garba with equal enthusiasm."
+          },
+          {
+            "question": "Which of these is a traditional Garba costume for men?",
+            "options": [
+              "Sherwani",
+              "Kedia and dhoti",
+              "Kurta and jeans",
+              "Lungi"
+            ],
+            "answer": "Kedia and dhoti",
+            "explanation": "Men wear a kedia (short kurta) with a dhoti or trousers."
+          },
+          {
+            "question": "Which of the following describes Garba steps?",
+            "options": [
+              "Jumping in place",
+              "Moving in circles with claps",
+              "Stamping feet rapidly",
+              "Running in a straight line"
+            ],
+            "answer": "Moving in circles with claps",
+            "explanation": "Garba involves graceful circular movements with rhythmic claps."
+          },
+          {
+            "question": "What makes Garba unique compared to other folk dances?",
+            "options": [
+              "It is only performed in temples",
+              "It is performed in a circle around a lamp",
+              "It is a solo dance",
+              "It is performed barefoot"
+            ],
+            "answer": "It is performed in a circle around a lamp",
+            "explanation": "Garba dancers move around a central lamp, symbolizing life."
+          }
+        ]        
+      },
+      {
+        "setNumber": 6,
+        "questions":
+        [
+          {
+            "question": "What is the origin of Garba?",
+            "options": [
+              "Ancient Hindu temples",
+              "Mughal courts",
+              "South Indian festivals",
+              "British colonial rule"
+            ],
+            "answer": "Ancient Hindu temples",
+            "explanation": "Garba originated as a devotional dance in Hindu temples."
+          },
+          {
+            "question": "Who is mainly worshipped during Garba performances?",
+            "options": [
+              "Lord Krishna",
+              "Goddess Durga",
+              "Lord Shiva",
+              "Lord Vishnu"
+            ],
+            "answer": "Goddess Durga",
+            "explanation": "Garba is dedicated to Goddess Durga, symbolizing feminine power."
+          },
+          {
+            "question": "What does dancing in a circle symbolize in Garba?",
+            "options": [
+              "The cycle of life",
+              "The sun's movement",
+              "The changing seasons",
+              "The shape of the Earth"
+            ],
+            "answer": "The cycle of life",
+            "explanation": "The circular movements represent the unending cycle of birth and rebirth."
+          },
+          {
+            "question": "Which region outside India also celebrates Garba widely?",
+            "options": [
+              "USA",
+              "Japan",
+              "Russia",
+              "Brazil"
+            ],
+            "answer": "USA",
+            "explanation": "The Indian diaspora in the USA celebrates Garba with large events."
+          },
+          {
+            "question": "True or False: Garba was influenced by Persian dance forms.",
+            "options": [
+              "True",
+              "False"
+            ],
+            "answer": "False",
+            "explanation": "Garba is purely an Indian folk dance with Hindu spiritual roots."
+          },
+          {
+            "question": "What is the difference between Garba and Dandiya Raas?",
+            "options": [
+              "Garba is slower, while Dandiya Raas is faster",
+              "Garba uses claps, Dandiya Raas uses sticks",
+              "Garba is performed only at weddings",
+              "There is no difference"
+            ],
+            "answer": "Garba uses claps, Dandiya Raas uses sticks",
+            "explanation": "Garba is done with claps, while Dandiya Raas involves wooden sticks."
+          },
+          {
+            "question": "Which Mughal emperor tried to ban Garba?",
+            "options": [
+              "Akbar",
+              "Aurangzeb",
+              "Jahangir",
+              "Babur"
+            ],
+            "answer": "Aurangzeb",
+            "explanation": "Aurangzeb attempted to suppress Hindu cultural expressions like Garba."
+          },
+          {
+            "question": "How has modern Garba evolved?",
+            "options": [
+              "It includes DJ music and fusion styles",
+              "It is performed on stage only",
+              "It is only performed in rural areas",
+              "It no longer involves devotion"
+            ],
+            "answer": "It includes DJ music and fusion styles",
+            "explanation": "Today’s Garba features modern music, lighting, and new dance moves."
+          },
+          {
+            "question": "Which of these describes Garba music?",
+            "options": [
+              "Fast beats with strong rhythm",
+              "Slow and classical",
+              "Only instrumental with no singing",
+              "Only sung in Hindi"
+            ],
+            "answer": "Fast beats with strong rhythm",
+            "explanation": "Garba songs are energetic, with rhythmic beats to match the dance."
+          },
+          {
+            "question": "Which Bollywood movie featured a famous Garba song?",
+            "options": [
+              "Hum Dil De Chuke Sanam",
+              "Lagaan",
+              "Swades",
+              "Dangal"
+            ],
+            "answer": "Hum Dil De Chuke Sanam",
+            "explanation": "The movie popularized Garba with the song Dholi Taro Dhol Baaje."
+          }
+        ]        
+      },
+      {
+        "setNumber": 7,
+        "questions":
+        [
+          {
+            "question": "What is the traditional outfit for women in Garba?",
+            "options": [
+              "Saree",
+              "Lehenga Choli",
+              "Salwar Kameez",
+              "Kurta Pajama"
+            ],
+            "answer": "Lehenga Choli",
+            "explanation": "Women wear colorful Lehenga Choli with embroidery and mirror work."
+          },
+          {
+            "question": "Which of these accessories is commonly worn by women during Garba?",
+            "options": [
+              "Bangles",
+              "Crown",
+              "Anklets",
+              "Earrings"
+            ],
+            "answer": "Bangles",
+            "explanation": "Women wear colorful bangles that match their outfits for Garba."
+          },
+          {
+            "question": "What are the small mirrors on Garba outfits called?",
+            "options": [
+              "Jari",
+              "Kundan",
+              "Abhla",
+              "Polki"
+            ],
+            "answer": "Abhla",
+            "explanation": "Abhla is the traditional mirror work found on Garba dresses."
+          },
+          {
+            "question": "Which of these is a common material used in Garba dresses?",
+            "options": [
+              "Wool",
+              "Cotton",
+              "Silk",
+              "Denim"
+            ],
+            "answer": "Cotton",
+            "explanation": "Garba dresses are usually made from lightweight cotton for comfort."
+          },
+          {
+            "question": "What musical instrument is played to create the beats of Garba?",
+            "options": [
+              "Sitar",
+              "Dhol",
+              "Flute",
+              "Santoor"
+            ],
+            "answer": "Dhol",
+            "explanation": "The dhol (drum) creates the fast-paced beats for Garba music."
+          },
+          {
+            "question": "What is the most common rhythm used in Garba music?",
+            "options": [
+              "4 beats",
+              "6 beats",
+              "8 beats",
+              "12 beats"
+            ],
+            "answer": "8 beats",
+            "explanation": "Garba music follows an 8-beat rhythmic cycle, making it easy to dance to."
+          },
+          {
+            "question": "Which famous singer is known for Garba songs?",
+            "options": [
+              "Shreya Ghoshal",
+              "Falguni Pathak",
+              "Sonu Nigam",
+              "Lata Mangeshkar"
+            ],
+            "answer": "Falguni Pathak",
+            "explanation": "Falguni Pathak is famous for her Garba songs and performances."
+          },
+          {
+            "question": "What is the main language of Garba songs?",
+            "options": [
+              "Hindi",
+              "Marathi",
+              "Gujarati",
+              "Sanskrit"
+            ],
+            "answer": "Gujarati",
+            "explanation": "Traditional Garba songs are sung in Gujarati to honor the culture."
+          },
+          {
+            "question": "Which Bollywood song is inspired by Garba?",
+            "options": [
+              "Dholi Taro Dhol Baaje",
+              "Kala Chashma",
+              "Malhari",
+              "Chikni Chameli"
+            ],
+            "answer": "Dholi Taro Dhol Baaje",
+            "explanation": "The song Dholi Taro is a Bollywood hit featuring Garba moves."
+          },
+          {
+            "question": "Which dance move is common in Garba?",
+            "options": [
+              "Twisting hands",
+              "Clapping and circling",
+              "Jumping up and down",
+              "Fast stomping"
+            ],
+            "answer": "Clapping and circling",
+            "explanation": "Garba dancers clap rhythmically while moving in a circle."
+          }
+        ]        
+      },
+      {
+        "setNumber": 8,
+        "questions":
+        [
+          {
+            "question": "Which city hosts the famous Navratri Garba Festival in Gujarat?",
+            "options": [
+              "Ahmedabad",
+              "Surat",
+              "Vadodara",
+              "Rajkot"
+            ],
+            "answer": "Ahmedabad",
+            "explanation": "Ahmedabad hosts the largest and most famous Navratri Garba festival."
+          },
+          {
+            "question": "In which city is the Garba dance performed at the Rath Yatra celebration?",
+            "options": [
+              "Surat",
+              "Vadodara",
+              "Dwarka",
+              "Puri"
+            ],
+            "answer": "Vadodara",
+            "explanation": "Vadodara is famous for its grand Rath Yatra and Garba performances."
+          },
+          {
+            "question": "Which festival is known for its grand Garba celebrations in Mumbai?",
+            "options": [
+              "Diwali",
+              "Ganesh Chaturthi",
+              "Navratri",
+              "Holi"
+            ],
+            "answer": "Navratri",
+            "explanation": "Navratri is the festival when Mumbai hosts grand Garba events."
+          },
+          {
+            "question": "Which city holds the biggest Garba festival in the United States?",
+            "options": [
+              "New York",
+              "Chicago",
+              "Dallas",
+              "Los Angeles"
+            ],
+            "answer": "Chicago",
+            "explanation": "Chicago has the largest Garba festival in the United States."
+          },
+          {
+            "question": "Which popular Garba event is held in Surat?",
+            "options": [
+              "Dandiya Utsav",
+              "Garba Mahotsav",
+              "Navratri Utsav",
+              "Surat Garba Mela"
+            ],
+            "answer": "Surat Garba Mela",
+            "explanation": "Surat Garba Mela is one of the most vibrant Garba festivals in Gujarat."
+          },
+          {
+            "question": "Where is the largest Garba dance event in the world held?",
+            "options": [
+              "Surat",
+              "Baroda",
+              "Ahmedabad",
+              "Vadodara"
+            ],
+            "answer": "Vadodara",
+            "explanation": "Vadodara holds the record for hosting the world's largest Garba event."
+          },
+          {
+            "question": "In which city can you find the famous 'Navratri Garba Night'?",
+            "options": [
+              "Rajkot",
+              "Gandhinagar",
+              "Ahmedabad",
+              "Bhopal"
+            ],
+            "answer": "Ahmedabad",
+            "explanation": "Ahmedabad is famous for its 'Navratri Garba Night' celebrations."
+          },
+          {
+            "question": "Which festival is the Bangalore Garba Festival celebrated during?",
+            "options": [
+              "Diwali",
+              "Navratri",
+              "Makar Sankranti",
+              "Karwa Chauth"
+            ],
+            "answer": "Navratri",
+            "explanation": "Bangalore Garba Festival is celebrated during Navratri with grand events."
+          },
+          {
+            "question": "What is the name of the famous Garba festival held in the Sardar Vallabhbhai Patel Sports Complex?",
+            "options": [
+              "Dholi Taro Garba",
+              "Dandiya Raat",
+              "Surat Garba",
+              "Navratri Garba Mahotsav"
+            ],
+            "answer": "Navratri Garba Mahotsav",
+            "explanation": "Navratri Garba Mahotsav is held at the Sardar Vallabhbhai Patel Sports Complex in Gujarat."
+          },
+          {
+            "question": "Which state celebrates Garba with grand events in the Rajasthan region?",
+            "options": [
+              "Jaipur",
+              "Udaipur",
+              "Jodhpur",
+              "Kota"
+            ],
+            "answer": "Jaipur",
+            "explanation": "Jaipur is known for its Garba celebrations during the Navratri festival."
+          }
+        ]        
+      },
+      {
+        "setNumber": 9,
+        "questions":
+        [
+          {
+            "question": "Which country outside India celebrates Garba with a large community event?",
+            "options": [
+              "Pakistan",
+              "Nepal",
+              "United States",
+              "United Kingdom"
+            ],
+            "answer": "United States",
+            "explanation": "The United States has large Indian communities that organize Garba events during Navratri."
+          },
+          {
+            "question": "Which city in Canada hosts a well-known Garba event?",
+            "options": [
+              "Toronto",
+              "Montreal",
+              "Vancouver",
+              "Calgary"
+            ],
+            "answer": "Toronto",
+            "explanation": "Toronto is known for its vibrant Garba festivals and Indian cultural celebrations."
+          },
+          {
+            "question": "Which country celebrates Garba as part of its multicultural events?",
+            "options": [
+              "Australia",
+              "France",
+              "South Africa",
+              "Germany"
+            ],
+            "answer": "Australia",
+            "explanation": "Australia celebrates Garba, especially in Sydney and Melbourne."
+          },
+          {
+            "question": "Where is the annual Garba festival celebrated in the United Kingdom?",
+            "options": [
+              "London",
+              "Birmingham",
+              "Manchester",
+              "Leicester"
+            ],
+            "answer": "London",
+            "explanation": "London hosts a famous Garba festival for the Indian community."
+          },
+          {
+            "question": "Which African country has a growing Garba celebration culture?",
+            "options": [
+              "Kenya",
+              "South Africa",
+              "Egypt",
+              "Nigeria"
+            ],
+            "answer": "South Africa",
+            "explanation": "South Africa is seeing an increasing interest in Garba, especially in major cities like Johannesburg."
+          },
+          {
+            "question": "In which country is the Garba festival celebrated with traditional dances during Navratri?",
+            "options": [
+              "Malaysia",
+              "Indonesia",
+              "Thailand",
+              "Singapore"
+            ],
+            "answer": "Singapore",
+            "explanation": "Singapore celebrates Garba during Navratri as part of their rich Indian heritage."
+          },
+          {
+            "question": "Which city in the United States holds the largest Garba event?",
+            "options": [
+              "San Francisco",
+              "New Jersey",
+              "New York",
+              "Chicago"
+            ],
+            "answer": "Chicago",
+            "explanation": "Chicago is known for hosting the largest Garba event in the United States."
+          },
+          {
+            "question": "Which European country celebrates Garba during the Navratri festival?",
+            "options": [
+              "United Kingdom",
+              "Spain",
+              "Germany",
+              "Italy"
+            ],
+            "answer": "United Kingdom",
+            "explanation": "The UK has a large Indian diaspora that celebrates Garba during Navratri."
+          },
+          {
+            "question": "In which city can you find the largest Garba event in Africa?",
+            "options": [
+              "Nairobi",
+              "Johannesburg",
+              "Cape Town",
+              "Accra"
+            ],
+            "answer": "Johannesburg",
+            "explanation": "Johannesburg in South Africa hosts one of the largest Garba celebrations in Africa."
+          },
+          {
+            "question": "In which country does the Indian diaspora perform Garba at the Dussehra festival?",
+            "options": [
+              "Canada",
+              "Japan",
+              "UAE",
+              "Saudi Arabia"
+            ],
+            "answer": "UAE",
+            "explanation": "The UAE celebrates Garba in Dubai and Abu Dhabi during Dussehra."
+          }
+        ]        
+      },
+      {
+        "setNumber": 10,
+        "questions":
+        [
+          {
+            "question": "Which goddess is associated with the celebration of Garba during the Navratri festival?",
+            "options": [
+              "Lakshmi",
+              "Saraswati",
+              "Durga",
+              "Parvati"
+            ],
+            "answer": "Durga",
+            "explanation": "Durga is the goddess worshipped during Navratri, and Garba is performed to honor her."
+          },
+          {
+            "question": "What does the circular movement in Garba dance symbolize?",
+            "options": [
+              "The cycle of life",
+              "Happiness",
+              "The moon",
+              "The sun"
+            ],
+            "answer": "The cycle of life",
+            "explanation": "The circular movement in Garba symbolizes the cycle of life and the eternal nature of the universe."
+          },
+          {
+            "question": "Which season is Garba traditionally performed during?",
+            "options": [
+              "Summer",
+              "Winter",
+              "Monsoon",
+              "Autumn"
+            ],
+            "answer": "Autumn",
+            "explanation": "Garba is traditionally performed during the autumn festival of Navratri."
+          },
+          {
+            "question": "What is the primary reason for performing Garba?",
+            "options": [
+              "Fun",
+              "To show talent",
+              "To seek blessings",
+              "To honor the king"
+            ],
+            "answer": "To seek blessings",
+            "explanation": "Garba is performed to seek blessings from the goddess and celebrate Navratri."
+          },
+          {
+            "question": "What is often used in Garba as a symbol of worship during Navratri?",
+            "options": [
+              "Flowers",
+              "Lamps",
+              "Coconut",
+              "Kalash (water pot)"
+            ],
+            "answer": "Kalash (water pot)",
+            "explanation": "The Kalash (water pot) is an important symbol used in Garba during Navratri to represent abundance."
+          },
+          {
+            "question": "Which cultural aspect is emphasized through Garba?",
+            "options": [
+              "Teamwork and unity",
+              "Competition",
+              "Wealth",
+              "Artistry"
+            ],
+            "answer": "Teamwork and unity",
+            "explanation": "Garba emphasizes teamwork and unity, as people dance together in groups to honor the goddess."
+          },
+          {
+            "question": "During Garba, the Dandiya sticks are used to represent what?",
+            "options": [
+              "The fight between good and evil",
+              "The strength of the dancers",
+              "The spirit of the goddess",
+              "The cycle of time"
+            ],
+            "answer": "The fight between good and evil",
+            "explanation": "The Dandiya sticks symbolize the fight between good and evil, representing the battle fought by goddess Durga."
+          },
+          {
+            "question": "In the traditional Garba dance, why do people move in a circle?",
+            "options": [
+              "To honor the earth",
+              "To symbolize unity",
+              "To follow a pattern",
+              "To pray for prosperity"
+            ],
+            "answer": "To symbolize unity",
+            "explanation": "The circle in Garba symbolizes unity and the interconnectedness of all people."
+          },
+          {
+            "question": "Garba is a form of devotional dance performed in honor of which Hindu goddess?",
+            "options": [
+              "Lakshmi",
+              "Saraswati",
+              "Parvati",
+              "Durga"
+            ],
+            "answer": "Durga",
+            "explanation": "Garba is a devotional dance performed in honor of Durga, the Hindu goddess of power and strength."
+          },
+          {
+            "question": "The energy and rhythm in Garba symbolize which force of nature?",
+            "options": [
+              "Fire",
+              "Air",
+              "Water",
+              "Earth"
+            ],
+            "answer": "Fire",
+            "explanation": "The energy and rhythm of Garba symbolize the force of fire, representing strength and vibrancy."
+          }
+        ]        
+      }
+   ]   
           },
           {
             "subtopicName": "Dandiya 🎉",
@@ -7030,9 +7720,699 @@
                           "explanation": "Traditional costumes for men include the kedia and dhoti, often paired with a turban, not jeans."
                         }
                       ] 
-                    }
-                  ]
-          }
+   },
+   {
+    "setNumber": 5,
+    "questions":
+    [
+      {
+        "question": "What does Dandiya symbolize in Gujarat?",
+        "options": [
+          "The harvest season",
+          "The spiritual journey",
+          "Goddess Durga's victory over evil",
+          "The birth of Lord Krishna"
+        ],
+        "answer": "Goddess Durga's victory over evil",
+        "explanation": "Dandiya symbolizes Goddess Durga’s triumph over Mahishasura, representing the victory of good over evil."
+      },
+      {
+        "question": "Which dance form involves striking sticks in rhythm?",
+        "options": [
+          "Kathak",
+          "Dandiya",
+          "Bharatnatyam",
+          "Kuchipudi"
+        ],
+        "answer": "Dandiya",
+        "explanation": "Dandiya is a folk dance where dancers strike sticks in rhythm while moving in a circle."
+      },
+      {
+        "question": "During which festival is Dandiya a popular activity?",
+        "options": [
+          "Holi",
+          "Navratri",
+          "Christmas",
+          "Diwali"
+        ],
+        "answer": "Navratri",
+        "explanation": "Dandiya is primarily performed during the nine nights of Navratri, a festival celebrating Goddess Durga."
+      },
+      {
+        "question": "What is the purpose of the Dandiya sticks?",
+        "options": [
+          "To make noise",
+          "To represent Goddess Durga's swords",
+          "To decorate the dancers",
+          "To perform acrobatics"
+        ],
+        "answer": "To represent Goddess Durga's swords",
+        "explanation": "The sticks in Dandiya represent the swords that Goddess Durga used in her fight against Mahishasura."
+      },
+      {
+        "question": "True or False: Dandiya is always performed by large groups.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "answer": "True",
+        "explanation": "Dandiya is typically performed by large groups of dancers who move together in synchronized patterns."
+      },
+      {
+        "question": "What are some of the main instruments used in Dandiya music?",
+        "options": [
+          "Trumpet and piano",
+          "Dhol and tabla",
+          "Guitar and drum kit",
+          "Flute and sitar"
+        ],
+        "answer": "Dhol and tabla",
+        "explanation": "The lively rhythm of Dandiya is created with instruments like the dhol, tabla, and shehnai."
+      },
+      {
+        "question": "Which of these movements is a part of Dandiya?",
+        "options": [
+          "Fast clapping",
+          "Foot stamping",
+          "Stick striking in rhythm",
+          "Slow twirling"
+        ],
+        "answer": "Stick striking in rhythm",
+        "explanation": "The key movement in Dandiya is striking sticks in rhythm, often in pairs, creating a lively dance."
+      },
+      {
+        "question": "Why do dancers wear colorful costumes in Dandiya?",
+        "options": [
+          "To look more graceful",
+          "To celebrate the festival of lights",
+          "To honor Goddess Durga",
+          "To blend into the crowd"
+        ],
+        "answer": "To honor Goddess Durga",
+        "explanation": "The bright, colorful costumes symbolize devotion and respect for Goddess Durga."
+      },
+      {
+        "question": "What is the central theme of Dandiya?",
+        "options": [
+          "Harvesting crops",
+          "Mythological storytelling",
+          "Victory of good over evil",
+          "The seasons"
+        ],
+        "answer": "Victory of good over evil",
+        "explanation": "Dandiya celebrates the victory of Goddess Durga over the demon Mahishasura, embodying the triumph of good over evil."
+      },
+      {
+        "question": "Which region of India is most famous for Dandiya?",
+        "options": [
+          "Punjab",
+          "Gujarat",
+          "Kerala",
+          "Uttar Pradesh"
+        ],
+        "answer": "Gujarat",
+        "explanation": "Dandiya originates from Gujarat, where it is an integral part of cultural celebrations like Navratri."
+      }
+    ]    
+   },
+   {
+    "setNumber": 6,
+    "questions":
+    [
+      {
+        "question": "Which goddess is associated with the Dandiya dance?",
+        "options": [
+          "Saraswati",
+          "Lakshmi",
+          "Durga",
+          "Parvati"
+        ],
+        "answer": "Durga",
+        "explanation": "Dandiya honors Goddess Durga, celebrating her victory over the demon Mahishasura."
+      },
+      {
+        "question": "What is the main characteristic of Dandiya music?",
+        "options": [
+          "Slow and peaceful",
+          "Fast and rhythmic",
+          "Classical and serene",
+          "Soft and melodic"
+        ],
+        "answer": "Fast and rhythmic",
+        "explanation": "Dandiya music is energetic and rhythmic, with beats from instruments like the dhol and tabla."
+      },
+      {
+        "question": "True or False: Dandiya is only performed during Navratri.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "answer": "False",
+        "explanation": "While Dandiya is most popular during Navratri, it is also performed at weddings and other cultural events."
+      },
+      {
+        "question": "What is the shape of the dance formation in Dandiya?",
+        "options": [
+          "Triangle",
+          "Circle",
+          "Straight line",
+          "Square"
+        ],
+        "answer": "Circle",
+        "explanation": "Dandiya dancers typically move in a circle, with synchronized stick movements."
+      },
+      {
+        "question": "What are Dandiya sticks decorated with?",
+        "options": [
+          "Ribbons and beads",
+          "Flowers",
+          "Lights",
+          "Paintings"
+        ],
+        "answer": "Ribbons and beads",
+        "explanation": "Dandiya sticks are decorated with colorful ribbons, beads, and sometimes paint, symbolizing Goddess Durga's swords."
+      },
+      {
+        "question": "Which other dance is often confused with Dandiya?",
+        "options": [
+          "Bharatanatyam",
+          "Kathak",
+          "Garba",
+          "Odissi"
+        ],
+        "answer": "Garba",
+        "explanation": "Dandiya and Garba are both performed during Navratri, but Garba involves clapping and hand movements, while Dandiya uses sticks."
+      },
+      {
+        "question": "What is a \"Chaniya Choli\"?",
+        "options": [
+          "A type of dance movement",
+          "A traditional costume worn by women",
+          "A folk instrument",
+          "A type of dance step"
+        ],
+        "answer": "A traditional costume worn by women",
+        "explanation": "The chaniya choli is a colorful outfit worn by women during Dandiya, decorated with embroidery and mirror work."
+      },
+      {
+        "question": "Which instruments help create the rhythm in Dandiya?",
+        "options": [
+          "Dhol, tabla, and shehnai",
+          "Drums and guitar",
+          "Piano and flute",
+          "Violin and sitar"
+        ],
+        "answer": "Dhol, tabla, and shehnai",
+        "explanation": "Traditional Gujarati folk music, featuring instruments like the dhol, tabla, and shehnai, provides the rhythm for Dandiya."
+      },
+      {
+        "question": "Why is Dandiya important in Gujarat?",
+        "options": [
+          "It marks the beginning of the harvest season",
+          "It celebrates religious unity",
+          "It is a part of cultural heritage",
+          "It is performed for entertainment only"
+        ],
+        "answer": "It is a part of cultural heritage",
+        "explanation": "Dandiya is deeply rooted in the cultural heritage of Gujarat and is an important part of community celebrations."
+      },
+      {
+        "question": "What is the typical attire worn by men during Dandiya?",
+        "options": [
+          "Kedia and dhoti",
+          "Kurta and jeans",
+          "Shirt and trousers",
+          "Sari and blouse"
+        ],
+        "answer": "Kedia and dhoti",
+        "explanation": "Men wear traditional attire, such as the kedia paired with a dhoti, during Dandiya performances."
+      }
+    ]    
+   },
+   {
+    "setNumber": 7,
+    "questions":
+    [
+      {
+        "question": "Which dance form is often combined with Dandiya during Navratri celebrations?",
+        "options": [
+          "Kathak",
+          "Bharatanatyam",
+          "Garba",
+          "Kuchipudi"
+        ],
+        "answer": "Garba",
+        "explanation": "Garba is often performed alongside Dandiya during Navratri, and both dances are integral to the celebrations."
+      },
+      {
+        "question": "True or False: The sticks used in Dandiya are always of the same length.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "answer": "False",
+        "explanation": "The length of Dandiya sticks can vary, but they are generally of a manageable size to allow easy movement."
+      },
+      {
+        "question": "Which of the following is a traditional element of a Dandiya performance?",
+        "options": [
+          "Use of lights and lasers",
+          "Dancers wearing colorful costumes",
+          "Dancers performing in silence",
+          "Dancers using musical instruments other than sticks"
+        ],
+        "answer": "Dancers wearing colorful costumes",
+        "explanation": "Dandiya dancers traditionally wear colorful costumes that represent the vibrancy of the festival."
+      },
+      {
+        "question": "Which region of India celebrates Dandiya with the most fervor?",
+        "options": [
+          "Uttar Pradesh",
+          "Gujarat",
+          "Kerala",
+          "West Bengal"
+        ],
+        "answer": "Gujarat",
+        "explanation": "Gujarat is the state most famous for celebrating Dandiya, especially during Navratri."
+      },
+      {
+        "question": "Which of the following is NOT a type of Dandiya dance?",
+        "options": [
+          "Dholi Raas",
+          "Garba Raas",
+          "Dandiya Raas",
+          "Dhol Tasha"
+        ],
+        "answer": "Dhol Tasha",
+        "explanation": "Dhol Tasha is a separate Maharashtrian tradition and not a type of Dandiya."
+      },
+      {
+        "question": "What is the common pace of music in a Dandiya dance?",
+        "options": [
+          "Moderate",
+          "Fast",
+          "Slow",
+          "Variable"
+        ],
+        "answer": "Fast",
+        "explanation": "Dandiya music is generally fast-paced, matching the energetic movements of the dance."
+      },
+      {
+        "question": "What does the Dandiya dance symbolize?",
+        "options": [
+          "A battle between gods and demons",
+          "The union of two lovers",
+          "The victory of good over evil",
+          "The harvest season"
+        ],
+        "answer": "The victory of good over evil",
+        "explanation": "Dandiya symbolizes the victory of Goddess Durga over the demon Mahishasura, celebrating the triumph of good over evil."
+      },
+      {
+        "question": "Which group of people is most likely to participate in a Dandiya event?",
+        "options": [
+          "Children",
+          "Senior citizens",
+          "Teenagers and adults",
+          "Only professionals"
+        ],
+        "answer": "Teenagers and adults",
+        "explanation": "Teenagers and adults are the main participants in Dandiya events, with everyone joining in the festivities."
+      },
+      {
+        "question": "What is the significance of the circular formation in Dandiya?",
+        "options": [
+          "Represents the moon",
+          "Represents the circle of life",
+          "Represents unity and togetherness",
+          "Represents eternal peace"
+        ],
+        "answer": "Represents unity and togetherness",
+        "explanation": "The circular formation in Dandiya symbolizes unity and the collective spirit of the community."
+      },
+      {
+        "question": "What is the meaning of the word 'Raas' in Dandiya Raas?",
+        "options": [
+          "Joy",
+          "Dance",
+          "Rhythm",
+          "Melody"
+        ],
+        "answer": "Dance",
+        "explanation": "'Raas' means 'dance,' so 'Dandiya Raas' refers to the traditional dance form performed with sticks."
+      }
+    ]
+   },
+   {
+    "setNumber": 8,
+    "questions":
+    [
+      {
+        "question": "Which deity is often depicted holding Dandiya sticks in ancient artwork?",
+        "options": [
+          "Lord Krishna",
+          "Goddess Durga",
+          "Lord Shiva",
+          "Goddess Saraswati"
+        ],
+        "answer": "Lord Krishna",
+        "explanation": "Lord Krishna is often depicted playing Raas Leela with Radha and the Gopis, using sticks similar to Dandiya."
+      },
+      {
+        "question": "Which traditional fabric is most commonly used for Dandiya outfits?",
+        "options": [
+          "Silk",
+          "Cotton",
+          "Chiffon",
+          "Denim"
+        ],
+        "answer": "Cotton",
+        "explanation": "Cotton fabrics, often with intricate embroidery and mirror work, are preferred for their comfort and traditional appeal."
+      },
+      {
+        "question": "What is the name of the special embroidery work found on Dandiya costumes?",
+        "options": [
+          "Kanjeevaram",
+          "Chikankari",
+          "Mirror work",
+          "Bandhani"
+        ],
+        "answer": "Mirror work",
+        "explanation": "Mirror work embroidery is a signature feature of traditional Gujarati Dandiya costumes."
+      },
+      {
+        "question": "What does the sound of Dandiya sticks symbolize?",
+        "options": [
+          "The heartbeat of the Earth",
+          "The clashing of divine forces",
+          "The footsteps of Goddess Durga",
+          "The rhythm of a war cry"
+        ],
+        "answer": "The clashing of divine forces",
+        "explanation": "The sound of sticks hitting together represents the symbolic battle between good and evil."
+      },
+      {
+        "question": "Which of these dance steps is commonly used in Dandiya?",
+        "options": [
+          "The twirl-and-clap",
+          "The four-step hop",
+          "The strike-and-turn",
+          "The moonwalk"
+        ],
+        "answer": "The strike-and-turn",
+        "explanation": "Dancers strike their sticks while turning in rhythm, creating a dynamic movement sequence."
+      },
+      {
+        "question": "What do people usually do before beginning a Dandiya dance?",
+        "options": [
+          "Offer prayers to Goddess Durga",
+          "Eat sweets for energy",
+          "Practice the steps individually",
+          "Meditate in silence"
+        ],
+        "answer": "Offer prayers to Goddess Durga",
+        "explanation": "Dandiya performances typically start with a prayer to Goddess Durga, seeking blessings for the festival."
+      },
+      {
+        "question": "Which of these cities is famous for hosting the largest Dandiya events?",
+        "options": [
+          "Jaipur",
+          "Ahmedabad",
+          "Kolkata",
+          "Hyderabad"
+        ],
+        "answer": "Ahmedabad",
+        "explanation": "Ahmedabad, Gujarat, hosts some of the largest and most elaborate Dandiya and Garba celebrations in India."
+      },
+      {
+        "question": "What is the ideal footwear for performing Dandiya?",
+        "options": [
+          "High heels",
+          "Sneakers",
+          "Traditional mojris or juttis",
+          "Sandals"
+        ],
+        "answer": "Traditional mojris or juttis",
+        "explanation": "Mojris or juttis are preferred as they provide comfort and match traditional attire."
+      },
+      {
+        "question": "Which of these is a common greeting during Navratri and Dandiya events?",
+        "options": [
+          "Shubh Navratri",
+          "Happy Holi",
+          "Ganpati Bappa Morya",
+          "Eid Mubarak"
+        ],
+        "answer": "Shubh Navratri",
+        "explanation": "\"Shubh Navratri\" is a common greeting during the festival when Dandiya is performed."
+      },
+      {
+        "question": "Which of these actions is considered disrespectful during Dandiya?",
+        "options": [
+          "Dancing with enthusiasm",
+          "Dropping the sticks repeatedly",
+          "Wearing traditional attire",
+          "Smiling while dancing"
+        ],
+        "answer": "Dropping the sticks repeatedly",
+        "explanation": "Dropping the sticks frequently is considered disrespectful as it disrupts the flow of the dance."
+      }
+    ]
+   },
+   {
+    "setNumber": 9,
+    "questions":
+    [
+      {
+        "question": "What is the origin of the word 'Dandiya'?",
+        "options": [
+          "A Sanskrit word meaning 'stick'",
+          "A Persian word meaning 'circle'",
+          "A Marathi word meaning 'rhythm'",
+          "A Tamil word meaning 'celebration'"
+        ],
+        "answer": "A Sanskrit word meaning 'stick'",
+        "explanation": "The word 'Dandiya' comes from Sanskrit and refers to the wooden sticks used in the dance."
+      },
+      {
+        "question": "Which of these is a key difference between Garba and Dandiya?",
+        "options": [
+          "Garba is slower, while Dandiya is more energetic",
+          "Garba is performed with sticks, while Dandiya is done with claps",
+          "Dandiya is a solo dance, while Garba is a group dance",
+          "Garba is only performed in temples, while Dandiya is performed outdoors"
+        ],
+        "answer": "Garba is slower, while Dandiya is more energetic",
+        "explanation": "Garba involves graceful circular movements, while Dandiya is more energetic and performed with sticks."
+      },
+      {
+        "question": "How many sticks does each dancer traditionally use in Dandiya?",
+        "options": [
+          "One",
+          "Two",
+          "Four",
+          "Six"
+        ],
+        "answer": "Two",
+        "explanation": "Each dancer uses two sticks, one in each hand, to strike against their partner’s sticks in rhythm with the music."
+      },
+      {
+        "question": "Which of these Bollywood movies featured a famous Dandiya sequence?",
+        "options": [
+          "Devdas",
+          "Hum Dil De Chuke Sanam",
+          "Lagaan",
+          "Zindagi Na Milegi Dobara"
+        ],
+        "answer": "Hum Dil De Chuke Sanam",
+        "explanation": "The movie 'Hum Dil De Chuke Sanam' featured the iconic Dandiya dance sequence, making it popular nationwide."
+      },
+      {
+        "question": "What do people traditionally wear on their heads during Dandiya in Gujarat?",
+        "options": [
+          "Turbans",
+          "Caps",
+          "Dupattas",
+          "Crowns"
+        ],
+        "answer": "Turbans",
+        "explanation": "In traditional Dandiya performances, men often wear colorful turbans, while women wear embellished dupattas."
+      },
+      {
+        "question": "What is the name of the circular earthen lamp arrangement often seen during Navratri?",
+        "options": [
+          "Rangoli",
+          "Deepotsav",
+          "Garbi",
+          "Jyoti Kalash"
+        ],
+        "answer": "Garbi",
+        "explanation": "'Garbi' is a decorative earthen lamp arrangement that is often placed in the center of Garba and Dandiya celebrations."
+      },
+      {
+        "question": "Which hand movement is commonly used in Dandiya?",
+        "options": [
+          "Clapping both hands together",
+          "Waving hands in the air",
+          "Rotating wrists while striking the sticks",
+          "Snapping fingers while turning"
+        ],
+        "answer": "Rotating wrists while striking the sticks",
+        "explanation": "Dancers rotate their wrists while striking the sticks to create fluid and rhythmic movements."
+      },
+      {
+        "question": "Why is Dandiya sometimes called 'The Sword Dance'?",
+        "options": [
+          "Because it mimics the battle between Goddess Durga and Mahishasura",
+          "Because dancers hold small swords instead of sticks",
+          "Because warriors traditionally performed it before battles",
+          "Because it was created to train soldiers in fighting"
+        ],
+        "answer": "Because it mimics the battle between Goddess Durga and Mahishasura",
+        "explanation": "The dance represents the symbolic fight between good and evil, similar to Durga's battle with Mahishasura."
+      },
+      {
+        "question": "Which accessory is commonly worn by women during Dandiya?",
+        "options": [
+          "Anklets with bells",
+          "Sunglasses",
+          "Heavy leather boots",
+          "Sports wristbands"
+        ],
+        "answer": "Anklets with bells",
+        "explanation": "Women often wear anklets with small bells that jingle as they dance, adding to the rhythm of the performance."
+      },
+      {
+        "question": "Which of these colors is most commonly associated with Dandiya costumes?",
+        "options": [
+          "Black and white",
+          "Green and blue",
+          "Bright red, yellow, and orange",
+          "Silver and grey"
+        ],
+        "answer": "Bright red, yellow, and orange",
+        "explanation": "Traditional Dandiya outfits are vibrant, featuring bright colors such as red, yellow, and orange, symbolizing festivity and energy."
+      }
+    ]    
+   },
+   {
+    "setNumber": 10,
+    "questions":
+    [
+      {
+        "question": "Which of the following is NOT a Dandiya movement?",
+        "options": [
+          "Single-hand strike",
+          "Cross-hand strike",
+          "Clapping above the head",
+          "Hopping on one leg"
+        ],
+        "answer": "Hopping on one leg",
+        "explanation": "Dandiya involves rhythmic hand movements, but hopping on one leg is not a traditional movement."
+      },
+      {
+        "question": "What do the sticks in Dandiya represent in Hindu mythology?",
+        "options": [
+          "The weapons of Goddess Durga",
+          "The flute of Lord Krishna",
+          "The arrows of Lord Ram",
+          "The drumsticks of Lord Shiva"
+        ],
+        "answer": "The weapons of Goddess Durga",
+        "explanation": "The Dandiya sticks symbolize the weapons of Goddess Durga used in her battle against evil forces."
+      },
+      {
+        "question": "Which of these is a common outfit worn by men during Dandiya?",
+        "options": [
+          "Dhoti-Kurta",
+          "Sherwani",
+          "Kurta-Pajama with a Kedia",
+          "Suit and tie"
+        ],
+        "answer": "Kurta-Pajama with a Kedia",
+        "explanation": "Men traditionally wear a Kurta-Pajama paired with a Kedia (a short, flared jacket) during Dandiya."
+      },
+      {
+        "question": "Dandiya music is typically played in which language?",
+        "options": [
+          "Hindi",
+          "Gujarati",
+          "Marathi",
+          "Tamil"
+        ],
+        "answer": "Gujarati",
+        "explanation": "Traditional Dandiya songs are sung in Gujarati, as the dance originates from Gujarat."
+      },
+      {
+        "question": "Which of the following is NOT a common Dandiya accessory?",
+        "options": [
+          "Colorful dupatta",
+          "Heavy silver anklets",
+          "Large earrings",
+          "Hand gloves"
+        ],
+        "answer": "Hand gloves",
+        "explanation": "Hand gloves are not traditionally worn during Dandiya, as dancers need a good grip on the sticks."
+      },
+      {
+        "question": "Dandiya performances are most popular in which month of the year?",
+        "options": [
+          "January",
+          "May",
+          "October",
+          "December"
+        ],
+        "answer": "October",
+        "explanation": "Dandiya is most popular in October during Navratri, which often falls in this month."
+      },
+      {
+        "question": "Which of the following is a famous Dandiya song?",
+        "options": [
+          "Dholi Taro Dhol Baaje",
+          "Kajra Re",
+          "Badtameez Dil",
+          "Chaiyya Chaiyya"
+        ],
+        "answer": "Dholi Taro Dhol Baaje",
+        "explanation": "'Dholi Taro Dhol Baaje' is a well-known Bollywood song featuring a Dandiya dance sequence."
+      },
+      {
+        "question": "Which of these dance moves is frequently seen in Dandiya performances?",
+        "options": [
+          "Moonwalk",
+          "Two-step turn",
+          "Windmill arms",
+          "High-kick jumps"
+        ],
+        "answer": "Two-step turn",
+        "explanation": "The two-step turn is a common move in Dandiya, where dancers strike sticks and turn rhythmically."
+      },
+      {
+        "question": "Which festival often follows the end of Navratri celebrations?",
+        "options": [
+          "Makar Sankranti",
+          "Diwali",
+          "Pongal",
+          "Raksha Bandhan"
+        ],
+        "answer": "Diwali",
+        "explanation": "Diwali follows Navratri and is celebrated a few weeks after the Dandiya festivities conclude."
+      },
+      {
+        "question": "Which of these groups commonly organizes Dandiya nights?",
+        "options": [
+          "Schools and colleges",
+          "Cultural associations",
+          "Community centers",
+          "All of the above"
+        ],
+        "answer": "All of the above",
+        "explanation": "Dandiya nights are organized by various groups, including schools, cultural organizations, and community centers."
+      }
+    ]    
+   }
+        ]
+        }
         ]
       },
       {
@@ -7536,7 +8916,552 @@
                         "explanation": "Kathakali is mainly performed during temple festivals and special cultural events in Kerala."
                       }
                     ] 
-                  }
+    },
+    {
+      "setNumber": 5,
+      "questions":[
+        {
+          "question": "Which Indian state is Kathakali traditionally associated with?",
+          "options": [
+            "Tamil Nadu",
+            "Karnataka",
+            "Kerala",
+            "Andhra Pradesh"
+          ],
+          "answer": "Kerala",
+          "explanation": "Kathakali is a classical dance-drama from Kerala, known for its elaborate costumes and expressive storytelling."
+        },
+        {
+          "question": "What is the primary language used in Kathakali performances?",
+          "options": [
+            "Hindi",
+            "Malayalam",
+            "Sanskrit",
+            "Tamil"
+          ],
+          "answer": "Malayalam",
+          "explanation": "Although Kathakali draws from Sanskrit texts, its performances are primarily in Malayalam, the language of Kerala."
+        },
+        {
+          "question": "Which of the following is NOT a characteristic of Kathakali?",
+          "options": [
+            "Elaborate facial makeup",
+            "Detailed hand gestures (Mudras)",
+            "Spontaneous dialogues",
+            "Vibrant costumes"
+          ],
+          "answer": "Spontaneous dialogues",
+          "explanation": "Kathakali is a silent dance-drama, with storytelling through facial expressions and gestures rather than spoken dialogues."
+        },
+        {
+          "question": "Kathakali makeup is called 'Chutti' and is used to:",
+          "options": [
+            "Distinguish character types",
+            "Show emotions",
+            "Protect the skin from heavy lighting",
+            "Indicate social status"
+          ],
+          "answer": "Distinguish character types",
+          "explanation": "Chutti makeup categorizes characters into divine, heroic, evil, and demonic roles through color schemes."
+        },
+        {
+          "question": "The term 'Kathakali' is derived from which two words?",
+          "options": [
+            "Katha (Story) and Kali (Play)",
+            "Katham (Dance) and Kali (Night)",
+            "Katha (Poetry) and Kali (Festival)",
+            "Katha (Mythology) and Kali (Performance)"
+          ],
+          "answer": "Katha (Story) and Kali (Play)",
+          "explanation": "The term Kathakali translates to 'Story Play,' indicating its theatrical and narrative elements."
+        },
+        {
+          "question": "What is the traditional musical accompaniment in Kathakali called?",
+          "options": [
+            "Mridangam",
+            "Chenda",
+            "Tabla",
+            "Veena"
+          ],
+          "answer": "Chenda",
+          "explanation": "Chenda, a cylindrical percussion instrument, is a key element in Kathakali music."
+        },
+        {
+          "question": "Which of the following is NOT a type of Kathakali character?",
+          "options": [
+            "Pachcha (Green)",
+            "Kathi (Knife)",
+            "Minukku (Shiny)",
+            "Nattuvanar (Narrator)"
+          ],
+          "answer": "Nattuvanar (Narrator)",
+          "explanation": "Nattuvanar is a role in Bharatanatyam, while Kathakali has Pachcha (noble), Kathi (villainous), Minukku (gentle), and other character types."
+        },
+        {
+          "question": "Kathakali is traditionally performed at what time of day?",
+          "options": [
+            "Morning",
+            "Afternoon",
+            "Evening",
+            "Night"
+          ],
+          "answer": "Night",
+          "explanation": "Kathakali performances usually begin in the evening and continue through the night."
+        },
+        {
+          "question": "Which epic stories are commonly depicted in Kathakali performances?",
+          "options": [
+            "Ramayana and Mahabharata",
+            "Panchatantra and Jataka Tales",
+            "Arthashastra and Vedas",
+            "Bible and Quran"
+          ],
+          "answer": "Ramayana and Mahabharata",
+          "explanation": "Kathakali is deeply rooted in Hindu epics like the Ramayana and Mahabharata."
+        },
+        {
+          "question": "Which of the following dance forms is most similar to Kathakali?",
+          "options": [
+            "Bharatanatyam",
+            "Odissi",
+            "Krishnanattam",
+            "Manipuri"
+          ],
+          "answer": "Krishnanattam",
+          "explanation": "Krishnanattam, another Kerala dance-drama, is considered a precursor to Kathakali."
+        }
+      ]
+    },
+    {
+      "setNumber": 6,
+      "questions":
+      [
+        {
+          "question": "Which of the following is NOT a primary category of Kathakali characters?",
+          "options": [
+            "Pachcha (Green)",
+            "Kathi (Knife)",
+            "Nataraja (Dancer)",
+            "Minukku (Shiny)"
+          ],
+          "answer": "Nataraja (Dancer)",
+          "explanation": "Nataraja is associated with Lord Shiva and Bharatanatyam, not Kathakali."
+        },
+        {
+          "question": "Which Kathakali character type is associated with righteousness and heroism?",
+          "options": [
+            "Thadi (Bearded)",
+            "Kari (Dark)",
+            "Pachcha (Green)",
+            "Kathi (Knife)"
+          ],
+          "answer": "Pachcha (Green)",
+          "explanation": "Green-painted characters represent noble heroes like Rama and Arjuna."
+        },
+        {
+          "question": "Which role does a performer in a red beard (Chuvanna Thadi) typically play?",
+          "options": [
+            "Noble king",
+            "Demon or villain",
+            "Goddess",
+            "Sage or priest"
+          ],
+          "answer": "Demon or villain",
+          "explanation": "Red-bearded characters represent aggressive and villainous roles."
+        },
+        {
+          "question": "Which facial feature is most exaggerated in a Kathakali performer’s makeup?",
+          "options": [
+            "Lips",
+            "Nose",
+            "Eyes",
+            "Ears"
+          ],
+          "answer": "Eyes",
+          "explanation": "Eye movements are crucial for expression and are emphasized with bold makeup."
+        },
+        {
+          "question": "Which character type uses the least makeup and subtle expressions?",
+          "options": [
+            "Minukku",
+            "Kari",
+            "Kathi",
+            "Thadi"
+          ],
+          "answer": "Minukku",
+          "explanation": "Minukku (shiny) characters, such as sages and female roles, have lighter makeup."
+        },
+        {
+          "question": "What training method helps Kathakali performers enhance their expressions?",
+          "options": [
+            "Yoga exercises",
+            "Mirror practice",
+            "Meditation",
+            "Singing lessons"
+          ],
+          "answer": "Mirror practice",
+          "explanation": "Performers practice in front of mirrors to perfect facial expressions."
+        },
+        {
+          "question": "Which gender primarily performed Kathakali in historical times?",
+          "options": [
+            "Women",
+            "Men",
+            "Both equally",
+            "Children only"
+          ],
+          "answer": "Men",
+          "explanation": "Traditionally, only men performed Kathakali, including female roles."
+        },
+        {
+          "question": "How does a Kathakali actor communicate dialogue?",
+          "options": [
+            "Through spoken words",
+            "Through lip-syncing",
+            "Through hand gestures and facial expressions",
+            "Through written signs"
+          ],
+          "answer": "Through hand gestures and facial expressions",
+          "explanation": "Kathakali is a silent art form where actors use mudras and expressions to narrate stories."
+        },
+        {
+          "question": "Which instrument helps in setting the rhythm for a Kathakali performance?",
+          "options": [
+            "Violin",
+            "Chenda",
+            "Mridangam",
+            "Veena"
+          ],
+          "answer": "Chenda",
+          "explanation": "The Chenda drum provides rhythmic beats that drive the performance."
+        },
+        {
+          "question": "Which of the following is NOT a feature of a Kathakali costume?",
+          "options": [
+            "Large headgear",
+            "Heavy silk skirts",
+            "Simple cotton attire",
+            "Painted wooden ornaments"
+          ],
+          "answer": "Simple cotton attire",
+          "explanation": "Kathakali costumes are elaborate with silk, gold embellishments, and heavy jewelry."
+        }
+      ]
+    },
+    {
+      "setNumber": 7,
+      "questions":[
+        {
+          "question": "Which historical period saw the emergence of Kathakali?",
+          "options": [
+            "15th century",
+            "17th century",
+            "19th century",
+            "21st century"
+          ],
+          "answer": "17th century",
+          "explanation": "Kathakali developed in the 17th century in Kerala as a fusion of drama and dance."
+        },
+        {
+          "question": "What is the primary material used for Kathakali headgear?",
+          "options": [
+            "Wood",
+            "Metal",
+            "Paper-mâché",
+            "Plastic"
+          ],
+          "answer": "Wood",
+          "explanation": "Kathakali headgear is traditionally crafted from light wood, elaborately painted and decorated."
+        },
+        {
+          "question": "Which of the following is NOT a role of a Kathakali singer?",
+          "options": [
+            "Narrating the story",
+            "Providing vocal expressions",
+            "Dancing on stage",
+            "Singing ragas"
+          ],
+          "answer": "Dancing on stage",
+          "explanation": "Kathakali singers provide vocal accompaniment offstage, while actors perform through gestures."
+        },
+        {
+          "question": "How does a Kathakali actor express emotions during a performance?",
+          "options": [
+            "Speaking dialogues",
+            "Using facial expressions and gestures",
+            "Through voice modulation",
+            "By changing costumes"
+          ],
+          "answer": "Using facial expressions and gestures",
+          "explanation": "Kathakali relies on intricate facial expressions and symbolic hand gestures (mudras) instead of spoken dialogue."
+        },
+        {
+          "question": "Which is a common setting for Kathakali performances?",
+          "options": [
+            "Open-air stage",
+            "Temple courtyards",
+            "Theatres",
+            "School halls"
+          ],
+          "answer": "Temple courtyards",
+          "explanation": "Traditional Kathakali performances often take place in temple courtyards during religious festivals."
+        },
+        {
+          "question": "What does the word 'Kathakali' literally mean?",
+          "options": [
+            "Dramatic dance",
+            "Story play",
+            "Holy performance",
+            "Masked dance"
+          ],
+          "answer": "Story play",
+          "explanation": "Kathakali is derived from the Malayalam words 'Katha' (story) and 'Kali' (play), meaning a dramatic storytelling art form."
+        },
+        {
+          "question": "Which of these is NOT a Kathakali mudra (hand gesture)?",
+          "options": [
+            "Katakam",
+            "Tripataka",
+            "Abhaya",
+            "Bharatanatyam"
+          ],
+          "answer": "Bharatanatyam",
+          "explanation": "Bharatanatyam is a classical dance form, whereas the other options are Kathakali mudras."
+        },
+        {
+          "question": "How long does it take to apply a full Kathakali makeup?",
+          "options": [
+            "30 minutes",
+            "1 hour",
+            "2-3 hours",
+            "5 hours"
+          ],
+          "answer": "2-3 hours",
+          "explanation": "Kathakali makeup is intricate and can take several hours to complete before a performance."
+        },
+        {
+          "question": "Which Kathakali character type wears a black face with white and red markings?",
+          "options": [
+            "Pachcha",
+            "Minukku",
+            "Kari",
+            "Kathi"
+          ],
+          "answer": "Kari",
+          "explanation": "Kari characters, representing evil spirits or hunters, have black faces with intricate white and red designs."
+        },
+        {
+          "question": "Which body part movement is crucial for Kathakali’s expressions?",
+          "options": [
+            "Hands",
+            "Eyebrows",
+            "Feet",
+            "Neck"
+          ],
+          "answer": "Eyebrows",
+          "explanation": "Kathakali actors use exaggerated eyebrow movements to convey emotions and expressions."
+        }
+      ]
+    },
+    {
+      "setNumber": 8,
+      "questions":
+      [
+        {
+          "question": "Which Indian state is Kathakali traditionally associated with?",
+          "options": ["Tamil Nadu", "Karnataka", "Kerala", "Andhra Pradesh"],
+          "answer": "Kerala",
+          "explanation": "Kathakali is a classical dance-drama from Kerala, known for its elaborate costumes and expressive storytelling."
+        },
+        {
+          "question": "What is the primary theme of most Kathakali performances?",
+          "options": ["Mythological stories", "Romantic tales", "Historical battles", "Social issues"],
+          "answer": "Mythological stories",
+          "explanation": "Kathakali performances often depict stories from Hindu epics like the Ramayana and Mahabharata."
+        },
+        {
+          "question": "Which color is used in Kathakali makeup to represent noble heroes?",
+          "options": ["Green", "Red", "Black", "Yellow"],
+          "answer": "Green",
+          "explanation": "A green face symbolizes noble and virtuous characters in Kathakali."
+        },
+        {
+          "question": "Which Indian epic is frequently depicted in Kathakali performances?",
+          "options": ["Ramayana", "Mahabharata", "Both Ramayana and Mahabharata", "Jataka Tales"],
+          "answer": "Both Ramayana and Mahabharata",
+          "explanation": "Kathakali stories are often inspired by both the Ramayana and the Mahabharata."
+        },
+        {
+          "question": "Which traditional instrument accompanies Kathakali performances?",
+          "options": ["Tabla", "Chenda", "Mridangam", "Sitar"],
+          "answer": "Chenda",
+          "explanation": "Chenda, a cylindrical drum, provides rhythmic beats for Kathakali performances."
+        },
+        {
+          "question": "What is the literal meaning of 'Kathakali'?",
+          "options": ["Story play", "Holy dance", "Mask drama", "Divine act"],
+          "answer": "Story play",
+          "explanation": "'Kathakali' is derived from 'Katha' (story) and 'Kali' (play), meaning a dramatic storytelling art form."
+        },
+        {
+          "question": "Which of the following is a distinctive feature of Kathakali?",
+          "options": ["Minimal costumes", "Elaborate makeup", "Sung dialogues", "Simple hand movements"],
+          "answer": "Elaborate makeup",
+          "explanation": "Kathakali is known for its detailed and colorful makeup, which symbolizes different character types."
+        },
+        {
+          "question": "What is a common setting for traditional Kathakali performances?",
+          "options": ["Temple courtyards", "Royal palaces", "Street corners", "School auditoriums"],
+          "answer": "Temple courtyards",
+          "explanation": "Traditional Kathakali performances are often held in temple courtyards during religious festivals."
+        },
+        {
+          "question": "Which body part movement is crucial for expressing emotions in Kathakali?",
+          "options": ["Hands", "Feet", "Eyebrows", "Neck"],
+          "answer": "Eyebrows",
+          "explanation": "Kathakali actors use elaborate eyebrow movements to convey emotions and expressions."
+        },
+        {
+          "question": "Which traditional oil is used to prepare Kathakali performers for their acts?",
+          "options": ["Coconut oil", "Mustard oil", "Castor oil", "Sesame oil"],
+          "answer": "Coconut oil",
+          "explanation": "Coconut oil is commonly used to massage the body and improve flexibility for Kathakali performances."
+        }
+      ]
+    },
+    {
+      "setNumber": 9,
+      "questions":
+      [
+        {
+          "question": "Which character type in Kathakali wears a black face with white and red markings?",
+          "options": ["Pachcha", "Minukku", "Kari", "Kathi"],
+          "answer": "Kari",
+          "explanation": "Kari characters represent demons or hunters and have black faces with red and white decorations."
+        },
+        {
+          "question": "How long does it take to apply a full Kathakali makeup?",
+          "options": ["30 minutes", "1 hour", "2-3 hours", "5 hours"],
+          "answer": "2-3 hours",
+          "explanation": "Kathakali makeup is intricate and can take several hours to complete before a performance."
+        },
+        {
+          "question": "What is the name of the musical style that accompanies Kathakali performances?",
+          "options": ["Sopana Sangeetham", "Carnatic Music", "Hindustani Music", "Folk Music"],
+          "answer": "Sopana Sangeetham",
+          "explanation": "Sopana Sangeetham is a traditional Kerala-based musical style that complements Kathakali storytelling."
+        },
+        {
+          "question": "Which historical period saw the emergence of Kathakali?",
+          "options": ["15th century", "17th century", "19th century", "21st century"],
+          "answer": "17th century",
+          "explanation": "Kathakali developed in the 17th century in Kerala as a fusion of drama and dance."
+        },
+        {
+          "question": "What material is traditionally used for Kathakali headgear?",
+          "options": ["Wood", "Metal", "Paper-mâché", "Plastic"],
+          "answer": "Wood",
+          "explanation": "Kathakali headgear is traditionally crafted from light wood, elaborately painted and decorated."
+        },
+        {
+          "question": "Which of these is NOT a Kathakali mudra (hand gesture)?",
+          "options": ["Katakam", "Tripataka", "Abhaya", "Bharatanatyam"],
+          "answer": "Bharatanatyam",
+          "explanation": "Bharatanatyam is a classical dance form, whereas the other options are Kathakali mudras."
+        },
+        {
+          "question": "What does 'Minukku' represent in Kathakali characters?",
+          "options": ["Villains", "Female characters", "Gods", "Demons"],
+          "answer": "Female characters",
+          "explanation": "Minukku makeup is used to represent female and saintly characters in Kathakali."
+        },
+        {
+          "question": "Which color in Kathakali makeup is associated with violent characters?",
+          "options": ["Red", "Green", "Yellow", "Blue"],
+          "answer": "Red",
+          "explanation": "Red makeup, often with black details, is used for aggressive and villainous characters."
+        },
+        {
+          "question": "How do Kathakali performers communicate emotions?",
+          "options": ["Spoken dialogues", "Facial expressions and hand gestures", "Dramatic music", "Singing"],
+          "answer": "Facial expressions and hand gestures",
+          "explanation": "Kathakali relies on intricate facial expressions and symbolic hand gestures (mudras) instead of spoken dialogue."
+        },
+        {
+          "question": "Which instrument is NOT traditionally used in Kathakali music?",
+          "options": ["Chenda", "Edakka", "Veena", "Maddalam"],
+          "answer": "Veena",
+          "explanation": "Veena is a string instrument used in Carnatic music, but not typically in Kathakali performances."
+        }
+      ]
+    },
+    {
+      "setNumber": 10,
+      "questions":
+      [
+        {
+          "question": "Which Kathakali character type is known for its curved mustache and red beard?",
+          "options": ["Pachcha", "Kathi", "Minukku", "Kari"],
+          "answer": "Kathi",
+          "explanation": "Kathi characters, representing villains and anti-heroes, are known for their red beards and curved mustaches."
+        },
+        {
+          "question": "Which hand gesture in Kathakali symbolizes a lotus flower?",
+          "options": ["Mukutam", "Hamsapaksham", "Alapadma", "Tripataka"],
+          "answer": "Alapadma",
+          "explanation": "The 'Alapadma' mudra represents a fully bloomed lotus flower in Kathakali."
+        },
+        {
+          "question": "Who is credited with refining and popularizing Kathakali in the 20th century?",
+          "options": ["Raja Ravi Varma", "Vallathol Narayana Menon", "Rabindranath Tagore", "Kalamandalam Gopi"],
+          "answer": "Vallathol Narayana Menon",
+          "explanation": "Vallathol Narayana Menon was instrumental in reviving Kathakali and establishing Kerala Kalamandalam."
+        },
+        {
+          "question": "Which of these is NOT a characteristic feature of Kathakali?",
+          "options": ["Elaborate headgear", "Use of classical ragas", "Fast-paced footwork", "Minimal makeup"],
+          "answer": "Minimal makeup",
+          "explanation": "Kathakali is known for its elaborate and intricate makeup, which plays a crucial role in character representation."
+        },
+        {
+          "question": "What role does the 'Chutti' play in Kathakali makeup?",
+          "options": ["Defines facial expressions", "Enhances eye movements", "Highlights character types", "All of the above"],
+          "answer": "All of the above",
+          "explanation": "The 'Chutti' is a white paper extension around the face that enhances expressions, eye movements, and character recognition."
+        },
+        {
+          "question": "Which element of Kathakali represents purity and divinity?",
+          "options": ["Yellow makeup", "Green makeup", "Red makeup", "Black makeup"],
+          "answer": "Green makeup",
+          "explanation": "Green makeup is used for noble and divine characters in Kathakali, representing goodness and heroism."
+        },
+        {
+          "question": "In traditional performances, what time of day is Kathakali usually performed?",
+          "options": ["Early morning", "Noon", "Evening till dawn", "Afternoon"],
+          "answer": "Evening till dawn",
+          "explanation": "Traditional Kathakali performances often start in the evening and continue until early morning."
+        },
+        {
+          "question": "Which form of training is essential for Kathakali artists?",
+          "options": ["Vocal training", "Yoga and Kalaripayattu", "Sanskrit studies", "Carnatic music"],
+          "answer": "Yoga and Kalaripayattu",
+          "explanation": "Kathakali dancers undergo rigorous training in Yoga and Kalaripayattu (a martial art) to improve flexibility and stamina."
+        },
+        {
+          "question": "Which of these is a famous Kathakali play?",
+          "options": ["Rukmini Swayamvaram", "Koodiyattam Ramayana", "Nalacharitham", "Yakshagana Mahabharata"],
+          "answer": "Nalacharitham",
+          "explanation": "'Nalacharitham' is one of the most well-known Kathakali plays, based on the Mahabharata."
+        },
+        {
+          "question": "What do Kathakali performers use to highlight their eyes during performances?",
+          "options": ["Coal powder", "Kajal", "Rice paste", "Manayola"],
+          "answer": "Manayola",
+          "explanation": "Kathakali artists use 'Manayola' (natural color pigments) to accentuate their eyes, making expressions more prominent on stage."
+        }
+      ]
+    }
+
                 ]
               },
               {
@@ -8164,7 +10089,575 @@
                           "explanation": "Mohiniyattam is known for its soft, graceful postures and movements that convey emotions."
                         }
                       ]
-                    }
+      },
+      {
+        "setNumber": 6,
+        "questions":
+        [
+          {
+            "question": "What is the primary form of dance expression in Mohiniyattam?",
+            "options": [
+              "Footwork",
+              "Facial expressions and hand gestures",
+              "High jumps",
+              "Quick spins"
+            ],
+            "answer": "Facial expressions and hand gestures",
+            "explanation": "Mohiniyattam heavily relies on facial expressions (abhinaya) and hand gestures (mudras) to convey emotions."
+          },
+          {
+            "question": "Which cultural tradition is closely linked to Mohiniyattam?",
+            "options": [
+              "Sikhism",
+              "Hinduism",
+              "Buddhism",
+              "Jainism"
+            ],
+            "answer": "Hinduism",
+            "explanation": "Mohiniyattam has roots in Hindu mythology and was originally performed as a form of temple dance dedicated to various deities."
+          },
+          {
+            "question": "What is the classical language used for the lyrics in Mohiniyattam?",
+            "options": [
+              "Sanskrit",
+              "Tamil",
+              "Malayalam",
+              "Telugu"
+            ],
+            "answer": "Sanskrit",
+            "explanation": "The lyrics in Mohiniyattam performances are usually in Sanskrit, which is often used in classical Indian dance and music."
+          },
+          {
+            "question": "True or False: Mohiniyattam is influenced by the dance form Bharatanatyam.",
+            "options": [
+              "True",
+              "False"
+            ],
+            "answer": "True",
+            "explanation": "Mohiniyattam shares some similarities with Bharatanatyam, but it has its distinct style and graceful movements."
+          },
+          {
+            "question": "Which type of music is typically used in Mohiniyattam?",
+            "options": [
+              "Folk music",
+              "Classical Carnatic music",
+              "Pop music",
+              "Western classical music"
+            ],
+            "answer": "Classical Carnatic music",
+            "explanation": "Mohiniyattam is accompanied by classical Carnatic music, often performed with instruments like mridangam, violin, and flute."
+          },
+          {
+            "question": "What is one of the primary movements in Mohiniyattam?",
+            "options": [
+              "Stamping the feet",
+              "Circular arm motions",
+              "Leaps and jumps",
+              "Swaying movements"
+            ],
+            "answer": "Circular arm motions",
+            "explanation": "Mohiniyattam includes circular arm movements that are smooth and graceful, symbolizing fluidity and beauty."
+          },
+          {
+            "question": "Which of the following is a famous piece of Mohiniyattam music?",
+            "options": [
+              "Varnam",
+              "Keerthanam",
+              "Padam",
+              "Thillana"
+            ],
+            "answer": "Padam",
+            "explanation": "'Padam' is a classical music form often used in Mohiniyattam, expressing emotions of longing and devotion."
+          },
+          {
+            "question": "What is the central theme often expressed through Mohiniyattam?",
+            "options": [
+              "Strength and victory",
+              "Devotion and love",
+              "Battle and war",
+              "Nature and animals"
+            ],
+            "answer": "Devotion and love",
+            "explanation": "The central theme in Mohiniyattam performances often revolves around expressing love, longing, and devotion to the divine."
+          },
+          {
+            "question": "What is typically worn on the feet of Mohiniyattam dancers?",
+            "options": [
+              "Heavy shoes",
+              "Small anklets with bells",
+              "Barefoot",
+              "Sandals"
+            ],
+            "answer": "Small anklets with bells",
+            "explanation": "Mohiniyattam dancers typically wear small anklets with bells that produce sound with their graceful foot movements."
+          },
+          {
+            "question": "What is the role of the dancer’s gaze in Mohiniyattam?",
+            "options": [
+              "To show focus",
+              "To express emotions",
+              "To follow the rhythm",
+              "To avoid distractions"
+            ],
+            "answer": "To express emotions",
+            "explanation": "The dancer’s gaze, along with facial expressions, plays a vital role in conveying the emotions of the dance."
+          }
+        ]        
+      },
+      {
+        "setNumber": 7,
+        "questions":
+        [
+          {
+            "question": "Who is considered the 'Mother of Mohiniyattam' for reviving the dance form in the 20th century?",
+            "options": [
+              "Rukmini Devi Arundale",
+              "Kalamandalam Kalyanikutty Amma",
+              "Satyajit Ray",
+              "Mallika Sarabhai"
+            ],
+            "answer": "Kalamandalam Kalyanikutty Amma",
+            "explanation": "Kalamandalam Kalyanikutty Amma is credited with reviving and popularizing Mohiniyattam during the 20th century."
+          },
+          {
+            "question": "What is a key feature of Mohiniyattam’s music in terms of rhythm?",
+            "options": [
+              "Slow and steady rhythm",
+              "Complex, fast beats",
+              "Constantly changing rhythms",
+              "No rhythm used"
+            ],
+            "answer": "Slow and steady rhythm",
+            "explanation": "Mohiniyattam typically follows a slow, steady rhythm that complements the graceful movements of the dancer."
+          },
+          {
+            "question": "True or False: The movements of Mohiniyattam are sharp and vigorous.",
+            "options": [
+              "True",
+              "False"
+            ],
+            "answer": "False",
+            "explanation": "Mohiniyattam is characterized by soft, flowing movements rather than sharp or vigorous actions."
+          },
+          {
+            "question": "Which is NOT a part of the traditional Mohiniyattam costume?",
+            "options": [
+              "White saree",
+              "Gold jewelry",
+              "Flower garland",
+              "Red dress"
+            ],
+            "answer": "Red dress",
+            "explanation": "The traditional costume consists of a white saree with golden borders, flower garlands, and gold jewelry."
+          },
+          {
+            "question": "What is the dance posture used in Mohiniyattam called?",
+            "options": [
+              "Aramandi",
+              "Bharatanatyam pose",
+              "Natyashastra pose",
+              "Kuchipudi stance"
+            ],
+            "answer": "Aramandi",
+            "explanation": "The Aramandi posture, with bent knees and a wide stance, is commonly used in Mohiniyattam to create elegance and grace."
+          },
+          {
+            "question": "Which of the following is an important characteristic of Mohiniyattam movements?",
+            "options": [
+              "Speed and strength",
+              "Static poses",
+              "Circular and flowing motions",
+              "Jumping and running"
+            ],
+            "answer": "Circular and flowing motions",
+            "explanation": "Mohiniyattam emphasizes smooth, circular, and flowing motions, particularly in arm and hand gestures."
+          },
+          {
+            "question": "Where did Mohiniyattam originate?",
+            "options": [
+              "Tamil Nadu",
+              "Odisha",
+              "Kerala",
+              "Uttar Pradesh"
+            ],
+            "answer": "Kerala",
+            "explanation": "Mohiniyattam is a traditional classical dance form from Kerala, a state in southern India."
+          },
+          {
+            "question": "Which of these is a common theme in Mohiniyattam dance pieces?",
+            "options": [
+              "Military victory",
+              "Goddess worship",
+              "Fun and games",
+              "Historical battles"
+            ],
+            "answer": "Goddess worship",
+            "explanation": "Many Mohiniyattam pieces are devoted to worshipping goddesses, especially goddess Mohini, who symbolizes beauty and grace."
+          },
+          {
+            "question": "What is used to enhance the sound during Mohiniyattam performances?",
+            "options": [
+              "Flute music",
+              "Hand clapping",
+              "Foot tapping",
+              "Drum beats"
+            ],
+            "answer": "Foot tapping",
+            "explanation": "Foot tapping, along with the anklets with bells, is used to produce rhythm during Mohiniyattam performances."
+          },
+          {
+            "question": "True or False: Mohiniyattam was once banned by the rulers of Kerala.",
+            "options": [
+              "True",
+              "False"
+            ],
+            "answer": "True",
+            "explanation": "Mohiniyattam was once banned by the rulers of Kerala, but it was later revived and popularized by dancers like Kalamandalam Kalyanikutty Amma."
+          }
+        ]        
+      },
+      {
+        "setNumber": 8,
+        "questions":
+        [
+          {
+            "question": "Which aspect of Mohiniyattam is most commonly associated with its elegance?",
+            "options": [
+              "High jumps",
+              "Slow and graceful movements",
+              "Speedy footwork",
+              "Acrobatic stunts"
+            ],
+            "answer": "Slow and graceful movements",
+            "explanation": "Mohiniyattam is known for its slow, graceful, and fluid movements, which create an air of elegance and beauty."
+          },
+          {
+            "question": "What does the term 'Mohini' in Mohiniyattam refer to?",
+            "options": [
+              "A famous dancer",
+              "A beautiful woman in Hindu mythology",
+              "A type of dance movement",
+              "A musical instrument"
+            ],
+            "answer": "A beautiful woman in Hindu mythology",
+            "explanation": "'Mohini' refers to a character in Hindu mythology, the enchantress, who is known for her beauty and charm, which the dance form seeks to express."
+          },
+          {
+            "question": "In Mohiniyattam, which part of the body is most expressive?",
+            "options": [
+              "Legs",
+              "Hands and arms",
+              "Eyes and face",
+              "Back"
+            ],
+            "answer": "Eyes and face",
+            "explanation": "The eyes and facial expressions (abhinaya) are crucial in conveying the emotions and storytelling in Mohiniyattam."
+          },
+          {
+            "question": "What is the basic rhythm pattern used in Mohiniyattam called?",
+            "options": [
+              "Tala",
+              "Raga",
+              "Sruti",
+              "Laya"
+            ],
+            "answer": "Tala",
+            "explanation": "'Tala' refers to the rhythmic pattern or cycle in classical Indian music, including in Mohiniyattam performances."
+          },
+          {
+            "question": "Which of these is a key feature of Mohiniyattam dance costumes?",
+            "options": [
+              "Bright colors and patterns",
+              "White saree with gold borders",
+              "Pants and shirts",
+              "Loose flowing robes"
+            ],
+            "answer": "White saree with gold borders",
+            "explanation": "Mohiniyattam dancers wear a traditional white saree with gold borders, enhancing their graceful movements."
+          },
+          {
+            "question": "In Mohiniyattam, how are the hands used to express emotions?",
+            "options": [
+              "By forming shapes and gestures",
+              "By clapping",
+              "By moving them fast",
+              "By pointing forward"
+            ],
+            "answer": "By forming shapes and gestures",
+            "explanation": "In Mohiniyattam, specific hand gestures (mudras) are used to express emotions and narrate stories."
+          },
+          {
+            "question": "Which of these musical instruments is commonly used in Mohiniyattam performances?",
+            "options": [
+              "Guitar",
+              "Sitar",
+              "Mridangam",
+              "Saxophone"
+            ],
+            "answer": "Mridangam",
+            "explanation": "The mridangam, a traditional Indian drum, is commonly used in Mohiniyattam performances to accompany the dancer's movements."
+          },
+          {
+            "question": "What is the mood typically conveyed in Mohiniyattam performances?",
+            "options": [
+              "Strength and power",
+              "Elegance and devotion",
+              "Anger and fight",
+              "Adventure and thrill"
+            ],
+            "answer": "Elegance and devotion",
+            "explanation": "Mohiniyattam performances typically convey feelings of elegance, grace, and devotion, often to divine figures."
+          },
+          {
+            "question": "Which Indian state is home to the dance form Mohiniyattam?",
+            "options": [
+              "Rajasthan",
+              "Kerala",
+              "Tamil Nadu",
+              "Karnataka"
+            ],
+            "answer": "Kerala",
+            "explanation": "Mohiniyattam originated in the state of Kerala, located in southern India."
+          },
+          {
+            "question": "What type of performances typically feature Mohiniyattam?",
+            "options": [
+              "Weddings",
+              "Temples and festivals",
+              "Movie sets",
+              "Sports events"
+            ],
+            "answer": "Temples and festivals",
+            "explanation": "Mohiniyattam is traditionally performed in temples and during festivals to honor deities, especially goddesses."
+          }
+        ]        
+      },
+      {
+        "setNumber": 9,
+        "questions":
+        [
+          {
+            "question": "Which of these best describes the overall movement style of Mohiniyattam?",
+            "options": [
+              "Sharp and fast",
+              "Soft, flowing, and graceful",
+              "Stiff and mechanical",
+              "Fast and energetic"
+            ],
+            "answer": "Soft, flowing, and graceful",
+            "explanation": "Mohiniyattam is known for its smooth, flowing, and graceful movements that emphasize femininity."
+          },
+          {
+            "question": "True or False: The music in Mohiniyattam is performed in a solo style, with only one musician.",
+            "options": [
+              "True",
+              "False"
+            ],
+            "answer": "False",
+            "explanation": "The music in Mohiniyattam typically involves a group of musicians playing instruments like the mridangam, violin, and flute."
+          },
+          {
+            "question": "What is the purpose of the circular movements in Mohiniyattam?",
+            "options": [
+              "To show anger",
+              "To demonstrate balance and grace",
+              "To symbolize nature's cycles",
+              "To represent speed"
+            ],
+            "answer": "To demonstrate balance and grace",
+            "explanation": "Circular movements in Mohiniyattam symbolize the fluidity and balance of the dance, adding to its graceful nature."
+          },
+          {
+            "question": "What is the main influence behind Mohiniyattam’s graceful and subtle movements?",
+            "options": [
+              "The beauty of nature",
+              "Dance of warriors",
+              "Animal movements",
+              "The goddess Mohini’s charm"
+            ],
+            "answer": "The goddess Mohini’s charm",
+            "explanation": "The dance movements in Mohiniyattam are inspired by the enchanting charm of the goddess Mohini in Hindu mythology."
+          },
+          {
+            "question": "In Mohiniyattam, what is the typical setting for a performance?",
+            "options": [
+              "Modern stage",
+              "Open fields",
+              "Temple courtyards or festival stages",
+              "Theatres"
+            ],
+            "answer": "Temple courtyards or festival stages",
+            "explanation": "Traditionally, Mohiniyattam performances take place in temple courtyards or during religious festivals."
+          },
+          {
+            "question": "What is the role of the dancer’s eyes in Mohiniyattam?",
+            "options": [
+              "To focus on the floor",
+              "To express emotions and connect with the audience",
+              "To look at the music",
+              "To follow the rhythm"
+            ],
+            "answer": "To express emotions and connect with the audience",
+            "explanation": "The dancer’s eyes, along with facial expressions, play an essential role in expressing emotions and connecting with the audience in Mohiniyattam."
+          },
+          {
+            "question": "Which classical dance form has influenced Mohiniyattam?",
+            "options": [
+              "Kuchipudi",
+              "Bharatanatyam",
+              "Kathak",
+              "Odissi"
+            ],
+            "answer": "Bharatanatyam",
+            "explanation": "Mohiniyattam has some influences from Bharatanatyam, especially in its posture and some dance elements."
+          },
+          {
+            "question": "What is the importance of footwork in Mohiniyattam?",
+            "options": [
+              "To produce loud noise",
+              "To emphasize rhythmic patterns",
+              "To express sadness",
+              "To create a sense of speed"
+            ],
+            "answer": "To emphasize rhythmic patterns",
+            "explanation": "Footwork in Mohiniyattam is essential for maintaining rhythm and complementing the graceful movements of the hands and body."
+          },
+          {
+            "question": "What is the role of the costume's gold border in Mohiniyattam?",
+            "options": [
+              "To show royalty",
+              "To enhance the visual elegance of the dance",
+              "To make the dancer appear taller",
+              "To add a religious element"
+            ],
+            "answer": "To enhance the visual elegance of the dance",
+            "explanation": "The gold border of the saree enhances the elegance and visual appeal of the dancer, complementing the graceful movements."
+          },
+          {
+            "question": "True or False: Mohiniyattam is only performed by women.",
+            "options": [
+              "True",
+              "False"
+            ],
+            "answer": "True",
+            "explanation": "Mohiniyattam is traditionally a female-dominated dance form, symbolizing feminine grace."
+          }
+        ]        
+      },
+      {
+        "setNumber": 10,
+        "questions":
+        [
+          {
+            "question": "What is the traditional attire for a Mohiniyattam dancer?",
+            "options": [
+              "Yellow sari with a red blouse",
+              "White saree with golden borders",
+              "Red dress with golden jewelry",
+              "Green dress with silver ornaments"
+            ],
+            "answer": "White saree with golden borders",
+            "explanation": "Mohiniyattam dancers traditionally wear a white saree with golden borders, which adds to the elegance of the performance."
+          },
+          {
+            "question": "Which style of music supports Mohiniyattam performances?",
+            "options": [
+              "Carnatic classical music",
+              "Hindustani classical music",
+              "Western classical music",
+              "Folk music"
+            ],
+            "answer": "Carnatic classical music",
+            "explanation": "Mohiniyattam is accompanied by Carnatic classical music, which is prevalent in southern India."
+          },
+          {
+            "question": "Which of these is a primary feature of the dance movements in Mohiniyattam?",
+            "options": [
+              "Quick steps and jumps",
+              "Soft, flowing, and graceful arm movements",
+              "Sharp, angular body movements",
+              "Flipping and spinning"
+            ],
+            "answer": "Soft, flowing, and graceful arm movements",
+            "explanation": "Mohiniyattam focuses on soft, flowing, and graceful arm movements to convey emotions and beauty."
+          },
+          {
+            "question": "Who are the primary mythological figures associated with Mohiniyattam?",
+            "options": [
+              "Lord Krishna",
+              "Goddess Mohini",
+              "Lord Shiva",
+              "Goddess Lakshmi"
+            ],
+            "answer": "Goddess Mohini",
+            "explanation": "The dance form is named after the goddess Mohini, an enchanting figure in Hindu mythology who symbolizes grace and beauty."
+          },
+          {
+            "question": "True or False: Mohiniyattam is a dance form meant to show strength and aggression.",
+            "options": [
+              "True",
+              "False"
+            ],
+            "answer": "False",
+            "explanation": "Mohiniyattam is a dance form that emphasizes grace, femininity, and beauty, rather than strength and aggression."
+          },
+          {
+            "question": "What role does the facial expression play in Mohiniyattam?",
+            "options": [
+              "To show excitement",
+              "To express deep emotions like love or devotion",
+              "To entertain the audience",
+              "To stay neutral"
+            ],
+            "answer": "To express deep emotions like love or devotion",
+            "explanation": "Facial expressions, or abhinaya, are key to conveying emotions like love, devotion, and longing in Mohiniyattam."
+          },
+          {
+            "question": "Which classical dance has the closest connection to Mohiniyattam in terms of style?",
+            "options": [
+              "Bharatanatyam",
+              "Kathakali",
+              "Odissi",
+              "Kuchipudi"
+            ],
+            "answer": "Bharatanatyam",
+            "explanation": "Mohiniyattam shares some stylistic features with Bharatanatyam but retains its unique graceful movements."
+          },
+          {
+            "question": "Which of these is a famous musical element in Mohiniyattam?",
+            "options": [
+              "Svarajati",
+              "Varnam",
+              "Padam",
+              "Thillana"
+            ],
+            "answer": "Padam",
+            "explanation": "\"Padam\" is a slow, lyrical composition used frequently in Mohiniyattam to express feelings of longing or devotion."
+          },
+          {
+            "question": "What is the typical pace of movements in Mohiniyattam?",
+            "options": [
+              "Fast-paced",
+              "Moderate",
+              "Slow and graceful",
+              "Mixed with quick and slow moments"
+            ],
+            "answer": "Slow and graceful",
+            "explanation": "The movements in Mohiniyattam are slow and graceful, enhancing the dance’s elegance and beauty."
+          },
+          {
+            "question": "Where is Mohiniyattam commonly performed?",
+            "options": [
+              "On modern stages in theaters",
+              "In ancient royal courts",
+              "In temples and cultural festivals",
+              "In public parks"
+            ],
+            "answer": "In temples and cultural festivals",
+            "explanation": "Mohiniyattam is traditionally performed in temples and during cultural festivals as a devotional dance form."
+          }
+        ]        
+      }
                   ]
                 
               }              
@@ -8793,8 +11286,583 @@
                   }
                 ]
                 
-              }
-             ]
+},
+{
+  "setNumber": 6,
+  "questions" :[
+    {
+      "question": "What does Padhant mainly involve?",
+      "options": [
+        "Singing classical songs",
+        "Reciting rhythmic beats",
+        "Performing acrobatics",
+        "Playing musical instruments"
+      ],
+      "answer": "Reciting rhythmic beats",
+      "explanation": "Padhant is the recitation of rhythmic beats to help dancers stay in sync."
+    },
+    {
+      "question": "In which Indian classical dance is Padhant performed before dancing?",
+      "options": [
+        "Odissi",
+        "Kathak",
+        "Mohiniyattam",
+        "Sattriya"
+      ],
+      "answer": "Kathak",
+      "explanation": "In Kathak, dancers recite Padhant before performing to set the rhythm."
+    },
+    {
+      "question": "Who can perform Padhant during a dance recital?",
+      "options": [
+        "Only the teacher",
+        "Only musicians",
+        "The dancer or the teacher",
+        "The audience"
+      ],
+      "answer": "The dancer or the teacher",
+      "explanation": "Either the dancer or the teacher can recite Padhant to maintain rhythm."
+    },
+    {
+      "question": "Which of these is NOT a rhythmic sound used in Padhant?",
+      "options": [
+        "Dha",
+        "Tin",
+        "Ma",
+        "Ta"
+      ],
+      "answer": "Ma",
+      "explanation": "‘Ma’ is a musical note, whereas Padhant uses beats like Dha, Tin, and Ta."
+    },
+    {
+      "question": "How does Padhant help dancers during a performance?",
+      "options": [
+        "It sets the rhythm",
+        "It adds more costumes",
+        "It makes movements faster",
+        "It increases the music volume"
+      ],
+      "answer": "It sets the rhythm",
+      "explanation": "Padhant helps dancers stay in rhythm by reciting beats aloud."
+    },
+    {
+      "question": "In Bharatanatyam, what does Padhant guide?",
+      "options": [
+        "Storytelling",
+        "Hand gestures and footwork",
+        "Costume selection",
+        "Dance speed"
+      ],
+      "answer": "Hand gestures and footwork",
+      "explanation": "Bharatanatyam dancers follow Padhant for precise footwork and hand gestures."
+    },
+    {
+      "question": "Why is Padhant important in training young dancers?",
+      "options": [
+        "Helps them stay on beat",
+        "Increases dance speed",
+        "Teaches new dance moves",
+        "Makes performances louder"
+      ],
+      "answer": "Helps them stay on beat",
+      "explanation": "Reciting beats aloud helps young dancers maintain rhythm easily."
+    },
+    {
+      "question": "True or False: Padhant can only be done by the dancer.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": "False",
+      "explanation": "Teachers and musicians can also do Padhant to support the dancer."
+    },
+    {
+      "question": "What makes Padhant fun for students?",
+      "options": [
+        "It involves playing instruments",
+        "It is like chanting rhythms",
+        "It changes dance styles",
+        "It makes them jump higher"
+      ],
+      "answer": "It is like chanting rhythms",
+      "explanation": "Reciting beats feels like a fun rhythmic chant, making learning enjoyable."
+    },
+    {
+      "question": "In a group performance, what does Padhant ensure?",
+      "options": [
+        "Everyone moves together",
+        "Dancers wear matching costumes",
+        "Music is faster",
+        "The dance changes mid-performance"
+      ],
+      "answer": "Everyone moves together",
+      "explanation": "Padhant helps dancers stay in sync during group performances."
+    }
+  ]
+},
+{
+  "setNumber" : 7,
+  "questions" :
+  [
+    {
+      "question": "What does Padhant mainly involve?",
+      "options": [
+        "Singing classical songs",
+        "Reciting rhythmic beats",
+        "Performing acrobatics",
+        "Playing musical instruments"
+      ],
+      "answer": "Reciting rhythmic beats",
+      "explanation": "Padhant is the recitation of rhythmic beats to help dancers stay in sync."
+    },
+    {
+      "question": "In which Indian classical dance is Padhant performed before dancing?",
+      "options": [
+        "Odissi",
+        "Kathak",
+        "Mohiniyattam",
+        "Sattriya"
+      ],
+      "answer": "Kathak",
+      "explanation": "In Kathak, dancers recite Padhant before performing to set the rhythm."
+    },
+    {
+      "question": "Who can perform Padhant during a dance recital?",
+      "options": [
+        "Only the teacher",
+        "Only musicians",
+        "The dancer or the teacher",
+        "The audience"
+      ],
+      "answer": "The dancer or the teacher",
+      "explanation": "Either the dancer or the teacher can recite Padhant to maintain rhythm."
+    },
+    {
+      "question": "Which of these is NOT a rhythmic sound used in Padhant?",
+      "options": [
+        "Dha",
+        "Tin",
+        "Ma",
+        "Ta"
+      ],
+      "answer": "Ma",
+      "explanation": "‘Ma’ is a musical note, whereas Padhant uses beats like Dha, Tin, and Ta."
+    },
+    {
+      "question": "How does Padhant help dancers during a performance?",
+      "options": [
+        "It sets the rhythm",
+        "It adds more costumes",
+        "It makes movements faster",
+        "It increases the music volume"
+      ],
+      "answer": "It sets the rhythm",
+      "explanation": "Padhant helps dancers stay in rhythm by reciting beats aloud."
+    },
+    {
+      "question": "In Bharatanatyam, what does Padhant guide?",
+      "options": [
+        "Storytelling",
+        "Hand gestures and footwork",
+        "Costume selection",
+        "Dance speed"
+      ],
+      "answer": "Hand gestures and footwork",
+      "explanation": "Bharatanatyam dancers follow Padhant for precise footwork and hand gestures."
+    },
+    {
+      "question": "Why is Padhant important in training young dancers?",
+      "options": [
+        "Helps them stay on beat",
+        "Increases dance speed",
+        "Teaches new dance moves",
+        "Makes performances louder"
+      ],
+      "answer": "Helps them stay on beat",
+      "explanation": "Reciting beats aloud helps young dancers maintain rhythm easily."
+    },
+    {
+      "question": "True or False: Padhant can only be done by the dancer.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": "False",
+      "explanation": "Teachers and musicians can also do Padhant to support the dancer."
+    },
+    {
+      "question": "What makes Padhant fun for students?",
+      "options": [
+        "It involves playing instruments",
+        "It is like chanting rhythms",
+        "It changes dance styles",
+        "It makes them jump higher"
+      ],
+      "answer": "It is like chanting rhythms",
+      "explanation": "Reciting beats feels like a fun rhythmic chant, making learning enjoyable."
+    },
+    {
+      "question": "In a group performance, what does Padhant ensure?",
+      "options": [
+        "Everyone moves together",
+        "Dancers wear matching costumes",
+        "Music is faster",
+        "The dance changes mid-performance"
+      ],
+      "answer": "Everyone moves together",
+      "explanation": "Padhant helps dancers stay in sync during group performances."
+    }
+  ]
+},
+{
+  "setNumber" : 8,
+  "questions" :
+  [
+    {
+      "question": "What is another name for the rhythmic beats used in Padhant?",
+      "options": [
+        "Bol",
+        "Raga",
+        "Mudra",
+        "Tal"
+      ],
+      "answer": "Bol",
+      "explanation": "The rhythmic sounds in Padhant are called 'bols,' which help dancers keep time."
+    },
+    {
+      "question": "In Kathak, Padhant is recited to match which part of the dance?",
+      "options": [
+        "Facial expressions",
+        "Footwork patterns",
+        "Hand movements",
+        "Costume changes"
+      ],
+      "answer": "Footwork patterns",
+      "explanation": "Kathak dancers use Padhant to maintain the rhythm in their footwork."
+    },
+    {
+      "question": "Which classical dance form also uses Padhant besides Kathak?",
+      "options": [
+        "Kuchipudi",
+        "Manipuri",
+        "Bharatanatyam",
+        "Yakshagana"
+      ],
+      "answer": "Bharatanatyam",
+      "explanation": "Bharatanatyam dancers use Padhant during Nritta, focusing on rhythm."
+    },
+    {
+      "question": "What do dancers learn first in Padhant training?",
+      "options": [
+        "Costumes",
+        "Rhythmic syllables",
+        "Storytelling techniques",
+        "Singing skills"
+      ],
+      "answer": "Rhythmic syllables",
+      "explanation": "Dancers first learn to recite rhythmic beats before applying them to dance."
+    },
+    {
+      "question": "How does Padhant improve concentration?",
+      "options": [
+        "It is repeated many times",
+        "It helps dancers focus on beats",
+        "It increases dance speed",
+        "It makes music louder"
+      ],
+      "answer": "It helps dancers focus on beats",
+      "explanation": "Padhant helps dancers sharpen their focus by keeping rhythm with beats."
+    },
+    {
+      "question": "Which instrument is commonly used alongside Padhant?",
+      "options": [
+        "Tabla",
+        "Violin",
+        "Flute",
+        "Sitar"
+      ],
+      "answer": "Tabla",
+      "explanation": "Tabla is often played to match the beats recited in Padhant."
+    },
+    {
+      "question": "What do the words ‘Dha, Dhin, Ta’ represent in Padhant?",
+      "options": [
+        "Dance movements",
+        "Rhythmic syllables",
+        "Music compositions",
+        "Storytelling themes"
+      ],
+      "answer": "Rhythmic syllables",
+      "explanation": "These words are bols, or rhythmic beats, that dancers follow."
+    },
+    {
+      "question": "In which part of a dance performance is Padhant usually heard?",
+      "options": [
+        "At the start",
+        "At the end",
+        "Only in the middle",
+        "Never used"
+      ],
+      "answer": "At the start",
+      "explanation": "Dancers recite Padhant at the beginning to establish the rhythm."
+    },
+    {
+      "question": "Why is Padhant done aloud instead of silently?",
+      "options": [
+        "To guide the musician",
+        "To make it more fun",
+        "To help the dancer stay in rhythm",
+        "To change the song"
+      ],
+      "answer": "To help the dancer stay in rhythm",
+      "explanation": "Saying beats aloud helps dancers stay in sync with the music."
+    },
+    {
+      "question": "What makes Padhant an important skill for dancers?",
+      "options": [
+        "It teaches rhythm and timing",
+        "It speeds up footwork",
+        "It creates new dance moves",
+        "It replaces live music"
+      ],
+      "answer": "It teaches rhythm and timing",
+      "explanation": "Padhant trains dancers in precise timing and rhythm, crucial for performances."
+    }
+  ]
+},
+{
+  "setNumber" : 9,
+  "questions" :
+  [
+    {
+      "question": "What is the primary purpose of using Padhant in Indian classical dance?",
+      "options": [
+        "To create a melody",
+        "To keep dancers in sync",
+        "To change the style of the dance",
+        "To tell a story"
+      ],
+      "answer": "To keep dancers in sync",
+      "explanation": "Padhant ensures that dancers remain synchronized with the rhythm during their performance."
+    },
+    {
+      "question": "Which classical dance form is most associated with Padhant for maintaining rhythm?",
+      "options": [
+        "Kuchipudi",
+        "Kathak",
+        "Bharatnatyam",
+        "Mohiniyattam"
+      ],
+      "answer": "Kathak",
+      "explanation": "Padhant is strongly associated with Kathak, where it helps dancers maintain rhythm during complex footwork."
+    },
+    {
+      "question": "What is the role of 'Ta', 'Dhin', and 'Na' in Padhant?",
+      "options": [
+        "Rhythmic syllables used in Padhant",
+        "Dance poses",
+        "Musical instruments played during performances",
+        "Descriptions of costumes"
+      ],
+      "answer": "Rhythmic syllables used in Padhant",
+      "explanation": "These are rhythmic syllables or ‘bols’ used to guide the dancer’s movements in Padhant."
+    },
+    {
+      "question": "How does Padhant benefit dancers in complex choreography?",
+      "options": [
+        "It allows them to focus on their expressions",
+        "It ensures they maintain a consistent rhythm",
+        "It helps them switch between styles easily",
+        "It increases their flexibility"
+      ],
+      "answer": "It ensures they maintain a consistent rhythm",
+      "explanation": "Padhant helps dancers maintain consistency in rhythm, especially during intricate steps and choreography."
+    },
+    {
+      "question": "Which of these forms of Padhant is used in Bharatanatyam?",
+      "options": [
+        "Nritta Padhant",
+        "Krithi Padhant",
+        "Jatiswaram",
+        "Alarippu"
+      ],
+      "answer": "Nritta Padhant",
+      "explanation": "In Bharatanatyam, Nritta Padhant is used for keeping time during pure dance (Nritta) sequences."
+    },
+    {
+      "question": "Who introduced the concept of Padhant in dance?",
+      "options": [
+        "Uday Shankar",
+        "Pandit Birju Maharaj",
+        "Rukmini Devi Arundale",
+        "Balasaraswati"
+      ],
+      "answer": "Pandit Birju Maharaj",
+      "explanation": "Pandit Birju Maharaj was instrumental in popularizing the use of Padhant in Kathak."
+    },
+    {
+      "question": "Which traditional instrument is commonly used to accompany Padhant recitation?",
+      "options": [
+        "Tanpura",
+        "Tabla",
+        "Mridangam",
+        "Flute"
+      ],
+      "answer": "Tabla",
+      "explanation": "Tabla is a prominent percussion instrument used to accompany the rhythmic syllables of Padhant."
+    },
+    {
+      "question": "What is the term for the rhythmic cycle in which Padhant is recited?",
+      "options": [
+        "Tala",
+        "Raga",
+        "Bhava",
+        "Mudra"
+      ],
+      "answer": "Tala",
+      "explanation": "Tala is the rhythmic cycle in Indian classical music, and it is essential for Padhant in dance."
+    },
+    {
+      "question": "What does a dancer focus on while reciting Padhant?",
+      "options": [
+        "Body posture",
+        "Hand movements",
+        "Rhythmic accuracy",
+        "Facial expressions"
+      ],
+      "answer": "Rhythmic accuracy",
+      "explanation": "The primary focus of reciting Padhant is to maintain rhythmic accuracy in sync with the dance steps."
+    },
+    {
+      "question": "In which part of a dance performance is Padhant most emphasized?",
+      "options": [
+        "Nritta",
+        "Abhinaya",
+        "Varnam",
+        "Adavu"
+      ],
+      "answer": "Nritta",
+      "explanation": "Padhant is most emphasized during Nritta, the pure dance section, to maintain rhythm during footwork."
+    }
+  ]  
+},
+{
+  "setNumber" : 10,
+  "questions" :
+  [
+    {
+      "question": "Which of these dance forms typically incorporates Padhant as a key element?",
+      "options": [
+        "Bharatanatyam",
+        "Kuchipudi",
+        "Kathak",
+        "Odissi"
+      ],
+      "answer": "Kathak",
+      "explanation": "Kathak is known for its use of Padhant to maintain rhythm during fast-paced footwork."
+    },
+    {
+      "question": "Padhant is particularly important in which type of Indian classical dance?",
+      "options": [
+        "Abhinaya-based dance",
+        "Purely rhythmic dance",
+        "Devotional dance",
+        "Folk dance"
+      ],
+      "answer": "Purely rhythmic dance",
+      "explanation": "Padhant is crucial in purely rhythmic dance forms like Kathak and Bharatanatyam."
+    },
+    {
+      "question": "What does a dancer do after reciting Padhant in a performance?",
+      "options": [
+        "Dance along to a pre-recorded tune",
+        "Perform footwork or hand gestures",
+        "Chant the lyrics of a song",
+        "Take a break"
+      ],
+      "answer": "Perform footwork or hand gestures",
+      "explanation": "After reciting Padhant, dancers perform footwork or hand gestures synchronized to the rhythm."
+    },
+    {
+      "question": "In the context of Padhant, what does the term ‘Bol’ refer to?",
+      "options": [
+        "The name of the dance teacher",
+        "A rhythmic syllable",
+        "A musical instrument",
+        "A dance pose"
+      ],
+      "answer": "A rhythmic syllable",
+      "explanation": "‘Bol’ refers to the rhythmic syllables recited during Padhant to guide dancers."
+    },
+    {
+      "question": "Which of the following is NOT a primary function of Padhant?",
+      "options": [
+        "To teach rhythm",
+        "To maintain tempo",
+        "To tell a story through gestures",
+        "To set the mood of the performance"
+      ],
+      "answer": "To set the mood of the performance",
+      "explanation": "Padhant primarily focuses on rhythm, tempo, and footwork, not mood setting."
+    },
+    {
+      "question": "Which rhythm is often used in Kathak during Padhant?",
+      "options": [
+        "Tintaal",
+        "Ektal",
+        "Rupak",
+        "Jhaptal"
+      ],
+      "answer": "Tintaal",
+      "explanation": "Tintaal, a 16-beat rhythm cycle, is commonly used in Kathak Padhant."
+    },
+    {
+      "question": "In which classical dance is the use of Padhant least common?",
+      "options": [
+        "Kathak",
+        "Bharatanatyam",
+        "Odissi",
+        "Kuchipudi"
+      ],
+      "answer": "Odissi",
+      "explanation": "Odissi does not emphasize Padhant as much as Kathak and Bharatanatyam."
+    },
+    {
+      "question": "What do dancers use Padhant for in preparation for their performance?",
+      "options": [
+        "To rehearse the entire choreography",
+        "To focus on musical improvisation",
+        "To practice rhythm and footwork synchronization",
+        "To design the stage setting"
+      ],
+      "answer": "To practice rhythm and footwork synchronization",
+      "explanation": "Padhant is used to synchronize rhythm and footwork during rehearsals."
+    },
+    {
+      "question": "What is one advantage of learning Padhant for beginner dancers?",
+      "options": [
+        "It increases flexibility",
+        "It helps with maintaining rhythm",
+        "It improves facial expressions",
+        "It teaches choreography"
+      ],
+      "answer": "It helps with maintaining rhythm",
+      "explanation": "Learning Padhant helps beginner dancers develop a sense of rhythm and timing."
+    },
+    {
+      "question": "In Kathak, Padhant is usually accompanied by which of these?",
+      "options": [
+        "Solo singing",
+        "Tabla",
+        "Violin",
+        "Mridangam"
+      ],
+      "answer": "Tabla",
+      "explanation": "Padhant is usually accompanied by the Tabla in Kathak to maintain rhythmic structure."
+    }
+  ]  
+}
+      ]
           },
           {
             "subtopicName": "Chhau🌸",
@@ -9421,7 +12489,577 @@
                     "explanation": "Chhau is unique for combining martial arts movements, acrobatic jumps, and expressive dance to tell stories."
                   }
                 ]                
-              }
+     },
+     {
+      "setNumber": 6,
+      "questions":
+      [
+        {
+          "question": "Which of these is an important characteristic of Chhau dance?",
+          "options": [
+            "Use of masks and vibrant costumes",
+            "Only solo performances",
+            "Only performed in the night",
+            "Focuses on slow and graceful movements"
+          ],
+          "answer": "Use of masks and vibrant costumes",
+          "explanation": "Chhau is known for its colorful and elaborate costumes and the use of masks to portray different characters."
+        },
+        {
+          "question": "Which state is known for Seraikella Chhau?",
+          "options": [
+            "Jharkhand",
+            "Odisha",
+            "West Bengal",
+            "Maharashtra"
+          ],
+          "answer": "Jharkhand",
+          "explanation": "Seraikella Chhau, known for its graceful movements, originates from the Jharkhand region."
+        },
+        {
+          "question": "What kind of music accompanies a Chhau performance?",
+          "options": [
+            "Classical instrumental music",
+            "Loud modern beats",
+            "Traditional drumming and wind instruments",
+            "Silent performance"
+          ],
+          "answer": "Traditional drumming and wind instruments",
+          "explanation": "Chhau performances are accompanied by the rhythmic beats of drums like the Madal and wind instruments like the flute."
+        },
+        {
+          "question": "What is the main purpose of the acrobatic movements in Chhau?",
+          "options": [
+            "To entertain",
+            "To express emotions",
+            "To showcase martial arts skills and power",
+            "To confuse the audience"
+          ],
+          "answer": "To showcase martial arts skills and power",
+          "explanation": "The acrobatic movements in Chhau showcase the strength and martial arts influence of the dance."
+        },
+        {
+          "question": "What type of stories are commonly portrayed in Chhau dance?",
+          "options": [
+            "Mythological battles",
+            "Everyday life stories",
+            "Romantic tales",
+            "Family dramas"
+          ],
+          "answer": "Mythological battles",
+          "explanation": "Chhau often depicts mythological themes, including battles between gods, demons, and other legendary figures."
+        },
+        {
+          "question": "True or False: Chhau dancers wear masks to conceal their identity.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "answer": "False",
+          "explanation": "While Chhau dancers wear masks, they do so to represent various mythological characters, not to conceal their identity."
+        },
+        {
+          "question": "What is the traditional setting for Chhau performances?",
+          "options": [
+            "On large stages with bright lights",
+            "At festivals and local celebrations",
+            "Only in classrooms",
+            "In theater halls"
+          ],
+          "answer": "At festivals and local celebrations",
+          "explanation": "Chhau performances are traditionally done during festivals and regional celebrations in Eastern India."
+        },
+        {
+          "question": "What role does the dancer’s facial expression play in Chhau?",
+          "options": [
+            "No role",
+            "It adds to the dramatic portrayal of characters and emotions",
+            "It shows their happiness",
+            "It is just for decoration"
+          ],
+          "answer": "It adds to the dramatic portrayal of characters and emotions",
+          "explanation": "Facial expressions in Chhau are key to expressing emotions and portraying different mythological characters."
+        },
+        {
+          "question": "Which Chhau style is known for having quick, explosive movements?",
+          "options": [
+            "Mayurbhanj Chhau",
+            "Seraikella Chhau",
+            "Purulia Chhau",
+            "All styles are equally slow"
+          ],
+          "answer": "Purulia Chhau",
+          "explanation": "Purulia Chhau is known for its energetic and quick movements, often influenced by martial arts."
+        },
+        {
+          "question": "Which instrument is essential in accompanying Chhau dance performances?",
+          "options": [
+            "Sitar",
+            "Tabla",
+            "Madal",
+            "Piano"
+          ],
+          "answer": "Madal",
+          "explanation": "Madal, a type of traditional drum, is essential to Chhau performances, providing rhythmic beats to the dance."
+        }
+      ]      
+     },
+     {
+      "setNumber": 7,
+      "questions":
+      [
+        {
+          "question": "Chhau is most popular in which region of India?",
+          "options": [
+            "Eastern India",
+            "Southern India",
+            "Western India",
+            "Northern India"
+          ],
+          "answer": "Eastern India",
+          "explanation": "Chhau is most popular in Eastern India, particularly in Odisha, Jharkhand, and West Bengal."
+        },
+        {
+          "question": "What is a key feature of Chhau dance that makes it unique compared to other Indian dance forms?",
+          "options": [
+            "Its use of facial expressions only",
+            "The combination of martial arts and acrobatics",
+            "Its reliance on music alone",
+            "The use of modern props"
+          ],
+          "answer": "The combination of martial arts and acrobatics",
+          "explanation": "Chhau combines traditional martial arts movements with acrobatic stunts, making it unique."
+        },
+        {
+          "question": "Which Chhau style uses slow, graceful movements?",
+          "options": [
+            "Purulia Chhau",
+            "Mayurbhanj Chhau",
+            "Seraikella Chhau",
+            "All of them"
+          ],
+          "answer": "Seraikella Chhau",
+          "explanation": "Seraikella Chhau is known for its graceful movements and is more refined in style compared to the other types."
+        },
+        {
+          "question": "Which of the following is a traditional element used in Chhau performances?",
+          "options": [
+            "Dance of the Lotus",
+            "Costumes and masks",
+            "Fire tricks",
+            "Acrobatics only"
+          ],
+          "answer": "Costumes and masks",
+          "explanation": "Costumes and masks are a key part of Chhau performances, adding to the drama and symbolism."
+        },
+        {
+          "question": "What is the main cultural purpose of Chhau dance?",
+          "options": [
+            "To promote only entertainment",
+            "To express religious and mythological themes",
+            "To tell personal stories",
+            "To entertain large crowds with acrobatics"
+          ],
+          "answer": "To express religious and mythological themes",
+          "explanation": "Chhau dance is primarily used to express religious stories, mythological tales, and cultural themes."
+        },
+        {
+          "question": "Which part of the body is most important in Chhau dance?",
+          "options": [
+            "Eyes",
+            "Hands",
+            "Legs and entire body",
+            "Only the face"
+          ],
+          "answer": "Legs and entire body",
+          "explanation": "Chhau dancers use their entire body to perform dynamic movements, including their legs, arms, and facial expressions."
+        },
+        {
+          "question": "True or False: Chhau can only be performed by adults.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "answer": "False",
+          "explanation": "Chhau can be performed by dancers of all ages, including children, though adult performers are more common in major performances."
+        },
+        {
+          "question": "Which traditional Chhau dance style is best known for its acrobatic flips and high-energy movements?",
+          "options": [
+            "Mayurbhanj Chhau",
+            "Purulia Chhau",
+            "Seraikella Chhau",
+            "All styles"
+          ],
+          "answer": "Purulia Chhau",
+          "explanation": "Purulia Chhau is known for its energetic, acrobatic movements, including flips and leaps, influenced by martial arts."
+        },
+        {
+          "question": "What kind of rhythm is used in Chhau performances?",
+          "options": [
+            "Soft and slow rhythms",
+            "Fast, dynamic rhythms",
+            "Only vocal music",
+            "Rhythms based on nature sounds"
+          ],
+          "answer": "Fast, dynamic rhythms",
+          "explanation": "Chhau performances feature fast and dynamic rhythms, often using drums like the Madal."
+        },
+        {
+          "question": "What is the primary role of Chhau masks?",
+          "options": [
+            "To enhance the dance movements",
+            "To conceal the identity of the dancers",
+            "To represent different characters in the story",
+            "To cover the dancer’s face for privacy"
+          ],
+          "answer": "To represent different characters in the story",
+          "explanation": "The masks in Chhau are used to depict different mythological characters, adding depth to the storytelling aspect of the performance."
+        }
+      ]      
+     },
+     {
+      "setNumber": 8,
+      "questions":
+      [
+        {
+          "question": "Which of these states is NOT associated with the Chhau dance?",
+          "options": [
+            "Odisha",
+            "Jharkhand",
+            "Maharashtra",
+            "West Bengal"
+          ],
+          "answer": "Maharashtra",
+          "explanation": "Chhau is predominantly associated with the states of Odisha, Jharkhand, and West Bengal, but not with Maharashtra."
+        },
+        {
+          "question": "In which year was Chhau dance included in India's cultural heritage?",
+          "options": [
+            "2001",
+            "2010",
+            "2018",
+            "2017"
+          ],
+          "answer": "2010",
+          "explanation": "Chhau dance was included in India's cultural heritage in 2010 by UNESCO as an Intangible Cultural Heritage."
+        },
+        {
+          "question": "What does the 'Chhau' in Chhau dance mean?",
+          "options": [
+            "Warrior",
+            "Dance of the Moon",
+            "A type of rhythm",
+            "Folk dance"
+          ],
+          "answer": "Warrior",
+          "explanation": "'Chhau' means 'warrior,' referring to the martial arts and combat movements that are a key aspect of the dance."
+        },
+        {
+          "question": "Which of these styles of Chhau dance involves the use of more acrobatic and combat movements?",
+          "options": [
+            "Purulia Chhau",
+            "Seraikella Chhau",
+            "Mayurbhanj Chhau",
+            "Kathak Chhau"
+          ],
+          "answer": "Purulia Chhau",
+          "explanation": "Purulia Chhau incorporates acrobatic and martial combat elements in its movements."
+        },
+        {
+          "question": "Which instruments are typically used to accompany Chhau dance performances?",
+          "options": [
+            "Tabla, sitar, and harmonium",
+            "Madal, shehnai, and dhol",
+            "Guitar, drums, and keyboard",
+            "Flute, violin, and mridangam"
+          ],
+          "answer": "Madal, shehnai, and dhol",
+          "explanation": "The instruments typically used in Chhau performances include the Madal (drum), Shehnai (wind instrument), and Dhol (large drum)."
+        },
+        {
+          "question": "What is the primary purpose of Chhau dance in its cultural context?",
+          "options": [
+            "Entertainment at festivals",
+            "To express religious and mythological stories",
+            "To showcase contemporary art",
+            "For meditation purposes"
+          ],
+          "answer": "To express religious and mythological stories",
+          "explanation": "Chhau dance is performed to narrate religious and mythological stories, often showcasing the triumph of good over evil."
+        },
+        {
+          "question": "True or False: Chhau dance is only performed during major festivals.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "answer": "False",
+          "explanation": "Chhau dance is not only performed during major festivals but also during local events and celebrations throughout the year."
+        },
+        {
+          "question": "Which aspect of Chhau dance is crucial for a performer’s skill?",
+          "options": [
+            "Expression through eyes alone",
+            "Mastery of hand gestures only",
+            "Coordination of acrobatic movements, gestures, and facial expressions",
+            "Only body flexibility"
+          ],
+          "answer": "Coordination of acrobatic movements, gestures, and facial expressions",
+          "explanation": "A successful Chhau dancer must excel in blending acrobatic movements, hand gestures, and facial expressions to tell a compelling story."
+        },
+        {
+          "question": "Which of the following does Chhau dance NOT typically emphasize?",
+          "options": [
+            "Storytelling through gestures",
+            "Connection with the audience",
+            "Complex body movements and flips",
+            "Use of high-tech props"
+          ],
+          "answer": "Use of high-tech props",
+          "explanation": "Chhau focuses on traditional elements like storytelling through gestures, body movements, and flips, without relying on high-tech props."
+        },
+        {
+          "question": "What is the role of the 'Mukhota' (mask) in Chhau dance?",
+          "options": [
+            "To represent the performer’s emotions",
+            "To hide the identity of the dancer",
+            "To symbolize different characters in a story",
+            "To create a dramatic effect only"
+          ],
+          "answer": "To symbolize different characters in a story",
+          "explanation": "The 'Mukhota' or mask in Chhau represents various mythological characters, adding symbolic meaning to the performance."
+        }
+      ]      
+     },
+     {
+      "setNumber": 9,
+      "questions":
+      [
+        {
+          "question": "The dance movements in Chhau are primarily derived from which art form?",
+          "options": [
+            "Bharatnatyam",
+            "Kalaripayattu",
+            "Odissi",
+            "Kathakali"
+          ],
+          "answer": "Kalaripayattu",
+          "explanation": "Chhau dance incorporates movements and techniques from Kalaripayattu, a traditional martial art form."
+        },
+        {
+          "question": "Which of these is a well-known festival during which Chhau dance is performed?",
+          "options": [
+            "Diwali",
+            "Dussehra",
+            "Holi",
+            "Pongal"
+          ],
+          "answer": "Dussehra",
+          "explanation": "Chhau dance is often performed during the Dussehra festival, particularly in regions of Jharkhand and West Bengal, to celebrate the victory of good over evil."
+        },
+        {
+          "question": "Which of the following Chhau dance styles is performed predominantly in West Bengal?",
+          "options": [
+            "Mayurbhanj Chhau",
+            "Purulia Chhau",
+            "Seraikella Chhau",
+            "Kathakali Chhau"
+          ],
+          "answer": "Purulia Chhau",
+          "explanation": "Purulia Chhau is a traditional dance form from West Bengal that involves dynamic, martial-inspired movements."
+        },
+        {
+          "question": "What kind of training is required to become proficient in Chhau dance?",
+          "options": [
+            "Only musical training",
+            "Years of physical and martial arts training",
+            "Vocal and acting skills training",
+            "No formal training is required"
+          ],
+          "answer": "Years of physical and martial arts training",
+          "explanation": "Chhau requires years of intense training in both physical movement and martial arts to master the complex techniques and acrobatic moves."
+        },
+        {
+          "question": "Chhau dance is known for depicting stories from which kind of traditions?",
+          "options": [
+            "National folklore",
+            "Indian mythology",
+            "Modern-day stories",
+            "Ancient Egyptian history"
+          ],
+          "answer": "Indian mythology",
+          "explanation": "Chhau dance primarily depicts themes from Indian mythology, such as battles between gods and demons."
+        },
+        {
+          "question": "What is the purpose of the martial movements in Chhau?",
+          "options": [
+            "To perform basic steps",
+            "To reflect the peaceful nature of the dance",
+            "To demonstrate strength and battle techniques",
+            "To improve the flexibility of dancers"
+          ],
+          "answer": "To demonstrate strength and battle techniques",
+          "explanation": "The martial movements in Chhau highlight strength, agility, and combat techniques, often symbolizing mythical battles."
+        },
+        {
+          "question": "In which region is the Mayurbhanj Chhau style primarily practiced?",
+          "options": [
+            "Jharkhand",
+            "West Bengal",
+            "Odisha",
+            "Tamil Nadu"
+          ],
+          "answer": "Odisha",
+          "explanation": "The Mayurbhanj Chhau style is primarily practiced in the Odisha region and is known for its slow, graceful movements."
+        },
+        {
+          "question": "Which type of Chhau dance performance is performed with masks?",
+          "options": [
+            "Only solo performances",
+            "Group performances only",
+            "Both solo and group performances",
+            "Chhau dance does not use masks"
+          ],
+          "answer": "Both solo and group performances",
+          "explanation": "Chhau dance uses masks in both solo and group performances to represent mythological characters."
+        },
+        {
+          "question": "True or False: The purpose of Chhau masks is to enhance the physical abilities of the dancer.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "answer": "False",
+          "explanation": "The purpose of Chhau masks is to symbolize mythological characters and convey emotions, not to enhance physical abilities."
+        },
+        {
+          "question": "Which of the following styles of Chhau is known for incorporating slow and graceful movements?",
+          "options": [
+            "Mayurbhanj Chhau",
+            "Seraikella Chhau",
+            "Purulia Chhau",
+            "All of the above"
+          ],
+          "answer": "Mayurbhanj Chhau",
+          "explanation": "Mayurbhanj Chhau is known for its slow, graceful movements and its emphasis on fluidity and beauty."
+        }
+      ]      
+     },
+     {
+      "setNumber": 10,
+      "questions":
+      [
+        {
+          "question": "What is the origin of Chhau dance?",
+          "options": [
+            "Northern India",
+            "Eastern India",
+            "Southern India",
+            "Western India"
+          ],
+          "answer": "Eastern India",
+          "explanation": "Chhau dance originated in the eastern part of India, specifically in the regions of Odisha, Jharkhand, and West Bengal."
+        },
+        {
+          "question": "Which is a key element of Chhau dance performance?",
+          "options": [
+            "The use of large-scale props",
+            "Storytelling through body movements and masks",
+            "Singing by the dancers",
+            "A specific type of food preparation"
+          ],
+          "answer": "Storytelling through body movements and masks",
+          "explanation": "Chhau dance is primarily known for storytelling through expressive body movements and masks, which represent mythological characters."
+        },
+        {
+          "question": "True or False: In Chhau dance, the masks are only worn for aesthetic purposes and do not have any symbolic meaning.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "answer": "False",
+          "explanation": "In Chhau dance, masks have deep symbolic meaning, representing different gods, demons, and mythological figures."
+        },
+        {
+          "question": "Which of the following is a well-known festival where Chhau dance is performed?",
+          "options": [
+            "Diwali",
+            "Makar Sankranti",
+            "Dussehra",
+            "Baisakhi"
+          ],
+          "answer": "Dussehra",
+          "explanation": "Chhau dance is performed during Dussehra to celebrate the victory of good over evil, often depicting mythological battles."
+        },
+        {
+          "question": "Which style of Chhau dance is the most acrobatic and martial in nature?",
+          "options": [
+            "Mayurbhanj Chhau",
+            "Seraikella Chhau",
+            "Purulia Chhau",
+            "Kathak Chhau"
+          ],
+          "answer": "Purulia Chhau",
+          "explanation": "Purulia Chhau is known for its acrobatic moves and martial arts influence, making it one of the most dynamic and energetic styles of Chhau dance."
+        },
+        {
+          "question": "What is the focus of the Chhau dancer’s performance?",
+          "options": [
+            "Perfect synchronization with the orchestra",
+            "Expressing emotions and storytelling through movement",
+            "Minimalist dance movements",
+            "Balancing props"
+          ],
+          "answer": "Expressing emotions and storytelling through movement",
+          "explanation": "The main focus of a Chhau dancer’s performance is to express emotions and narrate stories through their physical movements and gestures."
+        },
+        {
+          "question": "How is Chhau dance categorized based on its performance?",
+          "options": [
+            "Solo performances only",
+            "Group performances only",
+            "Both solo and group performances",
+            "No performance categorization"
+          ],
+          "answer": "Both solo and group performances",
+          "explanation": "Chhau dance can be performed as both solo and group performances, showcasing a variety of styles and themes."
+        },
+        {
+          "question": "The rhythm in Chhau dance performances is provided by which of these?",
+          "options": [
+            "Mridangam and tabla",
+            "Dhol, Madal, and shehnai",
+            "Drums and guitar",
+            "Harmonium and flute"
+          ],
+          "answer": "Dhol, Madal, and shehnai",
+          "explanation": "The rhythm in Chhau dance is created with traditional instruments like the Dhol, Madal, and Shehnai."
+        },
+        {
+          "question": "What distinguishes Mayurbhanj Chhau from other styles of Chhau?",
+          "options": [
+            "Its incorporation of slow, graceful movements and refined style",
+            "The use of vibrant costumes",
+            "The focus on martial arts techniques",
+            "The performance only by men"
+          ],
+          "answer": "Its incorporation of slow, graceful movements and refined style",
+          "explanation": "Mayurbhanj Chhau is known for its slow, graceful movements and refined style compared to the more acrobatic Purulia Chhau."
+        },
+        {
+          "question": "Chhau dance is typically performed during which type of events?",
+          "options": [
+            "Religious and mythological festivals",
+            "Private parties",
+            "Competitive sports events",
+            "Wedding ceremonies"
+          ],
+          "answer": "Religious and mythological festivals",
+          "explanation": "Chhau is typically performed during religious and mythological festivals, especially to celebrate mythological stories and deities."
+        }
+      ]      
+     }
             ]
       }  
     ]

@@ -39,7 +39,7 @@
                             "Descrip": "भांगड़ा अब बॉलीवुड, संगीत वीडियो और वैश्विक नृत्य प्रतियोगिताओं में शामिल हो चुका है। लोग इसे हिप-हॉप, पॉप और अन्य शैलियों के साथ मिलाते हैं, जिससे यह अधिक रोमांचक और व्यापक रूप से लोकप्रिय हो जाता है।"
                         },
                         {
-                            "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/94/Statue_of_Bhangra_in_Amritsar_26_सितंबर_2018.jpg",
+                            "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/94/Statue_of_Bhangra_in_Amritsar_26_September_2018.jpg",
                             "title": "भांगड़ा क्यों लोकप्रिय है?",
                             "Descrip": "यह व्यायाम करने और फिट रहने का एक मज़ेदार तरीका है।\nयह लोगों को एक साथ लाता है और खुशियाँ फैलाता है।\nसंगीत और धुनें इसे सभी के लिए मज़ेदार बनाती हैं।"
                         },
@@ -1204,27 +1204,27 @@
                     "descrip": "*सम्मी एक पारंपरिक लोक नृत्य है जो भारत और पाकिस्तान के पंजाब क्षेत्र से उत्पन्न हुआ है। यह मुख्य रूप से महिलाओं द्वारा किया जाता है और अपनी सुंदर और लयबद्ध हरकतों के लिए जाना जाता है।*",
                     "image_link": [
                         {
-                            "imageUrl": "https://compression-image.s3.ap-south-1.amazonaws.com/dance_images/sammi/sammi_1.jpeg",
+                            "imageUrl": "https://comprehension-image.s3.ap-south-1.amazonaws.com/dance_images/sammi/sammi_1.jpeg",
                             "title": "सम्मी का इतिहास",
                             "Descrip": "सम्मी एक प्राचीन नृत्य शैली है जिसकी उत्पत्ति सैंडल बार क्षेत्र (अब पाकिस्तान में) में हुई थी। यह पीढ़ी दर पीढ़ी चली आ रही है और पंजाबी संस्कृति का हिस्सा बनी हुई है।"
                         },
                         {
-                            "imageUrl": "https://compression-image.s3.ap-south-1.amazonaws.com/dance_images/sammi/sammi_2.jpeg",
+                            "imageUrl": "https://comprehension-image.s3.ap-south-1.amazonaws.com/dance_images/sammi/sammi_2.jpeg",
                             "title": "सैमी का प्रदर्शन कैसे किया जाता है?",
                             "Descrip": "मंडल नृत्य: महिलाएँ एक घेरा बनाकर एक साथ नृत्य करती हैं।\nसुंदर हरकतें: कोमल, लयबद्ध कदम, कोमल हाथ और बांह की हरकतें।\nगायन: नर्तकियों द्वारा लोकगीत गाए जाते हैं, जिससे माहौल खुशनुमा हो जाता है।"
                         },
                         {
-                            "imageUrl": "https://compression-image.s3.ap-south-1.amazonaws.com/dance_images/sammi/sammi_3.jpeg",
+                            "imageUrl": "https://comprehension-image.s3.ap-south-1.amazonaws.com/dance_images/sammi/sammi_3.jpeg",
                             "title": "सैमी के लिए पोशाकें",
                             "Descrip": "महिलाएं लहंगा-चोली या सलवार कमीज जैसे चमकीले और रंगीन कपड़े पहनती हैं। फुलकारी दुपट्टा (कढ़ाई वाला दुपट्टा) सजावट में चार चांद लगा देता है। चूड़ियाँ और झुमके जैसे पारंपरिक आभूषण लुक को और भी निखार देते हैं।"
                         },
                         {
-                            "imageUrl": "https://compression-image.s3.ap-south-1.amazonaws.com/dance_images/sammi/sammi_1.jpeg",
+                            "imageUrl": "https://comprehension-image.s3.ap-south-1.amazonaws.com/dance_images/sammi/sammi_1.jpeg",
                             "title": "संगीत",
                             "Descrip": "सम्मी नृत्य में हमेशा वाद्य यंत्रों की आवश्यकता नहीं होती। संगीत अक्सर नर्तकों द्वारा गाए गए लोकगीतों से तैयार किया जाता है।"
                         },
                         {
-                            "imageUrl": "https://compression-image.s3.ap-south-1.amazonaws.com/dance_images/sammi/sammi_4.jpeg",
+                            "imageUrl": "https://comprehension-image.s3.ap-south-1.amazonaws.com/dance_images/sammi/sammi_4.jpeg",
                             "title": "सैमी क्यों खास है?",
                             "Descrip": "यह पंजाबी महिलाओं की शालीनता और सुंदरता को दर्शाता है। यह पारंपरिक संस्कृति को संरक्षित करने में मदद करता है। यह लोगों को एक साथ एक आनंदमय और शांतिपूर्ण तरीके से लाता है।"
                         }
@@ -10727,42 +10727,32 @@
                     "descrip": "*पढ़ंत भारतीय शास्त्रीय नृत्य और संगीत का एक महत्वपूर्ण पहलू है, जो यह सुनिश्चित करता है कि लय स्पष्ट और सटीक रूप से संप्रेषित हो।*",
                     "image_link": [
                         {
-                            "imageUrl": "https://comprecision-image.s3.ap-south-1.amazonaws.com/dance_images/moiniattam/moiniattam_8.jpeg",
-                            "title": "पढंत - नृत्य में लयबद्ध सस्वर पाठ",
-                            "Descrip": "पधांत भारतीय शास्त्रीय नृत्य का एक विशेष हिस्सा है, जिसमें नर्तक या गायक नृत्य की लय को बनाए रखने में मदद करने के लिए लयबद्ध ध्वनियाँ (जिन्हें बोल कहा जाता है) गाते हैं। ये लयबद्ध ध्वनियाँ बीट्स की तरह होती हैं और प्रदर्शन करते समय नर्तक को संगीत के साथ तालमेल बनाए रखने में मदद करती हैं।"
-                        },
-                        {
-                            "imageUrl": "https://compression-image.s3.ap-south-1.amazonaws.com/dance_images/padhat/padhat_2.jpeg",
+                            "imageUrl": "https://comprehension-image.s3.ap-south-1.amazonaws.com/dance_images/padhat/padhat_2.jpeg",
                             "title": "पढंत क्या है?",
                             "Descrip": "पढ़ंत का मतलब है लयबद्ध ताल को जोर से बोलना। 'ता', 'धीन', 'ना' जैसी ये ताल या ध्वनियाँ नृत्य की लय (ताल) से मेल खाने के लिए इस्तेमाल की जाती हैं। पढ़ंत इसलिए महत्वपूर्ण है क्योंकि यह नर्तक की हरकतों का मार्गदर्शन करता है और उन्हें नृत्य के चरणों को याद रखने में मदद करता है।"
                         },
                         {
-                            "imageUrl": "https://compression-image.s3.ap-south-1.amazonaws.com/dance_images/padhat/padhat_3.jpeg",
-                            "title": "पधान्त का उपयोग कैसे किया जाता है?",
-                            "Descrip": "कथक में: नृत्य शुरू होने से पहले, नर्तक या शिक्षक ताल निर्धारित करने के लिए ताल (पढ़ंत) सुनाता है। नर्तक अपने पैरों और हाथों के हाव-भाव से इन तालों का अनुसरण करता है।"
-                        },
-                        {
-                            "imageUrl": "https://compression-image.s3.ap-south-1.amazonaws.com/dance_images/padhat/padhat_3.jpeg",
+                            "imageUrl": "https://comprehension-image.s3.ap-south-1.amazonaws.com/dance_images/padhat/padhat_3.jpeg",
                             "title": "पधान्त का उपयोग कैसे किया जाता है?",
                             "Descrip": "भरतनाट्यम में: शुद्ध नृत्य (नृत्त) करते समय पधंत का प्रयोग किया जाता है, जहां नर्तक ताल के अनुरूप लयबद्ध पैरों की हरकतों और हाथों के हाव-भाव पर ध्यान केंद्रित करता है।"
                         },
                         {
-                            "imageUrl": "https://compression-image.s3.ap-south-1.amazonaws.com/dance_images/padhat/padhat_4.jpeg",
+                            "imageUrl": "https://comprehension-image.s3.ap-south-1.amazonaws.com/dance_images/padhat/padhat_4.jpeg",
                             "title": "पढंत क्यों महत्वपूर्ण है?",
                             "Descrip": "नर्तकों को लय में रखता है: यह नर्तकों को संगीत के साथ सही लय में रहने में मदद करता है। सीखना आसान: पधांत को सुनाने से नृत्य के चरण सीखना आसान हो जाता है क्योंकि यह लय को गाने जैसा है। समय सिखाता है: पधांत नर्तकों को समय समझने और संगीत के साथ अपने कदमों को मिलाने में मदद करता है।"
                         },
                         {
-                            "imageUrl": "https://compression-image.s3.ap-south-1.amazonaws.com/dance_images/padhat/padhat_5.jpeg",
+                            "imageUrl": "https://comprehension-image.s3.ap-south-1.amazonaws.com/dance_images/padhat/padhat_5.jpeg",
                             "title": "पदहंत ध्वनियों के उदाहरण",
                             "Descrip": "'ता, धिन, ना, धिन, ता' - ये पधंत में प्रयुक्त कुछ सामान्य लयबद्ध ध्वनियाँ हैं। नर्तक इन ध्वनियों के अनुसार अपने पैर और शरीर को हिलाते हैं।"
                         },
                         {
-                            "imageUrl": "https://compression-image.s3.ap-south-1.amazonaws.com/dance_images/padhat/padhat_6.jpeg",
+                            "imageUrl": "https://comprehension-image.s3.ap-south-1.amazonaws.com/dance_images/padhat/padhat_6.jpeg",
                             "title": "मजेदार तथ्य",
                             "Descrip": "पढंत नर्तकों के लिए लय का अभ्यास करने का एक मजेदार तरीका है क्योंकि यह ध्वनियों को गति के साथ मिलाने वाले खेल की तरह है!"
                         },
                         {
-                            "imageUrl": "https://compression-image.s3.ap-south-1.amazonaws.com/dance_images/padhat/padhat_7.jpeg",
+                            "imageUrl": "https://comprehension-image.s3.ap-south-1.amazonaws.com/dance_images/padhat/padhat_7.jpeg",
                             "title": "समूह प्रदर्शन में मदद करता है",
                             "Descrip": "जब कई नर्तक एक साथ प्रदर्शन करते हैं, तो पढंत उन्हें तालमेल बनाए रखने में मदद करता है। लयबद्ध ध्वनियों को सुनाने से, हर कोई जानता है कि कब चलना है, जिससे यह सुनिश्चित होता है कि पूरा समूह सामंजस्य में चलता है।"
                         }
@@ -11913,47 +11903,47 @@
                     "descrip": "*छऊ एक जीवंत और गतिशील नृत्य शैली है जो मार्शल आर्ट, नृत्य और नाटकीय कहानी कहने का अनोखा संयोजन है।*",
                     "image_link": [
                         {
-                            "imageUrl": "https://compression-image.s3.ap-south-1.amazonaws.com/dance_images/chau/chau_1.jpeg",
+                            "imageUrl": "https://comprehension-image.s3.ap-south-1.amazonaws.com/dance_images/chhau/chhau_1.jpeg",
                             "title": "छऊ क्या है?",
                             "Descrip": "छऊ एक लोक नृत्य शैली है जिसकी उत्पत्ति पूर्वी भारत में हुई है, खासकर ओडिशा, पश्चिम बंगाल और झारखंड राज्यों में। यह एक अत्यधिक ऊर्जावान नृत्य है जिसमें मार्शल आर्ट मूवमेंट, कलाबाज़ी वाली छलांग और भावपूर्ण चेहरे के हाव-भाव शामिल होते हैं। छऊ अपने जीवंत प्रदर्शन, सुंदर वेशभूषा और कहानी कहने के लिए जाना जाता है।"
                         },
                         {
-                            "imageUrl": "https://compression-image.s3.ap-south-1.amazonaws.com/dance_images/chau/chau_2.jpeg",
+                            "imageUrl": "https://comprehension-image.s3.ap-south-1.amazonaws.com/dance_images/chhau/chhau_2.jpeg",
                             "title": "छऊ नृत्य के प्रकार",
                             "Descrip": "छऊ के तीन मुख्य प्रकार हैं:\n\nसेराइकेला छऊ (झारखंड): यह अपनी सुंदर और सुंदर हरकतों के लिए जाना जाता है, जो कहानी कहने पर केंद्रित है।\n\nमयूरभंज छऊ (ओडिशा): इसमें मजबूत और शक्तिशाली हरकतें होती हैं, जो अक्सर मार्शल आर्ट से प्रभावित होती हैं।"
                         },
                         {
-                            "imageUrl": "https://compression-image.s3.ap-south-1.amazonaws.com/dance_images/chau/chau_2.jpeg",
+                            "imageUrl": "https://comprehension-image.s3.ap-south-1.amazonaws.com/dance_images/chhau/chhau_2.jpeg",
                             "title": "छऊ नृत्य के प्रकार",
                             "Descrip": "पुरुलिया छऊ (पश्चिम बंगाल): इसमें नृत्य, कलाबाजी और नाटकीय भावों का संयोजन होता है, जिसे अक्सर त्योहारों के दौरान प्रदर्शित किया जाता है।"
                         },
                         {
-                            "imageUrl": "https://compression-image.s3.ap-south-1.amazonaws.com/dance_images/chau/chau_3.jpeg",
+                            "imageUrl": "https://comprehension-image.s3.ap-south-1.amazonaws.com/dance_images/chhau/chhau_3.jpeg",
                             "title": "छऊ कैसे किया जाता है?",
                             "Descrip": "मार्शल आर्ट मूवमेंट: छऊ में मार्शल आर्ट तकनीकें शामिल हैं, जिसमें नर्तक ऊंची छलांग, त्वरित फुटवर्क और शक्तिशाली शारीरिक हरकतें करते हैं। कहानी सुनाना: नर्तक पौराणिक कहानियों को बताने या युद्ध के दृश्यों, देवताओं, राक्षसों और अन्य पात्रों को चित्रित करने के लिए इशारों और चेहरे के भावों का उपयोग करते हैं।"
                         },
                         {
-                            "imageUrl": "https://compression-image.s3.ap-south-1.amazonaws.com/dance_images/chau/chau_3.jpeg",
+                            "imageUrl": "https://comprehension-image.s3.ap-south-1.amazonaws.com/dance_images/chhau/chhau_3.jpeg",
                             "title": "छऊ कैसे किया जाता है?",
                             "Descrip": "वेशभूषा और मुखौटे: नर्तक चमकीले परिधान और विस्तृत मुखौटे पहनते हैं जो विभिन्न पात्रों का प्रतिनिधित्व करने और कहानी को बढ़ाने में मदद करते हैं। लयबद्ध संगीत: छऊ प्रदर्शन पारंपरिक ढोल (जैसे मदाल और चेंडा) और अन्य वाद्ययंत्रों के साथ होते हैं, जो एक जीवंत और लयबद्ध वातावरण बनाते हैं।"
                         },
                         {
-                            "imageUrl": "https://compression-image.s3.ap-south-1.amazonaws.com/dance_images/chau/chau_4.jpeg",
+                            "imageUrl": "https://comprehension-image.s3.ap-south-1.amazonaws.com/dance_images/chhau/chhau_4.jpeg",
                             "title": "छऊ क्यों खास है?",
                             "Descrip": "मार्शल आर्ट का प्रभाव: छऊ अपने मार्शल आर्ट से प्रेरित आंदोलनों के लिए अद्वितीय है, जो इसे एक शक्तिशाली और गतिशील नृत्य बनाता है।\nसांस्कृतिक महत्व: यह पूर्वी भारत के त्योहारों और सांस्कृतिक विरासत का एक महत्वपूर्ण हिस्सा है, खासकर चैत्र पर्व और दुर्गा पूजा जैसे समारोहों के दौरान।"
                         },
                         {
-                            "imageUrl": "https://compression-image.s3.ap-south-1.amazonaws.com/dance_images/chau/chau_4.jpeg",
+                            "imageUrl": "https://comprehension-image.s3.ap-south-1.amazonaws.com/dance_images/chhau/chhau_4.jpeg",
                             "title": "छऊ क्यों खास है?",
                             "Descrip": "जीवंत प्रदर्शन: ऊर्जावान नृत्य चालें, रंग-बिरंगे परिधान और नाटकीय भाव-भंगिमाएं छऊ को एक अद्भुत नृत्य शैली बनाती हैं।"
                         },
                         {
-                            "imageUrl": "https://compression-image.s3.ap-south-1.amazonaws.com/dance_images/chau/chau_5.jpeg",
+                            "imageUrl": "https://comprehension-image.s3.ap-south-1.amazonaws.com/dance_images/chhau/chhau_5.jpeg",
                             "title": "छऊ में सांस्कृतिक और धार्मिक विषय",
                             "Descrip": "छऊ नृत्य में अक्सर पौराणिक कथाएँ और धार्मिक विषय शामिल होते हैं, जैसे कि अच्छाई और बुराई के बीच की लड़ाई, भगवान शिव, दुर्गा और राम जैसे देवताओं का जीवन। ये नृत्य स्थानीय त्योहारों और अनुष्ठानों से बहुत निकटता से जुड़े हुए हैं।"
                         },
                         {
-                            "imageUrl": "https://compression-image.s3.ap-south-1.amazonaws.com/dance_images/chau/chau_6.jpeg",
+                            "imageUrl": "https://comprehension-image.s3.ap-south-1.amazonaws.com/dance_images/chhau/chhau_6.jpeg",
                             "title": "छऊ में मुखौटे और चेहरे के भाव",
                             "Descrip": "पुरुलिया छऊ में, नर्तक देवताओं, राक्षसों और जानवरों जैसे विभिन्न पात्रों का प्रतिनिधित्व करने के लिए विस्तृत मुखौटे पहनते हैं। ये मुखौटे प्रदर्शन का एक अनिवार्य हिस्सा हैं, जो विभिन्न भावनाओं और व्यक्तित्वों को व्यक्त करने में मदद करते हैं।"
                         }

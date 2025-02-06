@@ -94,7 +94,7 @@ export function createButtonWithExplanation(from: string, subtopicName: string,l
       body: {
         type: 'text',
         text: {
-          body: localisedStrings.explanation(subtopicName),
+          body: localisedStrings.moreExplanation(subtopicName),
         },
       },
       buttons: buttons,

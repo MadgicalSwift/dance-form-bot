@@ -82,15 +82,8 @@ export class ChatbotService {
         user.questionsAnswered = 0;
         user.startingIndex = 0;
         user.lastIndex = 0;
-        // user.selectedSet = null;
-        // user.questionsAnswered = 0;
-        // user.startingIndex = 0;
-        // user.score = 0;
-        // user.name = null
+        
         await this.userService.saveUser(user);
-
-
-        // await this.message.endMessage(from,user.language);
 
         await this.message.sendInitialTopics(from,user.language);
         return
@@ -125,9 +118,7 @@ export class ChatbotService {
       }
       let userSelectedLanguage = user.language;
       
-
-      // Handle 'Main Menu' button - reset user quiz data and send welcome message
-      if (buttonBody === localisedStrings.mainMenu) {
+    if (buttonBody === localisedStrings.mainMenu) {
 
         user.selectedSet = null;
         user.questionsAnswered = 0;
@@ -280,8 +271,7 @@ export class ChatbotService {
         this.mixpanel.track('Button_Click', trackingData);
         return 'ok';
       }
-
-      // Handle quiz answer submission - check if the user is answering a quiz question
+// Handle quiz answer submission - check if the user is answering a quiz question
       if (user.selectedSet) {
         let userSelectedLanguage = user.language;
         const selectedMainTopic = user.selectedMainTopic;

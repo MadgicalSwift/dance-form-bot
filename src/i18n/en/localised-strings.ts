@@ -15,6 +15,7 @@ export const localised = {
   retakeQuiz: 'Retake Quiz',
   startQuiz: 'Start Quiz',
   Moreexplanation: 'More Explanation',
+  question: 'Question',
   viewChallenge: "View Challengers",
   congratsMessage: "Congrats🎉! you have completed the quiz 🎉 ",
   endMessage: "Whenever you're ready to continue, just type 'Hi' to start the bot again. Looking forward to helping you out! 😊",
@@ -24,7 +25,7 @@ export const localised = {
   noChallenges: 'No challenges have been completed yet.', 
   errorOccurred: 'An error occurred while fetching challenges. Please try again later.',
   explanation: (subtopicName: string) =>
-    `📖 **Explanation of ${subtopicName}:**`,
+    `📖 Explanation of ${subtopicName}:`,
   moreExplanation: (subtopicName: string) =>
     `📝 Choose Any from Below Buttons`,
   difficulty: `🎯 Choose your quiz level to get started!🚀`,

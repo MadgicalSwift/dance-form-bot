@@ -72,7 +72,7 @@ export class ChatbotService {
     console.log('user-language', user.language);
     
     if (persistent_menu_response) {
-      if (persistent_menu_response.body == "Change Topic") {
+      if (persistent_menu_response.body == "Change State") {
 
         
         user.selectedSet = null;
@@ -90,9 +90,17 @@ export class ChatbotService {
       }
 
       if (persistent_menu_response.body == "Change Language") {
-        user.language = null;
-        await this.userService.saveUser(user);
+       
+        user.selectedSet = null;
+        user.selectedMainTopic = null;
+        user.selectedSubtopic = null;
+        user.score = 0;
+        user.questionsAnswered = 0;
+        user.startingIndex = 0;
+        user.lastIndex = 0;
+        
         await this.message.sendLanguageSelectionMessage(from, user.language);
+        await this.userService.saveUser(user);
         return
       }
       

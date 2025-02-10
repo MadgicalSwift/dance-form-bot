@@ -4,7 +4,6 @@ import { MessageService } from 'src/message/message.service';
 import { UserService } from 'src/model/user.service';
 import { localised } from 'src/i18n/en/localised-strings';
 import { LocalizationService } from 'src/localization/localization.service';
-
 import englishData from '../datasource/english_data.json';
 import hindiData from '../datasource/hindi_data.json';
 import { SwiftchatMessageService } from 'src/swiftchat/swiftchat.service';
@@ -64,7 +63,6 @@ export class ChatbotService {
       topics = this.hindiTopics
     }
 
-    
     // Convert plain user data to a User class instance
     const user = plainToClass(User, userData);
 
@@ -106,8 +104,7 @@ export class ChatbotService {
       
 
     }
-    
-    // Handle button response from the user
+  
     else if (button_response) {
       const buttonBody = button_response.body;
       
@@ -309,9 +306,6 @@ export class ChatbotService {
 
           await this.message.scoreInformation(from,user.score, currentQuestionIndex+1,userSelectedLanguage)
         }
-
-        
-
         // If the user has answered 10 questions, send their final score
         if (user.questionsAnswered >= 10) {
 
@@ -338,14 +332,7 @@ export class ChatbotService {
               },
             ],
           };
-          // Save the challenge data into the database
-          // await this.userService.saveUserChallenge(
-          //   from,
-          //   userData.Botid,
-          //   challengeData,
-          //   userData.language
-          // );
-
+          
           await this.message.newscorecard(from, user.score, user.questionsAnswered, badge,userSelectedLanguage)
           
           let isAnswer = ""

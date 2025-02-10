@@ -7,7 +7,6 @@ import {
   createMainTopicButtons,
   createSubTopicButtons,
   createButtonWithExplanation,
-  // createDifficultyButtons,
   createTestYourSelfButton,
   questionButton,
   answerFeedback,
@@ -65,21 +64,6 @@ export class SwiftchatMessageService extends MessageService {
     return response;
   }
 
-
-//  old nor
-  // async sendWelcomeMessage(from: string, language: string) {
-
-  //   const message = localised.welcomeMessage;
-  //   const requestData = this.prepareRequestData(from, message);
-  //   const response = await this.sendMessage(
-  //     this.baseUrl,
-  //     requestData,
-  //     this.apiKey,
-  //   );
-  //   return response;
-  // }
-
-  // nor done
   async sendWelcomeMessage(from: string, language: string) {
     const localisedStrings = LocalizationService.getLocalisedString(language);
     const requestData = this.prepareRequestData(
@@ -138,14 +122,12 @@ export class SwiftchatMessageService extends MessageService {
     else if (score >= 5) backgroundColor = "green";
     else if (score >= 3) backgroundColor = "pink";
 
-    // Determine text2 message based on score (≤ 35 chars)
     let performanceMessage = "Keep going! You got this!"; // Default
     if (score >= 9) performanceMessage = "Outstanding! Keep shining!";
     else if (score >= 7) performanceMessage = "Great work! Keep improving!";
     else if (score >= 5) performanceMessage = "Good effort! Keep practicing!";
     else if (score >= 3) performanceMessage = "Nice try! You’re learning!";
 
-    // text3: Score percentage
     const performanceScore = `${(score / totalQuestions) * 100}%`;
 
     const payload = {
@@ -153,7 +135,7 @@ export class SwiftchatMessageService extends MessageService {
         type: "scorecard",
         scorecard: {
             theme: "theme2",
-            background: backgroundColor, // Dynamic color
+            background: backgroundColor, 
             performance: "high",
             share_message: localisedStrings.gotBadgeText,
             text1: `Quiz-${date}-${month}-${year}`,
@@ -172,7 +154,6 @@ export class SwiftchatMessageService extends MessageService {
       },
     });
     await this.sendScore(from, score, totalQuestions, badge,language);
-    // console.log(response)
     return response;
   }
 
@@ -191,7 +172,6 @@ export class SwiftchatMessageService extends MessageService {
       );
       try {
         const response = await this.sendMessage(this.baseUrl, videoData, this.apiKey);
-        // console.log('Message sent successfully:', response);
         return response
       } catch (error) {
         console.error('Error sending video message:', error);
@@ -299,9 +279,6 @@ export class SwiftchatMessageService extends MessageService {
 
   // button  done
   async imageWithButton(from: string, imageUrl: string, Title: any, subTopic: string, aboutimage: string,language:string) {
-
-    // console.log('swiftchat imageURL', imageUrl);
-
     if (!imageUrl) {
       return;
     }

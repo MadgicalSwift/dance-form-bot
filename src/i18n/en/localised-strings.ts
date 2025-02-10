@@ -29,10 +29,10 @@ export const localised = {
     `📝 Choose Any from Below Buttons`,
   difficulty: `🎯 Choose your quiz level to get started!🚀`,
   rightAnswer: (explanation: string) =>
-    `🌟 Fantastic! You got it 👍right! \nCheck this out: **${explanation}**`,
+    `🌟 Fantastic! You got it 👍right! \nCheck this out: *${explanation}*`,
 
   wrongAnswer: (correctAnswer: string, explanation: string) =>
-    `👎Not quite right, but you’re learning!  💪\n The correct answer is: **${correctAnswer}**\n Here’s the explanation : **${explanation}** `,
+    `👎Not quite right, but you’re learning!  💪\n The correct answer is: *${correctAnswer}*\n Here’s the explanation : *${explanation}* `,
 
 
   scoreInformation:(score:number,attempted: number) => 
@@ -42,7 +42,7 @@ export const localised = {
  
 
   score: (score: number, totalQuestions: number, badge: string) =>
-    `🌟 Wow! You did an awesome job.  **${score}** out of **${totalQuestions}**.\n\n💪 Congratulations! You earned ${badge} badge! `,
+    `🌟 Wow! You did an awesome job.  *${score}* out of *${totalQuestions}*.\n\n💪 Congratulations! You earned ${badge} badge! `,
   InformationMessage: (username: string) => `Hello ${username} 🎯 Welcome to the Quiz! \n You’ll answer 10 questions—earn 1 point for each correct answer. No penalties for wrong answers! 😊 \n 🏆 Rewards: \n 🥇 Gold: Score 10 \n 🥈 Silver: Score 7–9 \n 🥉 Bronze: Score 5–6 \n Ready to test your knowledge? Let’s go! 🚀
 `,
 

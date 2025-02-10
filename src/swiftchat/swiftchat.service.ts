@@ -123,22 +123,6 @@ export class SwiftchatMessageService extends MessageService {
   }
 
  
-
-
- 
-
-  // not used
-  // async difficultyButtons(from: string,language:string) {
-  //   const messageData = createDifficultyButtons(from,language);
-  //   const response = await this.sendMessage(
-  //     this.baseUrl,
-  //     messageData,
-  //     this.apiKey,
-  //   );
-  //   return response;
-  // }
-
-  // don;t change
   async newscorecard(from: string, score: number, totalQuestions: number, badge: string,language:string) {
     const localisedStrings = LocalizationService.getLocalisedString(language);
     //const messageData = createDifficultyButtons(from);
@@ -148,22 +132,37 @@ export class SwiftchatMessageService extends MessageService {
     const year = currentDate.getFullYear() % 100
 
 
-    // console.log(currentDate.getDate())
+    let backgroundColor = "teal"; // Default for low scores
+    if (score >= 9) backgroundColor = "orange";
+    else if (score >= 7) backgroundColor = "blue";
+    else if (score >= 5) backgroundColor = "green";
+    else if (score >= 3) backgroundColor = "pink";
+
+    // Determine text2 message based on score (≤ 35 chars)
+    let performanceMessage = "Keep going! You got this!"; // Default
+    if (score >= 9) performanceMessage = "Outstanding! Keep shining!";
+    else if (score >= 7) performanceMessage = "Great work! Keep improving!";
+    else if (score >= 5) performanceMessage = "Good effort! Keep practicing!";
+    else if (score >= 3) performanceMessage = "Nice try! You’re learning!";
+
+    // text3: Score percentage
+    const performanceScore = `${(score / totalQuestions) * 100}%`;
+
     const payload = {
-      to: from,
-      type: "scorecard",
-      scorecard: {
-        theme: "theme2",
-        background: "blue",
-        performance: "high",
-        share_message: localisedStrings.gotBadgeText,
-        text1: `Quiz-${date}-${month}-${year}`,
-        text2: localisedStrings.goodJobText,
-        text3: `${score * 10}%`,
-        text4: `${badge} `,
-        score: `${score}/10`,
-        animation: "confetti"
-      }
+        to: from,
+        type: "scorecard",
+        scorecard: {
+            theme: "theme2",
+            background: backgroundColor, // Dynamic color
+            performance: "high",
+            share_message: localisedStrings.gotBadgeText,
+            text1: `Quiz-${date}-${month}-${year}`,
+            text2: performanceMessage, // Dynamic encouragement (≤ 35 chars)
+            text3: performanceScore, // Score percentage
+            text4: `${badge} `,
+            score: `${score}/${totalQuestions}`,
+            animation: "confetti"
+        }
     }
 
     const response = await axios.post(this.baseUrl, payload, {
@@ -316,7 +315,7 @@ export class SwiftchatMessageService extends MessageService {
     );
     try {
       const response = await this.sendMessage(this.baseUrl, imagedata, this.apiKey);
-      // console.log('Message sent successfully:', response);
+      
       return response
     } catch (error) {
       console.error('Error sending image message:', error);

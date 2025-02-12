@@ -70,7 +70,7 @@ export class ChatbotService {
     console.log('user-language', user.language);
     
     if (persistent_menu_response) {
-      if (persistent_menu_response.body == "Change State") {
+      if (persistent_menu_response.body == "Change Topic") {
 
         
         user.selectedSet = null;

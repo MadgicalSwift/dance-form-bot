@@ -103,8 +103,8 @@ export function createButtonWithExplanation(from: string, subtopicName: string,l
   };
 }
 
-
-export function videoWithButton(from: string, videoUrl: string, videoTitle: string, subTopic: string, aboutVideo: string,language:string) {
+//=========================Original code============
+/*export function videoWithButton(from: string, videoUrl: string, videoTitle: string, subTopic: string, aboutVideo: string,language:string) {
 
   return {
     to: from, // Recipient's mobile number
@@ -124,7 +124,7 @@ export function videoWithButton(from: string, videoUrl: string, videoTitle: stri
     ],
   };
 }
-
+//================Original code=============
 export function imageWithButton(
   from, // Recipient's mobile number
   images, // Array of image objects containing URL, title, and description
@@ -168,7 +168,78 @@ export function imageWithButton(
     type: "article", // Message type is 'article'
     article: articles, // Array of articles
   };
+}*/
+
+
+//==============================My code=======================
+export function mediaWithButton(
+  from: string,
+  mediaItems: Array<{ type: "video" | "image"; url: string | Array<{ imageUrl: string }>; title: string; description: string }>,
+  subTopic: string,
+  language: string
+) {
+  console.log(mediaItems,"kkkkkkkkkkkkkkkkkkkkkkkkkkkkk")
+  const articles = mediaItems.map((item) => {
+    let imageUrl = "";
+    if (item.type === "image" && Array.isArray(item.url)) {
+      // Extract the first image URL from the array
+      if (item.url.length > 0 && item.url[0].imageUrl) {
+        imageUrl = item.url[0].imageUrl;
+      }
+    } else if (item.type === "image" && typeof item.url === "string") {
+      imageUrl = item.url;
+    }
+
+    if (item.type === "video") {
+      return {
+        tags: [subTopic],
+        title: item.title,
+        header: {
+          type: "text",
+          text: {
+            body: item.url as string,
+          },
+        },
+        description: item.description,
+      };
+    } else if (item.type === "image") {
+      return {
+        tags: [subTopic],
+        title: item.title,
+        header: {
+          type: "image",
+          image: {
+            url: imageUrl,
+          },
+        },
+        description: item.description,
+        actions: [
+          {
+            button_text: "Open Image",
+            type: "website",
+            website: {
+              title: "View Image",
+              payload: "open_image",
+              url: imageUrl,
+            },
+          },
+        ],
+      };
+    } else {
+      console.error(`Unsupported media type: ${item.type}`);
+      return null;
+    }
+  }).filter(article => article !== null);
+
+  return {
+    to: from,
+    type: "article",
+    article: articles,
+  };
 }
+
+
+
 
 
 export function createTestYourSelfButton(

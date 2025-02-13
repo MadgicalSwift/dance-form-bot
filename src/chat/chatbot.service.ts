@@ -184,6 +184,82 @@ export class ChatbotService {
       // Handle 'More Videos' button - send complete explanation for the subtopic
 
       if (buttonBody === localisedStrings.seeMoreVideo) {
+        const topic = user.selectedSubtopic;
+        const subtopic = topics
+          .flatMap((topic) => topic.subtopics)
+          .find((subtopic) => subtopic.subtopicName === topic);
+      
+        if (subtopic) {
+          const imageUrl = subtopic.image_link;
+          console.log(imageUrl,"iiiiiiiiiiii")
+
+          const videoUrl = subtopic.video_link;
+          const description = subtopic.description;
+          const Title = subtopic.title;
+          const aboutimage = subtopic.Descrip;
+          const SubTopic = subtopic.subtopicName;
+      
+          let indexing = user.startingIndex;
+          let updateIndexing = user.lastIndex;
+      
+          if (indexing >= imageUrl.length) {
+            user.startingIndex = 0;
+            user.lastIndex = 0;
+            await this.userService.saveUser(user);
+            await this.message.sendCompleteExplanation(from, SubTopic, userSelectedLanguage);
+          } else {
+            // Create an array of media items
+            const mediaItems = [];
+      
+            // Add the video to the media items array
+            mediaItems.push({
+              type: "video",
+              url: videoUrl,
+              title: "Sample Video",
+              description: "This is a sample video",
+            });
+      console.log(imageUrl,"iiiiiiiiiiii")
+            // Add all images in the current slice to the media items array
+            const eachImageUrl = imageUrl.slice(indexing, updateIndexing);
+            eachImageUrl.forEach((url, index) => {
+              mediaItems.push({
+                type: "image",
+                url: url,
+                title: `Image ${index + 1}`,
+                description: `Description of Image ${index + 1}`,
+              });
+            });
+      
+            // Send all media items in a single request
+            await this.message.sendMedia(from, mediaItems, SubTopic, userSelectedLanguage);
+      
+            if (updateIndexing >= imageUrl.length) {
+              user.startingIndex = 0;
+              user.lastIndex = 0;
+              await this.userService.saveUser(user);
+              await this.message.sendCompleteExplanation(from, SubTopic, userSelectedLanguage);
+            } else {
+              await this.message.sendExplanation(from, SubTopic, userSelectedLanguage);
+            }
+      
+            user.startingIndex = user.lastIndex;
+            user.lastIndex = user.lastIndex + 3;
+            await this.userService.saveUser(user);
+          }
+        }
+      
+        const trackingData = {
+          distinct_id: from,
+          button: buttonBody,
+          botID: botID,
+        };
+      
+        this.mixpanel.track('Button_Click', trackingData);
+        return 'ok';
+      }
+
+
+     /* if (buttonBody === localisedStrings.seeMoreVideo) {
 
         const topic = user.selectedSubtopic;
         // Find the selected subtopic in the list of topics
@@ -192,6 +268,7 @@ export class ChatbotService {
           .find((subtopic) => subtopic.subtopicName === topic);
         if (subtopic) {
           const imageUrl = subtopic.image_link;
+          const videoUrl = subtopic.video_link
           const description = subtopic.description;
           const Title = subtopic.title;
           const aboutimage = subtopic.Descrip
@@ -211,8 +288,13 @@ export class ChatbotService {
           }
           else {
             const eachImageUrl = imageUrl.slice(indexing, updateIndexing);
-
-            await this.message.imageWithButton(from, eachImageUrl, Title, SubTopic, aboutimage,userSelectedLanguage);
+             console.log(eachImageUrl,"hhhhhhhhhhhh")
+           //await this.message.imageWithButton(from, eachImageUrl, Title, SubTopic, aboutimage,userSelectedLanguage);
+           await this.message.sendMedia(from, [
+            { type: "video", url: videoUrl, title: "Sample Video", description: "This is a sample video" },
+            { type: "image", url: eachImageUrl, title: "Image 1", description: "Description of Image 1" },
+          ], SubTopic, userSelectedLanguage);
+          
 
 
 
@@ -242,7 +324,10 @@ export class ChatbotService {
 
         this.mixpanel.track('Button_Click', trackingData);
         return 'ok';
-      }
+      }*/
+
+
+
       // Handle 'Test Yourself' button - show difficulty options to the user
 
       if (buttonBody === localisedStrings.startQuiz) {
@@ -404,7 +489,7 @@ export class ChatbotService {
         const subtopic = topics
           .flatMap((topic) => topic.subtopics)
           .find((subtopic) => subtopic.subtopicName === buttonBody);
-        if (subtopic) {
+        /*if (subtopic) {
           const subtopicName = subtopic.subtopicName;
           const description = subtopic.description[0];
           if (!description) {
@@ -422,7 +507,7 @@ export class ChatbotService {
           }
 
           await this.userService.saveUser(user);
-          await this.message.sendVideo(from, videoUrl, title, subTopic, aboutVideo,userSelectedLanguage);
+          //await this.message.sendVideo(from, videoUrl, title, subTopic, aboutVideo,userSelectedLanguage);
 
 
           // code for buttonimage
@@ -440,7 +525,13 @@ export class ChatbotService {
 
           const eachImageUrl = imageUrl.slice(indexing, updateIndexing);
 
-          await this.message.imageWithButton(from, eachImageUrl, Title, SubTopic, aboutimage,userSelectedLanguage);
+          //await this.message.imageWithButton(from, eachImageUrl, Title, SubTopic, aboutimage,userSelectedLanguage);
+          await this.message.sendMedia(from, [
+            { type: "video", url: videoUrl, title: "Sample Video", description: "This is a sample video" },
+            { type: "image", url: eachImageUrl, title: "Image 1", description: "Description of Image 1" },
+            
+          ], subTopic, userSelectedLanguage);
+         
 
 
           if (updateIndexing >= imageUrl.length) {
@@ -462,7 +553,83 @@ export class ChatbotService {
           }
 
 
-        }
+        }*/
+
+          if (subtopic) {
+            const subtopicName = subtopic.subtopicName;
+            const description = subtopic.description[0];
+            if (!description) {
+              // Handle case where description is missing
+            }
+            user.selectedSubtopic = subtopicName;
+            const videoUrl = subtopic.video_link;
+            const title = subtopic.title;
+            const aboutVideo = subtopic.descrip;
+            let subTopic = subtopic.subtopicName;
+            if (subTopic.length > 20) {
+              subTopic = subTopic.slice(0, 20) + '...';
+            }
+          
+            await this.userService.saveUser(user);
+          
+            // Code for sending media (video and images)
+            const imageUrl = subtopic.image_link;
+            const Title = subtopic.title;
+            const aboutimage = subtopic.Descrip;
+            const SubTopic = subtopic.subtopicName;
+          
+            let indexing = user.startingIndex;
+            user.lastIndex = user.lastIndex + 3;
+            await this.userService.saveUser(user);
+            let updateIndexing = user.lastIndex;
+          
+            const eachImageUrl = imageUrl.slice(indexing, updateIndexing);
+          
+            // Create an array of media items
+            const mediaItems = [];
+          
+            // Add the video to the media items array
+            mediaItems.push({
+              type: "video",
+              url: videoUrl,
+              title: title,
+              description: aboutVideo,
+            });
+          
+            // Add all images in the current slice to the media items array
+            eachImageUrl.forEach((url, index) => {
+              mediaItems.push({
+                type: "image",
+                url: url,
+                title: `Image ${index + 1}`,
+                description: `Description of Image ${index + 1}`,
+              });
+            });
+          
+            // Send all media items in a single request
+            await this.message.sendMedia(from, mediaItems, SubTopic, userSelectedLanguage);
+          
+            if (updateIndexing >= imageUrl.length) {
+              user.lastIndex = 0;
+              await this.userService.saveUser(user);
+              await this.message.sendCompleteExplanation(from, subtopicName, userSelectedLanguage);
+            } else {
+              user.startingIndex = user.lastIndex;
+              user.lastIndex = user.lastIndex + 3;
+              await this.userService.saveUser(user);
+              await this.message.sendExplanation(from, subtopicName, userSelectedLanguage);
+            }
+          
+            const trackingData = {
+              distinct_id: from,
+              button: buttonBody,
+              botID: botID,
+            };
+          
+            this.mixpanel.track('Button_Click', trackingData);
+          }
+
+
 
         const trackingData = {
           distinct_id: from,

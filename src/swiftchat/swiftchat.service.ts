@@ -12,8 +12,9 @@ import {
   answerFeedback,
   optionButton,
   buttonWithScore,
-  videoWithButton,
-  imageWithButton
+  //videoWithButton,
+  //imageWithButton,
+  mediaWithButton
 } from 'src/i18n/buttons/button';
 dotenv.config();
 
@@ -157,8 +158,8 @@ export class SwiftchatMessageService extends MessageService {
     return response;
   }
 
-     // don;t chnage
-     async sendVideo(from: string, videoUrl: string, title: any, subTopic: string, aboutVideo: string,language:string) {
+     // don't chnage ===================Original code=========
+     /*async sendVideo(from: string, videoUrl: string, title: any, subTopic: string, aboutVideo: string,language:string) {
       if (!videoUrl) {
         return;
       }
@@ -177,6 +178,75 @@ export class SwiftchatMessageService extends MessageService {
         console.error('Error sending video message:', error);
       }
     }
+
+//==========================Original code=============
+    async imageWithButton(from: string, imageUrl: string, Title: any, subTopic: string, aboutimage: string,language:string) {
+      if (!imageUrl) {
+        return;
+      }
+      const imagedata = imageWithButton(
+        from, // The recipient's phone number
+        imageUrl, // Video URL
+        subTopic,
+        Title,
+        language
+  
+      );
+      try {
+        const response = await this.sendMessage(this.baseUrl, imagedata, this.apiKey);
+        
+        return response
+      } catch (error) {
+        console.error('Error sending image message:', error);
+      }
+    }*/
+
+     //=================================My code===============
+      /*async sendMedia(
+        from: string,
+        mediaItems: Array<{ type: "video" | "image"; url: string; title: any; description: string }>,
+        subTopic: string,
+        language: string
+      ) {
+        if (!mediaItems || mediaItems.length === 0) {
+          return;
+        }
+      
+        const mediaData = mediaWithButton(from, mediaItems, subTopic, language);
+      
+        try {
+          const response = await this.sendMessage(this.baseUrl, mediaData, this.apiKey);
+          return response;
+        } catch (error) {
+          console.error("Error sending media message:", error);
+        }
+      }*/
+
+//===========================My code=========
+        async sendMedia(
+          from: string,
+          mediaItems: Array<{ type: "video" | "image"; url: string; title: string; description: string }>,
+          subTopic: string,
+          language: string
+        ) {
+          if (!mediaItems || mediaItems.length === 0) {
+            return;
+          }
+        console.log(mediaItems,"swift")
+          const mediaData = mediaWithButton(from, mediaItems, subTopic, language);
+        
+          try {
+            const response = await this.sendMessage(this.baseUrl, mediaData, this.apiKey);
+            return response;
+          } catch (error) {
+            console.error("Error sending media message:", error);
+          }
+        }
+      
+  
+
+
+
   
     // dont'know
     async checkAnswer(
@@ -277,28 +347,8 @@ export class SwiftchatMessageService extends MessageService {
     return response;
   }
 
-  // button  done
-  async imageWithButton(from: string, imageUrl: string, Title: any, subTopic: string, aboutimage: string,language:string) {
-    if (!imageUrl) {
-      return;
-    }
-    const imagedata = imageWithButton(
-      from, // The recipient's phone number
-      imageUrl, // Video URL
-      subTopic,
-      Title,
-      language
 
-    );
-    try {
-      const response = await this.sendMessage(this.baseUrl, imagedata, this.apiKey);
-      
-      return response
-    } catch (error) {
-      console.error('Error sending image message:', error);
-    }
-  }
-
+  
     // button done
     async getQuestionBySet( from: string,answer: string, selectedMainTopic: string, selectedSubtopic: string,randomSet: string,currentQuestionIndex: number, language:string) {
       const messageData = optionButton(from,selectedMainTopic,selectedSubtopic,randomSet,currentQuestionIndex,language);

@@ -81,7 +81,15 @@ export abstract class MessageService {
 
   abstract sendLanguageSelectionMessage(from: string, language: string);
   abstract newscorecard(from: string, score: number, totalQuestions: number, badge: string,language: string);
-  abstract sendVideo(from: string, videoUrl: string, title: string, subTopic: string, aboutVideo: string,language: string);
-  abstract imageWithButton(from: string, imageUrl: string, Title: any, subTopic: string, aboutimage: string,language: string);
-  abstract sendInformationMessage(from: string, username: string,language: string);
+  //abstract sendVideo(from: string, videoUrl: string, title: string, subTopic: string, aboutVideo: string,language: string);
+  //abstract imageWithButton(from: string, imageUrl: string, Title: any, subTopic: string, aboutimage: string,language: string);
+  
+  abstract sendMedia(
+  from: string,
+  mediaItems: Array<{ type: "video" | "image"; url: string; title: string; description: string }>,
+  subTopic: string,
+  language: string
+);
+
+abstract sendInformationMessage(from: string, username: string,language: string);
 }

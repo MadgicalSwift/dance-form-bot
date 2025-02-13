@@ -1,6 +1,6 @@
-#  Chatbot NestJS Boilerplate
+#  Dance-Form-Bot
 
-In this comprehensive guide, we introduce you to our Chatbot Starter Kit, a resource designed to empower developers in building robust chatbot applications. Whether you are just starting your journey in chatbot development or are an experienced developer seeking an efficient solution, this document is your go-to resource for mastering the use of our starter kit.
+Welcome to the Dance Form Bot, an interactive platform designed to help users discover and learn about traditional Indian dance forms based on their state. Whether you are a dance enthusiast, a student, or simply curious about India's rich cultural heritage, this bot provides a seamless way to explore regional dance forms, take engaging quizzes, and access detailed information.
 
 
 # Prerequisites
@@ -8,7 +8,7 @@ Before you begin, ensure you have met the following requirements:
 
 * Node.js and npm installed
 * Nest.js CLI installed (npm install -g @nestjs/cli)
-* MySQL database accessible
+* DynomoDB database accessible
 
 ## Getting Started
 ### Installation
@@ -22,7 +22,7 @@ https://github.com/MadgicalSwift/dance-form-bot.git
 ```
 * Navigate to the Project Directory:
 ```
-cd chatbot-nestjs-boilerplate
+cd dance-form-bot
 ```
 * Install Project Dependencies:
 ```bash
@@ -58,13 +58,13 @@ $ npm run test:cov
 # Add the following environment variables:
 
 ```bash
-API_URL = API_URL
-BOT_ID = BOT_ID
-API_KEY = API_KEY
-DATA_BASE=DATA_BASE
-DB_HOST=DB_HOST
-DB_USER=DB_USER
-DB_PASSWORD=DB_PASSWORD
+USERS_TABLE= user_table
+REGION= region
+ACCESS_KEY_ID= access_key_id
+SECRET_ACCESS_KEY= secret_access_key
+API_URL = api_url
+BOT_ID = bot_id
+API_KEY = api_key
 ```
 # API Endpoints
 ```

@@ -171,25 +171,16 @@ export function imageWithButton(
 }*/
 
 
-//==============================My code=======================
+
 export function mediaWithButton(
   from: string,
-  mediaItems: Array<{ type: "video" | "image"; url: string | Array<{ imageUrl: string }>; title: string; description: string }>,
+  mediaItems: Array<{ type: "video" | "image"; url: string | { imageUrl: string; title: string; Descrip: string }; title: string; description: string }>,
   subTopic: string,
   language: string
 ) {
-  console.log(mediaItems,"kkkkkkkkkkkkkkkkkkkkkkkkkkkkk")
-  const articles = mediaItems.map((item) => {
-    let imageUrl = "";
-    if (item.type === "image" && Array.isArray(item.url)) {
-      // Extract the first image URL from the array
-      if (item.url.length > 0 && item.url[0].imageUrl) {
-        imageUrl = item.url[0].imageUrl;
-      }
-    } else if (item.type === "image" && typeof item.url === "string") {
-      imageUrl = item.url;
-    }
+  //console.log(mediaItems, "kkkkkkkkkkkkkkkkkkkkkkkkkkkkk");
 
+  const articles = mediaItems.map((item) => {
     if (item.type === "video") {
       return {
         tags: [subTopic],
@@ -197,19 +188,22 @@ export function mediaWithButton(
         header: {
           type: "text",
           text: {
-            body: item.url as string,
+            body: item.url as string, // Directly use the URL for video
           },
         },
         description: item.description,
       };
     } else if (item.type === "image") {
+      // Extract the imageUrl from the url object
+      const imageUrl = typeof item.url === "object" ? item.url.imageUrl : item.url;
+
       return {
         tags: [subTopic],
         title: item.title,
         header: {
           type: "image",
           image: {
-            url: imageUrl,
+            url: imageUrl, // Ensure the URL is a string
           },
         },
         description: item.description,
@@ -220,7 +214,7 @@ export function mediaWithButton(
             website: {
               title: "View Image",
               payload: "open_image",
-              url: imageUrl,
+              url: imageUrl, // Ensure the URL is a string
             },
           },
         ],
@@ -237,7 +231,6 @@ export function mediaWithButton(
     article: articles,
   };
 }
-
 
 
 

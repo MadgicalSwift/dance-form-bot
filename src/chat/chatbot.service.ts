@@ -181,7 +181,7 @@ export class ChatbotService {
         this.mixpanel.track('Button_Click', trackingData);
         return 'ok';
       }
-      // Handle 'More Videos' button - send complete explanation for the subtopic
+      // Handle 'See More ' button - send complete explanation for the subtopic
 
       if (buttonBody === localisedStrings.seeMoreVideo) {
         const topic = user.selectedSubtopic;
@@ -193,11 +193,11 @@ export class ChatbotService {
           const imageUrl = subtopic.image_link;
           console.log(imageUrl,"iiiiiiiiiiii")
 
-          const videoUrl = subtopic.video_link;
-          const description = subtopic.description;
-          const Title = subtopic.title;
-          const aboutimage = subtopic.Descrip;
-          const SubTopic = subtopic.subtopicName;
+          // const videoUrl = subtopic.video_link;
+          // const description = subtopic.description;
+          // const Title = subtopic.title;
+          // const aboutimage = subtopic.Descrip;
+           const SubTopic = subtopic.subtopicName;
       
           let indexing = user.startingIndex;
           let updateIndexing = user.lastIndex;
@@ -208,28 +208,19 @@ export class ChatbotService {
             await this.userService.saveUser(user);
             await this.message.sendCompleteExplanation(from, SubTopic, userSelectedLanguage);
           } else {
-            // Create an array of media items
             const mediaItems = [];
-      
-            // Add the video to the media items array
-            mediaItems.push({
-              type: "video",
-              url: videoUrl,
-              title: "Sample Video",
-              description: "This is a sample video",
-            });
-      console.log(imageUrl,"iiiiiiiiiiii")
+            //console.log(imageUrl,"iiiiiiiiiiii")
             // Add all images in the current slice to the media items array
             const eachImageUrl = imageUrl.slice(indexing, updateIndexing);
-            eachImageUrl.forEach((url, index) => {
+            eachImageUrl.forEach((image, index) => {
               mediaItems.push({
                 type: "image",
-                url: url,
-                title: `Image ${index + 1}`,
-                description: `Description of Image ${index + 1}`,
+                url: image.imageUrl,
+                title: image.title, 
+                description: image.Descrip, 
               });
             });
-      
+          
             // Send all media items in a single request
             await this.message.sendMedia(from, mediaItems, SubTopic, userSelectedLanguage);
       
@@ -597,15 +588,16 @@ export class ChatbotService {
             });
           
             // Add all images in the current slice to the media items array
-            eachImageUrl.forEach((url, index) => {
+            eachImageUrl.forEach((image, index) => {
               mediaItems.push({
                 type: "image",
-                url: url,
-                title: `Image ${index + 1}`,
-                description: `Description of Image ${index + 1}`,
+                url: image.imageUrl, // Use the imageUrl from the image object
+                title: image.title, // Use the title from the image object
+                description: image.Descrip, // Use the Descrip from the image object
               });
             });
           
+          console.log(aboutimage,"hgjhgjhgjhjgjhgjhjhgj",subtopic.Descrip)
             // Send all media items in a single request
             await this.message.sendMedia(from, mediaItems, SubTopic, userSelectedLanguage);
           

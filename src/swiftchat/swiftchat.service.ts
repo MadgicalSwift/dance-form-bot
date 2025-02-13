@@ -201,27 +201,7 @@ export class SwiftchatMessageService extends MessageService {
       }
     }*/
 
-     //=================================My code===============
-      /*async sendMedia(
-        from: string,
-        mediaItems: Array<{ type: "video" | "image"; url: string; title: any; description: string }>,
-        subTopic: string,
-        language: string
-      ) {
-        if (!mediaItems || mediaItems.length === 0) {
-          return;
-        }
-      
-        const mediaData = mediaWithButton(from, mediaItems, subTopic, language);
-      
-        try {
-          const response = await this.sendMessage(this.baseUrl, mediaData, this.apiKey);
-          return response;
-        } catch (error) {
-          console.error("Error sending media message:", error);
-        }
-      }*/
-
+     
 //===========================My code=========
         async sendMedia(
           from: string,

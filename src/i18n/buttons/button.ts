@@ -104,71 +104,62 @@ export function createButtonWithExplanation(from: string, subtopicName: string,l
 }
 
 
-export function videoWithButton(from: string, videoUrl: string, videoTitle: string, subTopic: string, aboutVideo: string,language:string) {
 
-  return {
-    to: from, // Recipient's mobile number
-    type: "article", // Message type is article
-    article: [
-      {
-        tags: [`${subTopic}`], // Subtopic name
-        title: videoTitle, // Title of the video
-        header: {
+
+
+// correct  code
+export function imageWithButton(from, images, subTopic, title, language: string) {
+  // Map each image object into the desired structure
+  const articles = images.map((image) => {
+    const header = image.videoUrl
+      ? {
           type: "text",
           text: {
-            body: videoUrl, // URL of the video
+            body: image.videoUrl, // URL of the video
           },
-        },
-        description: aboutVideo
-      },
-    ],
-  };
-}
+        }
+      : {
+          // Default header for image when no videoUrl is present
+          type: "image",
+          image: {
+            url: image.imageUrl, // The image URL
+            body: image.Descrip, // The title as the caption for the image
+          },
+        };
 
-export function imageWithButton(
-  from, // Recipient's mobile number
-  images, // Array of image objects containing URL, title, and description
-  subTopic, // Subtopic for tagging
-  title,
-  language:string
-) {
-  // console.log("Images:", images);
+    return {
+      tags: [subTopic], // Subtopic name as a tag
+      title: image.title, // Title of the image
+      header: header, // Conditionally set the header
+      description: image.Descrip, // Description for the image
 
-  // Map each image object into the desired structure
-  const articles = images.map((image) => ({
-    tags: [subTopic], // Subtopic name as a tag
-    title: image.title, // Title of the image
-    header: {
-      type: "image", // Type of header is 'image'
-      image: {
-        url: image.imageUrl, // The image URL
-        body: image.Descrip, // The title as the caption for the image
-        // width: 1000, // Set width to achieve a 2:1 ratio
-        // height: 2000, 
-      },
-    },
-    description: image.Descrip, // Description for the image
-    actions: [
-                {
-                    button_text: "Open Image",
-                    type: "website",
-                    website: {
-                        title: "Welcome to Swiftchat",
-                        payload: "qwerty",
-                        url: image.imageUrl,
+      // comment th action button 
+    // actions: [
+    //             {
+    //                 button_text: "Open Imagesafgxvzsd",
+    //                 type: "website",
+    //                 website: {
+    //                     title: "Welcome to Swiftchat",
+    //                     payload: "qwerty",
+    //                     url: image.imageUrl,
                        
-                    }
-                }
-            ]
-  }));
+    //                 }
+    //             }
+    //         ]
+    };
+  });
 
-  // Return the complete payload
   return {
     to: from, // Recipient's mobile number
     type: "article", // Message type is 'article'
     article: articles, // Array of articles
   };
 }
+
+
+
+
+
 
 
 export function createTestYourSelfButton(

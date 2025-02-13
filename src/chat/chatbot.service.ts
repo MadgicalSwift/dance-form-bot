@@ -67,10 +67,10 @@ export class ChatbotService {
     const user = plainToClass(User, userData);
 
     const localisedStrings = LocalizationService.getLocalisedString(user.language);
-    console.log('user-language', user.language);
+    // console.log('user-language', user.language);
     
     if (persistent_menu_response) {
-      if (persistent_menu_response.body == "Change State") {
+      if (persistent_menu_response.body == "Change Topic") {
 
         
         user.selectedSet = null;
@@ -111,7 +111,7 @@ export class ChatbotService {
       if (['english', 'hindi'].includes(buttonBody?.toLowerCase())) {
         user.language = buttonBody.toLowerCase();
         await this.userService.saveUser(user);
-        console.log('afterselecting-user-language', user.language);
+        // console.log('afterselecting-user-language', user.language);
         if (user.name == null){
           
           await this.message.sendName(from,user.language);
@@ -421,47 +421,50 @@ export class ChatbotService {
 
           }
 
+
+          // creat a video object
+          let video = {
+            "videoUrl" : subtopic.video_link ,
+            "title" : subtopic.title,
+            "Descrip" : subtopic.descrip,
+          }
+
           await this.userService.saveUser(user);
-          await this.message.sendVideo(from, videoUrl, title, subTopic, aboutVideo,userSelectedLanguage);
 
 
           // code for buttonimage
-
           const imageUrl = subtopic.image_link;
           const Title = subtopic.title;
           const aboutimage = subtopic.Descrip
           const SubTopic = subtopic.subtopicName
 
+          // start the indexing from 0 at new subtopic
+          user.startingIndex = 0;
+          user.lastIndex = 0;
+          await this.userService.saveUser(user);
           let indexing = user.startingIndex; 
-          user.lastIndex = user.lastIndex + 3;
+          user.lastIndex = user.lastIndex + 2;
           await this.userService.saveUser(user);
           let updateIndexing = user.lastIndex; 
-
+          
 
           const eachImageUrl = imageUrl.slice(indexing, updateIndexing);
-
+          eachImageUrl.unshift(video);  
+  
+          // console.log ('eachImageUrl=> ', eachImageUrl)
           await this.message.imageWithButton(from, eachImageUrl, Title, SubTopic, aboutimage,userSelectedLanguage);
 
-
           if (updateIndexing >= imageUrl.length) {
-
             user.lastIndex = 0;
             await this.userService.saveUser(user);
-
             await this.message.sendCompleteExplanation(from, subtopicName,userSelectedLanguage);
-
-
           }
           else {
             user.startingIndex = user.lastIndex;
             user.lastIndex = user.lastIndex + 3;
             await this.userService.saveUser(user);
             await this.message.sendExplanation(from, subtopicName,userSelectedLanguage);
-
-
           }
-
-
         }
 
         const trackingData = {

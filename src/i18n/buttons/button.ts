@@ -113,40 +113,41 @@ export function imageWithButton(from, images, subTopic, title, language: string)
   const articles = images.map((image) => {
     const header = image.videoUrl
       ? {
-          type: "text",
+        tags: [subTopic],
+        title: image.title,
+          header:{type: "text",
           text: {
             body: image.videoUrl, // URL of the video
           },
-        }
+        },
+        description: image.Descrip,
+      }
       : {
           // Default header for image when no videoUrl is present
-          type: "image",
+          tags: [subTopic], // Subtopic name as a tag
+          title: image.title,
+          header:{type: "image",
           image: {
             url: image.imageUrl, // The image URL
             body: image.Descrip, // The title as the caption for the image
           },
+        },
+        description: image.Descrip,
+        actions: [
+                      {
+                          button_text: "Open Image",
+                          type: "website",
+                          website: {
+                              title: "Welcome to Swiftchat",
+                              payload: "qwerty",
+                              url: image.imageUrl,
+                             
+                          }
+                      }
+                  ]
         };
 
-    return {
-      tags: [subTopic], // Subtopic name as a tag
-      title: image.title, // Title of the image
-      header: header, // Conditionally set the header
-      description: image.Descrip, // Description for the image
-
-      // comment th action button 
-    // actions: [
-    //             {
-    //                 button_text: "Open Imagesafgxvzsd",
-    //                 type: "website",
-    //                 website: {
-    //                     title: "Welcome to Swiftchat",
-    //                     payload: "qwerty",
-    //                     url: image.imageUrl,
-                       
-    //                 }
-    //             }
-    //         ]
-    };
+    return header
   });
 
   return {

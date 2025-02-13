@@ -12,7 +12,6 @@ import {
   answerFeedback,
   optionButton,
   buttonWithScore,
-  videoWithButton,
   imageWithButton
 } from 'src/i18n/buttons/button';
 dotenv.config();
@@ -157,26 +156,7 @@ export class SwiftchatMessageService extends MessageService {
     return response;
   }
 
-     // don;t chnage
-     async sendVideo(from: string, videoUrl: string, title: any, subTopic: string, aboutVideo: string,language:string) {
-      if (!videoUrl) {
-        return;
-      }
-      const videoData = videoWithButton(
-        from, // The recipient's phone number
-        videoUrl, // Video URL
-        title,
-        subTopic,
-        aboutVideo,
-        language
-      );
-      try {
-        const response = await this.sendMessage(this.baseUrl, videoData, this.apiKey);
-        return response
-      } catch (error) {
-        console.error('Error sending video message:', error);
-      }
-    }
+    
   
     // dont'know
     async checkAnswer(

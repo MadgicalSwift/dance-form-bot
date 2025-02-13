@@ -11,7 +11,7 @@ export class User {
   Botid: string;
 
   @IsString()
-  name:string;  
+  name: string;
 
   @IsString()
   selectedMainTopic: string | null;
@@ -29,29 +29,35 @@ export class User {
   questionsAnswered: number = 0;
 
   @IsString()
+  startingIndex: number = 0;
+
+  @IsString()
+  lastIndex: number = 0;
+
+  @IsString()
   score: number = 0;
 
-  challenges:Challenge[];
+  challenges: Challenge[];
 }
-export class Challenge{
+export class Challenge {
   @IsString()
-  topic:string;
+  topic: string;
 
   @IsString()
-  subTopic:string;
+  subTopic: string;
 
   @IsString()
-  level:string;
+  level: string;
 
-  question:Question[];
+  question: Question[];
 }
-export class Question{
+export class Question {
   @IsNumber()
-  setnumber:number;
+  setnumber: number;
 
   @IsNumber()
-  score:number;
-  
+  score: number;
+
   @IsString()
-  badge:string;
+  badge: string;
 }

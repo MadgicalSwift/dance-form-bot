@@ -31,7 +31,7 @@ export class UserService {
             mobileNumber: mobileNumber,
             language: language,
             Botid: botID,
-            name:null,
+            name: null,
           },
         };
         await dynamoDBClient().put(newUser).promise();
@@ -44,7 +44,7 @@ export class UserService {
 
   async findUserByMobileNumber(mobileNumber, Botid) {
     try {
-     
+
       const params = {
         TableName: USERS_TABLE,
         KeyConditionExpression:
@@ -83,61 +83,61 @@ export class UserService {
     }
   }
 
-  async getTopStudents(Botid: string, topic: string, setNumber: number, subTopic:string): Promise<User[] | any> {
+  async getTopStudents(Botid: string, topic: string, setNumber: number, subTopic: string): Promise<User[] | any> {
     try {
-        const params = {
-            TableName: USERS_TABLE,
-            KeyConditionExpression: 'Botid = :Botid',
-            ExpressionAttributeValues: {
-                ':Botid': Botid,
-            },
-        };
-        console.log(Botid, topic, subTopic, setNumber);
-        const result = await dynamoDBClient().query(params).promise();
-        // console.log(result)
-        const users = result.Items || [];
-        // console.log("users-", users);
-        const filteredUsers = users.filter(user => user.Botid === Botid);
-        // console.log("filtered-", filteredUsers);
-        if (filteredUsers.length === 0) {
-            return [];  
-        }
-  
-        filteredUsers.forEach(user => {
-            user['totalScore'] = 0;  
-  
-            if (user.challenges && Array.isArray(user.challenges)) {
-                console.log("User's challenges:", JSON.stringify(user.challenges, null, 2));  
-                user.challenges.forEach(challenge => {
-                    if (challenge.topic === topic && challenge.subTopic=== subTopic ) {
-                        if (challenge.question && Array.isArray(challenge.question)) {
-                            challenge.question.forEach(question => {
-                                if (Number(question.setNumber) === Number(setNumber) && question.score != null) {
-                                    user['totalScore'] += question.score;  
-                                } else {
-                                    console.log(`No match for setNumber or score is missing: setNumber ${question.setNumber}, score ${question.score}`);
-                                }
-                            });
-                        } else {
-                            console.log(`No questions found or questions is not an array for user ${user.mobileNumber}`);
-                        }
-                    } else {
-                        console.log(`Topic does not match for user ${user.mobileNumber}: ${challenge.topic} != ${topic}, ${challenge.subtopic} != ${subTopic}`);
-                    }
+      const params = {
+        TableName: USERS_TABLE,
+        KeyConditionExpression: 'Botid = :Botid',
+        ExpressionAttributeValues: {
+          ':Botid': Botid,
+        },
+      };
+      console.log(Botid, topic, subTopic, setNumber);
+      const result = await dynamoDBClient().query(params).promise();
+      // console.log(result)
+      const users = result.Items || [];
+      // console.log("users-", users);
+      const filteredUsers = users.filter(user => user.Botid === Botid);
+      // console.log("filtered-", filteredUsers);
+      if (filteredUsers.length === 0) {
+        return [];
+      }
+
+      filteredUsers.forEach(user => {
+        user['totalScore'] = 0;
+
+        if (user.challenges && Array.isArray(user.challenges)) {
+          console.log("User's challenges:", JSON.stringify(user.challenges, null, 2));
+          user.challenges.forEach(challenge => {
+            if (challenge.topic === topic && challenge.subTopic === subTopic) {
+              if (challenge.question && Array.isArray(challenge.question)) {
+                challenge.question.forEach(question => {
+                  if (Number(question.setNumber) === Number(setNumber) && question.score != null) {
+                    user['totalScore'] += question.score;
+                  } else {
+                    console.log(`No match for setNumber or score is missing: setNumber ${question.setNumber}, score ${question.score}`);
+                  }
                 });
+              } else {
+                console.log(`No questions found or questions is not an array for user ${user.mobileNumber}`);
+              }
             } else {
-                console.log(`User ${user.mobileNumber} has no challenges or challenges is not an array.`);
+              console.log(`Topic does not match for user ${user.mobileNumber}: ${challenge.topic} != ${topic}, ${challenge.subtopic} != ${subTopic}`);
             }
-        });
-  
-        const topUsers = filteredUsers
-            .filter(user => user['totalScore'] > 0)  
-            .sort((a, b) => b['totalScore'] - a['totalScore']) 
-            .slice(0, 10);  
-        return topUsers;
+          });
+        } else {
+          console.log(`User ${user.mobileNumber} has no challenges or challenges is not an array.`);
+        }
+      });
+
+      const topUsers = filteredUsers
+        .filter(user => user['totalScore'] > 0)
+        .sort((a, b) => b['totalScore'] - a['totalScore'])
+        .slice(0, 10);
+      return topUsers;
     } catch (error) {
-        console.error('Error retrieving top students:', error);
-        throw error;
+      console.error('Error retrieving top students:', error);
+      throw error;
     }
   }
 
@@ -150,7 +150,7 @@ export class UserService {
       },
       UpdateExpression: 'SET challenges = list_append(if_not_exists(challenges, :emptyList), :challengeData)',
       ExpressionAttributeValues: {
-        ':challengeData': [challengeData], 
+        ':challengeData': [challengeData],
         ':emptyList': []
       }
     };
@@ -175,6 +175,8 @@ export class UserService {
         selectedSubtopic: user.selectedSubtopic,
         selectedSet: user.selectedSet,
         questionsAnswered: user.questionsAnswered,
+        startingIndex: user.startingIndex,
+        lastIndex: user.lastIndex,
         score: user.score,
       },
     };

@@ -3,11 +3,14 @@ import IntentClassifier from '../intent/intent.classifier';
 import { MessageService } from 'src/message/message.service';
 import { UserService } from 'src/model/user.service';
 import { localised } from 'src/i18n/en/localised-strings';
-import data from '../datasource/data.json';
+import { LocalizationService } from 'src/localization/localization.service';
+import englishData from '../datasource/english_data.json';
+import hindiData from '../datasource/hindi_data.json';
 import { SwiftchatMessageService } from 'src/swiftchat/swiftchat.service';
 import { plainToClass } from 'class-transformer';
 import { User } from 'src/model/user.entity';
 import { MixpanelService } from 'src/mixpanel/mixpanel.service';
+import { log } from 'console';
 
 
 
@@ -22,7 +25,8 @@ export class ChatbotService {
   private readonly message: MessageService;
   private readonly userService: UserService;
   private readonly swiftchatMessageService: SwiftchatMessageService;
-  private readonly topics: any[] = data.topics;
+  private readonly englishTopics: any[] = englishData.topics;
+  private readonly hindiTopics: any[] = hindiData.topics;
   private readonly mixpanel: MixpanelService;
 
   constructor(
@@ -42,7 +46,7 @@ export class ChatbotService {
   public async processMessage(body: any): Promise<any> {
     // Destructure 'from', 'text', and 'button_response' from the body
     const { from, text, button_response, persistent_menu_response } = body;
-
+    let topics = []
     // Retrieve botID from environment variables
     const botID = process.env.BOT_ID;
     let userData = await this.userService.findUserByMobileNumber(from, botID);
@@ -52,53 +56,95 @@ export class ChatbotService {
       await this.userService.createUser(from, 'english', botID);
       userData = await this.userService.findUserByMobileNumber(from, botID);
     }
-  
+    if(userData.language=="english"){
+      topics = this.englishTopics
+    }
+    else{
+      topics = this.hindiTopics
+    }
+
     // Convert plain user data to a User class instance
     const user = plainToClass(User, userData);
-  if(persistent_menu_response){ 
-  if (persistent_menu_response. body=="Change State"){
-     
-   
-    
-    
-      user.selectedSet = null;
-      user.questionsAnswered = 0;
-      user.score = 0;
-      console.log("akash",user.selectedSet,user.questionsAnswered,user.score )
-      await this.message.sendInitialTopics(from);
-      await this.userService.saveUser(user);
-      return
-    
-    
-  }
-}
 
-  
+    const localisedStrings = LocalizationService.getLocalisedString(user.language);
+    // console.log('user-language', user.language);
+    
+    if (persistent_menu_response) {
+      console.log(persistent_menu_response)
+      if (persistent_menu_response.body == "Change State") {
 
-    // Handle button response from the user
-   else if (button_response) {
-      const buttonBody = button_response.body;
-
-      // Handle 'Main Menu' button - reset user quiz data and send welcome message
-      if (buttonBody === localised.mainMenu) {
         
         user.selectedSet = null;
+        user.selectedMainTopic = null;
+        user.selectedSubtopic = null;
+        user.score = 0;
         user.questionsAnswered = 0;
+        user.startingIndex = 0;
+        user.lastIndex = 0;
+        
+        await this.userService.saveUser(user);
+
+        await this.message.sendInitialTopics(from,user.language);
+        return
+      }
+
+      if (persistent_menu_response.body == "Change Language") {
+       
+        user.selectedSet = null;
+        user.selectedMainTopic = null;
+        user.selectedSubtopic = null;
+        user.score = 0;
+        user.questionsAnswered = 0;
+        user.startingIndex = 0;
+        user.lastIndex = 0;
+        
+        await this.message.sendLanguageSelectionMessage(from, user.language);
+        await this.userService.saveUser(user);
+        return
+      }
+      
+
+    }
+  
+    else if (button_response) {
+      const buttonBody = button_response.body;
+      
+      if (['english', 'hindi'].includes(buttonBody?.toLowerCase())) {
+        user.language = buttonBody.toLowerCase();
+        await this.userService.saveUser(user);
+        // console.log('afterselecting-user-language', user.language);
+        if (user.name == null){
+          
+          await this.message.sendName(from,user.language);
+        }
+        else{
+          
+        await this.message.sendInitialTopics(from , user.language);
+        }
+      }
+      let userSelectedLanguage = user.language;
+      
+    if (buttonBody === localisedStrings.mainMenu) {
+
+        user.selectedSet = null;
+        user.questionsAnswered = 0;
+        user.startingIndex = 0;
         user.score = 0;
         await this.userService.saveUser(user);
-        // await this.message.sendWelcomeMessage(from, user.language);
-        await this.message.sendInitialTopics(from);
+
+        await this.message.sendInitialTopics(from ,userSelectedLanguage);
         const trackingData = {
           distinct_id: from,
           button: buttonBody,
           botID: botID,
         };
-  
+
         this.mixpanel.track('Button_Click', trackingData);
         return 'ok';
       }
+      
       // Handle 'Retake Quiz' button - reset quiz progress and send the first question
-      if (buttonBody === localised.retakeQuiz) {
+      if (buttonBody === localisedStrings.retakeQuiz) {
         user.questionsAnswered = 0;
         user.score = 0;
         await this.userService.saveUser(user);
@@ -113,86 +159,142 @@ export class ChatbotService {
           selectedSubtopic,
           randomSet,
           user.questionsAnswered,
+          userSelectedLanguage
         );
         const trackingData = {
           distinct_id: from,
           button: buttonBody,
           botID: botID,
         };
-  
+
         this.mixpanel.track('Button_Click', trackingData);
         return 'ok';
       }
-      if(buttonBody=== localised.viewChallenge){
-        await this.handleViewChallenges(from, userData);
-        await this.message.endMessage(from);
+      if (buttonBody === localisedStrings.viewChallenge) {
+        await this.handleViewChallenges(from, userData,userSelectedLanguage);
+        await this.message.sendInitialTopics(from,user.language);
         const trackingData = {
           distinct_id: from,
           button: buttonBody,
           botID: botID,
         };
-  
+        user.selectedSet = null;
+        user.selectedMainTopic = null;
+        user.selectedSubtopic = null;
+        user.score = 0;
+        user.questionsAnswered = 0;
+        user.startingIndex = 0;
+        user.lastIndex = 0;
+        
+        // user.name = null
+        
+        await this.userService.saveUser(user); //save in database
         this.mixpanel.track('Button_Click', trackingData);
         return 'ok';
       }
-      // Handle 'More Explanation' button - send complete explanation for the subtopic
-      if (buttonBody === localised.Moreexplanation) {
+      // Handle 'More Videos' button - send complete explanation for the subtopic
+
+      if (buttonBody === localisedStrings.seeMoreVideo) {
+
         const topic = user.selectedSubtopic;
         // Find the selected subtopic in the list of topics
-        const subtopic = this.topics
-          .flatMap((topic) => topic.subtopics) 
+        const subtopic = topics
+          .flatMap((topic) => topic.subtopics)
           .find((subtopic) => subtopic.subtopicName === topic);
         if (subtopic) {
+          const imageUrl = subtopic.image_link;
           const description = subtopic.description;
-          
+          const Title = subtopic.title;
+          const aboutimage = subtopic.Descrip
+          const SubTopic = subtopic.subtopicName
 
-          await this.message.sendCompleteExplanation(from, description, topic);
-        } 
+
+          // Divide all the videos into parts of 3 each
+
+          let indexing = user.startingIndex; 
+          let updateIndexing = user.lastIndex;   
+          if (indexing >= imageUrl.length) {
+            user.startingIndex = 0;
+            user.lastIndex = 0;
+            await this.userService.saveUser(user);
+            await this.message.sendCompleteExplanation(from, SubTopic,userSelectedLanguage);
+
+          }
+          else {
+            const eachImageUrl = imageUrl.slice(indexing, updateIndexing);
+
+            await this.message.imageWithButton(from, eachImageUrl, Title, SubTopic, aboutimage,userSelectedLanguage);
+
+
+
+            if (user.lastIndex >= imageUrl.length) {
+              user.startingIndex = 0;
+              user.lastIndex = 0;
+              await this.userService.saveUser(user);
+              await this.message.sendCompleteExplanation(from, SubTopic,userSelectedLanguage);
+            }
+            else {
+
+              await this.message.sendExplanation(from, SubTopic,userSelectedLanguage);
+            }
+            user.startingIndex = user.lastIndex;
+            user.lastIndex = user.lastIndex + 3;
+            await this.userService.saveUser(user);
+
+
+          }
+
+        }
         const trackingData = {
           distinct_id: from,
           button: buttonBody,
           botID: botID,
         };
-  
+
         this.mixpanel.track('Button_Click', trackingData);
         return 'ok';
       }
       // Handle 'Test Yourself' button - show difficulty options to the user
 
-      if (buttonBody === localised.startQuiz) {
-        
-        user.questionsAnswered=0;
+      if (buttonBody === localisedStrings.startQuiz) {
+
+        await this.message.sendInformationMessage(from, user.name,userSelectedLanguage);
+
+        user.questionsAnswered = 0;
         await this.userService.saveUser(user);
 
         const selectedMainTopic = user.selectedMainTopic;
         const selectedSubtopic = user.selectedSubtopic;
-        
+        const selectedQuestionIndex = user.questionsAnswered;
+
         const { randomSet } = await this.message.sendQuestion(
           from,
           selectedMainTopic,
           selectedSubtopic,
+          selectedQuestionIndex,
+          user.language
         );
 
         user.selectedSet = randomSet;
-        
+
         await this.userService.saveUser(user);
         const trackingData = {
           distinct_id: from,
           button: buttonBody,
           botID: botID,
         };
-  
+
         this.mixpanel.track('Button_Click', trackingData);
         return 'ok';
       }
-
-      // Handle quiz answer submission - check if the user is answering a quiz question
-      if ( user.selectedSet) {
-        
+// Handle quiz answer submission - check if the user is answering a quiz question
+      if (user.selectedSet) {
+        let userSelectedLanguage = user.language;
         const selectedMainTopic = user.selectedMainTopic;
         const selectedSubtopic = user.selectedSubtopic;
-        // const selectedDifficulty = user.selectedDifficulty;
         const randomSet = user.selectedSet;
+        const score = user.score;
+
         const currentQuestionIndex = user.questionsAnswered;
         const { result } = await this.message.checkAnswer(
           from,
@@ -201,6 +303,8 @@ export class ChatbotService {
           selectedSubtopic,
           randomSet,
           currentQuestionIndex,
+          score,
+          userSelectedLanguage
         );
 
         // Update user score and questions answered
@@ -208,24 +312,29 @@ export class ChatbotService {
         user.questionsAnswered += 1;
         await this.userService.saveUser(user);
 
+
+        if ( currentQuestionIndex < 9) {
+
+          await this.message.scoreInformation(from,user.score, currentQuestionIndex+1,userSelectedLanguage)
+        }
         // If the user has answered 10 questions, send their final score
         if (user.questionsAnswered >= 10) {
 
           let badge = '';
-          if (user.score=== 10) {
+          if (user.score === 10) {
             badge = 'Gold 🥇';
-          } else if (user.score>= 7) {
+          } else if (user.score >= 7) {
             badge = 'Silver 🥈';
           } else if (user.score >= 5) {
             badge = 'Bronze 🥉';
           } else {
-            badge =  'Novice 🔰';
+            badge = 'Novice 🔰';
           }
 
           // Store the data to be stored in database
           const challengeData = {
             topic: selectedMainTopic,
-            subTopic:selectedSubtopic,
+            subTopic: selectedSubtopic,
             question: [
               {
                 setNumber: randomSet,
@@ -234,37 +343,27 @@ export class ChatbotService {
               },
             ],
           };
-          // Save the challenge data into the database
-          await this.userService.saveUserChallenge(
-            from,
-            userData.Botid,
-            challengeData,
-          );
-          console.log("Challenge Data:",challengeData)
-          // console.log("user:", user )
-          await this.message.newscorecard(from,user.score,user.questionsAnswered,badge)
-          // await this.message.sendScore(
-            
-          //   user.score,
-          //   user.questionsAnswered,
-           
-          //   payload
-          // );
+          
+          await this.message.newscorecard(from, user.score, user.questionsAnswered, badge,userSelectedLanguage)
+          
           let isAnswer = ""
-        if (result==1){
-          isAnswer = "correct"
-        }
-        else{
-          isAnswer = "incorrect"
-        }
-        const trackingData = {
-          distinct_id: from,
-          user_answer: buttonBody,
-          isAnswer: isAnswer,
-          botID: botID,
-        };
-  
-        this.mixpanel.track('Taking_Quiz', trackingData);
+          if (result == 1) {
+            isAnswer = "correct"
+          }
+          else {
+            isAnswer = "incorrect"
+          }
+          const trackingData = {
+            distinct_id: from,
+            user_answer: buttonBody,
+            isAnswer: isAnswer,
+            botID: botID,
+          };
+          user.questionsAnswered = 0;
+          user.startingIndex = 0;
+          user.score = 0;
+          await this.userService.saveUser(user);
+          this.mixpanel.track('Taking_Quiz', trackingData);
 
           return 'ok';
         }
@@ -276,12 +375,13 @@ export class ChatbotService {
           selectedSubtopic,
           randomSet,
           user.questionsAnswered,
+          userSelectedLanguage
         );
         let isAnswer = ""
-        if (result==1){
+        if (result == 1) {
           isAnswer = "correct"
         }
-        else{
+        else {
           isAnswer = "incorrect"
         }
         const trackingData = {
@@ -290,75 +390,103 @@ export class ChatbotService {
           isAnswer: isAnswer,
           botID: botID,
         };
-  
+
         this.mixpanel.track('Taking_Quiz', trackingData);
 
         return 'ok';
       }
 
       // Handle topic selection - find the main topic and save it to the user data
-      const topic = this.topics.find((topic) => topic.topicName === buttonBody);
-      // console.log("topic", topic);
+      const topic = topics.find((topic) => topic.topicName === buttonBody);
+  
       if (topic) {
         const mainTopic = topic.topicName;
 
         user.selectedMainTopic = mainTopic;
-
         await this.userService.saveUser(user);
-        // console.log("Main topic:", mainTopic)
 
-        await this.message.sendSubTopics(from, mainTopic);
+        await this.message.sendSubTopics(from, mainTopic,userSelectedLanguage);
         const trackingData = {
           distinct_id: from,
           button: buttonBody,
           botID: botID,
         };
-  
+
         this.mixpanel.track('Button_Click', trackingData);
       } else {
         // Handle subtopic selection - find the subtopic and send an explanation
-        const subtopic = this.topics
+        const subtopic = topics
           .flatMap((topic) => topic.subtopics)
           .find((subtopic) => subtopic.subtopicName === buttonBody);
         if (subtopic) {
           const subtopicName = subtopic.subtopicName;
           const description = subtopic.description[0];
           if (!description) {
-            
+
           }
           user.selectedSubtopic = subtopicName;
-          const videoUrl =subtopic.video_link;
+          const videoUrl = subtopic.video_link;
           const title = subtopic.title;
           const aboutVideo = subtopic.descrip
-          let subTopic =subtopic.subtopicName
-          if(subTopic.length > 20){
+          let subTopic = subtopic.subtopicName
+          if (subTopic.length > 20) {
             subTopic = subTopic.slice(0, 20) + '...'
 
-          
+
+          }
+
+
+          // creat a video object
+          let video = {
+            "videoUrl" : subtopic.video_link ,
+            "title" : subtopic.title,
+            "Descrip" : subtopic.descrip,
           }
 
           await this.userService.saveUser(user);
-          // const selectVideo =subtopic.video_link;
-          // await this.message.sendVideo(from, selectVideo)
-          await this.message.sendVideo(from, videoUrl, title, subTopic, aboutVideo);
-          
-          
-          const imageUrl =subtopic.image_link;
+
+
+          // code for buttonimage
+          const imageUrl = subtopic.image_link;
           const Title = subtopic.title;
           const aboutimage = subtopic.Descrip
-          const SubTopic =subtopic.subtopicName
-          await this.message.imageWithButton(from, imageUrl,Title, subTopic, aboutimage);
+          const SubTopic = subtopic.subtopicName
+
+          // start the indexing from 0 at new subtopic
+          user.startingIndex = 0;
+          user.lastIndex = 0;
+          await this.userService.saveUser(user);
+          let indexing = user.startingIndex; 
+          user.lastIndex = user.lastIndex + 2;
+          await this.userService.saveUser(user);
+          let updateIndexing = user.lastIndex; 
           
-          await this.message.sendExplanation(from, description, subtopicName);
-          
-        } 
+
+          const eachImageUrl = imageUrl.slice(indexing, updateIndexing);
+          eachImageUrl.unshift(video);  
+  
+          // console.log ('eachImageUrl=> ', eachImageUrl)
+          await this.message.imageWithButton(from, eachImageUrl, Title, SubTopic, aboutimage,userSelectedLanguage);
+
+          if (updateIndexing >= imageUrl.length) {
+            user.lastIndex = 0;
+            await this.userService.saveUser(user);
+            await this.message.sendCompleteExplanation(from, subtopicName,userSelectedLanguage);
+          }
+          else {
+            user.startingIndex = user.lastIndex;
+            user.lastIndex = user.lastIndex + 3;
+            await this.userService.saveUser(user);
+            await this.message.sendExplanation(from, subtopicName,userSelectedLanguage);
+          }
+        }
 
         const trackingData = {
           distinct_id: from,
           button: buttonBody,
           botID: botID,
         };
-  
+
         this.mixpanel.track('Button_Click', trackingData);
       }
 
@@ -366,7 +494,7 @@ export class ChatbotService {
     }
 
     // Handle text message input - reset user data and send a welcome message
-    else{
+    else {
 
       if (localised.validText.includes(text.body)) {
         const userData = await this.userService.findUserByMobileNumber(
@@ -376,50 +504,51 @@ export class ChatbotService {
         if (!userData) {
           await this.userService.createUser(from, 'English', botID);
         }
-  
-        user.selectedSet= null;   
-        user.selectedMainTopic=null;
-        user.selectedSubtopic=null;
-        user.score=0; 
-        user.questionsAnswered=0;
-        await this.userService.saveUser(user);   
-        // console.log("user data -",userData)
-        if(userData.name==null){
-          await this.message.sendWelcomeMessage(from, user.language);
-          
-          await this.message.sendName(from);
-        }
-        else{
-          await this.message.sendWelcomeMessage(from, user.language);
-          
-          await this.message.sendInitialTopics(from);
-        }
-      }
-      else{
 
-        await this.userService.saveUserName(from, botID, text.body);
-        await this.message.sendInitialTopics(from);
-      }
+        user.selectedSet = null;
+        user.selectedMainTopic = null;
+        user.selectedSubtopic = null;
+        user.score = 0;
+        user.questionsAnswered = 0;
+        user.startingIndex = 0;
+        user.lastIndex = 0;
+        
+        // user.name = null
+        
+        await this.userService.saveUser(user); //save in database
+        let userLang = userData.language
+        await this.message.sendWelcomeMessage(from, userLang);
+
+        await this.message.sendLanguageSelectionMessage(from, userLang)
        
+      }
+      else {
+        
+        //  save username and send the main topic
+        await this.userService.saveUserName(from, botID, text.body);
+        console.log('user-language for topic', user.language);
+        
+        await this.message.sendInitialTopics(from, user.language);
+      }
+
     }
 
     return 'ok';
   }
-  async handleViewChallenges(from: string, userData: any): Promise<void>{
-    try { 
-      console.log(userData)
+  async handleViewChallenges(from: string, userData: any, userSelectedLanguage:string): Promise<void> {
+    try {
       const topStudents = await this.userService.getTopStudents(
         userData.Botid,
         userData.selectedMainTopic,
         userData.selectedSet,
-        userData.selectedSubtopic, 
+        userData.selectedSubtopic,
       );
       if (topStudents.length === 0) {
-  
-        await this.swiftchatMessageService.sendMessage(this.baseUrl,{
+
+        await this.swiftchatMessageService.sendMessage(this.baseUrl, {
           to: from,
           type: 'text',
-          text: { body: 'No challenges have been completed yet.' },
+          text: { body: localised.noChallenges },
         }, this.apiKey);
         return;
       }
@@ -428,7 +557,7 @@ export class ChatbotService {
       topStudents.forEach((student, index) => {
         const totalScore = student.score || 0;
         const studentName = student.name || 'Unknown';
-      
+
         let badge = '';
         if (totalScore === 10) {
           badge = 'Gold 🥇';
@@ -437,7 +566,7 @@ export class ChatbotService {
         } else if (totalScore >= 5) {
           badge = 'Bronze 🥉';
         } else {
-          badge =  'Novice 🔰';
+          badge = 'Novice 🔰';
         }
 
         message += `${index + 1}. ${studentName}\n`;
@@ -446,18 +575,18 @@ export class ChatbotService {
       });
 
       // Send the message with the top students' names, scores, and badges
-      await this.swiftchatMessageService.sendMessage(this.baseUrl,{
+      await this.swiftchatMessageService.sendMessage(this.baseUrl, {
         to: from,
         type: 'text',
         text: { body: message },
       }, this.apiKey);
     } catch (error) {
       console.error('Error handling View Challenges:', error);
-      await this.swiftchatMessageService.sendMessage(this.baseUrl,{
+      await this.swiftchatMessageService.sendMessage(this.baseUrl, {
         to: from,
         type: 'text',
         text: {
-          body: 'An error occurred while fetching challenges. Please try again later.',
+          body: localised.errorOccurred,
         },
       }, this.apiKey);
     }

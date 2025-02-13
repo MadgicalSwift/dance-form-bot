@@ -77,6 +77,7 @@ Get/api/status: Endpoint for checking the status of  api
 src/
 ├── app.controller.ts
 ├── app.module.ts
+├── lambda.ts
 ├── main.ts
 ├── chat/
 │   ├── chat.service.ts
@@ -93,6 +94,8 @@ src/
 ├── config/
 │   └── database.config.ts
 ├── i18n/
+|    └── buttons/
+│       └── buttons.ts
 │   ├── en/
 │   │   └── localised-strings.ts
 │   └── hi/
@@ -109,8 +112,17 @@ src/
 │   ├──user.module.ts
 │   └──query.ts
 └── swiftchat/
-    ├── swiftchat.module.ts
-    └── swiftchat.service.ts
+|    ├── swiftchat.module.ts
+|    └── swiftchat.service.ts
+└── datasource/
+    ├── english_data.json
+    └── hindi_data.json
+└── intent/
+    ├── intent.classifier.ts
+├── mixpanel/
+│   ├── mixpanel.service.specs.ts
+│   └── mixpanel.service.ts
+    
 
 ```
 

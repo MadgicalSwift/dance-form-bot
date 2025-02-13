@@ -232,7 +232,7 @@ export class SwiftchatMessageService extends MessageService {
           if (!mediaItems || mediaItems.length === 0) {
             return;
           }
-        console.log(mediaItems,"swift")
+        // console.log(mediaItems,"swift")
           const mediaData = mediaWithButton(from, mediaItems, subTopic, language);
         
           try {
@@ -326,7 +326,6 @@ export class SwiftchatMessageService extends MessageService {
 
   // button done
   async sendInitialTopics(from: string,language:string) {
-    console.log(" object 2 = ", language)
     const messageData = createMainTopicButtons(from , language);
     const response = await this.sendMessage(
       this.baseUrl,

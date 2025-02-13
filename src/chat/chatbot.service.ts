@@ -67,7 +67,7 @@ export class ChatbotService {
     const user = plainToClass(User, userData);
 
     const localisedStrings = LocalizationService.getLocalisedString(user.language);
-    console.log('user-language', user.language);
+
     
     if (persistent_menu_response) {
       if (persistent_menu_response.body == "Change Topic") {
@@ -111,7 +111,6 @@ export class ChatbotService {
       if (['english', 'hindi'].includes(buttonBody?.toLowerCase())) {
         user.language = buttonBody.toLowerCase();
         await this.userService.saveUser(user);
-        console.log('afterselecting-user-language', user.language);
         if (user.name == null){
           
           await this.message.sendName(from,user.language);
@@ -191,7 +190,7 @@ export class ChatbotService {
       
         if (subtopic) {
           const imageUrl = subtopic.image_link;
-          console.log(imageUrl,"iiiiiiiiiiii")
+       
 
           const videoUrl = subtopic.video_link;
           const description = subtopic.description;
@@ -218,7 +217,7 @@ export class ChatbotService {
               title: "Sample Video",
               description: "This is a sample video",
             });
-      console.log(imageUrl,"iiiiiiiiiiii")
+      
             // Add all images in the current slice to the media items array
             const eachImageUrl = imageUrl.slice(indexing, updateIndexing);
             eachImageUrl.forEach((url, index) => {
@@ -288,7 +287,6 @@ export class ChatbotService {
           }
           else {
             const eachImageUrl = imageUrl.slice(indexing, updateIndexing);
-             console.log(eachImageUrl,"hhhhhhhhhhhh")
            //await this.message.imageWithButton(from, eachImageUrl, Title, SubTopic, aboutimage,userSelectedLanguage);
            await this.message.sendMedia(from, [
             { type: "video", url: videoUrl, title: "Sample Video", description: "This is a sample video" },
@@ -676,7 +674,7 @@ export class ChatbotService {
         
         //  save username and send the main topic
         await this.userService.saveUserName(from, botID, text.body);
-        console.log('user-language for topic', user.language);
+        
         
         await this.message.sendInitialTopics(from, user.language);
       }

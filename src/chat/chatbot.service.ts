@@ -67,10 +67,10 @@ export class ChatbotService {
     const user = plainToClass(User, userData);
 
     const localisedStrings = LocalizationService.getLocalisedString(user.language);
-    // console.log('user-language', user.language);
+  
     
     if (persistent_menu_response) {
-      console.log(persistent_menu_response)
+  
       if (persistent_menu_response.body == "Change State") {
 
         
@@ -112,7 +112,6 @@ export class ChatbotService {
       if (['english', 'hindi'].includes(buttonBody?.toLowerCase())) {
         user.language = buttonBody.toLowerCase();
         await this.userService.saveUser(user);
-        // console.log('afterselecting-user-language', user.language);
         if (user.name == null){
           
           await this.message.sendName(from,user.language);
@@ -450,9 +449,10 @@ export class ChatbotService {
           
 
           const eachImageUrl = imageUrl.slice(indexing, updateIndexing);
-          eachImageUrl.unshift(video);  
+          // eachImageUrl.unshift(video);  
+          // eachImageUrl.splice(2, 0, video);
   
-          // console.log ('eachImageUrl=> ', eachImageUrl)
+      
           await this.message.imageWithButton(from, eachImageUrl, Title, SubTopic, aboutimage,userSelectedLanguage);
 
           if (updateIndexing >= imageUrl.length) {
@@ -513,7 +513,7 @@ export class ChatbotService {
         
         //  save username and send the main topic
         await this.userService.saveUserName(from, botID, text.body);
-        console.log('user-language for topic', user.language);
+       
         
         await this.message.sendInitialTopics(from, user.language);
       }

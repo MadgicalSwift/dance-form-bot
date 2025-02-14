@@ -223,7 +223,7 @@ export class SwiftchatMessageService extends MessageService {
     );
     return response;
   }
-   // button done
+
    async sendScore(from: string, score: number, totalQuestions: number, badge: string,language:string) {
     const messageData = buttonWithScore(from, score, totalQuestions, badge,language);
     const response = await this.sendMessage(
@@ -234,9 +234,8 @@ export class SwiftchatMessageService extends MessageService {
     return response;
   }
 
-  // button done
+
   async sendInitialTopics(from: string,language:string) {
-    console.log(" object 2 = ", language)
     const messageData = createMainTopicButtons(from , language);
     const response = await this.sendMessage(
       this.baseUrl,

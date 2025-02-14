@@ -324,15 +324,15 @@ export function answerFeedback(
     (qs) =>
       qs.setNumber === parseInt(randomSet),
   );
-  // console.log(questionSet);
+
   if (!questionSet) {
 
   }
-  // console.log(currentQuestionIndex);
+
   const question = questionSet.questions[currentQuestionIndex];
 
 
-  // console.log(question);
+  
   const explanation = question.explanation;
   if (!explanation) {
 

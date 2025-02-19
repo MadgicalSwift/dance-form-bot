@@ -355,6 +355,30 @@ const localisedStrings = LocalizationService.getLocalisedString(language)
   return { feedbackMessage, result };
 }
 
+
+export function videoWithButton(from: string, videoUrl: string, videoTitle: string , subTopic: string, aboutVideo: string) {
+  // console.log(videoUrl);
+  // console.log(videoTitle);
+  return {
+    to: from, // Recipient's mobile number
+    type: "article", // Message type is article
+    article: [
+      {
+        tags: [`${subTopic}`], // Subtopic name
+        title: videoTitle, // Title of the video
+        header: {
+          type: "text",
+          text: {
+            body: videoUrl, // URL of the video
+          },
+        },
+        description: aboutVideo
+      },
+    ],
+  };
+}
+
+
 export function buttonWithScore(
   from: string,
   score: number,

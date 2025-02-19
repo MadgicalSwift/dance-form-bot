@@ -423,14 +423,10 @@ export class ChatbotService {
 
 
           // creat a video object
-          let video = {
-            "videoUrl" : subtopic.video_link ,
-            "title" : subtopic.title,
-            "Descrip" : subtopic.descrip,
-          }
+          
 
           await this.userService.saveUser(user);
-
+          await this.message.sendVideo(from, videoUrl, title, subTopic, aboutVideo);
 
           // code for buttonimage
           const imageUrl = subtopic.image_link;
@@ -443,16 +439,13 @@ export class ChatbotService {
           user.lastIndex = 0;
           await this.userService.saveUser(user);
           let indexing = user.startingIndex; 
-          user.lastIndex = user.lastIndex + 2;
+          user.lastIndex = user.lastIndex + 3;
           await this.userService.saveUser(user);
           let updateIndexing = user.lastIndex; 
           
 
           const eachImageUrl = imageUrl.slice(indexing, updateIndexing);
-          eachImageUrl.unshift(video);  
-          // eachImageUrl.splice(2, 0, video);
-  
-      
+        
           await this.message.imageWithButton(from, eachImageUrl, Title, SubTopic, aboutimage,userSelectedLanguage);
 
           if (updateIndexing >= imageUrl.length) {

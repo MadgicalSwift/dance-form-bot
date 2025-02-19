@@ -11,6 +11,7 @@ import {
   questionButton,
   answerFeedback,
   optionButton,
+  videoWithButton,
   buttonWithScore,
   imageWithButton
 } from 'src/i18n/buttons/button';
@@ -254,6 +255,33 @@ export class SwiftchatMessageService extends MessageService {
       this.apiKey,
     );
     return response;
+  }
+
+
+  async sendVideo(from: string, videoUrl: string, title:any, subTopic: string, aboutVideo: string ) {
+    if (!videoUrl) {
+      return;
+    }
+  
+    // Create the video message data
+    //const videoUrl=selectVideo
+    //const videoTitle=title||"Title not provided"
+    const videoData = videoWithButton(
+               from, // The recipient's phone number
+              videoUrl, // Video URL
+              title,
+              subTopic,
+              aboutVideo
+          );
+       
+    // Send the video message using the sendMessage function
+    try {
+      const response = await this.sendMessage(this.baseUrl, videoData, this.apiKey);
+      console.log('Message sent successfully:', response);
+      return response
+    } catch (error) {
+      console.error('Error sending video message:', error);
+    }
   }
 
   // button  done

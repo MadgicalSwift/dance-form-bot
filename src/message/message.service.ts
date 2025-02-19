@@ -14,6 +14,7 @@ export abstract class MessageService {
     return localised.seeMoreMessage;
   }
 
+  
   async sendMessage(baseUrl: string, requestData: any, token: string) {
     try {
       const response = await axios.post(baseUrl, requestData, {
@@ -78,7 +79,7 @@ export abstract class MessageService {
   abstract sendScore(from: string, score: number, totalQuestions: number, badge: string,language: string);
   abstract endMessage(from: string,language: string);
   abstract scoreInformation(from: string,score:number,attempted: number,language: string);
-
+  abstract sendVideo(from: string,  videoUrl: string, title:string, subTopic: string, aboutVideo: string);
   abstract sendLanguageSelectionMessage(from: string, language: string);
   abstract newscorecard(from: string, score: number, totalQuestions: number, badge: string,language: string);
   abstract imageWithButton(from: string, imageUrl: string, Title: any, subTopic: string, aboutimage: string,language: string);

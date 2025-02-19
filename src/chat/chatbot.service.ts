@@ -449,7 +449,7 @@ export class ChatbotService {
           
 
           const eachImageUrl = imageUrl.slice(indexing, updateIndexing);
-          // eachImageUrl.unshift(video);  
+          eachImageUrl.unshift(video);  
           // eachImageUrl.splice(2, 0, video);
   
       
